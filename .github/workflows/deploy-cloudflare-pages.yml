@@ -1,15 +1,16 @@
 name: Deploy to Cloudflare Pages
 
 on:
-  push:
+  pull_request:
+    types: [closed]
     branches: [main]
-  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
   deploy:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     env:
       PUBLIC_CALCOM_URL: ${{ vars.PUBLIC_CALCOM_URL }}
@@ -17,6 +18,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: main
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
