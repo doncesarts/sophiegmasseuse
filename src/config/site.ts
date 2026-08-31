@@ -21,6 +21,26 @@ export interface SiteConfig {
   bookingUrl: string;
   instagramUrl?: string;
   facebookUrl?: string;
+  /** Google Business Profile / Maps listing URL, used for JSON-LD `hasMap` and NAP consistency. */
+  googleMapsUrl?: string;
+  /** Latitude/longitude of the studio, used for JSON-LD `geo` (improves Maps/local pack accuracy). */
+  geo?: { latitude: number; longitude: number };
+  /** schema.org priceRange, e.g. "CHF 50-100". */
+  priceRange: string;
+  /** schema.org openingHoursSpecification strings, e.g. "Mo-Fr 09:00-19:00". */
+  openingHours: string[];
+  /**
+   * Google reviews social proof. Kept disabled until the Google Business Profile
+   * is claimed and verified — flip `enabled` to true and fill in the fields to
+   * surface the rating badge and `aggregateRating` JSON-LD across the site.
+   */
+  reviews: {
+    enabled: boolean;
+    rating?: number;
+    count?: number;
+    /** Link to the public Google reviews page for this business. */
+    url?: string;
+  };
   colors: {
     primary: string;
     secondary: string;
@@ -51,6 +71,20 @@ export const siteConfig: SiteConfig = {
   bookingUrl: "https://cal.com/example",
   instagramUrl: "",
   facebookUrl: "https://facebook.com/SophieMassageZurich",
+  // TODO: replace with the real Google Business Profile / Maps share link once claimed.
+  googleMapsUrl: "",
+  // TODO: set real coordinates for the studio address to strengthen local/Maps signals.
+  geo: undefined,
+  priceRange: "CHF 50-100",
+  // TODO: replace with real opening hours (schema.org format, e.g. "Mo-Fr 09:00-19:00").
+  openingHours: ["Mo-Fr 09:00-19:00", "Sa 09:00-14:00"],
+  // TODO: set enabled: true and fill in real values once the Google Business Profile is verified.
+  reviews: {
+    enabled: false,
+    rating: undefined,
+    count: undefined,
+    url: "",
+  },
   colors: {
     primary: "#5B7A63",
     secondary: "#B9713F",

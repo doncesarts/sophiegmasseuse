@@ -1,8 +1,11 @@
 ---
 import MainLayout from '../../../layouts/MainLayout.astro';
 import ServiceCard from '../../../components/ServiceCard.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { breadcrumbList } from '../../../lib/schema';
+import { siteConfig } from '../../../config/site';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
-import { type Locale } from '../../../i18n/config';
+import { defaultLocale, type Locale } from '../../../i18n/config';
 import { getTranslations } from '../../../i18n';
 
 export async function getStaticPaths() {
@@ -27,14 +30,47 @@ const slug = entry.id.split('/').pop();
 const related = (await getCollection('services', (e) => e.data.lang === locale && e.id !== entry.id))
   .sort((a, b) => a.data.order - b.data.order)
   .slice(0, 3);
+
+const pagePath = `/services/${slug}`;
+const breadcrumbs = [
+  { name: t.nav.home, href: `/${locale}` },
+  { name: t.nav.services, href: `/${locale}/services` },
+  { name: entry.data.title, href: `/${locale}${pagePath}` },
+];
+const breadcrumbSchema = breadcrumbList(
+  breadcrumbs.map((b) => ({ name: b.name, url: new URL(b.href, Astro.site).toString() })),
+);
+
+const offers = (entry.data.options.length > 0
+  ? entry.data.options.map((opt) => ({
+      '@type': 'Offer',
+      name: opt.description,
+      price: opt.price,
+      priceCurrency: entry.data.currency,
+    }))
+  : entry.data.price
+    ? [{ '@type': 'Offer', price: entry.data.price, priceCurrency: entry.data.currency }]
+    : []);
+
+const serviceSchema = {
+  '@type': 'Service',
+  serviceType: entry.data.title,
+  name: `${entry.data.title} — ${siteConfig.city}`,
+  description: entry.data.shortDescription || entry.data.title,
+  areaServed: siteConfig.serviceArea,
+  provider: { '@id': new URL(`/${defaultLocale}#business`, Astro.site).toString() },
+  ...(offers.length > 0 ? { offers } : {}),
+};
 ---
 
 <MainLayout
-  title={`${entry.data.title} — ${t.seo.services.title}`}
+  title={`${entry.data.title} in ${siteConfig.city} — ${siteConfig.name}`}
   description={entry.data.shortDescription || entry.data.title}
   locale={locale}
-  path={`/services/${slug}`}
+  path={pagePath}
+  structuredData={[breadcrumbSchema, serviceSchema]}
 >
+  <Breadcrumbs items={breadcrumbs} />
   <article class="page section container max-w-3xl">
     <a href={`/${locale}/services`} class="link link-primary text-sm">&larr; {t.common.backToServices}</a>
     <h1 class="mt-4">{entry.data.title}</h1>
@@ -91,6 +127,11 @@ const related = (await getCollection('services', (e) => e.data.lang === locale &
         </ul>
       </>
     )}
+
+    <h2>{t.serviceDetail.aftercareTitle}</h2>
+    <ul>
+      {t.serviceDetail.aftercareItems.map((item) => <li>{item}</li>)}
+    </ul>
 
     <div class="rounded-box bg-secondary text-secondary-content p-8 my-10 text-center">
       <h2 class="text-secondary-content">{t.serviceDetail.ctaTitle}</h2>

@@ -14,7 +14,7 @@ options:
     duration: 75
     price: 100
 image: "/images/placeholders/service-swedish-massage.svg"
-imageAlt: "Placeholder image representing the swedish massage treatment"
+imageAlt: "Swedish massage treatment at Voyage Sensoriel in Zurich"
 featured: true
 order: 1
 suitableFor:

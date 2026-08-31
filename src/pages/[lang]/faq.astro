@@ -1,6 +1,8 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
 import FaqAccordion from '../../components/FaqAccordion.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { breadcrumbList } from '../../lib/schema';
 import { locales, type Locale } from '../../i18n/config';
 import { getTranslations } from '../../i18n';
 
@@ -11,9 +13,32 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const locale = lang as Locale;
 const t = getTranslations(locale);
+
+const breadcrumbs = [
+  { name: t.nav.home, href: `/${locale}` },
+  { name: t.nav.faq, href: `/${locale}/faq` },
+];
+const breadcrumbSchema = breadcrumbList(
+  breadcrumbs.map((b) => ({ name: b.name, url: new URL(b.href, Astro.site).toString() })),
+);
+const faqSchema = {
+  '@type': 'FAQPage',
+  mainEntity: t.faqPage.items.map((item) => ({
+    '@type': 'Question',
+    name: item.question,
+    acceptedAnswer: { '@type': 'Answer', text: item.answer },
+  })),
+};
 ---
 
-<MainLayout title={t.seo.faq.title} description={t.seo.faq.description} locale={locale} path="/faq">
+<MainLayout
+  title={t.seo.faq.title}
+  description={t.seo.faq.description}
+  locale={locale}
+  path="/faq"
+  structuredData={[breadcrumbSchema, faqSchema]}
+>
+  <Breadcrumbs items={breadcrumbs} />
   <section class="page section container max-w-3xl">
     <h1>{t.faqPage.title}</h1>
     <p class="text-base-content/80 mb-8">{t.faqPage.intro}</p>

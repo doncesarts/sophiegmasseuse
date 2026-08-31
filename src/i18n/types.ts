@@ -45,6 +45,7 @@ export interface Translations {
     book: { title: string; description: string };
     privacy: { title: string; description: string };
     legal: { title: string; description: string };
+    healthSafety: { title: string; description: string };
   };
   hero: {
     eyebrow: string;
@@ -78,6 +79,8 @@ export interface Translations {
   testimonialsSection: {
     title: string;
     subtitle: string;
+    /** Shown only once Google reviews are enabled in siteConfig.reviews. */
+    googleCta: string;
   };
   gallery: {
     title: string;
@@ -102,6 +105,8 @@ export interface Translations {
     specialOfferNotice: string;
     suitableForTitle: string;
     whatToExpectTitle: string;
+    aftercareTitle: string;
+    aftercareItems: string[];
     relatedTitle: string;
     ctaTitle: string;
     ctaBody: string;
@@ -151,9 +156,20 @@ export interface Translations {
     rightsReserved: string;
     privacy: string;
     legal: string;
+    healthSafety: string;
   };
   legalPage: { title: string; body: string[] };
   privacyPage: { title: string; body: string[] };
+  healthSafetyPage: {
+    title: string;
+    intro: string;
+    hygieneTitle: string;
+    hygieneItems: string[];
+    contraindicationsTitle: string;
+    contraindicationsIntro: string;
+    contraindicationsItems: string[];
+    disclaimerNote: string;
+  };
   notFound: { title: string; body: string; cta: string };
   serverError: { title: string; body: string; cta: string };
 }

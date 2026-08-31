@@ -1,5 +1,7 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { breadcrumbList } from '../../lib/schema';
 import { siteConfig } from '../../config/site';
 import { locales, type Locale } from '../../i18n/config';
 import { getTranslations } from '../../i18n';
@@ -11,14 +13,29 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const locale = lang as Locale;
 const t = getTranslations(locale);
+
+const breadcrumbs = [
+  { name: t.nav.home, href: `/${locale}` },
+  { name: t.nav.about, href: `/${locale}/about` },
+];
+const breadcrumbSchema = breadcrumbList(
+  breadcrumbs.map((b) => ({ name: b.name, url: new URL(b.href, Astro.site).toString() })),
+);
 ---
 
-<MainLayout title={t.seo.about.title} description={t.seo.about.description} locale={locale} path="/about">
+<MainLayout
+  title={t.seo.about.title}
+  description={t.seo.about.description}
+  locale={locale}
+  path="/about"
+  structuredData={[breadcrumbSchema]}
+>
+  <Breadcrumbs items={breadcrumbs} />
   <article class="page section container max-w-3xl">
     <div class="grid gap-10 lg:grid-cols-[1fr_1.4fr] items-start mb-12 not-prose">
       <img
         src="/images/portrait.jpeg"
-        alt={`Placeholder portrait of ${siteConfig.therapistName}`}
+        alt={`${siteConfig.therapistName}, massage therapist in ${siteConfig.city}`}
         width="900"
         height="1100"
         class="rounded-box w-full h-auto"

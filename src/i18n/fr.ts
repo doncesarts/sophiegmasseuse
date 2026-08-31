@@ -3,7 +3,7 @@ import type { Translations } from "./types";
 const fr: Translations = {
   nav: {
     home: "Accueil",
-    services: "Soins",
+    services: "Massages",
     about: "À propos",
     faq: "FAQ",
     contact: "Contact",
@@ -11,12 +11,12 @@ const fr: Translations = {
   },
   common: {
     bookNow: "Réserver une séance",
-    discoverTreatments: "Découvrir les soins",
+    discoverTreatments: "Découvrir nos massages",
     learnMore: "En savoir plus",
     readMore: "Lire la suite",
-    viewService: "Voir le soin",
-    backToServices: "Retour à tous les soins",
-    relatedServices: "D'autres soins qui pourraient vous plaire",
+    viewService: "Voir le massage",
+    backToServices: "Retour à tous les massages",
+    relatedServices: "D'autres massages qui pourraient vous plaire",
     minutesShort: "min",
     from: "dès",
     skipToContent: "Aller au contenu",
@@ -26,19 +26,19 @@ const fr: Translations = {
   },
   seo: {
     home: {
-      title: "Voyage Sensoriel — Massage indépendant à Genève",
+      title: "Voyage Sensoriel — Massage balinais & suédois à Zurich",
       description:
-        "Des soins de massage calmes, chaleureux et sur mesure. Réservez votre séance avec Sophie Goupil à Genève.",
+        "Masseuse indépendante à Zurich proposant massage balinais et massage suédois. Soins calmes et sur mesure — réservez votre séance avec Sophie Goupil.",
     },
     services: {
-      title: "Soins — Voyage Sensoriel",
+      title: "Massage balinais & suédois à Zurich — Voyage Sensoriel",
       description:
-        "Découvrez nos soins de massage, de la détente douce au travail profond ciblé, chacun adapté à vos besoins.",
+        "Découvrez nos soins de massage à Zurich, dont le massage balinais et le massage suédois, chacun adapté à vos besoins.",
     },
     about: {
       title: "À propos de Sophie Goupil — Voyage Sensoriel",
       description:
-        "Découvrez Sophie Goupil, masseuse indépendante à Genève, et la philosophie de Voyage Sensoriel.",
+        "Découvrez Sophie Goupil, masseuse indépendante à Zurich, et la philosophie de Voyage Sensoriel.",
     },
     faq: {
       title: "Questions fréquentes — Voyage Sensoriel",
@@ -48,7 +48,7 @@ const fr: Translations = {
     contact: {
       title: "Contact — Voyage Sensoriel",
       description:
-        "Contactez Voyage Sensoriel à Genève, ou réservez directement votre séance de massage en ligne.",
+        "Contactez Voyage Sensoriel à Zurich, ou réservez directement votre séance de massage en ligne.",
     },
     book: {
       title: "Réserver une séance — Voyage Sensoriel",
@@ -63,15 +63,20 @@ const fr: Translations = {
       title: "Mentions légales — Voyage Sensoriel",
       description: "Informations légales concernant Voyage Sensoriel.",
     },
+    healthSafety: {
+      title: "Santé, sécurité & hygiène — Voyage Sensoriel",
+      description:
+        "Pratiques d'hygiène et contre-indications médicales à connaître avant de réserver un massage chez Voyage Sensoriel à Zurich.",
+    },
   },
   hero: {
-    eyebrow: "Cabinet de massage indépendant · Genève",
+    eyebrow: "Cabinet de massage indépendant · Zurich",
     headline: "Un espace calme pour ralentir et se retrouver.",
     subheadline: "Massage & bien-être, résolument personnel.",
     intro:
       "Voyage Sensoriel est le cabinet indépendant de Sophie Goupil, proposant des soins de massage calmes et attentifs, adaptés à votre corps et à votre rythme — jamais précipités, toujours personnels.",
     primaryCta: "Prendre rendez-vous",
-    secondaryCta: "Découvrir les soins",
+    secondaryCta: "Découvrir nos massages",
   },
   intro: {
     title: "Un moment pensé entièrement pour vous",
@@ -79,10 +84,10 @@ const fr: Translations = {
     cta: "Découvrir Sophie",
   },
   featuredServices: {
-    title: "Soins signature",
+    title: "Massages signature",
     subtitle:
-      "Une carte de soins restreinte et réfléchie — chacun pratiqué avec soin plutôt qu'enchaîné dans une longue liste.",
-    cta: "Voir tous les soins",
+      "Une carte de massages restreinte et réfléchie — chacun pratiqué avec soin plutôt qu'enchaîné dans une longue liste.",
+    cta: "Voir tous les massages",
   },
   benefits: {
     title: "Pourquoi choisir Voyage Sensoriel",
@@ -120,6 +125,7 @@ const fr: Translations = {
   testimonialsSection: {
     title: "Ce que disent les clients",
     subtitle: "Quelques mots de personnes qui viennent régulièrement à Voyage Sensoriel.",
+    googleCta: "sur Google",
   },
   gallery: {
     title: "Dans le studio",
@@ -127,7 +133,7 @@ const fr: Translations = {
   },
   locationSection: {
     title: "Où nous trouver",
-    body: "Voyage Sensoriel accueille sa clientèle sur rendez-vous dans un studio calme et facilement accessible à Genève, au service de la ville et de ses environs.",
+    body: "Voyage Sensoriel accueille sa clientèle sur rendez-vous dans un studio calme et facilement accessible à Zurich, au service de la ville et de ses environs.",
     cta: "Nous contacter",
   },
   bookingCta: {
@@ -136,23 +142,31 @@ const fr: Translations = {
     cta: "Prendre rendez-vous",
   },
   servicesPage: {
-    title: "Soins",
+    title: "Massages",
     intro:
-      "Chaque soin est proposé comme point de départ, puis adapté à vous pendant la séance. Une hésitation ? Contactez-nous, Sophie vous aidera à choisir.",
+      "Chaque massage est proposé comme point de départ, puis adapté à vous pendant la séance. Une hésitation ? Contactez-nous, Sophie vous aidera à choisir.",
   },
   serviceDetail: {
     optionsTitle: "Formules et tarifs",
     specialOfferNotice: "Ces formules et tarifs actuels font partie d'une offre spéciale de lancement et sont susceptibles d'évoluer à l'avenir.",
     suitableForTitle: "Recommandé pour",
     whatToExpectTitle: "À quoi s'attendre",
+    aftercareTitle: "Après votre séance",
+    aftercareItems: [
+      "Buvez suffisamment d'eau dans les heures qui suivent pour aider votre corps.",
+      "Prenez-le calmement pour le reste de la journée et évitez les efforts intenses.",
+      "Une douche tiède est recommandée ; évitez les bains très chauds ou le sauna pendant quelques heures.",
+      "Une légère sensibilité, fatigue ou sensation de tête légère est normale un moment — reposez-vous si besoin.",
+      "Contactez-nous si quelque chose vous semble anormal ou qu'une gêne persiste au-delà d'un jour ou deux.",
+    ],
     relatedTitle: "Vous aimerez aussi",
-    ctaTitle: "Prêt·e à réserver ce soin ?",
+    ctaTitle: "Prêt·e à réserver ce massage ?",
     ctaBody: "Réservez le créneau de votre choix en ligne — cela ne prend qu'une minute.",
   },
   about: {
     title: "À propos de Sophie Goupil",
     intro:
-      "Masseuse indépendante et fondatrice de Voyage Sensoriel, basée à Genève.",
+      "Masseuse indépendante et fondatrice de Voyage Sensoriel, basée à Zurich.",
     biographyTitle: "Mon parcours",
     biography: [
       "J'ai créé Voyage Sensoriel car je voulais proposer autre chose qu'un spa animé ou une clinique : un cabinet indépendant et à taille humaine, où chaque séance est prise le temps qu'il faut et réellement adaptée à la personne en face de moi.",
@@ -210,7 +224,7 @@ const fr: Translations = {
       {
         question: "Où se déroulent les séances ?",
         answer:
-          "Les séances ont lieu dans un studio privé à Genève. L'adresse exacte est communiquée à la confirmation de la réservation.",
+          "Les séances ont lieu dans un studio privé à Zurich. L'adresse exacte est communiquée à la confirmation de la réservation.",
       },
     ],
   },
@@ -235,7 +249,7 @@ const fr: Translations = {
   },
   footer: {
     description:
-      "Un cabinet de massage indépendant à Genève, proposant des soins calmes et personnalisés sur rendez-vous.",
+      "Un cabinet de massage indépendant à Zurich, proposant des soins calmes et personnalisés sur rendez-vous.",
     navTitle: "Explorer",
     contactTitle: "Contact",
     followTitle: "Suivre",
@@ -243,6 +257,7 @@ const fr: Translations = {
     rightsReserved: "Tous droits réservés.",
     privacy: "Politique de confidentialité",
     legal: "Mentions légales",
+    healthSafety: "Santé & sécurité",
   },
   legalPage: {
     title: "Mentions légales",
@@ -255,6 +270,33 @@ const fr: Translations = {
     body: [
       "[Espace réservé — politique de confidentialité à remplacer par un texte réel décrivant les données personnelles collectées, notamment via le prestataire de réservation, et leur utilisation, avant publication.]",
     ],
+  },
+  healthSafetyPage: {
+    title: "Santé, sécurité & hygiène",
+    intro:
+      "Votre bien-être et votre sécurité passent avant tout. Voici les pratiques d'hygiène chez Voyage Sensoriel, ainsi que les situations dans lesquelles le massage peut ne pas être approprié.",
+    hygieneTitle: "Pratiques d'hygiène",
+    hygieneItems: [
+      "Linge, serviettes et draps propres utilisés pour chaque client·e et changés entre les séances.",
+      "Mains lavées et désinfectées avant et après chaque soin.",
+      "Outils et surfaces de massage nettoyés et désinfectés entre les séances.",
+      "Studio régulièrement aéré et nettoyé.",
+      "En cas de symptômes (fièvre, rhume, grippe, maladie contagieuse), merci de reporter votre rendez-vous — pour vous protéger, protéger les autres client·e·s et Sophie.",
+    ],
+    contraindicationsTitle: "Contre-indications & avertissement médical",
+    contraindicationsIntro:
+      "Le massage est généralement sûr, mais ne convient pas à toutes les situations. Merci d'informer Sophie avant votre séance si l'un des points suivants vous concerne, afin d'adapter ou de reporter le soin en toute sécurité :",
+    contraindicationsItems: [
+      "Grossesse, en particulier au premier trimestre",
+      "Chirurgie récente, fractures, entorses ou plaies ouvertes",
+      "Fièvre, maladie infectieuse ou contagieuse",
+      "Thrombose veineuse profonde, troubles de la coagulation ou traitement anticoagulant",
+      "Hypertension non contrôlée ou problèmes cardiaques",
+      "Affections ou infections cutanées sur les zones à masser",
+      "Chimiothérapie ou radiothérapie récente sans accord médical",
+    ],
+    disclaimerNote:
+      "Ces informations sont fournies à titre indicatif et ne remplacent pas un avis médical. Le massage ne se substitue pas à un traitement médical — en cas de problème de santé ou de doute, consultez votre médecin avant de réserver.",
   },
   notFound: {
     title: "Page introuvable",

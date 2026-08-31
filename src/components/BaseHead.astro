@@ -16,6 +16,10 @@ interface Props {
   locale: Locale;
   /** Locale-agnostic path, e.g. "/", "/services", "/services/swedish-massage". */
   path: string;
+  /** Set true on error/utility pages (404, 500) to keep them out of search results. */
+  noindex?: boolean;
+  /** Extra schema.org nodes (Service, FAQPage, BreadcrumbList...) to emit alongside the LocalBusiness graph. */
+  structuredData?: Record<string, unknown>[];
 }
 
 const {
@@ -24,29 +28,52 @@ const {
   image = siteConfig.socialImage,
   locale,
   path,
+  noindex = false,
+  structuredData = [],
 } = Astro.props;
 
 const normalizedPath = path === '/' ? '' : path;
 const localizedPath = `/${locale}${normalizedPath}`;
 const canonicalURL = new URL(localizedPath, Astro.site);
 const imageURL = new URL(image, Astro.site);
+const businessId = new URL(`/${defaultLocale}#business`, Astro.site).toString();
 
-const jsonLd = {
+const localBusinessNode = {
   '@context': 'https://schema.org',
   '@type': 'HealthAndBeautyBusiness',
+  '@id': businessId,
   name: siteConfig.name,
   description: siteConfig.seo.defaultDescription,
   image: imageURL.toString(),
+  logo: new URL(siteConfig.logo, Astro.site).toString(),
   url: new URL(`/${defaultLocale}`, Astro.site).toString(),
   telephone: siteConfig.phone,
   email: siteConfig.email,
+  priceRange: siteConfig.priceRange,
   address: {
     '@type': 'PostalAddress',
     streetAddress: siteConfig.address,
-    addressLocality: siteConfig.city,
+    addressLocality: siteConfig.city.split(',')[0].trim(),
+    addressCountry: 'CH',
   },
+  ...(siteConfig.geo
+    ? {
+        geo: {
+          '@type': 'GeoCoordinates',
+          latitude: siteConfig.geo.latitude,
+          longitude: siteConfig.geo.longitude,
+        },
+      }
+    : {}),
+  ...(siteConfig.googleMapsUrl ? { hasMap: siteConfig.googleMapsUrl } : {}),
   areaServed: siteConfig.serviceArea,
-  sameAs: [siteConfig.instagramUrl, siteConfig.facebookUrl].filter(Boolean),
+  openingHoursSpecification: siteConfig.openingHours,
+  sameAs: [siteConfig.instagramUrl, siteConfig.facebookUrl, siteConfig.googleMapsUrl].filter(Boolean),
+};
+
+const jsonLdGraph = {
+  '@context': 'https://schema.org',
+  '@graph': [localBusinessNode, ...structuredData],
 };
 ---
 
@@ -80,6 +107,7 @@ const jsonLd = {
 <title>{title}</title>
 <meta name="title" content={title} />
 <meta name="description" content={description} />
+<meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
 
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
@@ -96,4 +124,4 @@ const jsonLd = {
 <meta name="twitter:image" content={imageURL} />
 
 <!-- JSON-LD Structured Data -->
-<script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLd)} />
+<script type="application/ld+json" is:inline set:html={JSON.stringify(jsonLdGraph)} />

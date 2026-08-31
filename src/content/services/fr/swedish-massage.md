@@ -14,7 +14,7 @@ options:
     duration: 75
     price: 100
 image: "/images/placeholders/service-swedish-massage.svg"
-imageAlt: "Image de remplacement représentant le massage suédois"
+imageAlt: "Massage suédois chez Voyage Sensoriel à Zurich"
 featured: true
 order: 1
 suitableFor:

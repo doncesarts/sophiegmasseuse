@@ -10,8 +10,9 @@ import Gallery from '../../components/homepage/Gallery.astro';
 import LocationCta from '../../components/homepage/LocationCta.astro';
 import BookingCta from '../../components/homepage/BookingCta.astro';
 import { getCollection } from 'astro:content';
-import { locales, type Locale } from '../../i18n/config';
+import { locales, defaultLocale, type Locale } from '../../i18n/config';
 import { getTranslations } from '../../i18n';
+import { siteConfig } from '../../config/site';
 
 export function getStaticPaths() {
   return locales.map((lang) => ({ params: { lang } }));
@@ -30,9 +31,29 @@ const testimonials = await getCollection('testimonials', (entry) => entry.data.l
 const featuredTestimonials = testimonials
   .filter((entry) => entry.data.featured)
   .sort((a, b) => a.data.order - b.data.order);
+
+// Only emitted once the Google Business Profile is verified (see siteConfig.reviews).
+const { enabled, rating, count } = siteConfig.reviews;
+const aggregateRatingSchema =
+  enabled && rating && count
+    ? [
+        {
+          '@type': 'AggregateRating',
+          itemReviewed: { '@id': new URL(`/${defaultLocale}#business`, Astro.site).toString() },
+          ratingValue: rating,
+          reviewCount: count,
+        },
+      ]
+    : [];
 ---
 
-<MainLayout title={t.seo.home.title} description={t.seo.home.description} locale={locale} path="/">
+<MainLayout
+  title={t.seo.home.title}
+  description={t.seo.home.description}
+  locale={locale}
+  path="/"
+  structuredData={aggregateRatingSchema}
+>
   <Hero locale={locale} t={t} />
   <Intro locale={locale} t={t} />
   <FeaturedServices services={featuredServices} locale={locale} t={t} />

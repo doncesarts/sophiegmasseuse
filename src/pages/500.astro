@@ -10,7 +10,7 @@ interface Props {
 const t = getTranslations(defaultLocale);
 ---
 
-<MainLayout title={t.serverError.title} description={t.serverError.body} locale={defaultLocale} path="/500">
+<MainLayout title={t.serverError.title} description={t.serverError.body} locale={defaultLocale} path="/500" noindex>
   <section class="section flex-1 flex flex-col justify-center items-center">
     <div class="container text-center grid gap-4">
       <p class="text-6xl lg:text-8xl font-serif font-bold text-primary">500</p>

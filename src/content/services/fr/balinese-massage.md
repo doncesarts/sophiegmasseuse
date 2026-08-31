@@ -11,7 +11,7 @@ options:
     duration: 60
     price: 90
 image: "/images/placeholders/service-balinese-massage.svg"
-imageAlt: "Image de remplacement représentant le massage profond"
+imageAlt: "Massage balinais chez Voyage Sensoriel à Zurich"
 featured: true
 order: 2
 suitableFor:

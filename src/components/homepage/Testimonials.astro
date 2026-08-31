@@ -1,5 +1,6 @@
 ---
 import TestimonialCard from '../TestimonialCard.astro';
+import GoogleReviews from '../GoogleReviews.astro';
 import type { CollectionEntry } from 'astro:content';
 import type { Translations } from '../../i18n/types';
 
@@ -14,7 +15,8 @@ const { testimonials, t } = Astro.props;
 <section class="section container">
   <div class="max-w-2xl mb-10">
     <h2>{t.testimonialsSection.title}</h2>
-    <p class="text-base-content/80">{t.testimonialsSection.subtitle}</p>
+    <p class="text-base-content/80 mb-4">{t.testimonialsSection.subtitle}</p>
+    <GoogleReviews t={t} />
   </div>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
     {testimonials.map((item) => <TestimonialCard {...item.data} />)}

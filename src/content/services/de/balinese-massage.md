@@ -11,7 +11,7 @@ options:
     duration: 60
     price: 90
 image: "/images/placeholders/service-balinese-massage.svg"
-imageAlt: "Platzhalterbild für die Balinesische Massage"
+imageAlt: "Balinesische Massage bei Voyage Sensoriel in Zürich"
 featured: true
 order: 2
 suitableFor:

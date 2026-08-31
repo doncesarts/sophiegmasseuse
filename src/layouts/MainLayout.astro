@@ -13,15 +13,25 @@ interface Props {
   locale: Locale;
   /** Locale-agnostic path, e.g. "/", "/services", "/services/swedish-massage". */
   path: string;
+  noindex?: boolean;
+  structuredData?: Record<string, unknown>[];
 }
 
-const { title, description, image, locale, path } = Astro.props;
+const { title, description, image, locale, path, noindex, structuredData } = Astro.props;
 const t = getTranslations(locale);
 ---
 
 <html lang={locale}>
   <head>
-    <BaseHead title={title} description={description} image={image} locale={locale} path={path} />
+    <BaseHead
+      title={title}
+      description={description}
+      image={image}
+      locale={locale}
+      path={path}
+      noindex={noindex}
+      structuredData={structuredData}
+    />
   </head>
 
   <body>

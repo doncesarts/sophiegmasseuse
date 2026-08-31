@@ -1,5 +1,7 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { breadcrumbList } from '../../lib/schema';
 import { siteConfig } from '../../config/site';
 import { locales, type Locale } from '../../i18n/config';
 import { getTranslations } from '../../i18n';
@@ -11,9 +13,27 @@ export function getStaticPaths() {
 const { lang } = Astro.params;
 const locale = lang as Locale;
 const t = getTranslations(locale);
+
+const breadcrumbs = [
+  { name: t.nav.home, href: `/${locale}` },
+  { name: t.nav.contact, href: `/${locale}/contact` },
+];
+const breadcrumbSchema = breadcrumbList(
+  breadcrumbs.map((b) => ({ name: b.name, url: new URL(b.href, Astro.site).toString() })),
+);
+
+const mapQuery = encodeURIComponent(`${siteConfig.address}, ${siteConfig.city}`);
+const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
 ---
 
-<MainLayout title={t.seo.contact.title} description={t.seo.contact.description} locale={locale} path="/contact">
+<MainLayout
+  title={t.seo.contact.title}
+  description={t.seo.contact.description}
+  locale={locale}
+  path="/contact"
+  structuredData={[breadcrumbSchema]}
+>
+  <Breadcrumbs items={breadcrumbs} />
   <section class="page section container max-w-3xl">
     <h1>{t.contactPage.title}</h1>
     <p class="text-base-content/80 mb-8">{t.contactPage.intro}</p>
@@ -49,6 +69,18 @@ const t = getTranslations(locale);
         </div>
       )}
     </dl>
+
+    <div class="mt-10 rounded-box overflow-hidden border border-base-300 not-prose">
+      <iframe
+        src={mapEmbedSrc}
+        title={`Map showing ${siteConfig.address}, ${siteConfig.city}`}
+        width="100%"
+        height="350"
+        style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
 
     <div class="mt-10 rounded-box border border-base-300 p-6 not-prose">
       <p class="mb-4">{t.contactPage.bookAlternative}</p>

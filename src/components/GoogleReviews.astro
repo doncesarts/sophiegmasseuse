@@ -1,0 +1,27 @@
+---
+// Google reviews social proof — disabled until siteConfig.reviews.enabled is
+// flipped to true once the Google Business Profile is verified. Renders
+// nothing in the meantime so no broken links/placeholder numbers ship.
+import { Star } from '@lucide/astro';
+import { siteConfig } from '../config/site';
+import type { Translations } from '../i18n/types';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+const { enabled, rating, count, url } = siteConfig.reviews;
+---
+
+{enabled && rating && count && url && (
+  <a
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-flex items-center gap-2 rounded-field border border-base-300 bg-base-100 px-4 py-2 text-sm font-medium hover:border-primary"
+  >
+    <Star class="w-4 h-4 fill-current text-accent" aria-hidden="true" />
+    <span>{rating.toFixed(1)} · {count} {t.testimonialsSection.googleCta}</span>
+  </a>
+)}

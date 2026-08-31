@@ -1,6 +1,8 @@
 ---
 import MainLayout from '../../../layouts/MainLayout.astro';
 import ServiceGrid from '../../../components/ServiceGrid.astro';
+import Breadcrumbs from '../../../components/Breadcrumbs.astro';
+import { breadcrumbList } from '../../../lib/schema';
 import { getCollection } from 'astro:content';
 import { locales, type Locale } from '../../../i18n/config';
 import { getTranslations } from '../../../i18n';
@@ -16,9 +18,24 @@ const t = getTranslations(locale);
 const services = (await getCollection('services', (entry) => entry.data.lang === locale)).sort(
   (a, b) => a.data.order - b.data.order,
 );
+
+const breadcrumbs = [
+  { name: t.nav.home, href: `/${locale}` },
+  { name: t.nav.services, href: `/${locale}/services` },
+];
+const breadcrumbSchema = breadcrumbList(
+  breadcrumbs.map((b) => ({ name: b.name, url: new URL(b.href, Astro.site).toString() })),
+);
 ---
 
-<MainLayout title={t.seo.services.title} description={t.seo.services.description} locale={locale} path="/services">
+<MainLayout
+  title={t.seo.services.title}
+  description={t.seo.services.description}
+  locale={locale}
+  path="/services"
+  structuredData={[breadcrumbSchema]}
+>
+  <Breadcrumbs items={breadcrumbs} />
   <section class="section container">
     <div class="page max-w-2xl mb-10">
       <h1>{t.servicesPage.title}</h1>
@@ -27,3 +44,4 @@ const services = (await getCollection('services', (entry) => entry.data.lang ===
     <ServiceGrid services={services} locale={locale} t={t} />
   </section>
 </MainLayout>
+

@@ -14,7 +14,7 @@ options:
     duration: 75
     price: 100
 image: "/images/placeholders/service-swedish-massage.svg"
-imageAlt: "Platzhalterbild für die Schwedische Massage"
+imageAlt: "Schwedische Massage bei Voyage Sensoriel in Zürich"
 featured: true
 order: 1
 suitableFor:

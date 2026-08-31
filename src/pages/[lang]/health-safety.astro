@@ -1,9 +1,7 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro';
-import BookingEmbed from '../../components/BookingEmbed.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { breadcrumbList } from '../../lib/schema';
-import { siteConfig } from '../../config/site';
 import { locales, type Locale } from '../../i18n/config';
 import { getTranslations } from '../../i18n';
 
@@ -17,7 +15,7 @@ const t = getTranslations(locale);
 
 const breadcrumbs = [
   { name: t.nav.home, href: `/${locale}` },
-  { name: t.nav.book, href: `/${locale}/book` },
+  { name: t.healthSafetyPage.title, href: `/${locale}/health-safety` },
 ];
 const breadcrumbSchema = breadcrumbList(
   breadcrumbs.map((b) => ({ name: b.name, url: new URL(b.href, Astro.site).toString() })),
@@ -25,23 +23,27 @@ const breadcrumbSchema = breadcrumbList(
 ---
 
 <MainLayout
-  title={t.seo.book.title}
-  description={t.seo.book.description}
+  title={t.seo.healthSafety.title}
+  description={t.seo.healthSafety.description}
   locale={locale}
-  path="/book"
+  path="/health-safety"
   structuredData={[breadcrumbSchema]}
 >
   <Breadcrumbs items={breadcrumbs} />
-  <section class="page section container max-w-3xl">
-    <h1>{t.bookPage.title}</h1>
-    <p class="text-base-content/80 mb-8">{t.bookPage.intro}</p>
+  <article class="page section container max-w-3xl">
+    <h1>{t.healthSafetyPage.title}</h1>
+    <p class="text-base-content/80 mb-8">{t.healthSafetyPage.intro}</p>
 
-    <BookingEmbed fallbackLabel={t.bookPage.fallbackCta} fallbackIntro={t.bookPage.fallbackText} />
+    <h2>{t.healthSafetyPage.hygieneTitle}</h2>
+    <ul>
+      {t.healthSafetyPage.hygieneItems.map((item) => <li>{item}</li>)}
+    </ul>
 
-    <p class="mt-8 text-base-content/80 not-prose">
-      {t.bookPage.contactAlternative}
-      {' '}
-      <a href={`mailto:${siteConfig.email}`} class="link link-primary">{siteConfig.email}</a>
-    </p>
-  </section>
+    <h2>{t.healthSafetyPage.contraindicationsTitle}</h2>
+    <p>{t.healthSafetyPage.contraindicationsIntro}</p>
+    <ul>
+      {t.healthSafetyPage.contraindicationsItems.map((item) => <li>{item}</li>)}
+    </ul>
+    <p class="italic text-base-content/70">{t.healthSafetyPage.disclaimerNote}</p>
+  </article>
 </MainLayout>

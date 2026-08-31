@@ -3,7 +3,7 @@ import type { Translations } from "./types";
 const en: Translations = {
   nav: {
     home: "Home",
-    services: "Treatments",
+    services: "Massages",
     about: "About",
     faq: "FAQ",
     contact: "Contact",
@@ -11,12 +11,12 @@ const en: Translations = {
   },
   common: {
     bookNow: "Book a session",
-    discoverTreatments: "Discover treatments",
+    discoverTreatments: "Discover our massages",
     learnMore: "Learn more",
     readMore: "Read more",
-    viewService: "View treatment",
-    backToServices: "Back to all treatments",
-    relatedServices: "Other treatments you may like",
+    viewService: "View massage",
+    backToServices: "Back to all massages",
+    relatedServices: "Other massages you may like",
     minutesShort: "min",
     from: "from",
     skipToContent: "Skip to content",
@@ -26,14 +26,14 @@ const en: Translations = {
   },
   seo: {
     home: {
-      title: "Voyage Sensoriel — Independent Massage Therapy in Zurich",
+      title: "Voyage Sensoriel — Balinese & Swedish Massage in Zurich",
       description:
-        "Calm, warm and attentive massage treatments tailored to you. Book your session with Sophie Goupil in Zurich.",
+        "Independent massage therapist in Zurich offering Balinese and Swedish massage. Calm, attentive treatments tailored to you — book your session with Sophie Goupil today.",
     },
     services: {
-      title: "Treatments — Voyage Sensoriel",
+      title: "Balinese & Swedish Massage Treatments in Zurich — Voyage Sensoriel",
       description:
-        "Explore our massage offerings, from gentle relaxation to focused deep tissue work, each thoughtfully adapted to your needs.",
+        "Explore our massage treatments in Zurich, including Balinese massage and Swedish massage — each thoughtfully adapted to your needs.",
     },
     about: {
       title: "About Sophie Goupil — Voyage Sensoriel",
@@ -63,6 +63,11 @@ const en: Translations = {
       title: "Legal Notice — Voyage Sensoriel",
       description: "Legal and imprint information for Voyage Sensoriel.",
     },
+    healthSafety: {
+      title: "Health, Safety & Hygiene — Voyage Sensoriel",
+      description:
+        "Hygiene practices and medical contraindications to know before booking a massage at Voyage Sensoriel in Zurich.",
+    },
   },
   hero: {
     eyebrow: "Independent massage practice · Zurich",
@@ -71,7 +76,7 @@ const en: Translations = {
     intro:
       "Voyage Sensoriel is the independent practice of Sophie Goupil, offering calm, attentive massage treatments tailored to your body and your pace — never rushed, always personal.",
     primaryCta: "Book an appointment",
-    secondaryCta: "Discover treatments",
+    secondaryCta: "Discover our massages",
   },
   intro: {
     title: "A moment made entirely for you",
@@ -79,10 +84,10 @@ const en: Translations = {
     cta: "About Sophie",
   },
   featuredServices: {
-    title: "Signature treatments",
+    title: "Signature massages",
     subtitle:
-      "A small, considered menu of treatments — each one practised with care rather than rushed through a long list.",
-    cta: "View all treatments",
+      "A small, considered menu of massages — each one practised with care rather than rushed through a long list.",
+    cta: "View all massages",
   },
   benefits: {
     title: "Why clients choose Voyage Sensoriel",
@@ -120,6 +125,7 @@ const en: Translations = {
   testimonialsSection: {
     title: "What clients say",
     subtitle: "A few words from people who visit Voyage Sensoriel regularly.",
+    googleCta: "on Google",
   },
   gallery: {
     title: "Inside the studio",
@@ -136,17 +142,25 @@ const en: Translations = {
     cta: "Book an appointment",
   },
   servicesPage: {
-    title: "Treatments",
+    title: "Massages",
     intro:
-      "Each treatment is offered as a starting point, then adapted to you during the session. Not sure what to choose? Get in touch and Sophie will help you decide.",
+      "Each massage is offered as a starting point, then adapted to you during the session. Not sure what to choose? Get in touch and Sophie will help you decide.",
   },
   serviceDetail: {
     optionsTitle: "Options & Pricing",
     specialOfferNotice: "These options and prices are part of a special introductory offer and are subject to future change.",
     suitableForTitle: "Suitable for",
     whatToExpectTitle: "What to expect",
+    aftercareTitle: "After your session",
+    aftercareItems: [
+      "Drink plenty of water over the following hours to support your body.",
+      "Take it easy for the rest of the day and avoid intense exercise.",
+      "A warm (not scalding) shower is fine; avoid very hot baths or saunas for a few hours.",
+      "Mild tenderness, tiredness or light-headedness for a short while is normal — rest if you feel it.",
+      "Get in touch if anything feels wrong or a discomfort doesn't settle within a day or two.",
+    ],
     relatedTitle: "You may also like",
-    ctaTitle: "Ready to book this treatment?",
+    ctaTitle: "Ready to book this massage?",
     ctaBody: "Reserve your preferred time online — it only takes a minute.",
   },
   about: {
@@ -244,6 +258,7 @@ const en: Translations = {
     rightsReserved: "All rights reserved.",
     privacy: "Privacy policy",
     legal: "Legal notice",
+    healthSafety: "Health & safety",
   },
   legalPage: {
     title: "Legal notice",
@@ -256,6 +271,33 @@ const en: Translations = {
     body: [
       "[Placeholder privacy policy. Replace with a real privacy policy describing what personal data is collected — for example through the booking provider — and how it is used, before publishing.]",
     ],
+  },
+  healthSafetyPage: {
+    title: "Health, safety & hygiene",
+    intro:
+      "Your wellbeing and safety come first. Here's what to know about hygiene practices at Voyage Sensoriel, and situations where massage may not be appropriate.",
+    hygieneTitle: "Hygiene practices",
+    hygieneItems: [
+      "Fresh linens, towels and covers are used for every client and changed between sessions.",
+      "Hands are washed and sanitised before and after each treatment.",
+      "Massage tools and surfaces are cleaned and disinfected between sessions.",
+      "The studio is ventilated and cleaned regularly.",
+      "If you're feeling unwell (fever, cold, flu, contagious illness), please reschedule — this protects you, other clients and Sophie.",
+    ],
+    contraindicationsTitle: "Contraindications & medical disclaimer",
+    contraindicationsIntro:
+      "Massage is generally safe, but it isn't appropriate for everyone or in every situation. Please tell Sophie before your session if any of the following apply to you, so the treatment can be adjusted or safely postponed:",
+    contraindicationsItems: [
+      "Pregnancy, particularly in the first trimester",
+      "Recent surgery, fractures, sprains or open wounds",
+      "Fever, infectious or contagious illness",
+      "Deep vein thrombosis, blood clotting disorders or being on blood thinners",
+      "Uncontrolled high blood pressure or heart conditions",
+      "Skin conditions, rashes or infections in the areas to be massaged",
+      "Recent chemotherapy or radiotherapy without a doctor's clearance",
+    ],
+    disclaimerNote:
+      "This information is provided for general guidance only and does not replace medical advice. Massage is not a substitute for medical treatment — if you have a health condition or are unsure whether massage is suitable for you, please consult your doctor before booking.",
   },
   notFound: {
     title: "Page not found",

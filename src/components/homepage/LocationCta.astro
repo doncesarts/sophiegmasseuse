@@ -9,6 +9,9 @@ interface Props {
 }
 
 const { locale, t } = Astro.props;
+
+const mapQuery = encodeURIComponent(`${siteConfig.address}, ${siteConfig.city}`);
+const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
 ---
 
 <section class="section container">
@@ -17,9 +20,18 @@ const { locale, t } = Astro.props;
       <h2>{t.locationSection.title}</h2>
       <p class="text-base-content/80 mb-1">{t.locationSection.body}</p>
       <p class="text-base-content/80 font-medium">{siteConfig.address}, {siteConfig.city}</p>
+      <a href={`/${locale}/contact`} class="btn btn-outline btn-primary rounded-field mt-4">{t.locationSection.cta}</a>
     </div>
-    <div>
-      <a href={`/${locale}/contact`} class="btn btn-outline btn-primary rounded-field">{t.locationSection.cta}</a>
+    <div class="rounded-box overflow-hidden border border-base-300">
+      <iframe
+        src={mapEmbedSrc}
+        title={`Map showing ${siteConfig.address}, ${siteConfig.city}`}
+        width="100%"
+        height="300"
+        style="border:0"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
     </div>
   </div>
 </section>

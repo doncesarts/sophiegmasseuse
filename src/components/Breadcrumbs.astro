@@ -1,0 +1,29 @@
+---
+// Visible breadcrumb trail. Pair with `breadcrumbList()` from `src/lib/schema.ts`
+// passed into MainLayout's `structuredData` prop for the matching JSON-LD.
+interface Crumb {
+  name: string;
+  href: string;
+}
+
+interface Props {
+  items: Crumb[];
+}
+
+const { items } = Astro.props;
+---
+
+<nav aria-label="Breadcrumb" class="container pt-6 not-prose">
+  <ol class="flex flex-wrap items-center gap-2 text-sm text-base-content/70">
+    {items.map((item, index) => (
+      <li class="flex items-center gap-2">
+        {index > 0 && <span aria-hidden="true">/</span>}
+        {index === items.length - 1 ? (
+          <span aria-current="page" class="text-base-content">{item.name}</span>
+        ) : (
+          <a href={item.href} class="hover:text-primary hover:underline">{item.name}</a>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>
