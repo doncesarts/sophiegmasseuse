@@ -1,19 +1,37 @@
 ---
-import HeaderLink from "./HeaderLink.astro";
+import HeaderLink from './HeaderLink.astro';
 import Logo from './Logo.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import type { Locale } from '../i18n/config';
+import type { Translations } from '../i18n/types';
+
+interface Props {
+  locale: Locale;
+  path: string;
+  t: Translations;
+}
+
+const { locale, path, t } = Astro.props;
+
+const navItems = [
+  { href: `/${locale}`, label: t.nav.home },
+  { href: `/${locale}/services`, label: t.nav.services },
+  { href: `/${locale}/about`, label: t.nav.about },
+  { href: `/${locale}/faq`, label: t.nav.faq },
+  { href: `/${locale}/contact`, label: t.nav.contact },
+];
 ---
 
-<div class="drawer-side">
-  <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"
-  ><span class="sr-only">Open menu</span></label>
-  <nav class="menu bg-base-200 min-h-full w-80 p-4 flex flex-col gap-3">
-    <Logo />
-	<hr class="opacity-20 my-4">
-    <HeaderLink href="/">Home</HeaderLink>
-    <HeaderLink href="/services">Services</HeaderLink>
-    <HeaderLink href="/doctors">Find Doctors</HeaderLink>
-    <HeaderLink href="#">About us</HeaderLink>
-    <HeaderLink href="/blog">Blog</HeaderLink>
-    <HeaderLink href="#">Contact us</HeaderLink>
+<div class="drawer-side z-50">
+  <label for="mobile-drawer" aria-label="Close navigation menu" class="drawer-overlay"></label>
+  <nav class="menu bg-base-100 min-h-full w-80 p-6 flex flex-col gap-2" aria-label="Mobile">
+    <Logo locale={locale} />
+    <hr class="border-base-300 my-4" />
+    {navItems.map((item) => (
+      <HeaderLink href={item.href} class="text-lg py-2">{item.label}</HeaderLink>
+    ))}
+    <a href={`/${locale}/book`} class="btn btn-primary rounded-field mt-4 text-base h-auto py-3">{t.nav.book}</a>
+    <hr class="border-base-300 my-4" />
+    <LanguageSwitcher locale={locale} path={path} />
   </nav>
 </div>

@@ -1,0 +1,70 @@
+---
+import type { Translations } from '../i18n/types';
+
+interface ServiceOption {
+  description: string;
+  duration: number;
+  price: number;
+}
+
+interface Props {
+  title: string;
+  shortDescription?: string;
+  duration?: number;
+  price?: number;
+  currency?: string;
+  options?: ServiceOption[];
+  image: string;
+  imageAlt: string;
+  href: string;
+  t: Translations;
+}
+
+const {
+  title,
+  shortDescription,
+  duration,
+  price,
+  currency = 'CHF',
+  options = [],
+  image,
+  imageAlt,
+  href,
+  t,
+} = Astro.props;
+---
+
+<article class="flex flex-col rounded-box border border-base-300 bg-base-100 overflow-hidden">
+  <a href={href} class="block aspect-4/3 overflow-hidden">
+    <img src={image} alt={imageAlt} width="1200" height="900" loading="lazy" class="w-full h-full object-cover" />
+  </a>
+  <div class="p-6 flex flex-col flex-1 gap-3">
+    <h3 class="font-serif text-xl mb-0">
+      <a href={href} class="hover:text-primary">{title}</a>
+    </h3>
+    {shortDescription && <p class="text-base-content/80 text-sm mb-1">{shortDescription}</p>}
+    {options && options.length > 0 ? (
+      <div class="flex flex-col flex-1 gap-2 my-1">
+        <ul class="flex flex-col gap-2 flex-1">
+          {options.map((option) => (
+            <li class="flex items-baseline justify-between text-sm gap-2 border-b border-base-200 pb-1.5 last:border-b-0 last:pb-0">
+              <span class="text-base-content/90 font-medium">{option.description}</span>
+              <span class="text-base-content/70 text-xs sm:text-sm whitespace-nowrap">
+                {option.duration} {t.common.minutesShort} {option.price} {currency}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <p class="text-[11px] leading-tight text-base-content/60 italic mt-auto pt-1">
+          * {t.common.specialOfferNotice}
+        </p>
+      </div>
+    ) : (
+      <div class="flex items-center justify-between text-sm text-base-content/70 mt-auto">
+        {duration && <span>{duration} {t.common.minutesShort}</span>}
+        {price && <span>{t.common.from} {price} {currency}</span>}
+      </div>
+    )}
+    <a href={href} class="btn btn-outline btn-primary rounded-field mt-auto">{t.common.viewService}</a>
+  </div>
+</article>

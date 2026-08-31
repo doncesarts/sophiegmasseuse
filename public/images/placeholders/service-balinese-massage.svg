@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Placeholder photograph for the balinese massage treatment">
+  <rect width="1200" height="900" fill="#F1E5DA"/>
+  <circle cx="900" cy="200" r="220" fill="#B9713F" opacity="0.25"/>
+  <circle cx="250" cy="700" r="260" fill="#B9713F" opacity="0.18"/>
+  <text x="50%" y="50%" text-anchor="middle" font-family="Georgia, serif" font-size="36" fill="#5a3a22">balinese massage</text>
+  <text x="50%" y="57%" text-anchor="middle" font-family="sans-serif" font-size="20" fill="#7a5636">Placeholder image</text>
+</svg>

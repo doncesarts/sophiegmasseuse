@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1100" viewBox="0 0 900 1100" role="img" aria-label="Placeholder portrait of the therapist">
+  <rect width="900" height="1100" fill="#EDE3D3"/>
+  <circle cx="450" cy="430" r="220" fill="#C9A97E"/>
+  <rect x="220" y="650" width="460" height="450" rx="230" fill="#C9A97E"/>
+  <text x="50%" y="95%" text-anchor="middle" font-family="Georgia, serif" font-size="34" fill="#3f3527">Portrait placeholder</text>
+</svg>

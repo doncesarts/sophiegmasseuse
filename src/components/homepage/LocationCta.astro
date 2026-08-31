@@ -1,0 +1,25 @@
+---
+import { siteConfig } from '../../config/site';
+import type { Locale } from '../../i18n/config';
+import type { Translations } from '../../i18n/types';
+
+interface Props {
+  locale: Locale;
+  t: Translations;
+}
+
+const { locale, t } = Astro.props;
+---
+
+<section class="section container">
+  <div class="rounded-box border border-base-300 bg-base-100 p-8 lg:p-12 grid gap-6 lg:grid-cols-2 items-center">
+    <div>
+      <h2>{t.locationSection.title}</h2>
+      <p class="text-base-content/80 mb-1">{t.locationSection.body}</p>
+      <p class="text-base-content/80 font-medium">{siteConfig.address}, {siteConfig.city}</p>
+    </div>
+    <div>
+      <a href={`/${locale}/contact`} class="btn btn-outline btn-primary rounded-field">{t.locationSection.cta}</a>
+    </div>
+  </div>
+</section>

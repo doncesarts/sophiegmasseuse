@@ -1,0 +1,22 @@
+---
+import type { Translations } from '../../i18n/types';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="section container">
+  <div class="rounded-box bg-primary text-primary-content px-8 py-14 lg:px-16 lg:py-20 grid gap-8 lg:grid-cols-[2fr_1fr] items-center">
+    <div>
+      <h2 class="text-primary-content">{t.philosophy.title}</h2>
+      <p class="opacity-90 mb-0">{t.philosophy.body}</p>
+    </div>
+    <blockquote class="border-l-2 border-primary-content/40 pl-6">
+      <p class="font-serif text-xl mb-2">&ldquo;{t.philosophy.quote}&rdquo;</p>
+      <cite class="not-italic text-sm opacity-80">{t.philosophy.quoteAuthor}</cite>
+    </blockquote>
+  </div>
+</section>

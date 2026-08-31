@@ -1,121 +1,77 @@
 ---
+import { siteConfig } from '../config/site';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import type { Locale } from '../i18n/config';
+import type { Translations } from '../i18n/types';
+
+interface Props {
+  locale: Locale;
+  path: string;
+  t: Translations;
+}
+
+const { locale, path, t } = Astro.props;
 const today = new Date();
-import Image from "astro/components/Image.astro";
+
+const navItems = [
+  { href: `/${locale}`, label: t.nav.home },
+  { href: `/${locale}/services`, label: t.nav.services },
+  { href: `/${locale}/about`, label: t.nav.about },
+  { href: `/${locale}/faq`, label: t.nav.faq },
+  { href: `/${locale}/contact`, label: t.nav.contact },
+  { href: `/${locale}/book`, label: t.nav.book },
+];
 ---
 
-<footer class="footer w-full bg-[#F2FAFF] gap-0 dark:bg-black">
-  <div class="footer-top w-full py-15">
+<footer class="footer w-full bg-base-200 gap-0">
+  <div class="footer-top w-full py-14">
     <div class="container">
-      <div class="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-10">
+      <div class="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr_1fr] gap-10">
         <div>
-          <a href="/">
-            <Image
-              src="/img/logo2.svg"
-              alt="HealNet Logo"
-              width="168"
-              height="144"
-            />
+          <a href={`/${locale}`} class="inline-block">
+            <img src={siteConfig.logo} alt={`${siteConfig.name} logo`} width="168" height="42" class="w-auto h-9" />
           </a>
-          <p class="mt-4">
-            Experience personalized medical care from the comfort of your home.
-          </p>
-
+          <p class="mt-4 max-w-sm text-base-content/80">{t.footer.description}</p>
         </div>
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-3 gap-10">
-          <div>
-            <h3 class="text-main-200">Support</h3>
-
-            <nav class="grid gap-3">
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Getting Started</a
-              >
-              <a href="#" class="hover:text-main-200 hover:underline">FAQS</a>
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Help Articles</a
-              >
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Report an issue</a
-              >
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Contact Help Desk</a
-              >
-            </nav>
-          </div>
-          <div>
-            <h3 class="text-main-200">Services</h3>
-
-            <nav class="grid gap-3">
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Booking appointments</a
-              >
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Online consultations</a
-              >
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Prescriptions</a
-              >
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Medicine Refills</a
-              >
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Medical Notes</a
-              >
-            </nav>
-          </div>
-          <div>
-            <h3 class="text-main-200">Legal</h3>
-
-            <nav class="grid gap-3">
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Terms & Conditions</a
-              >
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Privacy Policy</a
-              >
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Cookie Notice</a
-              >
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Cookie Preferences</a
-              >
-              <a href="#" class="hover:text-main-200 hover:underline"
-                >Trust Center</a
-              >
-            </nav>
-          </div>
+        <div>
+          <h3 class="text-primary font-serif">{t.footer.navTitle}</h3>
+          <nav class="grid gap-3 mt-3" aria-label="Footer">
+            {navItems.map((item) => (
+              <a href={item.href} class="hover:text-primary hover:underline">{item.label}</a>
+            ))}
+          </nav>
+        </div>
+        <div>
+          <h3 class="text-primary font-serif">{t.footer.contactTitle}</h3>
+          <nav class="grid gap-3 mt-3">
+            <a href={`mailto:${siteConfig.email}`} class="hover:text-primary hover:underline">{siteConfig.email}</a>
+            <a href={`tel:${siteConfig.phone.replace(/\s/g, '')}`} class="hover:text-primary hover:underline">{siteConfig.phone}</a>
+            <span>{siteConfig.address}, {siteConfig.city}</span>
+          </nav>
         </div>
       </div>
     </div>
   </div>
   <div class="footer-btm w-full">
-    <div class="container pb-5">
-      <hr class="border-t border-main-200 mb-5" />
+    <div class="container pb-6">
+      <hr class="border-t border-base-300 mb-6" />
       <div class="flex flex-wrap gap-4 items-center justify-between">
-          <div class="flex flex-wrap gap-3 items-center">
-            <a href="#" class="transition hover:-rotate-6" title="Facebook">
-              <svg class="icon" width="32" height="32">
-                <use xlink:href="#soc1"></use>
-              </svg>
-            </a>
-            <a href="#" class="transition hover:-rotate-6" title="Instagram">
-              <svg class="icon" width="32" height="32">
-                <use xlink:href="#soc2"></use>
-              </svg>
-            </a>
-            <a href="#" class="transition hover:-rotate-6" title="Linkedin">
-              <svg class="icon" width="32" height="32">
-                <use xlink:href="#soc3"></use>
-              </svg>
-            </a>
-            <a href="#" class="transition hover:-rotate-6" title="Youtube">
-              <svg class="icon" width="32" height="32">
-                <use xlink:href="#soc4"></use>
-              </svg>
-            </a>
-          </div>
-        <p>
-          HealNet &copy; {today.getFullYear()}. All Rights Reserved
+        <div class="flex flex-wrap gap-4 items-center">
+          {siteConfig.instagramUrl && (
+            <a href={siteConfig.instagramUrl} class="hover:text-primary" title="Instagram" rel="me noopener noreferrer" target="_blank">Instagram</a>
+          )}
+          {siteConfig.facebookUrl && (
+            <a href={siteConfig.facebookUrl} class="hover:text-primary" title="Facebook" rel="me noopener noreferrer" target="_blank">Facebook</a>
+          )}
+        </div>
+        <LanguageSwitcher locale={locale} path={path} />
+        <p class="text-sm text-base-content/70">
+          &copy; {today.getFullYear()} {siteConfig.name}. {t.footer.rightsReserved}
         </p>
+        <div class="flex flex-wrap gap-4 text-sm">
+          <a href={`/${locale}/privacy`} class="hover:text-primary hover:underline">{t.footer.privacy}</a>
+          <a href={`/${locale}/legal`} class="hover:text-primary hover:underline">{t.footer.legal}</a>
+        </div>
       </div>
     </div>
   </div>

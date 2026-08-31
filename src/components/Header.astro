@@ -1,23 +1,40 @@
 ---
 import HeaderLink from './HeaderLink.astro';
-import { Menu } from '@lucide/astro';
 import Logo from './Logo.astro';
+import LanguageSwitcher from './LanguageSwitcher.astro';
+import { Menu } from '@lucide/astro';
+import type { Locale } from '../i18n/config';
+import type { Translations } from '../i18n/types';
+
+interface Props {
+  locale: Locale;
+  path: string;
+  t: Translations;
+}
+
+const { locale, path, t } = Astro.props;
+
+const navItems = [
+  { href: `/${locale}`, label: t.nav.home },
+  { href: `/${locale}/services`, label: t.nav.services },
+  { href: `/${locale}/about`, label: t.nav.about },
+  { href: `/${locale}/faq`, label: t.nav.faq },
+  { href: `/${locale}/contact`, label: t.nav.contact },
+];
 ---
 
-<header>
-	<nav class="container grid grid-cols-[168px_1fr_auto] py-4 items-center gap-2">
-		<Logo />
-		<div class="hidden lg:flex gap-10 items-center mx-auto">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/services">Services</HeaderLink>
-			<HeaderLink href="/doctors">Find Doctors</HeaderLink>
-			<HeaderLink href="#">About us</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="#">Contact us</HeaderLink>
+<header class="border-b border-base-300/60">
+	<nav class="container grid grid-cols-[auto_1fr_auto] py-4 items-center gap-3" aria-label="Primary">
+		<Logo locale={locale} />
+		<div class="hidden lg:flex gap-8 items-center mx-auto">
+			{navItems.map((item) => <HeaderLink href={item.href}>{item.label}</HeaderLink>)}
 		</div>
-		<a href="#" class="btn ml-auto bg-[linear-gradient(125deg,var(--color-main-100),var(--color-main-200))] text-white border-0 rounded-xl text-lg py-3 px-6 h-auto shadow-xl hover:shadow-2xl">Join us</a>
-			<label for="my-drawer-2" aria-label="open sidebar" class="btn btn-square btn-ghost lg:hidden">
-         <Menu />
-        </label>
+		<div class="flex items-center gap-3 ml-auto">
+			<LanguageSwitcher locale={locale} path={path} class="hidden md:flex" />
+			<a href={`/${locale}/book`} class="btn btn-primary rounded-field text-base h-auto py-2.5 px-5 shadow-sm hover:shadow-md">{t.nav.book}</a>
+			<label for="mobile-drawer" aria-label="Open navigation menu" class="btn btn-square btn-ghost lg:hidden">
+				<Menu />
+			</label>
+		</div>
 	</nav>
 </header>

@@ -1,0 +1,22 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+import { locales, type Locale } from '../../i18n/config';
+import { getTranslations } from '../../i18n';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const locale = lang as Locale;
+const t = getTranslations(locale);
+---
+
+<MainLayout title={t.seo.faq.title} description={t.seo.faq.description} locale={locale} path="/faq">
+  <section class="page section container max-w-3xl">
+    <h1>{t.faqPage.title}</h1>
+    <p class="text-base-content/80 mb-8">{t.faqPage.intro}</p>
+    <FaqAccordion items={t.faqPage.items} />
+  </section>
+</MainLayout>

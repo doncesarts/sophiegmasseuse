@@ -1,0 +1,47 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import { siteConfig } from '../../config/site';
+import { locales, type Locale } from '../../i18n/config';
+import { getTranslations } from '../../i18n';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const locale = lang as Locale;
+const t = getTranslations(locale);
+---
+
+<MainLayout title={t.seo.about.title} description={t.seo.about.description} locale={locale} path="/about">
+  <article class="page section container max-w-3xl">
+    <div class="grid gap-10 lg:grid-cols-[1fr_1.4fr] items-start mb-12 not-prose">
+      <img
+        src="/images/portrait.jpeg"
+        alt={`Placeholder portrait of ${siteConfig.therapistName}`}
+        width="900"
+        height="1100"
+        class="rounded-box w-full h-auto"
+      />
+      <div>
+        <h1>{t.about.title}</h1>
+        <p class="text-lg text-base-content/80">{t.about.intro}</p>
+        <a href={`/${locale}/book`} class="btn btn-primary rounded-field mt-4">{t.about.cta}</a>
+      </div>
+    </div>
+
+    <h2>{t.about.biographyTitle}</h2>
+    {t.about.biography.map((paragraph) => <p>{paragraph}</p>)}
+
+    <h2>{t.about.philosophyTitle}</h2>
+    <p>{t.about.philosophyBody}</p>
+
+    <h2>{t.about.qualificationsTitle}</h2>
+    <ul>
+      {t.about.qualifications.map((item) => <li>{item}</li>)}
+    </ul>
+    <p class="italic text-base-content/70 whitespace-pre-line">{t.about.qualificationsNote}</p>
+    <h2>{t.about.approachTitle}</h2>
+    <p>{t.about.approachBody}</p>
+  </article>
+</MainLayout>

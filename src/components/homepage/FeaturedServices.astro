@@ -1,0 +1,25 @@
+---
+import ServiceGrid from '../ServiceGrid.astro';
+import type { CollectionEntry } from 'astro:content';
+import type { Locale } from '../../i18n/config';
+import type { Translations } from '../../i18n/types';
+
+interface Props {
+  services: CollectionEntry<'services'>[];
+  locale: Locale;
+  t: Translations;
+}
+
+const { services, locale, t } = Astro.props;
+---
+
+<section class="section container">
+  <div class="max-w-2xl mb-10">
+    <h2>{t.featuredServices.title}</h2>
+    <p class="text-base-content/80">{t.featuredServices.subtitle}</p>
+  </div>
+  <ServiceGrid services={services} locale={locale} t={t} />
+  <div class="mt-10">
+    <a href={`/${locale}/services`} class="btn btn-outline btn-primary rounded-field">{t.featuredServices.cta}</a>
+  </div>
+</section>

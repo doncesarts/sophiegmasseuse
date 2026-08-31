@@ -7,7 +7,10 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://heal-net-self.vercel.app/",
+  site: "https://maison-serein.example",
+  redirects: {
+    "/": "/en",
+  },
   integrations: [mdx(), sitemap()],
   vite: {
     plugins: [tailwindcss()],

@@ -1,9 +1,59 @@
 @import "tailwindcss";
-@plugin "daisyui";
+@plugin "daisyui" {
+  themes: false;
+}
+
+/*
+ * Design tokens for the "wellness" theme: warm neutrals, a muted sage
+ * primary, a terracotta secondary and a soft gold accent. Changing the
+ * brand look mostly means editing the values in this block (and, for
+ * business copy/URLs, src/config/site.ts).
+ */
+@plugin "daisyui/theme" {
+  name: "wellness";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-base-100: oklch(97% 0.014 85);
+  --color-base-200: oklch(94% 0.02 82);
+  --color-base-300: oklch(89% 0.03 80);
+  --color-base-content: oklch(27% 0.02 60);
+
+  --color-primary: oklch(50% 0.06 152);
+  --color-primary-content: oklch(98% 0.01 152);
+
+  --color-secondary: oklch(58% 0.11 45);
+  --color-secondary-content: oklch(98% 0.01 45);
+
+  --color-accent: oklch(78% 0.09 78);
+  --color-accent-content: oklch(24% 0.02 78);
+
+  --color-neutral: oklch(32% 0.02 60);
+  --color-neutral-content: oklch(96% 0.01 60);
+
+  --color-info: oklch(70% 0.08 220);
+  --color-info-content: oklch(20% 0.02 220);
+  --color-success: oklch(58% 0.09 152);
+  --color-success-content: oklch(98% 0.01 152);
+  --color-warning: oklch(75% 0.12 70);
+  --color-warning-content: oklch(20% 0.02 70);
+  --color-error: oklch(55% 0.14 30);
+  --color-error-content: oklch(98% 0.01 30);
+
+  --radius-selector: 0.75rem;
+  --radius-field: 0.75rem;
+  --radius-box: 1.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
 
 @theme {
-  --color-main-100: #a7e2ff;
-  --color-main-200: #0277c2;
+  --font-sans: "Atkinson", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
 }
 
 html,
@@ -12,15 +62,45 @@ body,
   @apply h-full;
 }
 
+body {
+  @apply font-sans bg-base-100 text-base-content;
+}
+
 .container {
   @apply max-w-7xl! mx-auto px-4;
 }
 
 .section {
-  @apply my-10 lg:my-20;
+  @apply my-16 lg:my-28;
+}
+
+/* Visible keyboard focus state across the site. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+  @apply outline outline-2 outline-offset-2 outline-primary;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
 }
 
 @layer base {
+  h1,
+  h2,
+  h3 {
+    @apply font-serif;
+  }
+
   h1 {
     @apply text-3xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 leading-tight;
   }
@@ -40,7 +120,7 @@ body,
   h4,
   h5,
   h6 {
-    @apply mt-4 mb-3 font-bold;
+    @apply mt-4 mb-3 font-bold font-serif;
   }
 
   h2 {

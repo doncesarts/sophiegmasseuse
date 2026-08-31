@@ -1,0 +1,30 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import BookingEmbed from '../../components/BookingEmbed.astro';
+import { siteConfig } from '../../config/site';
+import { locales, type Locale } from '../../i18n/config';
+import { getTranslations } from '../../i18n';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const locale = lang as Locale;
+const t = getTranslations(locale);
+---
+
+<MainLayout title={t.seo.book.title} description={t.seo.book.description} locale={locale} path="/book">
+  <section class="page section container max-w-3xl">
+    <h1>{t.bookPage.title}</h1>
+    <p class="text-base-content/80 mb-8">{t.bookPage.intro}</p>
+
+    <BookingEmbed fallbackLabel={t.bookPage.fallbackCta} fallbackIntro={t.bookPage.fallbackText} />
+
+    <p class="mt-8 text-base-content/80 not-prose">
+      {t.bookPage.contactAlternative}
+      {' '}
+      <a href={`mailto:${siteConfig.email}`} class="link link-primary">{siteConfig.email}</a>
+    </p>
+  </section>
+</MainLayout>

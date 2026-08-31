@@ -1,0 +1,20 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import { locales, type Locale } from '../../i18n/config';
+import { getTranslations } from '../../i18n';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const locale = lang as Locale;
+const t = getTranslations(locale);
+---
+
+<MainLayout title={t.seo.privacy.title} description={t.seo.privacy.description} locale={locale} path="/privacy">
+  <article class="page section container max-w-3xl">
+    <h1>{t.privacyPage.title}</h1>
+    {t.privacyPage.body.map((paragraph) => <p>{paragraph}</p>)}
+  </article>
+</MainLayout>

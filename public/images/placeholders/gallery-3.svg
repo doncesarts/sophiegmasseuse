@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Placeholder gallery photograph 3 of the studio">
+  <rect width="1200" height="900" fill="#F3EAD6"/>
+  <rect x="80" y="80" width="1040" height="740" fill="none" stroke="#D8B36B" stroke-width="2" opacity="0.5"/>
+  <text x="50%" y="50%" text-anchor="middle" font-family="Georgia, serif" font-size="32" fill="#5a4a26">Studio gallery — image 3</text>
+</svg>

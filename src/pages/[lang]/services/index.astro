@@ -1,0 +1,29 @@
+---
+import MainLayout from '../../../layouts/MainLayout.astro';
+import ServiceGrid from '../../../components/ServiceGrid.astro';
+import { getCollection } from 'astro:content';
+import { locales, type Locale } from '../../../i18n/config';
+import { getTranslations } from '../../../i18n';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const locale = lang as Locale;
+const t = getTranslations(locale);
+
+const services = (await getCollection('services', (entry) => entry.data.lang === locale)).sort(
+  (a, b) => a.data.order - b.data.order,
+);
+---
+
+<MainLayout title={t.seo.services.title} description={t.seo.services.description} locale={locale} path="/services">
+  <section class="section container">
+    <div class="page max-w-2xl mb-10">
+      <h1>{t.servicesPage.title}</h1>
+      <p class="text-base-content/80">{t.servicesPage.intro}</p>
+    </div>
+    <ServiceGrid services={services} locale={locale} t={t} />
+  </section>
+</MainLayout>

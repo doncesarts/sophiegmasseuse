@@ -1,0 +1,27 @@
+---
+import type { Translations } from '../../i18n/types';
+
+interface Props {
+  t: Translations;
+}
+
+const { t } = Astro.props;
+
+const images = [
+  { src: '/images/gallery-1.jpeg', alt: 'Placeholder gallery photograph 1 of the studio' },
+  { src: '/images/placeholders/gallery-2.svg', alt: 'Placeholder gallery photograph 2 of the studio' },
+  { src: '/images/placeholders/gallery-3.svg', alt: 'Placeholder gallery photograph 3 of the studio' },
+];
+---
+
+<section class="section container">
+  <div class="max-w-2xl mb-10">
+    <h2>{t.gallery.title}</h2>
+    <p class="text-base-content/80">{t.gallery.subtitle}</p>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+    {images.map((image) => (
+      <img src={image.src} alt={image.alt} width="1200" height="900" loading="lazy" class="w-full h-auto rounded-box object-cover" />
+    ))}
+  </div>
+</section>

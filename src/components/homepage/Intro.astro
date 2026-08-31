@@ -1,0 +1,31 @@
+---
+import type { Locale } from '../../i18n/config';
+import type { Translations } from '../../i18n/types';
+
+interface Props {
+  locale: Locale;
+  t: Translations;
+}
+
+const { locale, t } = Astro.props;
+---
+
+<section class="section container">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+    <div class="rounded-box overflow-hidden order-2 lg:order-1">
+      <img
+        src="/images/portrait.jpeg"
+        alt="Placeholder portrait of the therapist"
+        width="900"
+        height="1100"
+        loading="lazy"
+        class="w-full h-auto object-cover rounded-box"
+      />
+    </div>
+    <div class="order-1 lg:order-2">
+      <h2>{t.intro.title}</h2>
+      <p class="text-base-content/80 mb-6">{t.intro.body}</p>
+      <a href={`/${locale}/about`} class="btn btn-outline btn-primary rounded-field">{t.intro.cta}</a>
+    </div>
+  </div>
+</section>

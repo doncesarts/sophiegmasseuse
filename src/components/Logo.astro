@@ -1,15 +1,22 @@
 ---
-import Image from "astro/components/Image.astro"
+import { siteConfig } from '../config/site';
+import type { Locale } from '../i18n/config';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
 ---
 
-<a href="/">
-<Image
-    src="/img/logo.svg"
-    alt="logo"
+<a href={`/${locale}`} class="flex items-center gap-2 shrink-0">
+  <img
+    src={siteConfig.logo}
+    alt={`${siteConfig.name} logo`}
     width="168"
-    height="48"
+    height="42"
     fetchpriority="high"
     loading="eager"
-    class="w-auto h-auto"
+    class="w-auto h-10"
   />
 </a>

@@ -1,0 +1,123 @@
+---
+import MainLayout from '../../../layouts/MainLayout.astro';
+import ServiceCard from '../../../components/ServiceCard.astro';
+import { getCollection, render, type CollectionEntry } from 'astro:content';
+import { type Locale } from '../../../i18n/config';
+import { getTranslations } from '../../../i18n';
+
+export async function getStaticPaths() {
+  const services = await getCollection('services');
+  return services.map((entry) => ({
+    params: { lang: entry.data.lang, slug: entry.id.split('/').pop() },
+    props: { entry },
+  }));
+}
+
+interface Props {
+  entry: CollectionEntry<'services'>;
+}
+
+const { lang } = Astro.params;
+const locale = lang as Locale;
+const t = getTranslations(locale);
+const { entry }: Props = Astro.props;
+const { Content } = await render(entry);
+const slug = entry.id.split('/').pop();
+
+const related = (await getCollection('services', (e) => e.data.lang === locale && e.id !== entry.id))
+  .sort((a, b) => a.data.order - b.data.order)
+  .slice(0, 3);
+---
+
+<MainLayout
+  title={`${entry.data.title} — ${t.seo.services.title}`}
+  description={entry.data.shortDescription || entry.data.title}
+  locale={locale}
+  path={`/services/${slug}`}
+>
+  <article class="page section container max-w-3xl">
+    <a href={`/${locale}/services`} class="link link-primary text-sm">&larr; {t.common.backToServices}</a>
+    <h1 class="mt-4">{entry.data.title}</h1>
+    <img
+      src={entry.data.image}
+      alt={entry.data.imageAlt}
+      width="1200"
+      height="900"
+      class="w-full h-auto rounded-box my-6"
+    />
+    {entry.data.options && entry.data.options.length > 0 ? (
+      <div class="my-6 p-6 rounded-box bg-base-200/50 border border-base-300 not-prose">
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-3">
+          <h3 class="text-lg font-serif font-semibold mb-0">{t.serviceDetail.optionsTitle}</h3>
+          <span class="badge badge-secondary badge-outline text-xs font-medium">{t.common.specialOfferBadge}</span>
+        </div>
+        <ul class="divide-y divide-base-300/60">
+          {entry.data.options.map((opt) => (
+            <li class="py-2.5 flex justify-between items-center text-sm">
+              <span class="font-medium text-base-content/90">{opt.description}</span>
+              <span class="text-base-content/80 font-semibold">
+                {opt.duration} {t.common.minutesShort} &bull; {opt.price} {entry.data.currency}
+              </span>
+            </li>
+          ))}
+        </ul>
+        <p class="text-xs text-base-content/60 italic mt-4 pt-2 border-t border-base-300/40">
+          * {t.serviceDetail.specialOfferNotice}
+        </p>
+      </div>
+    ) : (
+      <div class="flex gap-6 text-base-content/70 mb-6 not-prose">
+        {entry.data.duration && <span>{entry.data.duration} {t.common.minutesShort}</span>}
+        {entry.data.price && <span>{t.common.from} {entry.data.price} {entry.data.currency}</span>}
+      </div>
+    )}
+
+    <Content />
+
+    {entry.data.suitableFor.length > 0 && (
+      <>
+        <h2>{t.serviceDetail.suitableForTitle}</h2>
+        <ul>
+          {entry.data.suitableFor.map((item) => <li>{item}</li>)}
+        </ul>
+      </>
+    )}
+
+    {entry.data.whatToExpect.length > 0 && (
+      <>
+        <h2>{t.serviceDetail.whatToExpectTitle}</h2>
+        <ul>
+          {entry.data.whatToExpect.map((item) => <li>{item}</li>)}
+        </ul>
+      </>
+    )}
+
+    <div class="rounded-box bg-secondary text-secondary-content p-8 my-10 text-center">
+      <h2 class="text-secondary-content">{t.serviceDetail.ctaTitle}</h2>
+      <p class="opacity-90 mb-6">{t.serviceDetail.ctaBody}</p>
+      <a href={`/${locale}/book`} class="btn bg-base-100 text-secondary border-0 rounded-field">{t.common.bookNow}</a>
+    </div>
+  </article>
+
+  {related.length > 0 && (
+    <section class="container pb-20">
+      <h2 class="page">{t.serviceDetail.relatedTitle}</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+        {related.map((r) => (
+          <ServiceCard
+            title={r.data.title}
+            shortDescription={r.data.shortDescription}
+            duration={r.data.duration}
+            price={r.data.price}
+            currency={r.data.currency}
+            options={r.data.options}
+            image={r.data.image}
+            imageAlt={r.data.imageAlt}
+            href={`/${locale}/services/${r.id.split('/').pop()}`}
+            t={t}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+</MainLayout>

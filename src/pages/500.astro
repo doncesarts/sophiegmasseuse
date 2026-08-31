@@ -1,34 +1,22 @@
 ---
-import Layout from "../layouts/MainLayout.astro";
-import Logo from "../components/Logo.astro";
+import MainLayout from "../layouts/MainLayout.astro";
+import { defaultLocale } from "../i18n/config";
+import { getTranslations } from "../i18n";
 
 interface Props {
   error: unknown;
 }
 
-const { error } = Astro.props;
+const t = getTranslations(defaultLocale);
 ---
 
-<Layout title="500 Error">
+<MainLayout title={t.serverError.title} description={t.serverError.body} locale={defaultLocale} path="/500">
   <section class="section flex-1 flex flex-col justify-center items-center">
     <div class="container text-center grid gap-4">
-      <div class="text-center mx-auto">
-        <Logo />
-      </div>
-      <h1 class="text-5xl lg:text-9xl font-bold">500</h1>
-      <p>
-        {error instanceof Error ? error.message : "Unknown error"}
-      </p>
-      <a href="/" class="btn bg-[linear-gradient(125deg,var(--color-main-100),var(--color-main-200))] text-white border-0 rounded-xl text-lg py-3 px-6 h-auto shadow-xl hover:shadow-2xl mx-auto"
-        >GO TO HOME</a
-      >
+      <p class="text-6xl lg:text-8xl font-serif font-bold text-primary">500</p>
+      <h1>{t.serverError.title}</h1>
+      <p class="text-base-content/80">{t.serverError.body}</p>
+      <a href={`/${defaultLocale}`} class="btn btn-primary rounded-field mx-auto">{t.serverError.cta}</a>
     </div>
   </section>
-
-  <style>
-	h1 {
-		font-size: 10em;
-		line-height: 0.8;
-	}
-  </style>
-</Layout>
+</MainLayout>

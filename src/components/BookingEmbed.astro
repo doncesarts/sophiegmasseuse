@@ -1,0 +1,31 @@
+---
+// Isolated Cal.com integration. Swapping providers later only requires
+// editing this file (and CALCOM_URL in src/config/calcom.ts) — no other
+// component references Cal.com directly.
+import { CALCOM_URL } from '../config/calcom';
+
+interface Props {
+  /** Accessible fallback link label, e.g. "Open booking page". */
+  fallbackLabel: string;
+  /** Text shown before the fallback link, e.g. "If the calendar doesn't load," */
+  fallbackIntro?: string;
+  class?: string;
+}
+
+const { fallbackLabel, fallbackIntro, class: className } = Astro.props;
+---
+
+<div class:list={['booking-embed', className]}>
+  <iframe
+    src={CALCOM_URL}
+    title="Booking calendar"
+    loading="lazy"
+    class="w-full min-h-[720px] md:min-h-[860px] rounded-box border border-base-300 bg-base-100"
+  ></iframe>
+  <p class="mt-4 text-sm text-base-content/70">
+    {fallbackIntro}{' '}
+    <a href={CALCOM_URL} target="_blank" rel="noopener noreferrer" class="link link-primary">
+      {fallbackLabel}
+    </a>
+  </p>
+</div>

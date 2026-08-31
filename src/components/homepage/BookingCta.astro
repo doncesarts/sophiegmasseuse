@@ -1,0 +1,19 @@
+---
+import type { Locale } from '../../i18n/config';
+import type { Translations } from '../../i18n/types';
+
+interface Props {
+  locale: Locale;
+  t: Translations;
+}
+
+const { locale, t } = Astro.props;
+---
+
+<section class="section container">
+  <div class="rounded-box bg-secondary text-secondary-content px-8 py-14 lg:px-16 lg:py-16 text-center">
+    <h2 class="text-secondary-content">{t.bookingCta.title}</h2>
+    <p class="opacity-90 mb-8 max-w-xl mx-auto">{t.bookingCta.subtitle}</p>
+    <a href={`/${locale}/book`} class="btn btn-lg bg-base-100 text-secondary hover:bg-base-200 border-0 rounded-field">{t.bookingCta.cta}</a>
+  </div>
+</section>

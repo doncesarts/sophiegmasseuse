@@ -1,0 +1,45 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro';
+import Hero from '../../components/homepage/Hero.astro';
+import Intro from '../../components/homepage/Intro.astro';
+import FeaturedServices from '../../components/homepage/FeaturedServices.astro';
+import Benefits from '../../components/homepage/Benefits.astro';
+import Philosophy from '../../components/homepage/Philosophy.astro';
+import Testimonials from '../../components/homepage/Testimonials.astro';
+import Gallery from '../../components/homepage/Gallery.astro';
+import LocationCta from '../../components/homepage/LocationCta.astro';
+import BookingCta from '../../components/homepage/BookingCta.astro';
+import { getCollection } from 'astro:content';
+import { locales, type Locale } from '../../i18n/config';
+import { getTranslations } from '../../i18n';
+
+export function getStaticPaths() {
+  return locales.map((lang) => ({ params: { lang } }));
+}
+
+const { lang } = Astro.params;
+const locale = lang as Locale;
+const t = getTranslations(locale);
+
+const services = await getCollection('services', (entry) => entry.data.lang === locale);
+const featuredServices = services
+  .filter((entry) => entry.data.featured)
+  .sort((a, b) => a.data.order - b.data.order);
+
+const testimonials = await getCollection('testimonials', (entry) => entry.data.lang === locale);
+const featuredTestimonials = testimonials
+  .filter((entry) => entry.data.featured)
+  .sort((a, b) => a.data.order - b.data.order);
+---
+
+<MainLayout title={t.seo.home.title} description={t.seo.home.description} locale={locale} path="/">
+  <Hero locale={locale} t={t} />
+  <Intro locale={locale} t={t} />
+  <FeaturedServices services={featuredServices} locale={locale} t={t} />
+  <Benefits t={t} />
+  <Philosophy t={t} />
+  <Testimonials testimonials={featuredTestimonials} t={t} />
+  <Gallery t={t} />
+  <LocationCta locale={locale} t={t} />
+  <BookingCta locale={locale} t={t} />
+</MainLayout>
