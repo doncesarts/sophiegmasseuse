@@ -11,6 +11,10 @@ export interface BenefitItem {
   title: string;
   description: string;
 }
+export interface TransportItem {
+  title: string;
+  description: string;
+}
 
 export interface Translations {
   nav: {
@@ -89,6 +93,7 @@ export interface Translations {
   locationSection: {
     title: string;
     body: string;
+    transports: TransportItem[];
     cta: string;
   };
   bookingCta: {
@@ -136,6 +141,7 @@ export interface Translations {
     intro: string;
     emailLabel: string;
     phoneLabel: string;
+    whatsappLabel: string;
     addressLabel: string;
     areaLabel: string;
     socialLabel: string;

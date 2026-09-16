@@ -1,6 +1,7 @@
 ---
 import { siteConfig } from '../config/site';
 import LanguageSwitcher from './LanguageSwitcher.astro';
+import WhatsAppLink from './WhatsAppLink.astro';
 import type { Locale } from '../i18n/config';
 import type { Translations } from '../i18n/types';
 
@@ -45,7 +46,10 @@ const navItems = [
           <h3 class="text-primary font-serif">{t.footer.contactTitle}</h3>
           <nav class="grid gap-3 mt-3">
             <a href={`mailto:${siteConfig.email}`} class="hover:text-primary hover:underline">{siteConfig.email}</a>
-            <a href={`tel:${siteConfig.phone.replace(/\s/g, '')}`} class="hover:text-primary hover:underline">{siteConfig.phone}</a>
+            <span class="inline-flex items-center gap-3">
+              <a href={`tel:${siteConfig.phone.replace(/\s/g, '')}`} class="hover:text-primary hover:underline">{siteConfig.phone}</a>
+              <WhatsAppLink label={t.contactPage.whatsappLabel} />
+            </span>
             <span>{siteConfig.address}, {siteConfig.city}</span>
           </nav>
         </div>

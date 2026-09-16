@@ -26,61 +26,61 @@ const en: Translations = {
   },
   seo: {
     home: {
-      title: "Voyage Sensoriel — Balinese & Swedish Massage in Zurich",
+      title: "Sophie Massage — Balinese & Swedish Massage in Zurich",
       description:
         "Independent massage therapist in Zurich offering Balinese and Swedish massage. Calm, attentive treatments tailored to you — book your session with Sophie Goupil today.",
     },
     services: {
-      title: "Balinese & Swedish Massage Treatments in Zurich — Voyage Sensoriel",
+      title: "Balinese & Swedish Massage Treatments in Zurich — Sophie Massage",
       description:
         "Explore our massage treatments in Zurich, including Balinese massage and Swedish massage — each thoughtfully adapted to your needs.",
     },
     about: {
-      title: "About Sophie Goupil — Voyage Sensoriel",
+      title: "About Sophie Goupil — Sophie Massage",
       description:
-        "Meet Sophie Goupil, independent massage therapist in Zurich, and discover the philosophy behind Voyage Sensoriel.",
+        "Meet Sophie Goupil, independent massage therapist in Zurich, and discover the philosophy behind Sophie Massage.",
     },
     faq: {
-      title: "Frequently Asked Questions — Voyage Sensoriel",
+      title: "Frequently Asked Questions — Sophie Massage",
       description:
         "Answers to common questions about booking, preparing for and what to expect from your massage session.",
     },
     contact: {
-      title: "Contact — Voyage Sensoriel",
+      title: "Contact — Sophie Massage",
       description:
-        "Get in touch with Voyage Sensoriel in Zurich, or book your massage session directly online.",
+        "Get in touch with Sophie Massage in Zurich, or book your massage session directly online.",
     },
     book: {
-      title: "Book a Session — Voyage Sensoriel",
+      title: "Book a Session — Sophie Massage",
       description:
         "Book your massage session online in a few clicks via our secure Cal.com booking page.",
     },
     privacy: {
-      title: "Privacy Policy — Voyage Sensoriel",
-      description: "How Voyage Sensoriel handles your personal information.",
+      title: "Privacy Policy — Sophie Massage",
+      description: "How Sophie Massage handles your personal information.",
     },
     legal: {
-      title: "Legal Notice — Voyage Sensoriel",
-      description: "Legal and imprint information for Voyage Sensoriel.",
+      title: "Legal Notice — Sophie Massage",
+      description: "Legal and imprint information for Sophie Massage.",
     },
     healthSafety: {
-      title: "Health, Safety & Hygiene — Voyage Sensoriel",
+      title: "Health, Safety & Hygiene — Sophie Massage",
       description:
-        "Hygiene practices and medical contraindications to know before booking a massage at Voyage Sensoriel in Zurich.",
+        "Hygiene practices and medical contraindications to know before booking a massage at Sophie Massage in Zurich.",
     },
   },
   hero: {
     eyebrow: "Independent massage practice · Zurich",
-    headline: "A quiet space to slow down and feel like yourself again.",
-    subheadline: "Massage & wellbeing, thoughtfully personal.",
+    headline: "A quiet space to slow down - a journey for the senses.",
+    subheadline: "Massage & wellbeing",
     intro:
-      "Voyage Sensoriel is the independent practice of Sophie Goupil, offering calm, attentive massage treatments tailored to your body and your pace — never rushed, always personal.",
+      "Calm, attentive massage treatments. An invitation to travel, a journey for the senses.",
     primaryCta: "Book an appointment",
     secondaryCta: "Discover our massages",
   },
   intro: {
     title: "A moment made entirely for you",
-    body: "Every session begins with a conversation. Sophie takes the time to understand how you feel before choosing the right pressure, pace and technique — so each treatment is shaped around you, not the other way around.",
+    body: "Every session begins with a conversation. Sophie takes the time to understand how you feel before choosing the right pressure, pace and technique. Sophie uses only natural, nourishing oils suitable for senstive skin.",
     cta: "About Sophie",
   },
   featuredServices: {
@@ -90,13 +90,13 @@ const en: Translations = {
     cta: "View all massages",
   },
   benefits: {
-    title: "Why clients choose Voyage Sensoriel",
+    title: "Why clients choose us",
     subtitle: "A practice built around attention, consistency and calm.",
     items: [
       {
-        title: "Truly personalised",
+        title: "A journey for the senses",
         description:
-          "No two sessions are alike. Pressure, pacing and focus are adapted to how you feel that day.",
+          "Each massage is an invitation to travel, from Europe to Asia, whilst enjoying the comfort of the studio.",
       },
       {
         title: "A calm, private space",
@@ -116,15 +116,14 @@ const en: Translations = {
     ],
   },
   philosophy: {
-    title: "A personal approach to touch",
-    body: "Massage, at its best, is a dialogue between hands and body. Sophie's approach favours listening over routine: each session adapts in real time, combining techniques from relaxation and deep tissue work to meet you exactly where you are.",
-    quote:
-      "My goal is simple — that you leave feeling lighter, calmer, and more at home in your body.",
-    quoteAuthor: "Sophie Goupil",
+    title: "A journey for the senses",
+    body: "Sophie's approach is to bring the world to you - without the rush and ensuring total body relaxation.",
+    quote: "",
+    quoteAuthor: "Sophie G.",
   },
   testimonialsSection: {
     title: "What clients say",
-    subtitle: "A few words from people who visit Voyage Sensoriel regularly.",
+    subtitle: "A few words from people who visit Sophie Massage regularly.",
     googleCta: "on Google",
   },
   gallery: {
@@ -133,7 +132,22 @@ const en: Translations = {
   },
   locationSection: {
     title: "Where to find us",
-    body: "Voyage Sensoriel welcomes clients by appointment in a quiet, easily accessible studio in Zurich, serving the city and surrounding area.",
+    body: "Sophie Massage welcomes clients by appointment in a quiet, easily accessible studio in Zurich, serving the city and surrounding area.",
+    transports: [
+      {
+        title: "By tram",
+        description:
+          "Tram No. 7 stop at 'Glattwiesen' or Tram No. 9  stop at 'Luegisland'. The studio is just a few minutes walk away.",
+      },
+      {
+        title: "By car",
+        description: "Client's parking spot No. 11. GPS navigation: Winterthurerstrasse 650, 8051 Zurich. Blue on-street parking spots on Glattwiesenstrasse also available.",
+      },
+      {
+        title: "When you arrive",
+        description: "Please ring at 'Raüme Glattwiesen'. 1st floor.",
+      },
+    ],
     cta: "Get in touch",
   },
   bookingCta: {
@@ -144,7 +158,7 @@ const en: Translations = {
   servicesPage: {
     title: "Massages",
     intro:
-      "Each massage is offered as a starting point, then adapted to you during the session. Not sure what to choose? Get in touch and Sophie will help you decide.",
+      "Not sure what to choose? Get in touch and Sophie will help you decide.",
   },
   serviceDetail: {
     optionsTitle: "Options & Pricing",
@@ -167,22 +181,21 @@ const en: Translations = {
   about: {
     title: "About Sophie Goupil",
     intro:
-      "Independent massage therapist and founder of Voyage Sensoriel, based in Zurich.",
+      "Independent massage therapist based in Zurich.",
     biographyTitle: "My story",
     biography: [
-      "I started Voyage Sensoriel because I wanted to offer something different from a busy spa or clinic: a small, independent practice where every session is unhurried and genuinely tailored to the person in front of me.",
-      "[Placeholder — replace with Sophie's real background, training path and years of practice.]",
+      "Massages have been part of my life from a very young age. As a child, I was already practicing some movements to relieve my relatives' back pain. Life led me down a different path, one driven by another passion: the passion for languages and travels. In 2025, I decided to reconnect with my long-standing interest in massage, so I undertook several training courses in Swedish and Balinese massage.", "Today I am delighted to be able to welcome patients in different languages and introduce them to a variety of traditional massage techniques.",
+      "Both passions combine to bring you on a journey through one of the world's oldest traditions.",
     ],
     philosophyTitle: "My philosophy",
-    philosophyBody:
-      "I believe good massage starts with listening. Before any technique, I want to understand how you feel, what you're carrying, and what would help you feel more at ease — then I adapt the session accordingly.",
+    philosophyBody: "I believe good massage starts with listening. Before any technique, I want to understand how you feel, and what would help you feel more at ease — then I adapt the session accordingly. \nI only use natural nourishing oils and a blend of essential oils that are gentle on the skin and sooze the mind.",
     qualificationsTitle: "Training & qualifications",
     qualificationsNote:
-      "CIBTAC (The Confederation of International Beauty Therapy and Cosmetology) has been producing beauty, complementary & spa therapy graduates of the highest calibre since 1977.\nVTCT (Vocational Training Charitable Trust) is a leading specialist awarding organization offering internationally recognized qualifications in massage and complementary therapies.",
+      "CIBTAC (The Confederation of International Beauty Therapy and Cosmetology) has been producing beauty, complementary & spa therapy graduates of the highest calibre since 1977.\nVTCT (Vocational Training Charitable Trust) is a leading specialist awarding organisation offering internationally recognized qualifications in massage and complementary therapies.",
     qualifications: [
-      "Classic Massage @ Klubschule Migros, Switzerland",
-      "VTCT Skills Level 3 Certificate in Swedish Massage @ BISA, Bali",
-      "CIBTAC Endorsed Balinese Massage @ BISA, Bali",
+      "Classic Massage - Klubschule Migros, Switzerland",
+      "VTCT Skills Level 3 Certificate in Swedish Massage - BISA (Bali International Spa Academy), Bali",
+      "CIBTAC Endorsed Balinese Massage - BISA (Bali International Spa Academy), Bali",
     ],
     approachTitle: "My approach",
     approachBody:
@@ -201,7 +214,7 @@ const en: Translations = {
       {
         question: "How long is a session?",
         answer:
-          "Sessions typically range from 35 to 90 minutes depending on the treatment you choose. Exact durations are listed on each treatment page.",
+          "Sessions typically range from 30 to 75 minutes depending on the treatment you choose. Exact durations are listed on each treatment page. Please note that an extra 10 to 15 minutes must be added to every treatment duration to include the consultation time and the aftercare advice.",
       },
       {
         question: "What should I bring?",
@@ -211,31 +224,32 @@ const en: Translations = {
       {
         question: "What should I wear?",
         answer:
-          "Comfortable clothing to and from your session. You will undress to your comfort level for the treatment itself and remain covered by a towel or sheet throughout, except for the area being worked on.",
+          "Comfortable clothing to and from your session. You will undress to your comfort level for the treatment itself and remain covered by a towel or a sheet throughout, except for the area being worked on.",
       },
       {
         question: "How early should I arrive?",
         answer:
-          "Please arrive around 10 minutes before your appointment to settle in and discuss how you're feeling before we begin.",
+          "Please arrive around 10 minutes before your appointment to settle in before we begin.",
       },
       {
         question: "What is the cancellation policy?",
         answer:
-          "[Placeholder — replace with your actual cancellation and rescheduling policy before publishing.]",
+          "Sessions cancelled less than 24 hours in advance and no-shows must be settled in full. You will find a link to cancel the session in the confirmation e-mail but please inform me directly for any rescheduling.",
       },
       {
         question: "Where are sessions held?",
         answer:
-          "Sessions take place in a private studio in Zurich. The exact address is shared upon booking confirmation.",
+          "Sessions take place at the Glattwiesen community centre in Zurich, Schwamendingen, Kreis 11. The place is shared with some wonderful women who offer coaching, massages and alternative therapies.",
       },
     ],
   },
   contactPage: {
     title: "Contact",
     intro:
-      "Have a question before booking, or prefer to reach out directly? Here's how to find Voyage Sensoriel.",
+      "Have a question before booking, or prefer to reach out directly? Here's how to find Sophie.",
     emailLabel: "Email",
     phoneLabel: "Phone",
+    whatsappLabel: "Message us on WhatsApp",
     addressLabel: "Studio address",
     areaLabel: "Service area",
     socialLabel: "Follow along",
@@ -247,7 +261,7 @@ const en: Translations = {
       "Choose a treatment and a time that suits you. You'll receive an instant email confirmation.",
     fallbackText: "If the booking calendar doesn't load,",
     fallbackCta: "open the booking page directly",
-    contactAlternative: "You can also reach out directly if you'd prefer to arrange your session by email or phone.",
+    contactAlternative: "You can also reach out directly if you'd prefer to arrange your session by email or WhatsApp",
   },
   footer: {
     description:
@@ -276,7 +290,7 @@ const en: Translations = {
   healthSafetyPage: {
     title: "Health, safety & hygiene",
     intro:
-      "Your wellbeing and safety come first. Here's what to know about hygiene practices at Voyage Sensoriel, and situations where massage may not be appropriate.",
+      "Your wellbeing and safety come first. Here's what to know about hygiene practices at Sophie Massage, and situations where massage may not be appropriate.",
     hygieneTitle: "Hygiene practices",
     hygieneItems: [
       "Fresh linens, towels and covers are used for every client and changed between sessions.",

@@ -58,26 +58,23 @@ export interface SiteConfig {
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Voyage Sensoriel",
+  name: "Sophie Massage",
   therapistName: "Sophie Goupil",
-  tagline: "Massage & wellbeing, thoughtfully personal.",
+  tagline: "Massage & wellbeing",
   description:
-    "An independent massage practice in Zurich offering calm, attentive, and personalised wellbeing treatments.",
+    "An independent massage practice in Zurich offering calm and attentive wellbeing treatments. An invitation to travel, a journey for the senses.",
   email: "sophie.g.massage@gmail.com",
-  phone: "+41 00 000 00 00",
-  address: "Glattwiesenstr. 213, 8051 Zürich",
-  city: "Zürich, Switzerland",
-  serviceArea: "Zürich and the surrounding area",
+  phone: "+41 77 804 44 52",
+  address: "Glattwiesenstrasse 213, 8051 Zurich",
+  city: "Switzerland",
+  serviceArea: "Zurich 11",
   bookingUrl: "https://cal.com/example",
   instagramUrl: "",
   facebookUrl: "https://facebook.com/SophieMassageZurich",
-  // TODO: replace with the real Google Business Profile / Maps share link once claimed.
-  googleMapsUrl: "",
-  // TODO: set real coordinates for the studio address to strengthen local/Maps signals.
-  geo: undefined,
-  priceRange: "CHF 50-100",
-  // TODO: replace with real opening hours (schema.org format, e.g. "Mo-Fr 09:00-19:00").
-  openingHours: ["Mo-Fr 09:00-19:00", "Sa 09:00-14:00"],
+  googleMapsUrl: "https://maps.app.goo.gl/mPGLm1mTLfZudURg8",
+  geo: { latitude: 47.4042, longitude: 8.5833 },
+  priceRange: "CHF 60-130",
+  openingHours: ["Wed-Thur 09:00-21:00"],
   // TODO: set enabled: true and fill in real values once the Google Business Profile is verified.
   reviews: {
     enabled: false,
@@ -90,12 +87,12 @@ export const siteConfig: SiteConfig = {
     secondary: "#B9713F",
     accent: "#D8B36B",
   },
-  socialImage: "/images/placeholders/og-image.svg",
-  logo: "/images/placeholders/logo.svg",
+  socialImage: "/images/og-image.svg",
+  logo: "/images/logo.svg",
   favicon: "/favicon/favicon.svg",
   seo: {
-    defaultTitle: "Voyage Sensoriel — Independent Massage Therapy in Zurich",
+    defaultTitle: "Sophie Massage — Independent Massage Therapy in Zurich",
     defaultDescription:
-      "Calm, warm and attentive massage treatments tailored to you. Book your session with Sophie Goupil in Zurich.",
+      "Calm and attentive massage treatments, an invitation to travel. Book your session with Sophie Goupil in Zurich.",
   },
 };

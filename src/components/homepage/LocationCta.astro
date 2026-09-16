@@ -21,7 +21,16 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
       <p class="text-base-content/80 mb-1">{t.locationSection.body}</p>
       <p class="text-base-content/80 font-medium">{siteConfig.address}, {siteConfig.city}</p>
       <a href={`/${locale}/contact`} class="btn btn-outline btn-primary rounded-field mt-4">{t.locationSection.cta}</a>
-    </div>
+      </div>
+      <div>   
+    {t.locationSection.transports.map((item) => (
+  
+        <h3 class="text-lg mb-2">{item.title}</h3>
+        <p class="text-base-content/80 font-medium">{item.description}</p>
+        <br/>
+
+    ))}   
+  </div>   
     <div class="rounded-box overflow-hidden border border-base-300">
       <iframe
         src={mapEmbedSrc}

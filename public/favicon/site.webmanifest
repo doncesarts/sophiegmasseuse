@@ -1,12 +1,12 @@
 {
-  "name": "HealNet",
-  "short_name": "HealNet",
+  "name": "Sophie Massage",
+  "short_name": "Sophie Massage",
   "start_url": "/",
-  "description": "Experience personalized medical care from the comfort of your home.",
+  "description": "Calm and attentive massage treatments in Zurich.",
   "display_override": ["window-control-overlay", "minimal-ui"],
   "orientation": "portrait",
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
+  "theme_color": "#f5e9e9",
+  "background_color": "#f5e9e9",
   "display": "standalone",
   "icons": [
     {
@@ -28,30 +28,5 @@
       "purpose": "any"
     }
   ],
-  "screenshots": [
-    {
-      "src": "/SEO/screen1.jpg",
-      "type": "image/jpg",
-      "sizes": "720x1280",
-      "form_factor": "wide"
-    },
-    {
-      "src": "/SEO/screen2.jpg",
-      "type": "image/jpg",
-      "sizes": "720x1280",
-      "form_factor": "wide"
-    },
-    {
-      "src": "/SEO/screen3.jpg",
-      "type": "image/jpg",
-      "sizes": "720x1280",
-      "form_factor": "wide"
-    },
-    {
-      "src": "/SEO/screen4.jpg",
-      "sizes": "540x720",
-      "type": "image/jpeg",
-      "form_factor": "narrow"
-    }
-  ]
+  "screenshots": []
 }

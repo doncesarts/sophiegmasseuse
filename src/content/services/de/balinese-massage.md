@@ -1,32 +1,32 @@
 ---
 lang: "de"
 title: "Balinesische Massage"
-shortDescription: "Tiefenentspannung zur Förderung von Blutzirkulation, Lymphdrainage, Beweglichkeit und Flexibilität."
+shortDescription: "Traditionelle Massage für tiefe Entspannung und zur Förderung der Lymphdrainage. Sie umfasst Druckpunktmassage sowie Techniken zur Verbesserung der Flexibilität und Beweglichkeit des Körpers."
 currency: "CHF"
 options:
-  - description: "Rücken und Nacken"
+  - description: "Rücken, Nacken und Schultern"
     duration: 30
-    price: 50
-    discountPercent: 20
+    price: 60
+    discountPercent: 15
     calLink: "sophiegmassage/balinese30min"
   - description: "Ganzkörper inkl. Gesicht und Kopf"
     duration: 60
-    price: 90
-    discountPercent: 20
+    price: 110
+    discountPercent: 15
     calLink: "sophiegmassage/balinese-massage-full-body-60-minutes"
-image: "/images/pexels/service-balinese-massage.jpg"
-imageAlt: "Balinesische Massage bei Voyage Sensoriel in Zürich"
+image: "/images/service-balinese-massage.jpg"
+imageAlt: "Balinesische Massage bei Sophie Massage in Zürich"
 featured: true
 order: 2
 suitableFor:
   - "Alle mit Verspannungen in Nacken, Schultern oder unterem Rücken"
-  - "Menschen mit sitzender oder körperlich anstrengender Tätigkeit"
-  - "Kund:innen, die einen kräftigeren, gezielteren Druck bevorzugen"
+  - "Erstbesucher:innen, die einen sanften Einstieg in die Massage suchen"
+  - "Alle, die sich überfordert oder angespannt fühlen oder ein langsameres Tempo brauchen"
 whatToExpect:
   - "Ein Gespräch zur Bestimmung der zu behandelnden Bereiche"
-  - "Langsamerer, anhaltenderer Druck mit Händen, Unterarmen und Ellbogen"
+  - "Langsamerer und anhaltenderer Druck mit Händen, Unterarmen und Ellbogen"
   - "Fortlaufende Anpassung des Drucks anhand Ihres Feedbacks"
   - "Ein sanfterer Ausklang der Sitzung für ein ruhiges Gefühl danach"
 ---
 
-Bietet tiefgreifende Entspannung und fördert die Blutzirkulation sowie die Lymphdrainage. Die Behandlung kombiniert Akupressur- und Druckpunkttechniken mit Griffen zur Verbesserung der Flexibilität und Beweglichkeit des Körpers.
+Traditionelle Massage für tiefe Entspannung und zur Förderung der Lymphdrainage. Sie umfasst Druckpunktmassage sowie Techniken zur Verbesserung der Flexibilität und Beweglichkeit des Körpers. Original ätherisches Frangipani-Blütenöl sorgt für ein noch tieferes Entspannungsgefühl.

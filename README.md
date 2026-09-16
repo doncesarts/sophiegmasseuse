@@ -1,4 +1,4 @@
-# Voyage Sensoriel — Independent Massage Therapy Website
+# Sophie Massage — Independent Massage Therapy Website
 
 A calm, warm, multilingual marketing website for an independent massage
 therapist, built with **Astro 7**, **Tailwind CSS 4** and **DaisyUI**.
@@ -142,7 +142,7 @@ be understood correctly by AI assistants. Tracked here until each is resolved.
   - Update the `Sitemap:` line in [`public/robots.txt`](./public/robots.txt).
   - Re-run `npm run build` and re-check canonical/OG/hreflang tags on a few
     pages before deploying.
-- [ ] **Real phone number** — replace the `+41 00 000 00 00` placeholder in
+- [ ] **Real phone number** — replace the `+41 77 804 44 52` placeholder in
   [`src/config/site.ts`](./src/config/site.ts) (`phone`). Required for the
   `LocalBusiness` JSON-LD and for Google Business Profile matching (NAP
   consistency).
@@ -163,7 +163,7 @@ be understood correctly by AI assistants. Tracked here until each is resolved.
   [`src/config/site.ts`](./src/config/site.ts). No other code changes needed —
   see [`GoogleReviews.astro`](./src/components/GoogleReviews.astro).
 - [ ] Confirm the final public-facing business name (site currently shows
-  "Voyage Sensoriel", but the repo/package is named "maison-serein") — use the
+  "Sophie Massage", but the repo/package is named "maison-serein") — use the
   exact same name everywhere: site, Google Business Profile, social profiles,
   directory listings.
 - [ ] Once the domain is live, submit the sitemap in Google Search Console and

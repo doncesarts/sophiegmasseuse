@@ -26,47 +26,47 @@ const de: Translations = {
   },
   seo: {
     home: {
-      title: "Voyage Sensoriel — Balinesische & Schwedische Massage in Zürich",
+      title: "Sophie Massage — Balinesische & Schwedische Massage in Zürich",
       description:
         "Unabhängige Massagetherapeutin in Zürich mit Balinesischer und Schwedischer Massage. Ruhige, individuell abgestimmte Behandlungen — buchen Sie Ihre Sitzung bei Sophie Goupil.",
     },
     services: {
-      title: "Balinesische & Schwedische Massage in Zürich — Voyage Sensoriel",
+      title: "Balinesische & Schwedische Massage in Zürich — Sophie Massage",
       description:
         "Entdecken Sie unsere Massagebehandlungen in Zürich, darunter Balinesische Massage und Schwedische Massage — jede individuell angepasst.",
     },
     about: {
-      title: "Über Sophie Goupil — Voyage Sensoriel",
+      title: "Über Sophie Goupil — Sophie Massage",
       description:
-        "Lernen Sie Sophie Goupil kennen, unabhängige Massagetherapeutin in Zürich, und die Philosophie von Voyage Sensoriel.",
+        "Lernen Sie Sophie Goupil kennen, unabhängige Massagetherapeutin in Zürich, und die Philosophie von Sophie Massage.",
     },
     faq: {
-      title: "Häufige Fragen — Voyage Sensoriel",
+      title: "Häufige Fragen — Sophie Massage",
       description:
         "Antworten auf häufige Fragen zur Buchung, Vorbereitung und zum Ablauf einer Massagesitzung.",
     },
     contact: {
-      title: "Kontakt — Voyage Sensoriel",
+      title: "Kontakt — Sophie Massage",
       description:
-        "Kontaktieren Sie Voyage Sensoriel in Zürich oder buchen Sie Ihre Massagesitzung direkt online.",
+        "Kontaktieren Sie Sophie Massage in Zürich oder buchen Sie Ihre Massagesitzung direkt online.",
     },
     book: {
-      title: "Termin buchen — Voyage Sensoriel",
+      title: "Termin buchen — Sophie Massage",
       description:
         "Buchen Sie Ihre Massagesitzung in wenigen Klicks online über unsere sichere Cal.com-Buchungsseite.",
     },
     privacy: {
-      title: "Datenschutzerklärung — Voyage Sensoriel",
-      description: "Wie Voyage Sensoriel mit Ihren personenbezogenen Daten umgeht.",
+      title: "Datenschutzerklärung — Sophie Massage",
+      description: "Wie Sophie Massage mit Ihren personenbezogenen Daten umgeht.",
     },
     legal: {
-      title: "Impressum — Voyage Sensoriel",
-      description: "Rechtliche Angaben zu Voyage Sensoriel.",
+      title: "Impressum — Sophie Massage",
+      description: "Rechtliche Angaben zu Sophie Massage.",
     },
     healthSafety: {
-      title: "Gesundheit, Sicherheit & Hygiene — Voyage Sensoriel",
+      title: "Gesundheit, Sicherheit & Hygiene — Sophie Massage",
       description:
-        "Hygienepraktiken und medizinische Kontraindikationen, die Sie vor einer Massagebuchung bei Voyage Sensoriel in Zürich kennen sollten.",
+        "Hygienepraktiken und medizinische Kontraindikationen, die Sie vor einer Massagebuchung bei Sophie Massage in Zürich kennen sollten.",
     },
   },
   hero: {
@@ -74,13 +74,13 @@ const de: Translations = {
     headline: "Ein ruhiger Ort, um innezuhalten und zu sich zu finden.",
     subheadline: "Massage & Wohlbefinden, ganz persönlich.",
     intro:
-      "Voyage Sensoriel ist die unabhängige Praxis von Sophie Goupil und bietet ruhige, aufmerksame Massagebehandlungen, abgestimmt auf Ihren Körper und Ihr Tempo — nie gehetzt, immer persönlich.",
+      "Sophie Massage ist die unabhängige Praxis von Sophie Goupil und bietet ruhige, aufmerksame Massagebehandlungen, abgestimmt auf Ihren Körper und Ihr Tempo — nie gehetzt, immer persönlich.",
     primaryCta: "Termin buchen",
     secondaryCta: "Massagen entdecken",
   },
   intro: {
     title: "Ein Moment ganz für Sie",
-    body: "Jede Sitzung beginnt mit einem Gespräch. Sophie nimmt sich Zeit zu verstehen, wie Sie sich fühlen, bevor sie Druck, Tempo und Technik wählt — so wird jede Behandlung um Sie herum gestaltet.",
+    body: "Jede Sitzung beginnt mit einem Gespräch. Sophie nimmt sich Zeit zu verstehen, wie Sie sich fühlen, bevor sie Druck, Tempo und Technik wählt. Sophie verwendet ausschließlich natürliche, pflegende Öle, die für empfindliche Haut geeignet sind.",
     cta: "Über Sophie",
   },
   featuredServices: {
@@ -90,13 +90,13 @@ const de: Translations = {
     cta: "Alle Massagen ansehen",
   },
   benefits: {
-    title: "Warum Kund:innen Voyage Sensoriel wählen",
+    title: "Warum Kund:innen uns wählen",
     subtitle: "Eine Praxis, die auf Aufmerksamkeit, Beständigkeit und Ruhe aufbaut.",
     items: [
       {
-        title: "Wirklich individuell",
+        title: "Eine Reise für die Sinne",
         description:
-          "Keine Sitzung gleicht der anderen. Druck, Tempo und Fokus richten sich nach Ihrem Befinden an diesem Tag.",
+          "Jede Massage ist eine Einladung zu einer Reise von Europa bis Asien, während Sie den Komfort des Studios genießen.",
       },
       {
         title: "Ein ruhiger, privater Ort",
@@ -116,15 +116,14 @@ const de: Translations = {
     ],
   },
   philosophy: {
-    title: "Ein persönlicher Umgang mit Berührung",
-    body: "Eine gute Massage ist vor allem ein Dialog zwischen Händen und Körper. Sophies Ansatz setzt auf Zuhören statt Routine: Jede Sitzung passt sich in Echtzeit an und verbindet entspannende und tiefergehende Techniken, um Sie genau dort abzuholen, wo Sie stehen.",
-    quote:
-      "Mein Ziel ist einfach — dass Sie leichter, ruhiger und mehr bei sich selbst gehen.",
-    quoteAuthor: "Sophie Goupil",
+    title: "Eine Reise für die Sinne",
+    body: "Sophies Ansatz bringt die Welt zu Ihnen — ohne Eile und mit dem Ziel einer vollständigen Entspannung des Körpers.",
+    quote: "",
+    quoteAuthor: "Sophie G.",
   },
   testimonialsSection: {
     title: "Was Kund:innen sagen",
-    subtitle: "Ein paar Worte von Menschen, die Voyage Sensoriel regelmäßig besuchen.",
+    subtitle: "Ein paar Worte von Menschen, die Sophie Massage regelmäßig besuchen.",
     googleCta: "auf Google",
   },
   gallery: {
@@ -133,7 +132,24 @@ const de: Translations = {
   },
   locationSection: {
     title: "Wo Sie uns finden",
-    body: "Voyage Sensoriel empfängt Kund:innen nach Vereinbarung in einem ruhigen, gut erreichbaren Studio in Zürich und betreut die Stadt sowie die Umgebung.",
+    body: "Sophie Massage empfängt Kund:innen nach Vereinbarung in einem ruhigen, gut erreichbaren Studio in Zürich und betreut die Stadt sowie die Umgebung.",
+    transports: [
+      {
+        title: "Mit der Straßenbahn",
+        description:
+          "Straßenbahn Nr. 7 bis zur Haltestelle „Glattwiesen“ oder Straßenbahn Nr. 9 bis „Luegisland“. Das Studio ist nur wenige Gehminuten entfernt.",
+      },
+      {
+        title: "Mit dem Auto",
+        description:
+          "Parkplatz Nr. 11 für Kund:innen. Navigation: Winterthurerstrasse 650, 8051 Zürich. Blaue Parkplätze an der Glattwiesenstrasse sind ebenfalls verfügbar.",
+      },
+      {
+        title: "Bei Ihrer Ankunft",
+        description:
+          "Bitte bei „Räume Glattwiesen“ klingeln. 1. Stock.",
+      },
+    ],
     cta: "Kontakt aufnehmen",
   },
   bookingCta: {
@@ -167,15 +183,16 @@ const de: Translations = {
   about: {
     title: "Über Sophie Goupil",
     intro:
-      "Unabhängige Massagetherapeutin und Gründerin von Voyage Sensoriel, ansässig in Zürich.",
+      "Unabhängige Massagetherapeutin und Gründerin von Sophie Massage, ansässig in Zürich.",
     biographyTitle: "Mein Werdegang",
     biography: [
-      "Ich habe Voyage Sensoriel gegründet, weil ich etwas anderes bieten wollte als ein geschäftiges Spa oder eine Klinik: eine kleine, unabhängige Praxis, in der jede Sitzung in Ruhe und wirklich auf die Person vor mir abgestimmt stattfindet.",
-      "[Platzhalter — durch Sophies tatsächlichen Werdegang, Ausbildung und Praxisjahre ersetzen.]",
+      "Massagen gehören seit meiner frühen Kindheit zu meinem Leben. Schon als Kind übte ich Bewegungen, um die Rückenschmerzen meiner Angehörigen zu lindern. Das Leben führte mich zunächst auf einen anderen Weg, geprägt von meiner Leidenschaft für Sprachen und Reisen. 2025 beschloss ich, mein langjähriges Interesse an Massagen wieder aufzunehmen, und absolvierte mehrere Ausbildungen in schwedischer und balinesischer Massage.",
+      "Heute freue ich mich, Patient:innen in verschiedenen Sprachen empfangen und ihnen eine Vielzahl traditioneller Massagetechniken näherbringen zu können.",
+      "Beide Leidenschaften verbinden sich und nehmen Sie mit auf eine Reise durch eine der ältesten Traditionen der Welt.",
     ],
     philosophyTitle: "Meine Philosophie",
     philosophyBody:
-      "Ich glaube, eine gute Massage beginnt mit Zuhören. Vor jeder Technik möchte ich verstehen, wie Sie sich fühlen, was Sie beschäftigt, und was Ihnen helfen würde, sich wohler zu fühlen — und passe die Sitzung entsprechend an.",
+      "Ich glaube, eine gute Massage beginnt mit Zuhören. Vor jeder Technik möchte ich verstehen, wie Sie sich fühlen und was Ihnen helfen würde, sich wohler zu fühlen — dann passe ich die Sitzung entsprechend an.\nIch verwende ausschließlich natürliche, pflegende Öle und eine Mischung ätherischer Öle, die sanft zur Haut sind und den Geist beruhigen.",
     qualificationsTitle: "Ausbildung & Qualifikationen",
     qualificationsNote:
       "CIBTAC (The Confederation of International Beauty Therapy and Cosmetology) bildet seit 1977 Absolvent:innen auf höchstem Niveau in Beauty-, Komplementär- und Wellness-Therapien aus.\nVTCT (Vocational Training Charitable Trust) ist eine führende, international anerkannte Zertifizierungsorganisation für Massage- und Komplementärtherapien.",
@@ -201,7 +218,7 @@ const de: Translations = {
       {
         question: "Wie lange dauert eine Sitzung?",
         answer:
-          "Sitzungen dauern je nach gewählter Behandlung in der Regel 35 bis 90 Minuten. Die genauen Zeiten finden Sie auf jeder Behandlungsseite.",
+          "Sitzungen dauern je nach gewählter Behandlung in der Regel 30 bis 75 Minuten. Die genauen Zeiten finden Sie auf jeder Behandlungsseite. Bitte beachten Sie, dass zu jeder Behandlungsdauer zusätzlich 10 bis 15 Minuten für das Vorgespräch und die Nachsorge eingeplant werden müssen.",
       },
       {
         question: "Was soll ich mitbringen?",
@@ -220,21 +237,22 @@ const de: Translations = {
       {
         question: "Wie lautet die Stornierungsrichtlinie?",
         answer:
-          "[Platzhalter — vor Veröffentlichung durch Ihre tatsächliche Stornierungs- und Umbuchungsrichtlinie ersetzen.]",
+          "Sitzungen, die weniger als 24 Stunden im Voraus abgesagt werden, sowie Nichterscheinen müssen vollständig bezahlt werden. Einen Link zur Absage finden Sie in der Bestätigungs-E-Mail. Für Umbuchungen informieren Sie mich bitte direkt.",
       },
       {
         question: "Wo finden die Sitzungen statt?",
         answer:
-          "Die Sitzungen finden in einem privaten Studio in Zürich statt. Die genaue Adresse wird bei der Buchungsbestätigung mitgeteilt.",
+          "Die Sitzungen finden im Gemeinschaftszentrum Glattwiesen in Zürich, Schwamendingen, Kreis 11 statt. Der Ort wird mit wunderbaren Frauen geteilt, die Coaching, Massagen und alternative Therapien anbieten.",
       },
     ],
   },
   contactPage: {
     title: "Kontakt",
     intro:
-      "Eine Frage vor der Buchung, oder Sie möchten uns lieber direkt kontaktieren? So erreichen Sie Voyage Sensoriel.",
+      "Eine Frage vor der Buchung, oder Sie möchten uns lieber direkt kontaktieren? So erreichen Sie Sophie Massage.",
     emailLabel: "E-Mail",
     phoneLabel: "Telefon",
+    whatsappLabel: "Uns auf WhatsApp schreiben",
     addressLabel: "Adresse des Studios",
     areaLabel: "Einzugsgebiet",
     socialLabel: "Folgen Sie uns",
@@ -246,7 +264,7 @@ const de: Translations = {
       "Wählen Sie eine Behandlung und einen passenden Termin. Sie erhalten sofort eine Bestätigung per E-Mail.",
     fallbackText: "Falls der Buchungskalender nicht lädt,",
     fallbackCta: "öffnen Sie die Buchungsseite direkt",
-    contactAlternative: "Sie können uns auch direkt kontaktieren, wenn Sie Ihre Sitzung lieber per E-Mail oder Telefon vereinbaren möchten.",
+    contactAlternative: "Sie können uns auch direkt kontaktieren, wenn Sie Ihre Sitzung lieber per E-Mail oder WhatsApp vereinbaren möchten.",
   },
   footer: {
     description:
@@ -275,7 +293,7 @@ const de: Translations = {
   healthSafetyPage: {
     title: "Gesundheit, Sicherheit & Hygiene",
     intro:
-      "Ihr Wohlbefinden und Ihre Sicherheit stehen an erster Stelle. Hier erfahren Sie mehr über die Hygienepraktiken bei Voyage Sensoriel sowie Situationen, in denen eine Massage möglicherweise nicht geeignet ist.",
+      "Ihr Wohlbefinden und Ihre Sicherheit stehen an erster Stelle. Hier erfahren Sie mehr über die Hygienepraktiken bei Sophie Massage sowie Situationen, in denen eine Massage möglicherweise nicht geeignet ist.",
     hygieneTitle: "Hygienepraktiken",
     hygieneItems: [
       "Frische Wäsche, Handtücher und Abdeckungen werden für jede Sitzung verwendet und dazwischen gewechselt.",

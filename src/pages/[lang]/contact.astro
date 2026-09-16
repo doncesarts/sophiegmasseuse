@@ -5,6 +5,7 @@ import { breadcrumbList } from '../../lib/schema';
 import { siteConfig } from '../../config/site';
 import { locales, type Locale } from '../../i18n/config';
 import { getTranslations } from '../../i18n';
+import WhatsAppLink from '../../components/WhatsAppLink.astro';
 
 export function getStaticPaths() {
   return locales.map((lang) => ({ params: { lang } }));
@@ -45,7 +46,10 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
       </div>
       <div>
         <dt class="font-semibold">{t.contactPage.phoneLabel}</dt>
-        <dd><a href={`tel:${siteConfig.phone.replace(/\s/g, '')}`} class="link link-primary">{siteConfig.phone}</a></dd>
+        <dd class="flex items-center gap-3">
+          <a href={`tel:${siteConfig.phone.replace(/\s/g, '')}`} class="link link-primary">{siteConfig.phone}</a>
+          <WhatsAppLink label={t.contactPage.whatsappLabel} />
+        </dd>
       </div>
       <div>
         <dt class="font-semibold">{t.contactPage.addressLabel}</dt>
@@ -81,6 +85,18 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
         referrerpolicy="no-referrer-when-downgrade"
       ></iframe>
     </div>
+
+<div class="mt-10"></div>
+    <dl class="grid gap-6 sm:grid-cols-2 not-prose">
+      {t.locationSection.transports.map((item) => (
+      <div>   
+          <dt class="font-semibold">{item.title}</dt>
+        <dd class="flex gap-4">{item.description}</dd>
+        
+        </div> 
+    ))}   
+    </dl>
+
 
     <div class="mt-10 rounded-box border border-base-300 p-6 not-prose">
       <p class="mb-4">{t.contactPage.bookAlternative}</p>
