@@ -22,7 +22,8 @@ const fr: Translations = {
     skipToContent: "Aller au contenu",
     languageLabel: "Langue",
     specialOfferBadge: "Offre spéciale",
-    specialOfferNotice: "Offre spéciale — formules et tarifs sujets à modification",
+    specialOfferNotice:
+      "Offre spéciale — formules et tarifs sujets à modification",
   },
   seo: {
     home: {
@@ -91,7 +92,8 @@ const fr: Translations = {
   },
   benefits: {
     title: "Pourquoi choisir notre cabinet",
-    subtitle: "Un cabinet construit autour de l'attention, de la régularité et du calme.",
+    subtitle:
+      "Un cabinet construit autour de l'attention, de la régularité et du calme.",
     items: [
       {
         title: "Un voyage pour les sens",
@@ -123,12 +125,14 @@ const fr: Translations = {
   },
   testimonialsSection: {
     title: "Ce que disent les clients",
-    subtitle: "Quelques mots de personnes qui viennent régulièrement à Sophie Massage.",
+    subtitle:
+      "Quelques mots de personnes qui viennent régulièrement à Sophie Massage.",
     googleCta: "sur Google",
   },
   gallery: {
     title: "Dans le studio",
-    subtitle: "Un aperçu de l'espace calme et chaleureux où se déroule chaque séance.",
+    subtitle:
+      "Un aperçu de l'espace calme et chaleureux où se déroule chaque séance.",
   },
   locationSection: {
     title: "Où nous trouver",
@@ -146,8 +150,7 @@ const fr: Translations = {
       },
       {
         title: "À votre arrivée",
-        description:
-          "Merci de sonner chez « Räume Glattwiesen ». 1er étage.",
+        description: "Merci de sonner chez « Räume Glattwiesen ». 1er étage.",
       },
     ],
     cta: "Nous contacter",
@@ -164,7 +167,8 @@ const fr: Translations = {
   },
   serviceDetail: {
     optionsTitle: "Formules et tarifs",
-    specialOfferNotice: "Ces formules et tarifs actuels font partie d'une offre spéciale de lancement et sont susceptibles d'évoluer à l'avenir.",
+    specialOfferNotice:
+      "Ces formules et tarifs actuels font partie d'une offre spéciale de lancement et sont susceptibles d'évoluer à l'avenir.",
     bookOptionTitle: "Réserver cette formule en ligne",
     suitableForTitle: "Recommandé pour",
     whatToExpectTitle: "À quoi s'attendre",
@@ -178,7 +182,8 @@ const fr: Translations = {
     ],
     relatedTitle: "Vous aimerez aussi",
     ctaTitle: "Prêt·e à réserver ce massage ?",
-    ctaBody: "Réservez le créneau de votre choix en ligne — cela ne prend qu'une minute.",
+    ctaBody:
+      "Réservez le créneau de votre choix en ligne — cela ne prend qu'une minute.",
   },
   about: {
     title: "À propos de Sophie Goupil",
@@ -222,7 +227,8 @@ const fr: Translations = {
       },
       {
         question: "Que dois-je apporter ?",
-        answer: "Rien de particulier. Serviettes et tout le nécessaire sont fournis sur place.",
+        answer:
+          "Rien de particulier. Serviettes et tout le nécessaire sont fournis sur place.",
       },
       {
         question: "Que dois-je porter ?",
@@ -264,7 +270,8 @@ const fr: Translations = {
       "Choisissez un soin et un horaire qui vous conviennent. Vous recevrez une confirmation immédiate par email.",
     fallbackText: "Si le calendrier de réservation ne s'affiche pas,",
     fallbackCta: "ouvrez directement la page de réservation",
-    contactAlternative: "Vous pouvez aussi nous contacter directement si vous préférez organiser votre séance par email ou WhatsApp.",
+    contactAlternative:
+      "Vous pouvez aussi nous contacter directement si vous préférez organiser votre séance par email ou WhatsApp.",
   },
   footer: {
     description:

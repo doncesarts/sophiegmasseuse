@@ -7,7 +7,10 @@ export interface DiscountedPrice {
   discountPercent?: number;
 }
 
-export function getDiscountedPrice(price: number, discountPercent?: number): DiscountedPrice {
+export function getDiscountedPrice(
+  price: number,
+  discountPercent?: number,
+): DiscountedPrice {
   if (!discountPercent) {
     return { normalPrice: price, finalPrice: price };
   }

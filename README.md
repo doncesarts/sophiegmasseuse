@@ -44,13 +44,13 @@ src/
 
 ## Commands
 
-| Command           | Action                                       |
-| ------------------ | -------------------------------------------- |
-| `npm install`       | Install dependencies                         |
-| `npm run dev`       | Start the local dev server at `localhost:4321` |
-| `npm run build`     | Build the production site to `./dist/`       |
-| `npm run preview`   | Preview the production build locally         |
-| `npm run check`     | Run the Astro type checker                   |
+| Command           | Action                                         |
+| ----------------- | ---------------------------------------------- |
+| `npm install`     | Install dependencies                           |
+| `npm run dev`     | Start the local dev server at `localhost:4321` |
+| `npm run build`   | Build the production site to `./dist/`         |
+| `npm run preview` | Preview the production build locally           |
+| `npm run check`   | Run the Astro type checker                     |
 
 ## Deploying to Cloudflare Pages
 
@@ -143,11 +143,11 @@ be understood correctly by AI assistants. Tracked here until each is resolved.
   - Re-run `npm run build` and re-check canonical/OG/hreflang tags on a few
     pages before deploying.
 - [ ] **Real phone number** — replace the `+41 77 804 44 52` placeholder in
-  [`src/config/site.ts`](./src/config/site.ts) (`phone`). Required for the
-  `LocalBusiness` JSON-LD and for Google Business Profile matching (NAP
-  consistency).
+      [`src/config/site.ts`](./src/config/site.ts) (`phone`). Required for the
+      `LocalBusiness` JSON-LD and for Google Business Profile matching (NAP
+      consistency).
 - [ ] **Google Business Profile** — create/claim a listing once the business
-  name, address and phone number are final:
+      name, address and phone number are final:
   - Category: "Massage therapist" (or closest local equivalent).
   - Add real photos, real opening hours, and the Balinese/Swedish massage
     services with prices.
@@ -157,23 +157,21 @@ be understood correctly by AI assistants. Tracked here until each is resolved.
   - Encourage clients to leave Google reviews (reviews are one of the
     strongest local-pack ranking factors).
 - [ ] **Google reviews (feature-flagged, off by default)** — once the Google
-  Business Profile is verified and has real reviews, enable the on-site
-  reviews badge and `AggregateRating` schema by setting `reviews.enabled: true`
-  and filling in `rating`, `count` and `url` in
-  [`src/config/site.ts`](./src/config/site.ts). No other code changes needed —
-  see [`GoogleReviews.astro`](./src/components/GoogleReviews.astro).
+      Business Profile is verified and has real reviews, enable the on-site
+      reviews badge and `AggregateRating` schema by setting `reviews.enabled: true`
+      and filling in `rating`, `count` and `url` in
+      [`src/config/site.ts`](./src/config/site.ts). No other code changes needed —
+      see [`GoogleReviews.astro`](./src/components/GoogleReviews.astro).
 - [ ] Confirm the final public-facing business name (site currently shows
-  "Sophie Massage", but the repo/package is named "maison-serein") — use the
-  exact same name everywhere: site, Google Business Profile, social profiles,
-  directory listings.
+      "Sophie Massage", but the repo/package is named "maison-serein") — use the
+      exact same name everywhere: site, Google Business Profile, social profiles,
+      directory listings.
 - [ ] Once the domain is live, submit the sitemap in Google Search Console and
-  Bing Webmaster Tools, and verify ownership.
+      Bing Webmaster Tools, and verify ownership.
 
 ## License
 
 MIT — see [LICENSE](./LICENSE). Original template © anastasiiaxfr
 ([HealNet](https://github.com/anastasiiaxfr/HealNet)).
-
-
 
 Update https://maison-serein.example with real information.

@@ -7,9 +7,9 @@ export interface BreadcrumbItem {
 
 export function breadcrumbList(items: BreadcrumbItem[]) {
   return {
-    '@type': 'BreadcrumbList',
+    "@type": "BreadcrumbList",
     itemListElement: items.map((item, index) => ({
-      '@type': 'ListItem',
+      "@type": "ListItem",
       position: index + 1,
       name: item.name,
       item: item.url,

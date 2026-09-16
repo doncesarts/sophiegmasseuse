@@ -23,7 +23,10 @@ const services = defineCollection({
     title: z.string(),
     shortDescription: z.string().optional(),
     duration: z.number().describe("Duration in minutes").optional(),
-    price: z.number().describe("Regular price in the local currency").optional(),
+    price: z
+      .number()
+      .describe("Regular price in the local currency")
+      .optional(),
     /** Optional discount applied to `price`; omit to show the regular price with no offer. */
     discountPercent: z.number().min(0).max(100).optional(),
     currency: z.string().default("CHF"),
@@ -41,7 +44,10 @@ const services = defineCollection({
 // Testimonials are similarly organised by locale so quotes read naturally in
 // each language rather than being machine translated at render time.
 const testimonials = defineCollection({
-  loader: glob({ base: "./src/content/testimonials", pattern: "**/*.{md,mdx}" }),
+  loader: glob({
+    base: "./src/content/testimonials",
+    pattern: "**/*.{md,mdx}",
+  }),
   schema: z.object({
     lang: z.enum(["en", "fr", "de"]),
     name: z.string(),

@@ -22,7 +22,8 @@ const en: Translations = {
     skipToContent: "Skip to content",
     languageLabel: "Language",
     specialOfferBadge: "Special offer",
-    specialOfferNotice: "Special offer — options and prices subject to future change",
+    specialOfferNotice:
+      "Special offer — options and prices subject to future change",
   },
   seo: {
     home: {
@@ -128,7 +129,8 @@ const en: Translations = {
   },
   gallery: {
     title: "Inside the studio",
-    subtitle: "A glimpse of the calm, warm space where every session takes place.",
+    subtitle:
+      "A glimpse of the calm, warm space where every session takes place.",
   },
   locationSection: {
     title: "Where to find us",
@@ -141,7 +143,8 @@ const en: Translations = {
       },
       {
         title: "By car",
-        description: "Client's parking spot No. 11. GPS navigation: Winterthurerstrasse 650, 8051 Zurich. Blue on-street parking spots on Glattwiesenstrasse also available.",
+        description:
+          "Client's parking spot No. 11. GPS navigation: Winterthurerstrasse 650, 8051 Zurich. Blue on-street parking spots on Glattwiesenstrasse also available.",
       },
       {
         title: "When you arrive",
@@ -162,7 +165,8 @@ const en: Translations = {
   },
   serviceDetail: {
     optionsTitle: "Options & Pricing",
-    specialOfferNotice: "These options and prices are part of a special introductory offer and are subject to future change.",
+    specialOfferNotice:
+      "These options and prices are part of a special introductory offer and are subject to future change.",
     bookOptionTitle: "Book this option online",
     suitableForTitle: "Suitable for",
     whatToExpectTitle: "What to expect",
@@ -180,15 +184,16 @@ const en: Translations = {
   },
   about: {
     title: "About Sophie Goupil",
-    intro:
-      "Independent massage therapist based in Zurich.",
+    intro: "Independent massage therapist based in Zurich.",
     biographyTitle: "My story",
     biography: [
-      "Massages have been part of my life from a very young age. As a child, I was already practicing some movements to relieve my relatives' back pain. Life led me down a different path, one driven by another passion: the passion for languages and travels. In 2025, I decided to reconnect with my long-standing interest in massage, so I undertook several training courses in Swedish and Balinese massage.", "Today I am delighted to be able to welcome patients in different languages and introduce them to a variety of traditional massage techniques.",
+      "Massages have been part of my life from a very young age. As a child, I was already practicing some movements to relieve my relatives' back pain. Life led me down a different path, one driven by another passion: the passion for languages and travels. In 2025, I decided to reconnect with my long-standing interest in massage, so I undertook several training courses in Swedish and Balinese massage.",
+      "Today I am delighted to be able to welcome patients in different languages and introduce them to a variety of traditional massage techniques.",
       "Both passions combine to bring you on a journey through one of the world's oldest traditions.",
     ],
     philosophyTitle: "My philosophy",
-    philosophyBody: "I believe good massage starts with listening. Before any technique, I want to understand how you feel, and what would help you feel more at ease — then I adapt the session accordingly. \nI only use natural nourishing oils and a blend of essential oils that are gentle on the skin and sooze the mind.",
+    philosophyBody:
+      "I believe good massage starts with listening. Before any technique, I want to understand how you feel, and what would help you feel more at ease — then I adapt the session accordingly. \nI only use natural nourishing oils and a blend of essential oils that are gentle on the skin and sooze the mind.",
     qualificationsTitle: "Training & qualifications",
     qualificationsNote:
       "CIBTAC (The Confederation of International Beauty Therapy and Cosmetology) has been producing beauty, complementary & spa therapy graduates of the highest calibre since 1977.\nVTCT (Vocational Training Charitable Trust) is a leading specialist awarding organisation offering internationally recognized qualifications in massage and complementary therapies.",
@@ -261,7 +266,8 @@ const en: Translations = {
       "Choose a treatment and a time that suits you. You'll receive an instant email confirmation.",
     fallbackText: "If the booking calendar doesn't load,",
     fallbackCta: "open the booking page directly",
-    contactAlternative: "You can also reach out directly if you'd prefer to arrange your session by email or WhatsApp",
+    contactAlternative:
+      "You can also reach out directly if you'd prefer to arrange your session by email or WhatsApp",
   },
   footer: {
     description:

@@ -57,7 +57,8 @@ const de: Translations = {
     },
     privacy: {
       title: "Datenschutzerklärung — Sophie Massage",
-      description: "Wie Sophie Massage mit Ihren personenbezogenen Daten umgeht.",
+      description:
+        "Wie Sophie Massage mit Ihren personenbezogenen Daten umgeht.",
     },
     legal: {
       title: "Impressum — Sophie Massage",
@@ -91,7 +92,8 @@ const de: Translations = {
   },
   benefits: {
     title: "Warum Kund:innen uns wählen",
-    subtitle: "Eine Praxis, die auf Aufmerksamkeit, Beständigkeit und Ruhe aufbaut.",
+    subtitle:
+      "Eine Praxis, die auf Aufmerksamkeit, Beständigkeit und Ruhe aufbaut.",
     items: [
       {
         title: "Eine Reise für die Sinne",
@@ -123,12 +125,14 @@ const de: Translations = {
   },
   testimonialsSection: {
     title: "Was Kund:innen sagen",
-    subtitle: "Ein paar Worte von Menschen, die Sophie Massage regelmäßig besuchen.",
+    subtitle:
+      "Ein paar Worte von Menschen, die Sophie Massage regelmäßig besuchen.",
     googleCta: "auf Google",
   },
   gallery: {
     title: "Ein Blick ins Studio",
-    subtitle: "Ein Einblick in den ruhigen, warmen Raum, in dem jede Sitzung stattfindet.",
+    subtitle:
+      "Ein Einblick in den ruhigen, warmen Raum, in dem jede Sitzung stattfindet.",
   },
   locationSection: {
     title: "Wo Sie uns finden",
@@ -146,8 +150,7 @@ const de: Translations = {
       },
       {
         title: "Bei Ihrer Ankunft",
-        description:
-          "Bitte bei „Räume Glattwiesen“ klingeln. 1. Stock.",
+        description: "Bitte bei „Räume Glattwiesen“ klingeln. 1. Stock.",
       },
     ],
     cta: "Kontakt aufnehmen",
@@ -164,7 +167,8 @@ const de: Translations = {
   },
   serviceDetail: {
     optionsTitle: "Optionen & Preise",
-    specialOfferNotice: "Diese aktuellen Optionen und Preise sind Teil eines speziellen Einführungsangebots und können sich in Zukunft ändern.",
+    specialOfferNotice:
+      "Diese aktuellen Optionen und Preise sind Teil eines speziellen Einführungsangebots und können sich in Zukunft ändern.",
     bookOptionTitle: "Diese Option online buchen",
     suitableForTitle: "Geeignet für",
     whatToExpectTitle: "Was Sie erwartet",
@@ -178,7 +182,8 @@ const de: Translations = {
     ],
     relatedTitle: "Das könnte Ihnen auch gefallen",
     ctaTitle: "Bereit, diese Massage zu buchen?",
-    ctaBody: "Reservieren Sie Ihren Wunschtermin online — das dauert nur eine Minute.",
+    ctaBody:
+      "Reservieren Sie Ihren Wunschtermin online — das dauert nur eine Minute.",
   },
   about: {
     title: "Über Sophie Goupil",
@@ -264,7 +269,8 @@ const de: Translations = {
       "Wählen Sie eine Behandlung und einen passenden Termin. Sie erhalten sofort eine Bestätigung per E-Mail.",
     fallbackText: "Falls der Buchungskalender nicht lädt,",
     fallbackCta: "öffnen Sie die Buchungsseite direkt",
-    contactAlternative: "Sie können uns auch direkt kontaktieren, wenn Sie Ihre Sitzung lieber per E-Mail oder WhatsApp vereinbaren möchten.",
+    contactAlternative:
+      "Sie können uns auch direkt kontaktieren, wenn Sie Ihre Sitzung lieber per E-Mail oder WhatsApp vereinbaren möchten.",
   },
   footer: {
     description:
