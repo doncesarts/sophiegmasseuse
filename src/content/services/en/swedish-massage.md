@@ -6,14 +6,17 @@ currency: "CHF"
 options:
   - description: "Back and neck"
     duration: 30
-    price: 50
+    price: 60
+    discountPercent: 17
   - description: "Full body"
     duration: 60
-    price: 90
+    price: 110
+    discountPercent: 18
   - description: "Full body incl. face and head"
     duration: 75
-    price: 100
-image: "/images/placeholders/service-swedish-massage.svg"
+    price: 130
+    discountPercent: 20
+image: "/images/pexels/service-swedish-massage.jpg"
 imageAlt: "Swedish massage treatment at Voyage Sensoriel in Zurich"
 featured: true
 order: 1

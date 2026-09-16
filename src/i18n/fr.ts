@@ -149,6 +149,7 @@ const fr: Translations = {
   serviceDetail: {
     optionsTitle: "Formules et tarifs",
     specialOfferNotice: "Ces formules et tarifs actuels font partie d'une offre spéciale de lancement et sont susceptibles d'évoluer à l'avenir.",
+    bookOptionTitle: "Réserver cette formule en ligne",
     suitableForTitle: "Recommandé pour",
     whatToExpectTitle: "À quoi s'attendre",
     aftercareTitle: "Après votre séance",

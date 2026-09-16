@@ -1,10 +1,12 @@
 ---
 import type { Translations } from '../i18n/types';
+import { getDiscountedPrice } from '../lib/pricing';
 
 interface ServiceOption {
   description: string;
   duration: number;
   price: number;
+  discountPercent?: number;
 }
 
 interface Props {
@@ -12,6 +14,7 @@ interface Props {
   shortDescription?: string;
   duration?: number;
   price?: number;
+  discountPercent?: number;
   currency?: string;
   options?: ServiceOption[];
   image: string;
@@ -25,6 +28,7 @@ const {
   shortDescription,
   duration,
   price,
+  discountPercent,
   currency = 'CHF',
   options = [],
   image,
@@ -32,6 +36,8 @@ const {
   href,
   t,
 } = Astro.props;
+
+const pricing = price !== undefined ? getDiscountedPrice(price, discountPercent) : undefined;
 ---
 
 <article class="flex flex-col rounded-box border border-base-300 bg-base-100 overflow-hidden">
@@ -46,14 +52,26 @@ const {
     {options && options.length > 0 ? (
       <div class="flex flex-col flex-1 gap-2 my-1">
         <ul class="flex flex-col gap-2 flex-1">
-          {options.map((option) => (
-            <li class="flex items-baseline justify-between text-sm gap-2 border-b border-base-200 pb-1.5 last:border-b-0 last:pb-0">
-              <span class="text-base-content/90 font-medium">{option.description}</span>
-              <span class="text-base-content/70 text-xs sm:text-sm whitespace-nowrap">
-                {option.duration} {t.common.minutesShort} {option.price} {currency}
-              </span>
-            </li>
-          ))}
+          {options.map((option) => {
+            const optionPricing = getDiscountedPrice(option.price, option.discountPercent);
+            return (
+              <li class="flex items-baseline justify-between text-sm gap-2 border-b border-base-200 pb-1.5 last:border-b-0 last:pb-0">
+                <span class="text-base-content/90 font-medium">{option.description}</span>
+                <span class="text-base-content/70 text-xs sm:text-sm whitespace-nowrap flex items-baseline gap-1">
+                  <span>{option.duration} {t.common.minutesShort}</span>
+                  {optionPricing.discountPercent ? (
+                    <>
+                      <del class="text-base-content/40">{optionPricing.normalPrice} {currency}</del>
+                      <span class="badge badge-secondary badge-xs">-{optionPricing.discountPercent}%</span>
+                      <span class="font-semibold text-base-content">{optionPricing.finalPrice} {currency}</span>
+                    </>
+                  ) : (
+                    <span>{optionPricing.finalPrice} {currency}</span>
+                  )}
+                </span>
+              </li>
+            );
+          })}
         </ul>
         <p class="text-[11px] leading-tight text-base-content/60 italic mt-auto pt-1">
           * {t.common.specialOfferNotice}
@@ -62,7 +80,20 @@ const {
     ) : (
       <div class="flex items-center justify-between text-sm text-base-content/70 mt-auto">
         {duration && <span>{duration} {t.common.minutesShort}</span>}
-        {price && <span>{t.common.from} {price} {currency}</span>}
+        {pricing && (
+          <span class="flex items-baseline gap-1">
+            <span>{t.common.from}</span>
+            {pricing.discountPercent ? (
+              <>
+                <del class="text-base-content/40">{pricing.normalPrice} {currency}</del>
+                <span class="badge badge-secondary badge-xs">-{pricing.discountPercent}%</span>
+                <span class="font-semibold text-base-content">{pricing.finalPrice} {currency}</span>
+              </>
+            ) : (
+              <span>{pricing.finalPrice} {currency}</span>
+            )}
+          </span>
+        )}
       </div>
     )}
     <a href={href} class="btn btn-outline btn-primary rounded-field mt-auto">{t.common.viewService}</a>

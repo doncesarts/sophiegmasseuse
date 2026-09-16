@@ -7,10 +7,14 @@ options:
   - description: "Rücken und Nacken"
     duration: 30
     price: 50
+    discountPercent: 20
+    calLink: "sophiegmassage/balinese30min"
   - description: "Ganzkörper inkl. Gesicht und Kopf"
     duration: 60
     price: 90
-image: "/images/placeholders/service-balinese-massage.svg"
+    discountPercent: 20
+    calLink: "sophiegmassage/balinese-massage-full-body-60-minutes"
+image: "/images/pexels/service-balinese-massage.jpg"
 imageAlt: "Balinesische Massage bei Voyage Sensoriel in Zürich"
 featured: true
 order: 2

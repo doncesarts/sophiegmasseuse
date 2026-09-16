@@ -7,13 +7,16 @@ options:
   - description: "Dos et nuque"
     duration: 30
     price: 50
+    discountPercent: 20
   - description: "Corps entier"
     duration: 60
     price: 90
+    discountPercent: 20
   - description: "Corps entier avec visage et tête"
     duration: 75
     price: 100
-image: "/images/placeholders/service-swedish-massage.svg"
+    discountPercent: 20
+image: "/images/pexels/service-swedish-massage.jpg"
 imageAlt: "Massage suédois chez Voyage Sensoriel à Zurich"
 featured: true
 order: 1

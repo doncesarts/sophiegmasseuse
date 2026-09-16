@@ -7,10 +7,14 @@ options:
   - description: "Dos et nuque"
     duration: 30
     price: 50
+    discountPercent: 20
+    calLink: "sophiegmassage/balinese30min"
   - description: "Corps entier avec visage et tête"
     duration: 60
     price: 90
-image: "/images/placeholders/service-balinese-massage.svg"
+    discountPercent: 20
+    calLink: "sophiegmassage/balinese-massage-full-body-60-minutes"
+image: "/images/pexels/service-balinese-massage.jpg"
 imageAlt: "Massage balinais chez Voyage Sensoriel à Zurich"
 featured: true
 order: 2

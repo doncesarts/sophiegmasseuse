@@ -7,13 +7,16 @@ options:
   - description: "Rücken und Nacken"
     duration: 30
     price: 50
+    discountPercent: 20
   - description: "Ganzkörper"
     duration: 60
     price: 90
+    discountPercent: 20
   - description: "Ganzkörper inkl. Gesicht und Kopf"
     duration: 75
     price: 100
-image: "/images/placeholders/service-swedish-massage.svg"
+    discountPercent: 20
+image: "/images/pexels/service-swedish-massage.jpg"
 imageAlt: "Schwedische Massage bei Voyage Sensoriel in Zürich"
 featured: true
 order: 1

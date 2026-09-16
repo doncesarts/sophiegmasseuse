@@ -149,6 +149,7 @@ const de: Translations = {
   serviceDetail: {
     optionsTitle: "Optionen & Preise",
     specialOfferNotice: "Diese aktuellen Optionen und Preise sind Teil eines speziellen Einführungsangebots und können sich in Zukunft ändern.",
+    bookOptionTitle: "Diese Option online buchen",
     suitableForTitle: "Geeignet für",
     whatToExpectTitle: "Was Sie erwartet",
     aftercareTitle: "Nach Ihrer Sitzung",

@@ -6,11 +6,15 @@ currency: "CHF"
 options:
   - description: "Back and neck"
     duration: 30
-    price: 50
+    price: 60
+    discountPercent: 17
+    calLink: "sophiegmassage/balinese30min"
   - description: "Full body incl. face and head"
     duration: 60
-    price: 90
-image: "/images/placeholders/service-balinese-massage.svg"
+    price: 110
+    discountPercent: 18
+    calLink: "sophiegmassage/balinese-massage-full-body-60-minutes"
+image: "/images/pexels/service-balinese-massage.jpg"
 imageAlt: "Balinese massage treatment at Voyage Sensoriel in Zurich"
 featured: true
 order: 2

@@ -1,8 +1,10 @@
 ---
 import MainLayout from '../../../layouts/MainLayout.astro';
 import ServiceCard from '../../../components/ServiceCard.astro';
+import CalInlineEmbed from '../../../components/CalInlineEmbed.astro';
 import Breadcrumbs from '../../../components/Breadcrumbs.astro';
 import { breadcrumbList } from '../../../lib/schema';
+import { getDiscountedPrice } from '../../../lib/pricing';
 import { siteConfig } from '../../../config/site';
 import { getCollection, render, type CollectionEntry } from 'astro:content';
 import { defaultLocale, type Locale } from '../../../i18n/config';
@@ -45,11 +47,15 @@ const offers = (entry.data.options.length > 0
   ? entry.data.options.map((opt) => ({
       '@type': 'Offer',
       name: opt.description,
-      price: opt.price,
+      price: getDiscountedPrice(opt.price, opt.discountPercent).finalPrice,
       priceCurrency: entry.data.currency,
     }))
   : entry.data.price
-    ? [{ '@type': 'Offer', price: entry.data.price, priceCurrency: entry.data.currency }]
+    ? [{
+        '@type': 'Offer',
+        price: getDiscountedPrice(entry.data.price, entry.data.discountPercent).finalPrice,
+        priceCurrency: entry.data.currency,
+      }]
     : []);
 
 const serviceSchema = {
@@ -88,23 +94,70 @@ const serviceSchema = {
           <span class="badge badge-secondary badge-outline text-xs font-medium">{t.common.specialOfferBadge}</span>
         </div>
         <ul class="divide-y divide-base-300/60">
-          {entry.data.options.map((opt) => (
-            <li class="py-2.5 flex justify-between items-center text-sm">
-              <span class="font-medium text-base-content/90">{opt.description}</span>
-              <span class="text-base-content/80 font-semibold">
-                {opt.duration} {t.common.minutesShort} &bull; {opt.price} {entry.data.currency}
-              </span>
-            </li>
-          ))}
+          {entry.data.options.map((opt) => {
+            const optionPricing = getDiscountedPrice(opt.price, opt.discountPercent);
+            const priceRow = (
+              <>
+                <span class="font-medium text-base-content/90">{opt.description}</span>
+                <span class="text-base-content/80 font-semibold flex items-baseline gap-1.5">
+                  <span class="font-normal text-base-content/70">{opt.duration} {t.common.minutesShort}</span>
+                  {optionPricing.discountPercent ? (
+                    <>
+                      <del class="font-normal text-base-content/40">{optionPricing.normalPrice} {entry.data.currency}</del>
+                      <span class="badge badge-secondary badge-sm">-{optionPricing.discountPercent}%</span>
+                      <span>{optionPricing.finalPrice} {entry.data.currency}</span>
+                    </>
+                  ) : (
+                    <span>{optionPricing.finalPrice} {entry.data.currency}</span>
+                  )}
+                  {opt.calLink && (
+                    <span class="link link-primary font-medium whitespace-nowrap">{t.common.bookNow}</span>
+                  )}
+                </span>
+              </>
+            );
+            return (
+              <li class="text-sm">
+                {opt.calLink ? (
+                  <CalInlineEmbed
+                    calLink={opt.calLink}
+                    ariaLabel={`${t.serviceDetail.bookOptionTitle} — ${opt.description}`}
+                    class="py-2.5"
+                    summaryClass="flex justify-between items-center w-full gap-2"
+                  >
+                    {priceRow}
+                  </CalInlineEmbed>
+                ) : (
+                  <div class="py-2.5 flex justify-between items-center">{priceRow}</div>
+                )}
+              </li>
+            );
+          })}
         </ul>
         <p class="text-xs text-base-content/60 italic mt-4 pt-2 border-t border-base-300/40">
           * {t.serviceDetail.specialOfferNotice}
         </p>
       </div>
     ) : (
-      <div class="flex gap-6 text-base-content/70 mb-6 not-prose">
+      <div class="flex gap-6 text-base-content/70 mb-6 not-prose items-baseline">
         {entry.data.duration && <span>{entry.data.duration} {t.common.minutesShort}</span>}
-        {entry.data.price && <span>{t.common.from} {entry.data.price} {entry.data.currency}</span>}
+        {entry.data.price !== undefined && (() => {
+          const detailPricing = getDiscountedPrice(entry.data.price, entry.data.discountPercent);
+          return (
+            <span class="flex items-baseline gap-1.5">
+              <span>{t.common.from}</span>
+              {detailPricing.discountPercent ? (
+                <>
+                  <del class="text-base-content/40">{detailPricing.normalPrice} {entry.data.currency}</del>
+                  <span class="badge badge-secondary badge-sm">-{detailPricing.discountPercent}%</span>
+                  <span class="font-semibold text-base-content">{detailPricing.finalPrice} {entry.data.currency}</span>
+                </>
+              ) : (
+                <span>{detailPricing.finalPrice} {entry.data.currency}</span>
+              )}
+            </span>
+          );
+        })()}
       </div>
     )}
 
@@ -150,6 +203,7 @@ const serviceSchema = {
             shortDescription={r.data.shortDescription}
             duration={r.data.duration}
             price={r.data.price}
+            discountPercent={r.data.discountPercent}
             currency={r.data.currency}
             options={r.data.options}
             image={r.data.image}

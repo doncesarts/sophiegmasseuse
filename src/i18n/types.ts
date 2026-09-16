@@ -103,6 +103,7 @@ export interface Translations {
   serviceDetail: {
     optionsTitle: string;
     specialOfferNotice: string;
+    bookOptionTitle: string;
     suitableForTitle: string;
     whatToExpectTitle: string;
     aftercareTitle: string;

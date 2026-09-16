@@ -9,7 +9,11 @@ import { z } from "astro/zod";
 const serviceOption = z.object({
   description: z.string(),
   duration: z.number().describe("Duration in minutes"),
-  price: z.number().describe("Price in local currency"),
+  price: z.number().describe("Regular price in local currency"),
+  /** Optional discount applied to `price`; omit to show the regular price with no offer. */
+  discountPercent: z.number().min(0).max(100).optional(),
+  /** Optional Cal.com event link (e.g. "handle/event-slug") to embed an inline booking calendar for this option. */
+  calLink: z.string().optional(),
 });
 
 const services = defineCollection({
@@ -19,7 +23,9 @@ const services = defineCollection({
     title: z.string(),
     shortDescription: z.string().optional(),
     duration: z.number().describe("Duration in minutes").optional(),
-    price: z.number().describe("Price in the local currency").optional(),
+    price: z.number().describe("Regular price in the local currency").optional(),
+    /** Optional discount applied to `price`; omit to show the regular price with no offer. */
+    discountPercent: z.number().min(0).max(100).optional(),
     currency: z.string().default("CHF"),
     options: z.array(serviceOption).default([]),
     /** Path to an image under /public, kept as a plain string to avoid requiring real photography. */
