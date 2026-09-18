@@ -27,7 +27,7 @@ src/
 │   └── homepage/       Homepage section components
 ├── config/
 │   ├── site.ts          Central brand/business configuration
-│   └── calcom.ts        Cal.com URL (reads PUBLIC_CALCOM_URL)
+│   └── calcom.ts        Centralized Cal.com booking URL
 ├── content/
 │   ├── services/{en,fr,de}/   Treatment data (slug, price, duration, ...)
 │   └── testimonials/{en,fr,de}/
@@ -69,10 +69,7 @@ Before the first deployment:
 3. In the GitHub repository, add these **Actions secrets**:
    - `CLOUDFLARE_API_TOKEN`: the Cloudflare API token.
    - `CLOUDFLARE_ACCOUNT_ID`: the account ID from the Cloudflare dashboard.
-4. Add `PUBLIC_CALCOM_URL` as a GitHub **Actions variable** with the public
-   Cal.com booking URL. It is a variable, not a secret, because it is embedded
-   in the website's client-visible HTML.
-5. After the first successful deployment, set the real `pages.dev` or custom
+4. After the first successful deployment, set the real `pages.dev` or custom
    domain URL as `site` in [`astro.config.mjs`](./astro.config.mjs). This keeps
    the sitemap URLs correct.
 
@@ -93,13 +90,11 @@ properties there to restyle the whole site.
 
 ## Configuring Cal.com booking
 
-1. Copy `.env.example` to `.env`.
-2. Set `PUBLIC_CALCOM_URL` to your Cal.com booking link, e.g.
-   `https://cal.com/your-handle/session`.
-3. The `/book` page and the `BookingEmbed` component
+Set `bookingUrl` in [`src/config/site.ts`](./src/config/site.ts) to your public
+Cal.com booking link, e.g. `https://cal.com/your-handle/session`. The `/book`
+page and the `BookingEmbed` component
    ([`src/components/BookingEmbed.astro`](./src/components/BookingEmbed.astro))
-   automatically use this URL. No other file needs to change, and no secrets
-   are exposed client-side (only a public booking URL is embedded).
+automatically use this URL.
 
 ## Adding or editing services
 
@@ -128,7 +123,8 @@ for every locale in `locales`.
 - Replace the cancellation policy placeholder in the FAQ section.
 - Replace the legal notice and privacy policy placeholder text.
 - Set real contact details, address, and social links in `src/config/site.ts`.
-- Set `PUBLIC_CALCOM_URL` to a real Cal.com booking link.
+- Set `bookingUrl` in [`src/config/site.ts`](./src/config/site.ts) to a real
+   Cal.com booking link.
 - Update `site` in `astro.config.mjs` to the real production domain.
 
 ## SEO & local search launch checklist

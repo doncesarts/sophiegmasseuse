@@ -17,7 +17,7 @@ export interface SiteConfig {
   city: string;
   /** Human readable service area, e.g. "Zurich and surrounding area". */
   serviceArea: string;
-  /** External booking URL fallback (the actual embed uses PUBLIC_CALCOM_URL). */
+  /** Public booking URL used by the booking embed and fallback link. */
   bookingUrl: string;
   instagramUrl?: string;
   facebookUrl?: string;
@@ -69,7 +69,7 @@ export const siteConfig: SiteConfig = {
     "Gemeinschaftsräume Glattwiesen, Glattwiesenstrasse 213, 8051 Zurich",
   city: "Switzerland",
   serviceArea: "Zurich 11",
-  bookingUrl: "https://cal.com/example",
+  bookingUrl: "https://cal.com/sophiegmassage",
   instagramUrl: "",
   facebookUrl: "https://facebook.com/SophieMassageZurich",
   googleMapsUrl: "https://maps.app.goo.gl/mPGLm1mTLfZudURg8",
