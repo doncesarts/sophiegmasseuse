@@ -16,5 +16,10 @@ const t = getTranslations(locale);
   <article class="page section container max-w-3xl">
     <h1>{t.legalPage.title}</h1>
     {t.legalPage.body.map((paragraph) => <p>{paragraph}</p>)}
+    <p>
+      {t.legalPage.developerCredit.label}: <a href={t.legalPage.developerCredit.url} rel="noopener noreferrer" target="_blank">
+        {t.legalPage.developerCredit.url}
+      </a>
+    </p>
   </article>
 </MainLayout>

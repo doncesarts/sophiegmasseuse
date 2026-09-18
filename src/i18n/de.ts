@@ -287,8 +287,15 @@ const de: Translations = {
   legalPage: {
     title: "Impressum",
     body: [
-      "[Platzhalter-Impressum — vor Veröffentlichung durch den tatsächlichen Firmennamen, Registrierungsangaben und alle gesetzlich vorgeschriebenen Angaben ersetzen.]",
+      "Sophie Massage wird von Sophie Goupil als Privatperson betrieben.",
+      "Adresse: Glattwiesenstrasse 213, 8051 Zürich, Schweiz.",
+      "E-Mail: sophie.g.massage@gmail.com | Telefon: +41 77 804 44 52",
+      "Sophie Massage ist nicht im Handelsregister eingetragen und nicht mehrwertsteuerpflichtig registriert.",
     ],
+    developerCredit: {
+      label: "Webentwicklung durch 0xLSD / Lopez Software Development",
+      url: "https://0xlopezsd.github.io/",
+    },
   },
   privacyPage: {
     title: "Datenschutzerklärung",

@@ -284,8 +284,15 @@ const en: Translations = {
   legalPage: {
     title: "Legal notice",
     body: [
-      "[Placeholder legal notice / imprint. Replace with the business's real legal name, registration details, and any information required by local law before publishing.]",
+      "Sophie Massage is operated by Sophie Goupil as a private individual.",
+      "Registered address: Glattwiesenstrasse 213, 8051 Zurich, Switzerland.",
+      "Email: sophie.g.massage@gmail.com | Phone: +41 77 804 44 52",
+      "Sophie Massage is not entered in the commercial register and is not registered for VAT.",
     ],
+    developerCredit: {
+      label: "Website development by 0xLSD / Lopez Software Development",
+      url: "https://0xlopezsd.github.io/",
+    },
   },
   privacyPage: {
     title: "Privacy policy",

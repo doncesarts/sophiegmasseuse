@@ -165,7 +165,11 @@ export interface Translations {
     legal: string;
     healthSafety: string;
   };
-  legalPage: { title: string; body: string[] };
+  legalPage: {
+    title: string;
+    body: string[];
+    developerCredit: { label: string; url: string };
+  };
   privacyPage: { title: string; body: string[] };
   healthSafetyPage: {
     title: string;

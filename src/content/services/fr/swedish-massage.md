@@ -8,14 +8,17 @@ options:
     duration: 30
     price: 60
     discountPercent: 15
+    calLink: "sophiegmassage/swedish30"
   - description: "Corps entier"
     duration: 60
     price: 110
     discountPercent: 15
+    calLink: "sophiegmassage/60min"
   - description: "Corps entier avec visage et tête"
     duration: 75
     price: 125
     discountPercent: 15
+    calLink: "sophiegmassage/75min"
 image: "/images/service-swedish-massage.jpg"
 imageAlt: "Massage suédois chez Sophie Massage à Zurich"
 featured: true
