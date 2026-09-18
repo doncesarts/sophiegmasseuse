@@ -15,14 +15,14 @@
   prefersdark: false;
   color-scheme: light;
 
-    /* Background color */
+  /* Background color */
   /* --color-base-100: oklch(97% 0.014 85); */
   --color-base-100: #f4e7e7;
-  
+
   /* Footer background color */
   /* --color-base-200: oklch(94% 0.02 82); */
   --color-base-200: #dec3c3;
-  
+
   /* Line boxes color */
   --color-base-300: oklch(87% 0.02 25);
 
@@ -33,12 +33,11 @@
   /* --color-primary: oklch(50% 0.06 152); */
   --color-primary: #a85757;
 
-
   /* Button content color, currently white */
   --color-primary-content: oklch(98% 0.01 152);
 
   /* Boxes color, currently brown */
-  --color-secondary: oklch(45% 0.10 35);
+  --color-secondary: oklch(45% 0.1 35);
   /* Boxes content color, currently white */
   --color-secondary-content: oklch(98% 0.01 45);
 
@@ -71,7 +70,6 @@
 @theme {
   --font-sans: "Atkinson", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
-
 }
 
 html,

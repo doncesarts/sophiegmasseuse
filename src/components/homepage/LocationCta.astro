@@ -19,7 +19,17 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
     <div>
       <h2>{t.locationSection.title}</h2>
       <p class="text-base-content/80 mb-1">{t.locationSection.body}</p>
-      <p class="text-base-content/80 font-medium">{siteConfig.address}, {siteConfig.city}</p>
+      <br/>
+      <div class="flex items-center gap-4">
+        <img
+          src="/images/logo-community.jpg"
+          alt="Gemeinschaftsräume Glattwiesen community logo"
+          width="80"
+          height="80"
+          class="h-20 w-20 shrink-0 rounded-box object-cover"
+        />
+        <p class="text-base-content/80 font-medium">{siteConfig.address}, {siteConfig.city}</p>
+      </div>
       <a href={`/${locale}/contact`} class="btn btn-outline btn-primary rounded-field mt-4">{t.locationSection.cta}</a>
       </div>
       <div>   

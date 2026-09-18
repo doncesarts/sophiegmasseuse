@@ -49,6 +49,7 @@ export interface Translations {
     book: { title: string; description: string };
     privacy: { title: string; description: string };
     legal: { title: string; description: string };
+    terms: { title: string; description: string };
     healthSafety: { title: string; description: string };
   };
   hero: {
@@ -163,6 +164,7 @@ export interface Translations {
     rightsReserved: string;
     privacy: string;
     legal: string;
+    terms: string;
     healthSafety: string;
   };
   legalPage: {
@@ -170,6 +172,7 @@ export interface Translations {
     body: string[];
     developerCredit: { label: string; url: string };
   };
+  termsPage: { title: string; body: string[] };
   privacyPage: { title: string; body: string[] };
   healthSafetyPage: {
     title: string;

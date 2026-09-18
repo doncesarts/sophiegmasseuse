@@ -25,4 +25,3 @@ whatToExpect:
 The cure for jetlag (special Cabin Crew but for everyone too)
 
 Blended techniques focusing on legs, back and shoulders to promote blood circulation in the legs and release tension accumulated on long flights. Special blend of essential oils will enhance the soothing and relaxing effects of the treatment.
-

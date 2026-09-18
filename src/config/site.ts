@@ -65,7 +65,8 @@ export const siteConfig: SiteConfig = {
     "An independent massage practice in Zurich offering calm and attentive wellbeing treatments. An invitation to travel, a journey for the senses.",
   email: "sophie.g.massage@gmail.com",
   phone: "+41 77 804 44 52",
-  address: "Glattwiesenstrasse 213, 8051 Zurich",
+  address:
+    "Gemeinschaftsräume Glattwiesen, Glattwiesenstrasse 213, 8051 Zurich",
   city: "Switzerland",
   serviceArea: "Zurich 11",
   bookingUrl: "https://cal.com/example",

@@ -56,13 +56,18 @@ const de: Translations = {
         "Buchen Sie Ihre Massagesitzung in wenigen Klicks online über unsere sichere Cal.com-Buchungsseite.",
     },
     privacy: {
-      title: "Datenschutzerklärung — Sophie Massage",
+      title: "Datenschutz — Sophie Massage",
       description:
-        "Wie Sophie Massage mit Ihren personenbezogenen Daten umgeht.",
+        "Wie Sophie Massage personenbezogene Daten verarbeitet und schützt.",
     },
     legal: {
       title: "Impressum — Sophie Massage",
       description: "Rechtliche Angaben zu Sophie Massage.",
+    },
+    terms: {
+      title: "Allgemeine Geschäftsbedingungen — Sophie Massage",
+      description:
+        "Allgemeine Geschäftsbedingungen für Behandlungen bei Sophie Massage.",
     },
     healthSafety: {
       title: "Gesundheit, Sicherheit & Hygiene — Sophie Massage",
@@ -240,9 +245,19 @@ const de: Translations = {
           "Bitte kommen Sie etwa 10 Minuten vor Ihrem Termin, um sich einzurichten und kurz über Ihr Befinden zu sprechen, bevor wir beginnen.",
       },
       {
+        question: "Zahlungsmöglichkeiten?",
+        answer:
+          "Wir akzeptieren Zahlungen in Barzahlung, TWINT oder Überweisung (Wise, Revolut) direkt nach der Behandlung. \nRechnung nur auf Anfrage (Zahlungsfrist: 14 Tage). \nBei ausstehenden Zahlungen erfolgt eine Zahlungserinnerung nach 14 Tagen.",
+      },
+      {
         question: "Wie lautet die Stornierungsrichtlinie?",
         answer:
-          "Sitzungen, die weniger als 24 Stunden im Voraus abgesagt werden, sowie Nichterscheinen müssen vollständig bezahlt werden. Einen Link zur Absage finden Sie in der Bestätigungs-E-Mail. Für Umbuchungen informieren Sie mich bitte direkt.",
+          "Bitte sagen Sie Termine mindestens 24 Stunden im Voraus über WhatsApp ab. \nBei kurzfristigen Absagen (<24 Stunden) wird der volle Preis des Termins berechnet. \nAusnahmen: Krankheit mit ärztlichem Attest, Unfall, Todesfall. Bei verspätetem Erscheinen wird die ursprünglich gebuchte Zeit berechnet. Die Behandlung endet pünktlich.",
+      },
+      {
+        question: "Was passiert, wenn ich zu spät komme?",
+        answer:
+          "Bei einer Verspätung wird der volle Betrag der ursprünglich gebuchten Zeit verrechnet. \nDer Termin endet grundsätzlich zur vereinbarten Zeit, damit die nachfolgenden Termine pünktlich beginnen können.",
       },
       {
         question: "Wo finden die Sitzungen statt?",
@@ -282,13 +297,14 @@ const de: Translations = {
     rightsReserved: "Alle Rechte vorbehalten.",
     privacy: "Datenschutzerklärung",
     legal: "Impressum",
+    terms: "Allgemeine Geschäftsbedingungen",
     healthSafety: "Gesundheit & Sicherheit",
   },
   legalPage: {
     title: "Impressum",
     body: [
       "Sophie Massage wird von Sophie Goupil als Privatperson betrieben.",
-      "Adresse: Glattwiesenstrasse 213, 8051 Zürich, Schweiz.",
+      "Adresse: Gemeinschaftsräume Glattwiesen, Glattwiesenstrasse 213, 8051 Zürich, Schweiz.",
       "E-Mail: sophie.g.massage@gmail.com | Telefon: +41 77 804 44 52",
       "Sophie Massage ist nicht im Handelsregister eingetragen und nicht mehrwertsteuerpflichtig registriert.",
     ],
@@ -297,10 +313,87 @@ const de: Translations = {
       url: "https://0xlopezsd.github.io/",
     },
   },
-  privacyPage: {
-    title: "Datenschutzerklärung",
+  termsPage: {
+    title: "Allgemeine Geschäftsbedingungen",
     body: [
-      "[Platzhalter-Datenschutzerklärung — vor Veröffentlichung durch einen echten Text ersetzen, der beschreibt, welche personenbezogenen Daten z. B. über den Buchungsanbieter erhoben und wie sie verwendet werden.]",
+      "AGB",
+      "Allgemeine Geschäftsbedingungen",
+      "Sophie Massage",
+
+      "Stand: 15.09.2026",
+
+      "Hinweis: Dies ist ein Entwurf. Diese Allgemeinen Geschäftsbedingungen sollten vor der Veröffentlichung noch fachjuristisch nach Schweizer Recht geprüft werden.",
+
+      "Anbieterin: Sophie Goupil, Sophie Massage. Telefon und WhatsApp: 077 804 44 52.",
+
+      "1. Geltungsbereich",
+      "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Behandlungen von Sophie Goupil an den Standort Zürich-Schwamendingen (Glattwiesenstrasse 213, 8051 Zürich). Mit der Buchung eines Termins werden diese AGB anerkannt. Diese ersetzen keine medizinische Behandlung.",
+
+      "2. Angebot und Preise",
+      "Wir bieten Wellness-Massagen an. Diese sind kein Ersatz für eine medizinische Behandlung.",
+      "Preise in CHF gemäss Website. Zahlung bei der ersten Konsultation vor der Sitzung (Bar, TWINT, Überweisung), ab zweiter Sitzung danach.",
+
+      "3. Preisanpassungen",
+      "Sophie Goupil kann die Preise anpassen. Massgebend ist der zum Zeitpunkt der Buchung kommunizierte Preis.",
+
+      "4. Behandlungszeit",
+      "Die gebuchte Zeit umfasst den gesamten Termin (Begrüssung, Vorgespräch, Anamnese beziehungsweise Klärung des Anliegens, die eigentliche Behandlung oder Beratung, eine kurze Ruhezeit und den Abschluss) und nicht ausschliesslich die Zeit auf der Massageliege.",
+
+      "5. Terminabsagen und Terminverschiebungen",
+      "Termine müssen mindestens 24 Stunden vorher abgesagt oder verschoben werden. Eine kurze Mitteilung per WhatsApp an Sophie Goupil unter  077 804 44 52 genügt. Bei einer Absage weniger als 24 Stunden vor dem Termin wird die vollständig reservierte Behandlungsweise Beratungszeit verrechnet. Ausnahmen gelten bei Krankheit mit Arztzeugnis, Unfall oder Todesfall.",
+
+      "6. Verspätungen",
+      "Bei einer Verspätung wird der volle Betrag der ursprünglich gebuchten Zeit verrechnet. Der Termin endet grundsätzlich zur vereinbarten Zeit, damit die nachfolgenden Termine pünktlich beginnen können.",
+
+      "7. Schweigepflicht und Datenschutz",
+      "Sophie Goupil behandelt alle persönlichen und gesundheitlichen Angaben vertraulich. Die Bearbeitung personenbezogener Daten richtet sich nach der Datenschutzerklärung und den anwendbaren gesetzlichen Bestimmungen.",
+
+      "8. Gesundheitsangaben und Mitwirkung",
+      "Vor der ersten Behandlung findet eine Anamnese statt. Kundinnen und Kunden informieren vollständig über bekannte Diagnosen, aktuelle Beschwerden, frühere Verletzungen und Operationen, bestehende Erkrankungen, Schwangerschaft, Allergien, Medikamente (einschliesslich selbst gekaufter oder nicht verschreibungspflichtiger), Nahrungsergänzungsmittel und pflanzliche Präparate sowie bekannte gesundheitliche Risiken. Veränderungen des Gesundheitszustands, neue Diagnosen oder neu verordnete Medikamente sind vor einer weiteren Behandlung mitzuteilen.",
+
+      "9. Ablehnung, Unterbrechung oder Beendigung",
+      "Eine Behandlung kann abgelehnt, unterbrochen oder beendet werden, wenn gesundheitliche Risiken bestehen, wichtige Angaben fehlen, die Durchführung nicht sicher oder fachlich verantwortbar erscheint, eine ärztliche Abklärung erforderlich ist, das Anliegen ausserhalb des fachlichen Kompetenzbereichs liegt, das nötige Vertrauensverhältnis nicht gegeben ist oder vereinbarte Rahmenbedingungen nicht eingehalten werden. Kundinnen und Kunden können eine laufende Behandlung jederzeit unterbrechen oder beenden.",
+
+      "10. Haftung",
+      "Keine Haftung für Folgen, die aus dataProtectionPageden Sitzungen entstehen. Klient/in trägt die volle Verantwortung für seine/ihre Gesundheit.",
+
+      "11. Anwendbares Recht",
+      "Es gilt Schweizer Recht. Gerichtsstand Zürich",
+    ],
+  },
+  privacyPage: {
+    title: "Datenschutz (Sophie massage)",
+    body: [
+      "Zuletzt aktualisiert am: 15.09.2026",
+      "Wir informieren nachfolgend transparent darüber, wie wir personenbezogene Daten bearbeiten.",
+      "1. Verantwortlicher",
+      "Sophie Goupil \nGemeinschaftsräume Glattwiesen\nGlattwiesenstrasse 213\n8051 Zürich\nSchweiz\n\n Telefon: +41 77 804 44 52 \nE-Mail: sophie.g.massage@gmail.com",
+      "2. Nutzung der Online-Buchung",
+      "Mittels der Online-Buchung biete ich Ihnen die Möglichkeit, Termine bei Sophie Massage zu buchen. Der Online-Buchungsdienst wird von der Cal.com betrieben. Für mehr Informationen, besuchen Sie: https://cal.com/privacy.",
+      "3. Termine Online buchen",
+      "Wenn Sie die Online-Buchung nutzen möchten, ist die Angabe verschiedener Personendaten wie Vor-/Nachname und möglicherweise weiterer persönlicher Informationen wie E-Mail-Adresse und Mobiltelefonnummer. Ausserdem steht es Ihnen frei, das Feld «Bemerkungen» zu nutzen.",
+      "Die von Ihnen gemachten Angaben werden zum Zwecke der Terminvereinbarung und deren Abwicklung bearbeitet.",
+      "Die Pflichtangaben sind erforderlich, um mit Ihnen einen Termin zu vereinbaren. Die freiwillige Angabe weiterer Daten erleichtert mir die Bearbeitung Ihrer Anfrage und ermöglicht mir, Ihnen genauere Auskünfte zu erteilen.",
+      "Wir geben personenbezogene Daten nur weiter, wenn dies notwendig ist, insbesondere an:",
+      "Buchhaltung / Treuhand.",
+      "Sie können dieser Datenbearbeitung jederzeit widersprechen. Senden Sie Ihren Widerspruch bitte an die unter Ziffer 1 genannte E-Mail-Adresse.",
+      "4. Cookies und Tracking",
+      "Unsere Website verwendet Cookies sowie Funktionen zur Analyse und Sicherheit.",
+      "Cookies sind kleine Textdateien, die auf Ihrem Gerät gespeichert werden. Sie können Cookies in Ihrem Browser jederzeit löschen oder blockieren.",
+      "5. Aufbewahrung der Daten",
+      "Grundsätzlich werden Ihre Personendaten so lange aufbewahrt, wie es für den jeweiligen Zweck erforderlich ist.",
+      "Soweit gesetzliche Aufbewahrungspflichten bestehen, werden die betreffenden Personendaten für die Dauer der Aufbewahrungspflicht gespeichert. Nach Ablauf der Aufbewahrungspflicht wird geprüft, ob eine weitere Erforderlichkeit für die Bearbeitung vorliegt. Liegt eine Erforderlichkeit nicht mehr vor, werden Ihre Daten entweder gelöscht oder anonymisiert.",
+      "Werden Ihre Daten aufgrund einer Vertragsbeziehung mit Ihnen gespeichert, bleiben diese Daten mindestens so lange gespeichert, wie die Vertragsbeziehung besteht und längstens so lange Verjährungsfristen für mögliche Ansprüche laufen oder gesetzliche oder vertragliche Aufbewahrungspflichten bestehen.",
+      "Die Personendaten werden so lange aufbewahrt, wie es die gesetzlichen und vertraglichen Aufbewahrungsfristen verlangen. Nach Ablauf der Aufbewahrungsfrist werden die Personendaten gelöscht oder anonymisiert.",
+      "6. Betroffenenrechte",
+      "Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch gegen die Bearbeitung und Widerruf der Einwilligung mit Bezug auf Ihre Personendaten zu.",
+      "Bitte beachten Sie aber, dass ich mir vorbehalte, die gesetzlich vorgesehenen Einschränkungen geltend zu machen, etwa wenn ich zur Aufbewahrung oder Bearbeitung gewisser Daten verpflichtet bin, daran ein überwiegendes Interesse habe (soweit ich mich darauf berufen darf) oder sie für die Geltendmachung von Ansprüchen benötige.",
+      "Beachten Sie, dass die Ausübung dieser Rechte im Konflikt zu vertraglichen Abmachungen stehen kann und dies Folgen wie z.B. die vorzeitige Vertragsauflösung oder Kostenfolgen haben kann. Ich werde Sie diesfalls vorgängig informieren, wo dies nicht bereits vertraglich geregelt ist.",
+      "Wenn Sie glauben, dass die Bearbeitung Ihrer Personendaten gegen das Datenschutzrecht verstösst, oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich ausserdem bei der zuständigen Aufsichtsbehörde beschweren. In der Schweiz ist dies der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftrage (EDÖB).",
+      "Die Ausübung Ihrer datenschutzrechtlichen Rechte setzt in der Regel voraus, dass Sie Ihre Identität eindeutig nachweisen (z.B. durch eine Ausweiskopie, wo Ihre Identität sonst nicht klar ist bzw. verifiziert werden kann). Zur Geltendmachung Ihrer Rechte kontaktieren Sie mich bitte per E-Mail unter der in Ziffer 1 bezeichneten E-Mail-Adresse.",
+      "7. Änderungen",
+      "Diese Datenschutzerklärung kann jederzeit angepasst werden.",
+      "Es gilt jeweils die aktuelle Version auf unserer Website.",
     ],
   },
   healthSafetyPage: {

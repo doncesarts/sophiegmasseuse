@@ -12,9 +12,9 @@ const locale = lang as Locale;
 const t = getTranslations(locale);
 ---
 
-<MainLayout title={t.seo.privacy.title} description={t.seo.privacy.description} locale={locale} path="/privacy">
+<MainLayout title={t.seo.terms.title} description={t.seo.terms.description} locale={locale} path="/terms">
   <article class="page section container max-w-3xl">
-    <h1>{t.privacyPage.title}</h1>
-    {t.privacyPage.body.map((paragraph) => <p class="whitespace-pre-line">{paragraph}</p>)}
+    <h1>{t.termsPage.title}</h1>
+    {t.termsPage.body.map((paragraph) => <p>{paragraph}</p>)}
   </article>
 </MainLayout>
