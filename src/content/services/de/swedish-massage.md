@@ -24,13 +24,15 @@ imageAlt: "Schwedische Massage bei Sophie Massage in Zürich"
 featured: true
 order: 1
 suitableFor:
-  - "Alle, die sich vor oder nach einer anstrengenden Zeit entspannen möchten"
-  - "Menschen mit sitzender oder körperlich anstrengender Tätigkeit"
+  - "Menschen mit sitzenden oder körperlich anstrengenden Berufen"
+  - "Jeder, der sich vor oder nach einer hektischen Phase entspannen möchte"
 whatToExpect:
-  - "Ein kurzes Gespräch darüber, wie Sie sich fühlen und was Sie sich wünschen"
-  - "Langsame, fließende Griffe sowie tiefere Bewegungen und leichtes Klopfen mit Öl am ganzen Körper"
-  - "Ein ruhiges Studio mit sanftem Licht und beruhigender Musik"
-  - "Ein paar ruhige Minuten zum Nachspüren am Ende der Sitzung"
+  - "Ein kurzes Gespräch darüber, wie es dir geht und was du dir von der Sitzung wünschst"
+  - "Langsame, fliessende Streichbewegungen sowie tiefere Bewegungen und leichtes Klopfen mit Öl am ganzen Körper"
+  - "Ein ruhiges Studio mit sanfter Beleuchtung und beruhigender Musik"
+  - "Ein paar ruhige Minuten zum Ausruhen am Ende der Sitzung"
 ---
 
-Eine entspannende und entgiftende Behandlung. Sie kombiniert sanfte Ausstreichungen, leichte Reibungen und tieferen Druck, um die Muskeln zu entspannen, die Blutzirkulation anzuregen und Stress abzubauen. Die Behandlung kann dazu beitragen, Cellulite zu reduzieren.
+Der Begriff «schwedische Massage» geht auf einen Schweden namens Per Henrik Ling zurück, der im frühen 19. Jahrhundert das Programm «Schwedische Gymnastikübungen» entwickelte.
+
+Die schwedische Massage ermöglicht es dem Körper, mehr Sauerstoff aufzunehmen, was seine Regeneration fördert. Ausserdem unterstützt sie die Entgiftung, indem sie die Geschwindigkeit erhöht, mit der die Körperzellen Abfallprodukte ausscheiden. Die schwedische Massage vermittelt dem Empfänger ein immenses Gefühl der Zufriedenheit und Entspannung.

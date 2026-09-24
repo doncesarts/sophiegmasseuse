@@ -33,4 +33,7 @@ whatToExpect:
   - "A few quiet minutes to rest at the end of the session"
 ---
 
-A relaxing and detoxifying treatment. It involves gentle stroking movements, light rubbing and deeper pressure to relax the muscles, stimulate blood circulation and relieve stress. The treatment can be used to help reduce cellulite.
+The term “Swedish Massage” is credited to a Swede named Per Henrik Ling who developed the Swedish Gymnastic Movements programme in the early nineteenth century.
+
+Swedish massage allows the body to absorb more oxygen, thereby rejuvenating the body.
+It is also geared towards detoxification by increasing the speed by which the cells of the body eliminate their waste materials. Swedish massage brings to the receiver an immense feeling of satisfaction and relaxation.

@@ -38,6 +38,7 @@ export interface Translations {
     skipToContent: string;
     languageLabel: string;
     specialOfferBadge: string;
+    close: string;
     specialOfferNotice: string;
   };
   seo: {
@@ -154,6 +155,7 @@ export interface Translations {
     fallbackText: string;
     fallbackCta: string;
     contactAlternative: string;
+    startOver: string;
   };
   footer: {
     description: string;

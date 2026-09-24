@@ -36,7 +36,11 @@ const breadcrumbSchema = breadcrumbList(
     <h1>{t.bookPage.title}</h1>
     <p class="text-base-content/80 mb-8">{t.bookPage.intro}</p>
 
-    <BookingEmbed fallbackLabel={t.bookPage.fallbackCta} fallbackIntro={t.bookPage.fallbackText} />
+    <BookingEmbed
+      fallbackLabel={t.bookPage.fallbackCta}
+      fallbackIntro={t.bookPage.fallbackText}
+      startOverLabel={t.bookPage.startOver}
+    />
 
     <p class="mt-8 text-base-content/80 not-prose">
       {t.bookPage.contactAlternative}

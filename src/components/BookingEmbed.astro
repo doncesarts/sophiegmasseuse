@@ -1,27 +1,42 @@
 ---
 // Isolated Cal.com integration. Swapping providers later only requires
-// editing this file (and CALCOM_URL in src/config/calcom.ts) — no other
-// component references Cal.com directly.
-import { CALCOM_URL } from '../config/calcom';
+// editing this file (and CALCOM_URL/CALCOM_LINK in src/config/calcom.ts) —
+// no other component references Cal.com directly.
+//
+// Uses the Cal.com embed.js inline embed (same technique as
+// CalInlineEmbed.astro) rather than a raw <iframe src={CALCOM_URL}>. A plain
+// iframe loads Cal.com's full standalone page — including its own header and
+// margins — which leaves large white gutters and looks disconnected from the
+// site. The embed script strips that chrome and renders just the calendar,
+// themed to match the site.
+import { CALCOM_URL, CALCOM_LINK } from '../config/calcom';
+import { siteConfig } from '../config/site';
 
 interface Props {
   /** Accessible fallback link label, e.g. "Open booking page". */
   fallbackLabel: string;
   /** Text shown before the fallback link, e.g. "If the calendar doesn't load," */
   fallbackIntro?: string;
+  /** Label for the button that resets the embed back to the event list, e.g. "Start over". */
+  startOverLabel?: string;
   class?: string;
 }
 
-const { fallbackLabel, fallbackIntro, class: className } = Astro.props;
+const { fallbackLabel, fallbackIntro, startOverLabel = 'Start over', class: className } = Astro.props;
+const namespace = 'booking-page';
+const elementId = 'my-cal-booking-page';
+const restartButtonId = 'cal-booking-restart';
 ---
 
 <div class:list={['booking-embed', className]}>
-  <iframe
-    src={CALCOM_URL}
-    title="Booking calendar"
-    loading="lazy"
-    class="w-full min-h-[720px] md:min-h-[860px] rounded-box border border-base-300 bg-base-100"
-  ></iframe>
+  <div class="flex justify-end mb-2">
+    <button type="button" id={restartButtonId} class="btn btn-ghost btn-xs">
+      &larr; {startOverLabel}
+    </button>
+  </div>
+  <div class="min-h-[720px] md:min-h-[860px] bg-base-100 rounded-box">
+    <div id={elementId} style="width:100%;height:100%;overflow:scroll"></div>
+  </div>
   <p class="mt-4 text-sm text-base-content/70">
     {fallbackIntro}{' '}
     <a href={CALCOM_URL} target="_blank" rel="noopener noreferrer" class="link link-primary">
@@ -29,3 +44,75 @@ const { fallbackLabel, fallbackIntro, class: className } = Astro.props;
     </a>
   </p>
 </div>
+
+<script
+  is:inline
+  type="text/javascript"
+  define:vars={{ calLink: CALCOM_LINK, namespace, elementId, restartButtonId, brandColor: siteConfig.colors.primary }}
+>
+  (function (C, A, L) {
+    let p = function (a, ar) { a.q.push(ar); };
+    let d = C.document;
+    C.Cal = C.Cal || function () {
+      let cal = C.Cal;
+      let ar = arguments;
+      if (!cal.loaded) {
+        cal.ns = {};
+        cal.q = cal.q || [];
+        d.head.appendChild(d.createElement('script')).src = A;
+        cal.loaded = true;
+      }
+      if (ar[0] === L) {
+        const api = function () { p(api, arguments); };
+        const ns = ar[1];
+        api.q = api.q || [];
+        if (typeof ns === 'string') {
+          cal.ns[ns] = cal.ns[ns] || api;
+          p(cal.ns[ns], ar);
+          p(cal, ['initNamespace', ns]);
+        } else {
+          p(cal, ar);
+        }
+        return;
+      }
+      p(cal, ar);
+    };
+  })(window, 'https://app.cal.com/embed/embed.js', 'init');
+
+  Cal('init', namespace, { origin: 'https://app.cal.com' });
+  Cal.config = Cal.config || {};
+  Cal.config.forwardQueryParams = true;
+
+  // The Cal.com embed has no built-in way to reset a full profile listing
+  // back to its start once a visitor drills into an event's date/time picker,
+  // so re-mount the widget from scratch on demand via the "Start over" button.
+  function renderBookingEmbed() {
+    const container = document.getElementById(elementId);
+    container.innerHTML = '';
+
+    Cal.ns[namespace]('inline', {
+      elementOrSelector: '#' + elementId,
+      config: { layout: 'month_view', useSlotsViewOnSmallScreen: 'true' },
+      calLink: calLink,
+    });
+
+    // Read the site's actual theme tokens so the embed's background/text stay
+    // in sync with global.css instead of duplicating hardcoded colors here.
+    const rootStyle = getComputedStyle(document.documentElement);
+    const bg = rootStyle.getPropertyValue('--color-base-100').trim();
+    const text = rootStyle.getPropertyValue('--color-base-content').trim();
+    const border = rootStyle.getPropertyValue('--color-base-300').trim();
+    const theme = { 'cal-brand': brandColor, 'cal-bg': bg, 'cal-bg-emphasis': bg, 'cal-border': border, 'cal-text': text };
+
+    Cal.ns[namespace]('ui', {
+      hideEventTypeDetails: false,
+      layout: 'month_view',
+      cssVarsPerTheme: { light: theme, dark: theme },
+    });
+  }
+
+  renderBookingEmbed();
+  document.getElementById(restartButtonId).addEventListener('click', renderBookingEmbed);
+</script>
+</script>
+

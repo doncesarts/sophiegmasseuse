@@ -61,8 +61,13 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
             height="80"
             class="h-20 w-20 shrink-0 rounded-box object-cover"
           />
-          <span>{siteConfig.address}, {siteConfig.city}</span>
-        </dd>
+          <div>{siteConfig.address}, {siteConfig.city}
+          <p>
+           {siteConfig.building}
+          </p>
+          </div>
+      </dd>
+
       </div>
       <div>
         <dt class="font-semibold">{t.contactPage.areaLabel}</dt>

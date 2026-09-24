@@ -14,6 +14,8 @@ export interface SiteConfig {
   email: string;
   phone: string;
   address: string;
+  /** Building name or specific location within the address. */
+  building?: string;
   city: string;
   /** Human readable service area, e.g. "Zurich and surrounding area". */
   serviceArea: string;
@@ -62,11 +64,11 @@ export const siteConfig: SiteConfig = {
   therapistName: "Sophie Goupil",
   tagline: "Massage & wellbeing",
   description:
-    "An independent massage practice in Zurich offering calm and attentive wellbeing treatments. An invitation to travel, a journey for the senses.",
+    "Independent massage practice in Zurich offering calm and attentive wellbeing treatments. A journey for the senses.",
   email: "sophie.g.massage@gmail.com",
   phone: "+41 77 804 44 52",
-  address:
-    "Gemeinschaftsräume Glattwiesen, Glattwiesenstrasse 213, 8051 Zurich",
+  address: "Glattwiesenstrasse 213, 8051 Zurich",
+  building: "Gemeinschaftsräume Glattwiesen",
   city: "Switzerland",
   serviceArea: "Zurich 11",
   bookingUrl: "https://cal.com/sophiegmassage",

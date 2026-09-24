@@ -24,6 +24,7 @@ const en: Translations = {
     specialOfferBadge: "Special offer",
     specialOfferNotice:
       "Special offer — options and prices subject to future change",
+    close: "Close",
   },
   seo: {
     home: {
@@ -79,8 +80,7 @@ const en: Translations = {
     eyebrow: "Independent massage practice · Zurich",
     headline: "A quiet space to slow down - a journey for the senses.",
     subheadline: "Massage & wellbeing",
-    intro:
-      "Calm, attentive massage treatments. An invitation to travel, a journey for the senses.",
+    intro: "",
     primaryCta: "Book an appointment",
     secondaryCta: "Discover our massages",
   },
@@ -97,7 +97,7 @@ const en: Translations = {
   },
   benefits: {
     title: "Why clients choose us",
-    subtitle: "A practice built around attention, consistency and calm.",
+    subtitle: "",
     items: [
       {
         title: "A journey for the senses",
@@ -153,7 +153,8 @@ const en: Translations = {
       },
       {
         title: "When you arrive",
-        description: "Please ring at 'Raüme Glattwiesen'. 1st floor.",
+        description:
+          "Please ring at 'Gemeinschaftsraüme Glattwiesen'. 1st floor.",
       },
     ],
     cta: "Get in touch",
@@ -192,7 +193,7 @@ const en: Translations = {
     intro: "Independent massage therapist based in Zurich.",
     biographyTitle: "My story",
     biography: [
-      "Massages have been part of my life from a very young age. As a child, I was already practicing some movements to relieve my relatives' back pain. Life led me down a different path, one driven by another passion: the passion for languages and travels. In 2025, I decided to reconnect with my long-standing interest in massage, so I undertook several training courses in Swedish and Balinese massage.",
+      "Massages have been part of my life from a very young age. As a child, I was already practicing massages to relieve back pain. Life led me down a different path, one driven by another passion: the passion for languages and foreign cultures. In 2025, I decided to reconnect with my long-standing interest in massage, so I undertook several training courses in Swedish and Balinese massage.",
       "Today I am delighted to be able to welcome patients in different languages and introduce them to a variety of traditional massage techniques.",
       "Both passions combine to bring you on a journey through one of the world's oldest traditions.",
     ],
@@ -213,7 +214,7 @@ const en: Translations = {
     cta: "Book a session with Sophie",
   },
   faqPage: {
-    title: "Frequently asked questions",
+    title: "Frequently Asked Questions",
     intro: "Everything you need to know before your first visit.",
     items: [
       {
@@ -242,14 +243,14 @@ const en: Translations = {
           "Please arrive around 10 minutes before your appointment to settle in before we begin.",
       },
       {
-        question: "Payment options?",
+        question: "What are the payment options?",
         answer:
           "We accept payments via Cash, TWINT or bank transfers (Wise, Revolut) immediately after the session. \nInvoices issued on request only (payment due within 14 days). \nA payment reminder will be sent after 14 days for outstanding payments.",
       },
       {
         question: "What is the cancellation policy?",
         answer:
-          "Please cancel appointments at least 24 hours in advance via WhatsApp.  \nFor last-minute cancellations (<24 hours): The full cost of the appointment will be charged. \nExceptions: Illness with a doctor’s certificate, accident, bereavement.  \nIn the event of late arrival: The originally booked time will be charged. The treatment will end on time.",
+          "Please cancel appointments at least 24 hours in advance via WhatsApp, SMS or email.  \nFor last-minute cancellations (<24 hours): The full cost of the appointment will be charged. \nExceptions: Illness with a doctor’s certificate, accident, bereavement.",
       },
       {
         question: "What happens if I am late?",
@@ -259,7 +260,7 @@ const en: Translations = {
       {
         question: "Where are sessions held?",
         answer:
-          "Sessions take place at the Glattwiesen community centre in Zurich, Schwamendingen, Kreis 11. The place is shared with some wonderful women who offer coaching, massages and alternative therapies.",
+          "Sessions take place at the Glattwiesen community centre in Zurich, Schwamendingen, Kreis 11. The place is shared with some wonderful women who offer independent coaching, massages and alternative therapies.",
       },
     ],
   },
@@ -281,12 +282,13 @@ const en: Translations = {
       "Choose a treatment and a time that suits you. You'll receive an instant email confirmation.",
     fallbackText: "If the booking calendar doesn't load,",
     fallbackCta: "open the booking page directly",
+    startOver: "Start over",
     contactAlternative:
-      "You can also reach out directly if you'd prefer to arrange your session by email or WhatsApp",
+      "You can also reach out directly if you'd prefer to arrange your session by email or WhatsApp +41 77 804 44 52.",
   },
   footer: {
     description:
-      "An independent massage practice in Zurich, offering calm and personalised treatments by appointment.",
+      "Independent wellness massage practice in Zurich, by appointment only.",
     navTitle: "Explore",
     contactTitle: "Contact",
     followTitle: "Follow",
@@ -294,7 +296,7 @@ const en: Translations = {
     rightsReserved: "All rights reserved.",
     privacy: "Data protection",
     legal: "Legal notice",
-    terms: "Terms and conditions",
+    terms: "GTC",
     healthSafety: "Health & safety",
   },
   legalPage: {
@@ -311,14 +313,14 @@ const en: Translations = {
     },
   },
   termsPage: {
-    title: "GTC - General Terms and Conditions",
+    title: "General Terms and Conditions",
     body: [
       "Sophie Massage",
       "Date: 15 September 2026",
       "Note: This is a draft. These General Terms and Conditions should be reviewed by a legal expert specialising in Swiss law before publication.",
       "Provider: Sophie Goupil, Sophie Massage. Phone and WhatsApp: +41 77 804 44 52.",
       "1. Scope",
-      "These General Terms and Conditions (GTC) apply to all treatments provided by Sophie Goupil at the Zurich-Schwamendingen practice (Glattwiesenstrasse 213, 8051 Zurich). By booking an appointment, you accept these GTC.",
+      "These General Terms and Conditions (GTC) apply to all treatments provided by Sophie Goupil at the Zurich-Schwamendingen practice (Gemeinschaftsräume Glattwiesen, Glattwiesenstrasse 213, 8051 Zurich). By booking an appointment, you accept these GTC.",
       "2. Services and Prices",
       "We offer wellness massages. These are not a substitute for medical treatment.",
       "Prices are in CHF as stated on the website. Payment is due at the first consultation prior to the session (cash, TWINT, bank transfer); from the second session onwards, payment is due afterwards.",
@@ -343,7 +345,7 @@ const en: Translations = {
     ],
   },
   privacyPage: {
-    title: "Data protection (Sophie Massage)",
+    title: "Data Protection",
     body: [
       "Last updated: 15.09.2026",
       "Below, we provide transparent information on how we process personal data.",
@@ -354,7 +356,7 @@ const en: Translations = {
       "If you wish to use the online booking service, you will need to provide various personal details such as your first name and surname, and possibly further personal information such as your email address and mobile phone number. You are also free to use the 'Comments' field.",
       "The information you provide will be processed for the purpose of arranging and managing your appointment.",
       "The mandatory fields are required in order to arrange an appointment with you. Providing additional information on a voluntary basis helps me to process your enquiry more efficiently and enables me to provide you with more detailed information.",
-      "We will only pass on personal data where necessary, in particular to: Accounting / Trust Services.",
+      "We will only pass on personal data where necessary, in particular to: Accounting services.",
       "You may object to this data processing at any time. Please send your objection to the email address specified in section 1.",
       "4. Cookies and Tracking",
       "Our website uses cookies as well as analytics and security features.",

@@ -93,7 +93,7 @@ properties there to restyle the whole site.
 Set `bookingUrl` in [`src/config/site.ts`](./src/config/site.ts) to your public
 Cal.com booking link, e.g. `https://cal.com/your-handle/session`. The `/book`
 page and the `BookingEmbed` component
-   ([`src/components/BookingEmbed.astro`](./src/components/BookingEmbed.astro))
+([`src/components/BookingEmbed.astro`](./src/components/BookingEmbed.astro))
 automatically use this URL.
 
 ## Adding or editing services
@@ -124,7 +124,7 @@ for every locale in `locales`.
 - Replace the legal notice and privacy policy placeholder text.
 - Set real contact details, address, and social links in `src/config/site.ts`.
 - Set `bookingUrl` in [`src/config/site.ts`](./src/config/site.ts) to a real
-   Cal.com booking link.
+  Cal.com booking link.
 - Update `site` in `astro.config.mjs` to the real production domain.
 
 ## SEO & local search launch checklist

@@ -33,4 +33,7 @@ whatToExpect:
   - "Quelques minutes de repos tranquille à la fin de la séance"
 ---
 
-Un soin relaxant et détoxifiant. Il associe des effleurages doux, de légères frictions et des pressions plus profondes pour détendre les muscles, stimuler la circulation sanguine et libérer le stress. Le traitement peut contribuer à réduire la cellulite.
+Le terme « massage suédois » est attribué au Suédois Per Henrik Ling, qui a développé le programme de mouvements de gymnastique suédoise au début du XIXe siècle.
+
+Le massage suédois permet au corps d'absorber davantage d'oxygène, favorisant ainsi sa revitalisation.
+Il contribue également à la détoxification en accélérant l'élimination des déchets par les cellules de l'organisme. Il procure une profonde sensation de bien-être et de détente.

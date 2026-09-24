@@ -24,6 +24,7 @@ const fr: Translations = {
     specialOfferBadge: "Offre spéciale",
     specialOfferNotice:
       "Offre spéciale — formules et tarifs sujets à modification",
+    close: "Fermer",
   },
   seo: {
     home: {
@@ -78,10 +79,9 @@ const fr: Translations = {
   },
   hero: {
     eyebrow: "Cabinet de massage indépendant · Zurich",
-    headline: "Un espace calme pour ralentir et se retrouver.",
-    subheadline: "Massage & bien-être, résolument personnel.",
-    intro:
-      "Sophie Massage est le cabinet indépendant de Sophie Goupil, proposant des soins de massage calmes et attentifs, adaptés à votre corps et à votre rythme — jamais précipités, toujours personnels.",
+    headline: "Un espace calme pour ralentir — un voyage pour les sens.",
+    subheadline: "Massage & bien-être",
+    intro: "",
     primaryCta: "Prendre rendez-vous",
     secondaryCta: "Découvrir nos massages",
   },
@@ -98,8 +98,7 @@ const fr: Translations = {
   },
   benefits: {
     title: "Pourquoi choisir notre cabinet",
-    subtitle:
-      "Un cabinet construit autour de l'attention, de la régularité et du calme.",
+    subtitle: "",
     items: [
       {
         title: "Un voyage pour les sens",
@@ -147,16 +146,17 @@ const fr: Translations = {
       {
         title: "En tram",
         description:
-          "Tram 7, arrêt « Glattwiesen », ou tram 9, arrêt « Luegisland ». Le studio se trouve à quelques minutes à pied.",
+          "Tram n° 7, arrêt « Glattwiesen », ou tram n° 9, arrêt « Luegisland ». Le studio se trouve à quelques minutes à pied.",
       },
       {
         title: "En voiture",
         description:
-          "Place de parking client n° 11. Adresse GPS : Winterthurerstrasse 650, 8051 Zurich. Des places bleues sont également disponibles dans la rue Glattwiesenstrasse.",
+          "Place de parking client n° 11. Adresse GPS : Winterthurerstrasse 650, 8051 Zurich. Des places de stationnement bleues sont également disponibles dans la Glattwiesenstrasse.",
       },
       {
         title: "À votre arrivée",
-        description: "Merci de sonner chez « Räume Glattwiesen ». 1er étage.",
+        description:
+          "Veuillez sonner chez « Gemeinschaftsräume Glattwiesen ». 1er étage.",
       },
     ],
     cta: "Nous contacter",
@@ -169,7 +169,7 @@ const fr: Translations = {
   servicesPage: {
     title: "Massages",
     intro:
-      "Chaque massage est proposé comme point de départ, puis adapté à vous pendant la séance. Une hésitation ? Contactez-nous, Sophie vous aidera à choisir.",
+      "Vous ne savez pas lequel choisir ? Contactez Sophie, qui vous aidera à vous décider.",
   },
   serviceDetail: {
     optionsTitle: "Formules et tarifs",
@@ -193,12 +193,11 @@ const fr: Translations = {
   },
   about: {
     title: "À propos de Sophie Goupil",
-    intro:
-      "Masseuse indépendante et fondatrice de Sophie Massage, basée à Zurich.",
+    intro: "Masseuse indépendante basée à Zurich.",
     biographyTitle: "Mon parcours",
     biography: [
-      "Les massages font partie de ma vie depuis mon plus jeune âge. Enfant, je pratiquais déjà certains mouvements pour soulager le dos de mes proches. La vie m'a d'abord menée sur un autre chemin, guidé par une autre passion : les langues et les voyages. En 2025, j'ai décidé de renouer avec mon intérêt de longue date pour le massage et j'ai suivi plusieurs formations en massage suédois et balinais.",
-      "Aujourd'hui, je suis ravie de pouvoir accueillir des patient·e·s dans différentes langues et de leur faire découvrir une variété de techniques de massage traditionnelles.",
+      "Les massages font partie de ma vie depuis mon plus jeune âge. Enfant, je pratiquais déjà des massages pour soulager les maux de dos. La vie m'a menée sur un autre chemin, guidé par une autre passion : celle des langues et des cultures étrangères. En 2025, j'ai décidé de renouer avec mon intérêt de longue date pour le massage et j'ai suivi plusieurs formations en massage suédois et balinais.",
+      "Aujourd'hui, je suis ravie de pouvoir accueillir des clients dans différentes langues et de leur faire découvrir une variété de techniques de massage traditionnelles.",
       "Ces deux passions se rejoignent pour vous faire voyager à travers l'une des plus anciennes traditions du monde.",
     ],
     philosophyTitle: "Ma philosophie",
@@ -254,7 +253,7 @@ const fr: Translations = {
       {
         question: "Quelle est la politique d'annulation ?",
         answer:
-          "Merci d'annuler vos rendez-vous au moins 24 heures à l'avance via WhatsApp. \nPour les annulations de dernière minute (<24 heures) : le coût total du rendez-vous sera facturé. \nExceptions : maladie avec certificat médical, accident, deuil. \nEn cas de retard : le temps initialement réservé sera facturé. Le soin se termine à l'heure prévue.",
+          "Veuillez annuler vos rendez-vous au moins 24 heures à l'avance par WhatsApp, SMS ou e-mail. \nPour les annulations de dernière minute (<24 heures), le coût total du rendez-vous sera facturé. \nExceptions : maladie avec certificat médical, accident ou deuil.",
       },
       {
         question: "Que se passe-t-il si je suis en retard ?",
@@ -286,8 +285,9 @@ const fr: Translations = {
       "Choisissez un soin et un horaire qui vous conviennent. Vous recevrez une confirmation immédiate par email.",
     fallbackText: "Si le calendrier de réservation ne s'affiche pas,",
     fallbackCta: "ouvrez directement la page de réservation",
+    startOver: "Recommencer",
     contactAlternative:
-      "Vous pouvez aussi nous contacter directement si vous préférez organiser votre séance par email ou WhatsApp.",
+      "Vous pouvez aussi nous contacter directement si vous préférez organiser votre séance par e-mail ou WhatsApp au +41 77 804 44 52.",
   },
   footer: {
     description:

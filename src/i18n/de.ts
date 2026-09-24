@@ -23,6 +23,7 @@ const de: Translations = {
     languageLabel: "Sprache",
     specialOfferBadge: "Sonderangebot",
     specialOfferNotice: "Sonderangebot — Optionen und Preise freibleibend",
+    close: "Schliessen",
   },
   seo: {
     home: {
@@ -76,49 +77,47 @@ const de: Translations = {
     },
   },
   hero: {
-    eyebrow: "Unabhängige Massagepraxis · Zürich",
-    headline: "Ein ruhiger Ort, um innezuhalten und zu sich zu finden.",
-    subheadline: "Massage & Wohlbefinden, ganz persönlich.",
-    intro:
-      "Sophie Massage ist die unabhängige Praxis von Sophie Goupil und bietet ruhige, aufmerksame Massagebehandlungen, abgestimmt auf Ihren Körper und Ihr Tempo — nie gehetzt, immer persönlich.",
+    eyebrow: "Wellnessassagepraxis · Zürich",
+    headline: "Ein ruhiger Ort zum Entspannen – eine Reise für die Sinne.",
+    subheadline: "",
+    intro: "Massage & Wellbeing",
     primaryCta: "Termin buchen",
     secondaryCta: "Massagen entdecken",
   },
   intro: {
     title: "Ein Moment ganz für Sie",
-    body: "Jede Sitzung beginnt mit einem Gespräch. Sophie nimmt sich Zeit zu verstehen, wie Sie sich fühlen, bevor sie Druck, Tempo und Technik wählt. Sophie verwendet ausschließlich natürliche, pflegende Öle, die für empfindliche Haut geeignet sind.",
+    body: "Jede Sitzung beginnt mit einem Gespräch. Sophie nimmt sich Zeit, um zu verstehen, wie du dich fühlst, bevor sie den richtigen Druck, das richtige Tempo und die richtige Technik auswählt. Sophie verwendet ausschliesslich natürliche, pflegende Öle, die für empfindliche Haut geeignet sind.",
     cta: "Über Sophie",
   },
   featuredServices: {
     title: "Signature-Massagen",
     subtitle:
-      "Eine kleine, bewusst zusammengestellte Auswahl an Massagen — jede mit Sorgfalt statt Routine ausgeführt.",
+      "Eine kleine, sorgfältig zusammengestellte Auswahl an Massagen – jede einzelne wird mit Sorgfalt durchgeführt, anstatt eine lange Liste hastig abzuarbeiten.",
     cta: "Alle Massagen ansehen",
   },
   benefits: {
     title: "Warum Kund:innen uns wählen",
-    subtitle:
-      "Eine Praxis, die auf Aufmerksamkeit, Beständigkeit und Ruhe aufbaut.",
+    subtitle: "",
     items: [
       {
         title: "Eine Reise für die Sinne",
         description:
-          "Jede Massage ist eine Einladung zu einer Reise von Europa bis Asien, während Sie den Komfort des Studios genießen.",
+          "Jede Massage ist eine Einladung zu einer Reise von Europa nach Asien, während man den Komfort des Studios geniesst.",
       },
       {
         title: "Ein ruhiger, privater Ort",
         description:
-          "Ein stilles, sanft beleuchtetes Studio, das Ihnen hilft, die Außenwelt loszulassen.",
+          "Ein ruhiges, sanft beleuchtetes Studio, das dir dabei helfen soll, von der Aussenwelt abzuschalten.",
       },
       {
-        title: "Beständige, entspannte Betreuung",
+        title: "Konsequente, entspannte Betreuung",
         description:
-          "Sitzungen werden nie gehetzt. Sie behalten bei jedem Besuch dieselbe vertraute Therapeutin.",
+          "Die Sitzungen werden niemals überstürzt durchgeführt. Bei jedem Besuch werdest du von demselben Therapeuten behandelt, den du kennst und dem du vertraust.",
       },
       {
         title: "Einfache Online-Buchung",
         description:
-          "Reservieren Sie Ihren Wunschtermin in wenigen Klicks, mit klarer Bestätigung und Erinnerungen.",
+          "Buche deinen Wunschtermin mit nur wenigen Klicks – inklusive einer übersichtlichen Bestätigung und Erinnerungen.",
       },
     ],
   },
@@ -131,44 +130,45 @@ const de: Translations = {
   testimonialsSection: {
     title: "Was Kund:innen sagen",
     subtitle:
-      "Ein paar Worte von Menschen, die Sophie Massage regelmäßig besuchen.",
+      "Ein paar Worte von Leuten, die regelmässig bei Sophie Massage vorbeischauen.",
     googleCta: "auf Google",
   },
   gallery: {
     title: "Ein Blick ins Studio",
     subtitle:
-      "Ein Einblick in den ruhigen, warmen Raum, in dem jede Sitzung stattfindet.",
+      "Ein Einblick in den ruhigen, gemütlichen Raum, in dem jede Sitzung stattfindet.",
   },
   locationSection: {
     title: "Wo Sie uns finden",
-    body: "Sophie Massage empfängt Kund:innen nach Vereinbarung in einem ruhigen, gut erreichbaren Studio in Zürich und betreut die Stadt sowie die Umgebung.",
+    body: "Sophie Massage empfängt ihre Kund:innen nach Vereinbarung in einem ruhigen, gut erreichbaren Studio in Zürich und betreut Kunden aus der Stadt und der Umgebung.",
     transports: [
       {
-        title: "Mit der Straßenbahn",
+        title: "Mit dem Tram",
         description:
-          "Straßenbahn Nr. 7 bis zur Haltestelle „Glattwiesen“ oder Straßenbahn Nr. 9 bis „Luegisland“. Das Studio ist nur wenige Gehminuten entfernt.",
+          "Tram Nr. 7 bis zur Haltestelle „Glattwiesen“ oder Tram Nr. 9 bis „Luegisland“. Von dort sind es nur wenige Gehminuten.",
       },
       {
         title: "Mit dem Auto",
         description:
-          "Parkplatz Nr. 11 für Kund:innen. Navigation: Winterthurerstrasse 650, 8051 Zürich. Blaue Parkplätze an der Glattwiesenstrasse sind ebenfalls verfügbar.",
+          "Kundenparkplatz Nr. 11. Für die Navigation: Winterthurerstrasse 650, 8051 Zürich. Alternativ findest du in der Umgebung Parkplätze in der blauen Zone.",
       },
       {
-        title: "Bei Ihrer Ankunft",
-        description: "Bitte bei „Räume Glattwiesen“ klingeln. 1. Stock.",
+        title: "Beim Eingang",
+        description:
+          "Bitte bei „Gemeinschaftsräume Glattwiesen“ klingeln. 1. Stock.",
       },
     ],
     cta: "Kontakt aufnehmen",
   },
   bookingCta: {
-    title: "Bereit für einen Moment nur für Sie?",
-    subtitle: "Reservieren Sie Ihre Sitzung in wenigen Minuten online.",
+    title: "Bereit für einen Moment ganz für dich?",
+    subtitle: "Buche deinen Termin in nur wenigen Minuten online.",
     cta: "Termin buchen",
   },
   servicesPage: {
     title: "Massagen",
     intro:
-      "Jede Massage dient als Ausgangspunkt und wird während der Sitzung an Sie angepasst. Unsicher, was Sie wählen sollen? Kontaktieren Sie uns — Sophie hilft Ihnen gerne weiter.",
+      "Du weisst nicht, wofür du dich entscheiden sollst? Melde dich bei uns, und Sophie hilft dir bei der Entscheidung.",
   },
   serviceDetail: {
     optionsTitle: "Optionen & Preise",
@@ -176,33 +176,31 @@ const de: Translations = {
       "Diese aktuellen Optionen und Preise sind Teil eines speziellen Einführungsangebots und können sich in Zukunft ändern.",
     bookOptionTitle: "Diese Option online buchen",
     suitableForTitle: "Geeignet für",
-    whatToExpectTitle: "Was Sie erwartet",
-    aftercareTitle: "Nach Ihrer Sitzung",
+    whatToExpectTitle: "Was du erwartest",
+    aftercareTitle: "Nach deiner Sitzung",
     aftercareItems: [
-      "Trinken Sie in den folgenden Stunden ausreichend Wasser, um Ihren Körper zu unterstützen.",
-      "Nehmen Sie den Rest des Tages ruhig und vermeiden Sie intensive körperliche Anstrengung.",
-      "Eine warme (nicht zu heiße) Dusche ist unbedenklich; verzichten Sie einige Stunden auf sehr heiße Bäder oder die Sauna.",
-      "Leichte Empfindlichkeit, Müdigkeit oder ein kurzes Schwindelgefühl sind normal — ruhen Sie sich bei Bedarf aus.",
-      "Melden Sie sich, falls sich etwas unstimmig anfühlt oder ein Unbehagen nicht innerhalb ein bis zwei Tagen abklingt.",
+      "Trink in den nächsten Stunden reichlich Wasser, damit sich dein Körper erholen kann",
+      "Schon dich für den Rest des Tages und vermeide anstrengende körperliche Aktivitäten",
+      "Eine warme (nicht heisse) Dusche ist in Ordnung; vermeide für einige Stunden sehr heisse Bäder oder Saunagänge",
+      "Leichte Empfindlichkeit, Müdigkeit oder kurzzeitiger Schwindel sind normal – ruhe dich aus, wenn du eines dieser Symptome verspürst",
+      "Lass es uns wissen, wenn dir etwas ungewöhnlich vorkommt oder wenn deine Symptome nicht verschwinden",
     ],
-    relatedTitle: "Das könnte Ihnen auch gefallen",
+    relatedTitle: "Das könnte dir auch gefallen",
     ctaTitle: "Bereit, diese Massage zu buchen?",
-    ctaBody:
-      "Reservieren Sie Ihren Wunschtermin online — das dauert nur eine Minute.",
+    ctaBody: "Buche deinen Wunschtermin online – das dauert nur eine Minute.",
   },
   about: {
     title: "Über Sophie Goupil",
-    intro:
-      "Unabhängige Massagetherapeutin und Gründerin von Sophie Massage, ansässig in Zürich.",
-    biographyTitle: "Mein Werdegang",
+    intro: "Selbstständige Massagetherapeutin mit Sitz in Zürich.",
+    biographyTitle: "Meine Geschichte",
     biography: [
-      "Massagen gehören seit meiner frühen Kindheit zu meinem Leben. Schon als Kind übte ich Bewegungen, um die Rückenschmerzen meiner Angehörigen zu lindern. Das Leben führte mich zunächst auf einen anderen Weg, geprägt von meiner Leidenschaft für Sprachen und Reisen. 2025 beschloss ich, mein langjähriges Interesse an Massagen wieder aufzunehmen, und absolvierte mehrere Ausbildungen in schwedischer und balinesischer Massage.",
-      "Heute freue ich mich, Patient:innen in verschiedenen Sprachen empfangen und ihnen eine Vielzahl traditioneller Massagetechniken näherbringen zu können.",
-      "Beide Leidenschaften verbinden sich und nehmen Sie mit auf eine Reise durch eine der ältesten Traditionen der Welt.",
+      "Massagen gehören seit meiner frühen Kindheit zu meinem Leben. Schon als Kind habe ich Massagen praktiziert, um Rückenschmerzen zu lindern. Das Leben führte mich auf einen anderen Weg, der von einer anderen Leidenschaft geprägt war: der Leidenschaft für Sprachen und fremde Kulturen. Im Jahr 2025 beschloss ich, mein langjähriges Interesse an Massagen wieder aufzugreifen, und absolvierte daher mehrere Ausbildungen in schwedischer und balinesischer Massage.",
+      "Heute freue ich mich sehr, Patienten in verschiedenen Sprachen begrüssen zu dürfen und ihnen eine Vielzahl traditioneller Massagetechniken näherzubringen.",
+      "Beide Leidenschaften vereinen sich, um Sie auf eine Reise durch eine der ältesten Traditionen der Welt mitzunehmen.",
     ],
     philosophyTitle: "Meine Philosophie",
     philosophyBody:
-      "Ich glaube, eine gute Massage beginnt mit Zuhören. Vor jeder Technik möchte ich verstehen, wie Sie sich fühlen und was Ihnen helfen würde, sich wohler zu fühlen — dann passe ich die Sitzung entsprechend an.\nIch verwende ausschließlich natürliche, pflegende Öle und eine Mischung ätherischer Öle, die sanft zur Haut sind und den Geist beruhigen.",
+      "Ich bin davon überzeugt, dass eine gute Massage damit beginnt, zuzuhören. Bevor ich irgendwelche Techniken anwende, möchte ich verstehen, wie du dich fühlst und was dir helfen würde, dich wohler zu fühlen – dann passe ich die Sitzung entsprechend an. Ich verwende ausschliesslich natürliche, pflegende Öle und eine Mischung aus ätherischen Ölen, die sanft zur Haut sind und den Geist beruhigen.",
     qualificationsTitle: "Ausbildung & Qualifikationen",
     qualificationsNote:
       "CIBTAC (The Confederation of International Beauty Therapy and Cosmetology) bildet seit 1977 Absolvent:innen auf höchstem Niveau in Beauty-, Komplementär- und Wellness-Therapien aus.\nVTCT (Vocational Training Charitable Trust) ist eine führende, international anerkannte Zertifizierungsorganisation für Massage- und Komplementärtherapien.",
@@ -213,56 +211,57 @@ const de: Translations = {
     ],
     approachTitle: "Mein Ansatz",
     approachBody:
-      "Jede Sitzung beginnt mit einem kurzen Gespräch darüber, wie Sie sich fühlen und was Sie sich von der Sitzung wünschen. Danach kombiniere ich Techniken — von langsamen, entspannenden Griffen bis zu gezielterer Arbeit — passend zu Ihrem Körper an diesem Tag.",
+      "Jede Sitzung beginnt mit einem kurzen Gespräch darüber, wie du dich fühlst und was du dir von der Sitzung erhoffst. Darauf aufbauend kombiniere ich verschiedene Techniken – von langsamen, entspannenden Streichbewegungen bis hin zu gezielteren Handgriffen –, um mich ganz auf deinen Körper an diesem Tag einzustellen.",
     cta: "Sitzung bei Sophie buchen",
   },
   faqPage: {
     title: "Häufige Fragen",
-    intro: "Alles, was Sie vor Ihrem ersten Besuch wissen sollten.",
+    intro: "Alles, was du vor deinem ersten Besuch wissen musst.",
     items: [
       {
         question: "Wie buche ich eine Sitzung?",
         answer:
-          "Sie können jederzeit direkt online über unsere Buchungsseite reservieren. Sie erhalten sofort eine Bestätigung per E-Mail.",
+          "Du kannst direkt online über unsere Buchungsseite buchen, die jederzeit verfügbar ist. Du erhältst umgehend eine Bestätigung per E-Mail.",
       },
       {
-        question: "Wie lange dauert eine Sitzung?",
+        question: "Wie lange dauert eine Behandlung?",
         answer:
-          "Sitzungen dauern je nach gewählter Behandlung in der Regel 30 bis 75 Minuten. Die genauen Zeiten finden Sie auf jeder Behandlungsseite. Bitte beachten Sie, dass zu jeder Behandlungsdauer zusätzlich 10 bis 15 Minuten für das Vorgespräch und die Nachsorge eingeplant werden müssen.",
+          "Die Behandlungen dauern in der Regel zwischen 30 und 75 Minuten, je nachdem, für welche Behandlung du dich entscheidest. Die genauen Dauerangaben findest du auf den jeweiligen Behandlungsseiten. Bitte beachte, dass zu jeder Behandlungsdauer noch 10 bis 15 Minuten hinzugerechnet werden müssen, um die Beratungszeit und die Nachsorgehinweise einzubeziehen.",
       },
       {
         question: "Was soll ich mitbringen?",
-        answer: "Nur sich selbst. Handtücher und alles Nötige werden gestellt.",
+        answer:
+          "Nur dich selbst. Handtücher und alles, was du für deine Sitzung benötigst, werden bereitgestellt.",
       },
       {
         question: "Was soll ich anziehen?",
         answer:
-          "Bequeme Kleidung für den Weg hin und zurück. Für die Behandlung entkleiden Sie sich nach Ihrem eigenen Komfort und bleiben während der gesamten Sitzung mit einem Handtuch oder Laken bedeckt, außer im behandelten Bereich.",
+          "Bequeme Kleidung für den Hin- und Rückweg zur Sitzung. Für die Behandlung selbst ziehst du so viel aus, wie es dir angenehm ist, und bleibst während der gesamten Behandlung mit einem Handtuch oder Laken bedeckt, mit Ausnahme des Bereichs, der gerade behandelt wird.",
       },
       {
-        question: "Wie früh sollte ich ankommen?",
+        question: "Wie früh soll ich da sein?",
         answer:
-          "Bitte kommen Sie etwa 10 Minuten vor Ihrem Termin, um sich einzurichten und kurz über Ihr Befinden zu sprechen, bevor wir beginnen.",
+          "Bitte komm etwa 10 Minuten vor deinem Termin, damit du dich in Ruhe einrichten kannst, bevor wir beginnen.",
       },
       {
-        question: "Zahlungsmöglichkeiten?",
+        question: "Welche Zahlungsmöglichkeiten gibt es?",
         answer:
-          "Wir akzeptieren Zahlungen in Barzahlung, TWINT oder Überweisung (Wise, Revolut) direkt nach der Behandlung. \nRechnung nur auf Anfrage (Zahlungsfrist: 14 Tage). \nBei ausstehenden Zahlungen erfolgt eine Zahlungserinnerung nach 14 Tagen.",
+          "Wir akzeptieren Zahlungen in bar, per TWINT oder per Banküberweisung (Wise, Revolut) unmittelbar nach der Sitzung. Rechnungen werden nur auf Anfrage ausgestellt (Zahlungsfrist 14 Tage). Bei ausstehenden Zahlungen wird nach 14 Tagen eine Zahlungserinnerung verschickt.",
       },
       {
-        question: "Wie lautet die Stornierungsrichtlinie?",
+        question: "Wie lauten die Stornierungsbedingungen?",
         answer:
-          "Bitte sagen Sie Termine mindestens 24 Stunden im Voraus über WhatsApp ab. \nBei kurzfristigen Absagen (<24 Stunden) wird der volle Preis des Termins berechnet. \nAusnahmen: Krankheit mit ärztlichem Attest, Unfall, Todesfall. Bei verspätetem Erscheinen wird die ursprünglich gebuchte Zeit berechnet. Die Behandlung endet pünktlich.",
+          "Bitte sag Termine mindestens 24 Stunden im Voraus per WhatsApp, SMS oder E-Mail ab. Bei kurzfristigen Absagen (<24 Stunden): Es werden die vollen Kosten des Termins in Rechnung gestellt. Ausnahmen: Krankheit mit ärztlichem Attest, Unfall, Todesfall.",
       },
       {
-        question: "Was passiert, wenn ich zu spät komme?",
+        question: "Was passiert, wenn ich mich verspäte?",
         answer:
-          "Bei einer Verspätung wird der volle Betrag der ursprünglich gebuchten Zeit verrechnet. \nDer Termin endet grundsätzlich zur vereinbarten Zeit, damit die nachfolgenden Termine pünktlich beginnen können.",
+          "Wenn du dich verspätest, wird dir der volle Betrag für die ursprünglich gebuchte Zeit in Rechnung gestellt. Termine enden in der Regel zur vereinbarten Zeit, damit nachfolgende Termine pünktlich beginnen können.",
       },
       {
         question: "Wo finden die Sitzungen statt?",
         answer:
-          "Die Sitzungen finden im Gemeinschaftszentrum Glattwiesen in Zürich, Schwamendingen, Kreis 11 statt. Der Ort wird mit wunderbaren Frauen geteilt, die Coaching, Massagen und alternative Therapien anbieten.",
+          "Die Sitzungen finden in den Gemeinschaftsräumen Glattwiesen in Zürich, Schwamendingen, Kreis 11 statt. Der Ort wird mit wunderbaren Frauen geteilt, die eigenständiges Coaching, Massagen und alternative Therapien anbieten.",
       },
     ],
   },
@@ -284,12 +283,13 @@ const de: Translations = {
       "Wählen Sie eine Behandlung und einen passenden Termin. Sie erhalten sofort eine Bestätigung per E-Mail.",
     fallbackText: "Falls der Buchungskalender nicht lädt,",
     fallbackCta: "öffnen Sie die Buchungsseite direkt",
+    startOver: "Von vorne beginnen",
     contactAlternative:
       "Sie können uns auch direkt kontaktieren, wenn Sie Ihre Sitzung lieber per E-Mail oder WhatsApp vereinbaren möchten.",
   },
   footer: {
     description:
-      "Eine unabhängige Massagepraxis in Zürich mit ruhigen, individuell abgestimmten Behandlungen nach Vereinbarung.",
+      "Eigenständige Wellness-Massagepraxis in Zürich nur nach Vereinbarung.",
     navTitle: "Entdecken",
     contactTitle: "Kontakt",
     followTitle: "Folgen",
@@ -297,7 +297,7 @@ const de: Translations = {
     rightsReserved: "Alle Rechte vorbehalten.",
     privacy: "Datenschutzerklärung",
     legal: "Impressum",
-    terms: "Allgemeine Geschäftsbedingungen",
+    terms: "AGB",
     healthSafety: "Gesundheit & Sicherheit",
   },
   legalPage: {
@@ -306,7 +306,7 @@ const de: Translations = {
       "Sophie Massage wird von Sophie Goupil als Privatperson betrieben.",
       "Adresse: Gemeinschaftsräume Glattwiesen, Glattwiesenstrasse 213, 8051 Zürich, Schweiz.",
       "E-Mail: sophie.g.massage@gmail.com | Telefon: +41 77 804 44 52",
-      "Sophie Massage ist nicht im Handelsregister eingetragen und nicht mehrwertsteuerpflichtig registriert.",
+      "Sophie Massage ist nicht im Handelsregister eingetragen und nicht mehrwertsteuerpflichtig.",
     ],
     developerCredit: {
       label: "Webentwicklung durch 0xLSD / Lopez Software Development",
@@ -316,15 +316,13 @@ const de: Translations = {
   termsPage: {
     title: "Allgemeine Geschäftsbedingungen",
     body: [
-      "AGB",
-      "Allgemeine Geschäftsbedingungen",
       "Sophie Massage",
 
       "Stand: 15.09.2026",
 
       "Hinweis: Dies ist ein Entwurf. Diese Allgemeinen Geschäftsbedingungen sollten vor der Veröffentlichung noch fachjuristisch nach Schweizer Recht geprüft werden.",
 
-      "Anbieterin: Sophie Goupil, Sophie Massage. Telefon und WhatsApp: 077 804 44 52.",
+      "Anbieterin: Sophie Goupil, Sophie Massage. Telefon und WhatsApp: +41 77 804 44 52.",
 
       "1. Geltungsbereich",
       "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Behandlungen von Sophie Goupil an den Standort Zürich-Schwamendingen (Glattwiesenstrasse 213, 8051 Zürich). Mit der Buchung eines Termins werden diese AGB anerkannt. Diese ersetzen keine medizinische Behandlung.",
@@ -362,7 +360,7 @@ const de: Translations = {
     ],
   },
   privacyPage: {
-    title: "Datenschutz (Sophie massage)",
+    title: "Datenschutzerklärung",
     body: [
       "Zuletzt aktualisiert am: 15.09.2026",
       "Wir informieren nachfolgend transparent darüber, wie wir personenbezogene Daten bearbeiten.",
@@ -375,7 +373,7 @@ const de: Translations = {
       "Die von Ihnen gemachten Angaben werden zum Zwecke der Terminvereinbarung und deren Abwicklung bearbeitet.",
       "Die Pflichtangaben sind erforderlich, um mit Ihnen einen Termin zu vereinbaren. Die freiwillige Angabe weiterer Daten erleichtert mir die Bearbeitung Ihrer Anfrage und ermöglicht mir, Ihnen genauere Auskünfte zu erteilen.",
       "Wir geben personenbezogene Daten nur weiter, wenn dies notwendig ist, insbesondere an:",
-      "Buchhaltung / Treuhand.",
+      "Buchhaltung.",
       "Sie können dieser Datenbearbeitung jederzeit widersprechen. Senden Sie Ihren Widerspruch bitte an die unter Ziffer 1 genannte E-Mail-Adresse.",
       "4. Cookies und Tracking",
       "Unsere Website verwendet Cookies sowie Funktionen zur Analyse und Sicherheit.",

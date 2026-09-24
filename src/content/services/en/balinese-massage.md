@@ -29,4 +29,7 @@ whatToExpect:
   - "A gentler close to the session to leave you feeling settled"
 ---
 
-Traditional massage providing deep relaxation and promoting lymphatic drainage. It involves pressure-point massage as well as techniques to improve the body's flexibility and mobility. Original frangipani flower essential oil is used for a deeper feeling of relaxation.
+Balinese Massage consists of a combination of different techniques from various cultures that the Balinese people have adapted over time to create their own unique massage style (China, India, Java and Sweden).
+
+The Balinese massage combines long strokes, gentle kneading, and soft pressure points. It relaxes muscles, calms the mind, and restores inner harmony.
+Original frangipani flower essential oil is used for a deeper feeling of relaxation.

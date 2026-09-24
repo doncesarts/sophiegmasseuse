@@ -29,4 +29,7 @@ whatToExpect:
   - "Une fin de séance plus douce pour repartir apaisé·e"
 ---
 
-Un massage traditionnel procurant une relaxation profonde et favorisant le drainage lymphatique. Il associe des pressions ciblées et des techniques destinées à améliorer la souplesse et la mobilité du corps. De l'huile essentielle originale de fleur de frangipanier est utilisée pour une sensation de relaxation plus profonde.
+Le massage balinais associe différentes techniques issues de plusieurs cultures, que les Balinais ont adaptées au fil du temps pour créer leur propre style de massage (Chine, Inde, Java et Suède).
+
+Il combine de longs mouvements, des pétrissages doux et des pressions ciblées légères. Il détend les muscles, apaise l'esprit et rétablit l'harmonie intérieure.
+De l'huile essentielle authentique de fleur de frangipanier est utilisée pour favoriser une sensation de relaxation plus profonde.

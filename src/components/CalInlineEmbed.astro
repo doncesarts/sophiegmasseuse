@@ -8,6 +8,8 @@ interface Props {
   calLink: string;
   /** Accessible name for the toggle, since its visible content may not fully describe the action. */
   ariaLabel?: string;
+  /** Label for the button shown above the open calendar, e.g. "Close". */
+  closeLabel?: string;
   class?: string;
   summaryClass?: string;
 }
@@ -15,6 +17,7 @@ interface Props {
 const {
   calLink,
   ariaLabel,
+  closeLabel = 'Close',
   class: className,
   summaryClass = 'link link-primary text-sm whitespace-nowrap',
 } = Astro.props;
@@ -30,7 +33,14 @@ const elementId = `my-cal-inline-${namespace}`;
   >
     <slot />
   </summary>
-  <div class="mt-4 min-h-[720px]">
+  <div class="mt-4 min-h-[720px] bg-base-100 rounded-box">
+    <button
+      type="button"
+      class="btn btn-ghost btn-xs mb-2"
+      onclick="this.closest('details').removeAttribute('open')"
+    >
+      &larr; {closeLabel}
+    </button>
     <div id={elementId} style="width:100%;height:100%;overflow:scroll"></div>
   </div>
   <script is:inline type="text/javascript" define:vars={{ calLink, namespace, elementId }}>
@@ -78,7 +88,20 @@ const elementId = `my-cal-inline-${namespace}`;
           config: { layout: 'month_view', useSlotsViewOnSmallScreen: 'true' },
           calLink: calLink,
         });
-        Cal.ns[namespace]('ui', { hideEventTypeDetails: false, layout: 'month_view' });
+
+        // Read the site's actual theme tokens so the embed's background/text
+        // stay in sync with global.css instead of duplicating hardcoded colors here.
+        const rootStyle = getComputedStyle(document.documentElement);
+        const bg = rootStyle.getPropertyValue('--color-base-100').trim();
+        const text = rootStyle.getPropertyValue('--color-base-content').trim();
+        const border = rootStyle.getPropertyValue('--color-base-300').trim();
+        const theme = { 'cal-bg': bg, 'cal-bg-emphasis': bg, 'cal-border': border, 'cal-text': text };
+
+        Cal.ns[namespace]('ui', {
+          hideEventTypeDetails: false,
+          layout: 'month_view',
+          cssVarsPerTheme: { light: theme, dark: theme },
+        });
       },
       { once: true },
     );

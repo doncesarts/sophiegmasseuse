@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  if: false  # This disables the entire workflow
+  if: false # This disables the entire workflow
   deploy:
     if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
