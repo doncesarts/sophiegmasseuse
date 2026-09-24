@@ -1,6 +1,6 @@
 ---
 lang: "de"
-name: "Marc T."
+name: "Cesar L."
 location: "Zürich"
 quote: "Ein ruhiger, einladender Ort und ein wirklich persönlicher Ansatz. Ich gehe immer leichter wieder hinaus."
 rating: 5

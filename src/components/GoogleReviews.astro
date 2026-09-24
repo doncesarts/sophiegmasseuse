@@ -5,6 +5,7 @@
 import { Star } from '@lucide/astro';
 import { siteConfig } from '../config/site';
 import type { Translations } from '../i18n/types';
+import { getGoogleReviewStats } from '../lib/google-reviews';
 
 interface Props {
   t: Translations;
@@ -12,9 +13,10 @@ interface Props {
 
 const { t } = Astro.props;
 const { enabled, rating, count, url } = siteConfig.reviews;
+const stats = enabled && url ? await getGoogleReviewStats(url, { rating, count }) : null;
 ---
 
-{enabled && rating && count && url && (
+{enabled && stats && url && (
   <a
     href={url}
     target="_blank"
@@ -22,6 +24,6 @@ const { enabled, rating, count, url } = siteConfig.reviews;
     class="inline-flex items-center gap-2 rounded-field border border-base-300 bg-base-100 px-4 py-2 text-sm font-medium hover:border-primary"
   >
     <Star class="w-4 h-4 fill-current text-accent" aria-hidden="true" />
-    <span>{rating.toFixed(1)} · {count} {t.testimonialsSection.googleCta}</span>
+    <span>{stats.rating.toFixed(1)} · {stats.count} {t.testimonialsSection.googleCta}</span>
   </a>
 )}

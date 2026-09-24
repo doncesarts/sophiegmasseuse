@@ -32,14 +32,15 @@ export interface SiteConfig {
   /** schema.org openingHoursSpecification strings, e.g. "Mo-Fr 09:00-19:00". */
   openingHours: string[];
   /**
-   * Google reviews social proof. Kept disabled until the Google Business Profile
-   * is claimed and verified — flip `enabled` to true and fill in the fields to
-   * surface the rating badge and `aggregateRating` JSON-LD across the site.
+  * Google reviews social proof. Dynamic values are fetched when
+  * GOOGLE_PLACES_API_KEY is available; rating and count are used as the
+  * static fallback otherwise.
    */
   reviews: {
     enabled: boolean;
-    rating?: number;
-    count?: number;
+    /** Fallback values used when GOOGLE_PLACES_API_KEY is unavailable. */
+    rating: number;
+    count: number;
     /** Link to the public Google reviews page for this business. */
     url?: string;
   };
@@ -78,12 +79,11 @@ export const siteConfig: SiteConfig = {
   geo: { latitude: 47.4042, longitude: 8.5833 },
   priceRange: "CHF 60-130",
   openingHours: ["Wed-Thur 09:00-21:00"],
-  // TODO: set enabled: true and fill in real values once the Google Business Profile is verified.
   reviews: {
-    enabled: false,
-    rating: undefined,
-    count: undefined,
-    url: "",
+    enabled: true,
+    rating: 5,
+    count: 10,
+    url: "https://maps.app.goo.gl/1CT95A1QAtyFQuLH6",
   },
   colors: {
     primary: "#5B7A63",

@@ -57,12 +57,12 @@ src/
 This static site is deployed automatically by the GitHub Actions workflow at
 [`.github/workflows/deploy-cloudflare-pages.yml`](./.github/workflows/deploy-cloudflare-pages.yml).
 Every push to the `main` branch runs the Astro checks, builds `dist/`, and
-uploads it to the Cloudflare Pages project named `maison-serein`. The workflow
+uploads it to the Cloudflare Pages project named `YOUR-SITE`. The workflow
 can also be run manually from the **Actions** tab in GitHub.
 
 Before the first deployment:
 
-1. In Cloudflare, create a Pages project named `maison-serein`. Do not connect
+1. In Cloudflare, create a Pages project named `YOUR-SITE`. Do not connect
    it to GitHub; GitHub Actions performs deployments directly.
 2. Create a Cloudflare API token with **Account > Cloudflare Pages > Edit**
    permission.
@@ -95,6 +95,17 @@ Cal.com booking link, e.g. `https://cal.com/your-handle/session`. The `/book`
 page and the `BookingEmbed` component
 ([`src/components/BookingEmbed.astro`](./src/components/BookingEmbed.astro))
 automatically use this URL.
+
+## Configuring Google reviews
+
+Set `GOOGLE_PLACES_API_KEY` in the build environment. The key must have the
+Google Places API (New) enabled and be restricted to the Places API. During the
+Astro build, the Google Maps URL in [`src/config/site.ts`](./src/config/site.ts)
+is resolved to a Place ID and the current rating and review count are fetched
+automatically. If the variable is missing, the review badge and rating schema
+use the fallback `rating` and `count` values in
+[`src/config/site.ts`](./src/config/site.ts). When the variable is available,
+the current Google values are used instead.
 
 ## Adding or editing services
 
@@ -138,7 +149,7 @@ be understood correctly by AI assistants. Tracked here until each is resolved.
   - Update the `Sitemap:` line in [`public/robots.txt`](./public/robots.txt).
   - Re-run `npm run build` and re-check canonical/OG/hreflang tags on a few
     pages before deploying.
-- [ ] **Real phone number** — replace the `+41 77 804 44 52` placeholder in
+- [ ] **Real phone number** — replace the `+41 00 000 00 00` placeholder in
       [`src/config/site.ts`](./src/config/site.ts) (`phone`). Required for the
       `LocalBusiness` JSON-LD and for Google Business Profile matching (NAP
       consistency).
@@ -152,14 +163,12 @@ be understood correctly by AI assistants. Tracked here until each is resolved.
     `hasMap`/`geo` fields in the site's structured data.
   - Encourage clients to leave Google reviews (reviews are one of the
     strongest local-pack ranking factors).
-- [ ] **Google reviews (feature-flagged, off by default)** — once the Google
-      Business Profile is verified and has real reviews, enable the on-site
-      reviews badge and `AggregateRating` schema by setting `reviews.enabled: true`
-      and filling in `rating`, `count` and `url` in
-      [`src/config/site.ts`](./src/config/site.ts). No other code changes needed —
-      see [`GoogleReviews.astro`](./src/components/GoogleReviews.astro).
+- [ ] **Google reviews** — verify the Google Business Profile and set the
+  fallback `rating`, `count` and `url` in [`src/config/site.ts`](./src/config/site.ts).
+  Add `GOOGLE_PLACES_API_KEY` to the build environment when dynamic values
+  are desired. See [`GoogleReviews.astro`](./src/components/GoogleReviews.astro).
 - [ ] Confirm the final public-facing business name (site currently shows
-      "Sophie Massage", but the repo/package is named "maison-serein") — use the
+      "Sophie Massage", but the repo/package is named "YOUR-SITE") — use the
       exact same name everywhere: site, Google Business Profile, social profiles,
       directory listings.
 - [ ] Once the domain is live, submit the sitemap in Google Search Console and
@@ -170,4 +179,4 @@ be understood correctly by AI assistants. Tracked here until each is resolved.
 MIT — see [LICENSE](./LICENSE). Original template © anastasiiaxfr
 ([HealNet](https://github.com/anastasiiaxfr/HealNet)).
 
-Update https://maison-serein.example with real information.
+Update https://sophie-massage.ch with real information.

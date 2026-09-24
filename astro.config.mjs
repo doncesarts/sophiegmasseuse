@@ -7,9 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
-  // TODO: replace with the real production domain before launch — this placeholder
-  // breaks canonical URLs, hreflang tags, the sitemap and Open Graph URLs.
-  site: "https://maison-serein.example",
+  site: "https://sophie-massage.ch",
   redirects: {
     "/": "/en",
   },
