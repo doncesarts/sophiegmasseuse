@@ -164,9 +164,9 @@ be understood correctly by AI assistants. Tracked here until each is resolved.
   - Encourage clients to leave Google reviews (reviews are one of the
     strongest local-pack ranking factors).
 - [ ] **Google reviews** — verify the Google Business Profile and set the
-  fallback `rating`, `count` and `url` in [`src/config/site.ts`](./src/config/site.ts).
-  Add `GOOGLE_PLACES_API_KEY` to the build environment when dynamic values
-  are desired. See [`GoogleReviews.astro`](./src/components/GoogleReviews.astro).
+      fallback `rating`, `count` and `url` in [`src/config/site.ts`](./src/config/site.ts).
+      Add `GOOGLE_PLACES_API_KEY` to the build environment when dynamic values
+      are desired. See [`GoogleReviews.astro`](./src/components/GoogleReviews.astro).
 - [ ] Confirm the final public-facing business name (site currently shows
       "Sophie Massage", but the repo/package is named "YOUR-SITE") — use the
       exact same name everywhere: site, Google Business Profile, social profiles,

@@ -58,7 +58,7 @@ const fr: Translations = {
         "Réservez votre séance de massage en ligne en quelques clics via notre page de réservation Cal.com.",
     },
     privacy: {
-      title: "Protection des données — Sophie Massage",
+      title: "Politique de confidentialité — Sophie Massage",
       description:
         "Comment Sophie Massage traite et protège les données personnelles.",
     },
@@ -67,7 +67,7 @@ const fr: Translations = {
       description: "Informations légales concernant Sophie Massage.",
     },
     terms: {
-      title: "Conditions générales — Sophie Massage",
+      title: "Conditions générales de vente — Sophie Massage",
       description:
         "Conditions générales applicables aux soins de Sophie Massage.",
     },
@@ -79,7 +79,7 @@ const fr: Translations = {
   },
   hero: {
     eyebrow: "Cabinet de massage indépendant · Zurich",
-    headline: "Un espace calme pour ralentir — un voyage pour les sens.",
+    headline: "Un espace calme pour se ressourcer — un voyage sensoriel.",
     subheadline: "Massage & bien-être",
     intro: "",
     primaryCta: "Prendre rendez-vous",
@@ -92,8 +92,7 @@ const fr: Translations = {
   },
   featuredServices: {
     title: "Massages signature",
-    subtitle:
-      "Une carte de massages restreinte et réfléchie — chacun pratiqué avec soin plutôt qu'enchaîné dans une longue liste.",
+    subtitle: "Une carte de massages restreinte et préparée avec soin.",
     cta: "Voir tous les massages",
   },
   benefits: {
@@ -101,7 +100,7 @@ const fr: Translations = {
     subtitle: "",
     items: [
       {
-        title: "Un voyage pour les sens",
+        title: "Voyage sensoriel",
         description:
           "Chaque massage est une invitation au voyage, de l'Europe à l'Asie, tout en profitant du confort du studio.",
       },
@@ -123,15 +122,14 @@ const fr: Translations = {
     ],
   },
   philosophy: {
-    title: "Un voyage pour les sens",
+    title: "Voyage sensoriel",
     body: "L'approche de Sophie consiste à faire voyager le monde jusqu'à vous, sans précipitation, pour favoriser une détente complète du corps.",
     quote: "",
     quoteAuthor: "Sophie G.",
   },
   testimonialsSection: {
     title: "Ce que disent les clients",
-    subtitle:
-      "Quelques mots de personnes qui viennent régulièrement à Sophie Massage.",
+    subtitle: "Quelques mots de fidèles clients.",
     googleCta: "sur Google",
   },
   gallery: {
@@ -141,7 +139,7 @@ const fr: Translations = {
   },
   locationSection: {
     title: "Où nous trouver",
-    body: "Sophie Massage accueille sa clientèle sur rendez-vous dans un studio calme et facilement accessible à Zurich, au service de la ville et de ses environs.",
+    body: "Sophie Massage accueille sa clientèle sur rendez-vous dans un studio calme et facilement accessible depuis Zurich et ses environs.",
     transports: [
       {
         title: "En tram",
@@ -151,12 +149,11 @@ const fr: Translations = {
       {
         title: "En voiture",
         description:
-          "Place de parking client n° 11. Adresse GPS : Winterthurerstrasse 650, 8051 Zurich. Des places de stationnement bleues sont également disponibles dans la Glattwiesenstrasse.",
+          "Place de parking client n° 11. Adresse GPS : Winterthurerstrasse 650, 8051 Zurich. Des places de stationnement bleues sont également disponibles sur Glattwiesenstrasse.",
       },
       {
         title: "À votre arrivée",
-        description:
-          "Veuillez sonner chez « Gemeinschaftsräume Glattwiesen ». 1er étage.",
+        description: "Sonnez à « Gemeinschaftsräume Glattwiesen ». 1er étage.",
       },
     ],
     cta: "Nous contacter",
@@ -180,10 +177,10 @@ const fr: Translations = {
     whatToExpectTitle: "À quoi s'attendre",
     aftercareTitle: "Après votre séance",
     aftercareItems: [
-      "Buvez suffisamment d'eau dans les heures qui suivent pour aider votre corps.",
-      "Prenez-le calmement pour le reste de la journée et évitez les efforts intenses.",
+      "Buvez suffisamment d'eau dans les heures qui suivent pour aider votre corps à se réhydrater.",
+      "Profitez calmement du reste de la journée et évitez les efforts intenses.",
       "Une douche tiède est recommandée ; évitez les bains très chauds ou le sauna pendant quelques heures.",
-      "Une légère sensibilité, fatigue ou sensation de tête légère est normale un moment — reposez-vous si besoin.",
+      "Une légère sensibilité, fatigue ou sensation de vertige est normale — reposez-vous si besoin.",
       "Contactez-nous si quelque chose vous semble anormal ou qu'une gêne persiste au-delà d'un jour ou deux.",
     ],
     relatedTitle: "Vous aimerez aussi",
@@ -196,13 +193,13 @@ const fr: Translations = {
     intro: "Masseuse indépendante basée à Zurich.",
     biographyTitle: "Mon parcours",
     biography: [
-      "Les massages font partie de ma vie depuis mon plus jeune âge. Enfant, je pratiquais déjà des massages pour soulager les maux de dos. La vie m'a menée sur un autre chemin, guidé par une autre passion : celle des langues et des cultures étrangères. En 2025, j'ai décidé de renouer avec mon intérêt de longue date pour le massage et j'ai suivi plusieurs formations en massage suédois et balinais.",
+      "Les massages font partie de ma vie depuis mon plus jeune âge. Enfant, je pratiquais déjà des massages pour soulager les maux de dos. J'ai d'abord décidé de suivre une autre voie, guidée par une autre passion, celle des langues et des cultures étrangères. En 2025, j'ai décidé de renouer avec mon intérêt de longue date pour le massage et ai suivi plusieurs formations en massage suédois et balinais.",
       "Aujourd'hui, je suis ravie de pouvoir accueillir des clients dans différentes langues et de leur faire découvrir une variété de techniques de massage traditionnelles.",
       "Ces deux passions se rejoignent pour vous faire voyager à travers l'une des plus anciennes traditions du monde.",
     ],
     philosophyTitle: "Ma philosophie",
     philosophyBody:
-      "Je crois qu'un bon massage commence par l'écoute. Avant toute technique, je cherche à comprendre comment vous vous sentez et ce qui vous aiderait à vous sentir mieux — puis j'adapte la séance en conséquence.\nJ'utilise uniquement des huiles naturelles et nourrissantes ainsi qu'un mélange d'huiles essentielles douces pour la peau et apaisantes pour l'esprit.",
+      "Un bon massage commence par l'écoute. Avant toute technique, je cherche à comprendre comment vous vous sentez et ce qui vous aiderait à vous sentir mieux — puis j'adapte la séance en conséquence.\nJ'utilise uniquement des huiles naturelles et nourrissantes ainsi qu'un mélange d'huiles essentielles douces pour la peau et apaisantes pour l'esprit.",
     qualificationsTitle: "Formation & qualifications",
     qualificationsNote:
       "CIBTAC (The Confederation of International Beauty Therapy and Cosmetology) forme des diplômés de haut niveau en esthétique, soins complémentaires et spa depuis 1977.\nVTCT (Vocational Training Charitable Trust) est un organisme de certification spécialisé et reconnu au niveau international pour les qualifications en massage et thérapies complémentaires.",
@@ -233,12 +230,12 @@ const fr: Translations = {
       {
         question: "Que dois-je apporter ?",
         answer:
-          "Rien de particulier. Serviettes et tout le nécessaire sont fournis sur place.",
+          "Rien de particulier. Les linges et tout le nécessaire sont fournis sur place.",
       },
       {
         question: "Que dois-je porter ?",
         answer:
-          "Des vêtements confortables pour venir et repartir. Vous vous déshabillez selon votre confort pour le soin et restez couvert·e par une serviette ou un drap, sauf la zone travaillée.",
+          "Des vêtements confortables pour venir et repartir. Vous vous déshabillez selon votre confort pour le soin et restez couvert·e par un linge ou un drap, sauf la zone travaillée.",
       },
       {
         question: "Combien de temps à l'avance dois-je arriver ?",
@@ -246,7 +243,7 @@ const fr: Translations = {
           "Merci d'arriver environ 10 minutes avant votre rendez-vous afin de vous installer et d'échanger sur votre état avant de commencer.",
       },
       {
-        question: "Modes de paiement ?",
+        question: "Quelles sont les modes de paiement ?",
         answer:
           "Nous acceptons les paiements en espèces, via TWINT ou par virement bancaire (Wise, Revolut) immédiatement après la séance. \nLes factures ne sont émises que sur demande (paiement sous 14 jours). \nUn rappel de paiement sera envoyé après 14 jours pour les paiements en attente.",
       },
@@ -263,7 +260,7 @@ const fr: Translations = {
       {
         question: "Où se déroulent les séances ?",
         answer:
-          "Les séances ont lieu au centre communautaire Glattwiesen à Zurich, dans le quartier de Schwamendingen, Kreis 11. Le lieu est partagé avec plusieurs femmes formidables qui proposent du coaching, des massages et des thérapies alternatives.",
+          "Les séances ont lieu au centre communautaire Gemeinschaftsräume Glattwiesen à Zurich, dans le quartier de Schwamendingen, Kreis 11. Le lieu est partagé avec entrepreneuses formidables qui proposent indépendamment du coaching, des massages et des thérapies alternatives.",
       },
     ],
   },
@@ -272,7 +269,7 @@ const fr: Translations = {
     intro:
       "Une question avant de réserver, ou vous préférez nous contacter directement ? Voici comment joindre Sophie Massage.",
     emailLabel: "Email",
-    phoneLabel: "Téléphone",
+    phoneLabel: "Natel",
     whatsappLabel: "Nous écrire sur WhatsApp",
     addressLabel: "Adresse du studio",
     areaLabel: "Zone de service",
@@ -291,15 +288,15 @@ const fr: Translations = {
   },
   footer: {
     description:
-      "Un cabinet de massage indépendant à Zurich, proposant des soins calmes et personnalisés sur rendez-vous.",
+      "Cabinet de massage indépendant à Zurich, uniquement sur rendez-vous.",
     navTitle: "Explorer",
     contactTitle: "Contact",
     followTitle: "Suivre",
     languageTitle: "Langue",
     rightsReserved: "Tous droits réservés.",
-    privacy: "Protection des données",
+    privacy: "Politique de confidentialité",
     legal: "Mentions légales",
-    terms: "Conditions générales",
+    terms: "CGV",
     healthSafety: "Santé & sécurité",
   },
   legalPage: {
@@ -316,7 +313,7 @@ const fr: Translations = {
     },
   },
   termsPage: {
-    title: "Conditions générales",
+    title: "Conditions générales de vente",
     body: [
       "Sophie Massage",
       "Date : 15 septembre 2026",
@@ -325,7 +322,7 @@ const fr: Translations = {
       "1. Champ d'application",
       "Les présentes conditions générales s'appliquent à tous les soins proposés par Sophie Goupil dans son cabinet de Zurich-Schwamendingen (Glattwiesenstrasse 213, 8051 Zurich). En prenant rendez-vous, vous acceptez les présentes conditions générales.",
       "2. Prestations et tarifs",
-      "Nous proposons des massages de bien-être. Ceux-ci ne remplacent pas un traitement médical.",
+      "Nous proposons des massages bien-être. Ceux-ci ne remplacent pas un traitement médical.",
       "Les prix sont indiqués en CHF sur le site internet. Lors de la première consultation, le paiement est dû avant la séance (en espèces, par TWINT ou par virement bancaire) ; à partir de la deuxième séance, le paiement est dû après la séance.",
       "3. Modification des tarifs",
       "Sophie Goupil se réserve le droit d'adapter ses tarifs. Le prix communiqué au moment de la réservation est le prix applicable.",
@@ -348,7 +345,7 @@ const fr: Translations = {
     ],
   },
   privacyPage: {
-    title: "Protection des données (Sophie Massage)",
+    title: "Politique de confidentialité",
     body: [
       "Dernière mise à jour : 15.09.2026",
       "Vous trouverez ci-dessous des informations transparentes sur la manière dont nous traitons les données personnelles.",
@@ -356,7 +353,7 @@ const fr: Translations = {
       "Sophie Goupil\nGemeinschaftsräume Glattwiesen\nGlattwiesenstrasse 213\n8051 Zurich\nSuisse\n\nTéléphone : +41 77 804 44 52\nE-mail : sophie.g.massage@gmail.com",
       "2. En utilisant le service de réservation en ligne, je vous offre la possibilité de prendre rendez-vous chez Sophie Massage. Le service de réservation en ligne est exploité par cal.com. Pour plus d'informations, veuillez consulter : https://cal.com/privacy",
       "3. Réserver un rendez-vous en ligne",
-      "Si vous souhaitez utiliser le service de réservation en ligne, vous devrez fournir diverses données personnelles, telles que vos prénom et nom, et éventuellement d'autres informations personnelles comme votre adresse e-mail et votre numéro de téléphone portable. Vous pouvez également utiliser librement le champ « Commentaires ».",
+      "Si vous souhaitez utiliser le service de réservation en ligne, vous devrez fournir diverses données personnelles, telles que vos prénom et nom, et éventuellement d'autres informations personnelles comme votre adresse e-mail et votre numéro de natel. Vous pouvez également utiliser librement le champ « Commentaires ».",
       "Les informations que vous fournissez seront traitées afin d'organiser et de gérer votre rendez-vous.",
       "Les champs obligatoires sont nécessaires pour organiser un rendez-vous avec vous. La fourniture volontaire d'informations supplémentaires m'aide à traiter votre demande plus efficacement et me permet de vous fournir des informations plus détaillées.",
       "Nous ne transmettrons les données personnelles que lorsque cela est nécessaire, notamment à : des services de comptabilité et de fiduciaire.",
@@ -373,10 +370,10 @@ const fr: Translations = {
       "Vous disposez en principe d'un droit d'accès, de rectification, d'effacement, de limitation du traitement, de portabilité des données, d'opposition au traitement et de retrait de votre consentement concernant vos données personnelles.",
       "Veuillez toutefois noter que je me réserve le droit d'invoquer les restrictions prévues par la loi, notamment lorsque je suis tenue de conserver ou de traiter certaines données, que j'ai un intérêt prépondérant à le faire (dans la mesure où je suis autorisée à l'invoquer) ou que ces données sont nécessaires pour faire valoir des droits.",
       "Veuillez noter que l'exercice de ces droits peut entrer en conflit avec des dispositions contractuelles et avoir des conséquences telles qu'une résiliation anticipée du contrat ou des conséquences financières. Dans de tels cas, je vous en informerai à l'avance, lorsque cela n'est pas déjà prévu dans le contrat.",
-      "Si vous estimez que le traitement de vos données personnelles enfreint le droit de la protection des données, ou que vos droits en matière de protection des données ont été violés d'une autre manière, vous pouvez également déposer une plainte auprès de l'autorité de surveillance compétente. En Suisse, il s'agit du Préposé fédéral à la protection des données et à la transparence (PFPDT).",
-      "L'exercice de vos droits en matière de protection des données nécessite généralement une preuve claire de votre identité (par exemple une copie de votre pièce d'identité si votre identité n'est pas claire ou ne peut pas être vérifiée). Pour exercer vos droits, veuillez me contacter par e-mail à l'adresse indiquée à la section 1.",
+      "Si vous estimez que le traitement de vos données personnelles enfreint le droit de la confidentialité, ou que vos droits en matière de protection des données ont été violés d'une autre manière, vous pouvez également déposer une plainte auprès de l'autorité de surveillance compétente. En Suisse, il s'agit du Préposé fédéral à la protection des données et à la transparence (PFPDT).",
+      "L'exercice de vos droits en matière de confidentialité nécessite généralement une preuve claire de votre identité (par exemple une copie de votre pièce d'identité si votre identité n'est pas claire ou ne peut pas être vérifiée). Pour exercer vos droits, veuillez me contacter par e-mail à l'adresse indiquée à la section 1.",
       "7. Modifications",
-      "La présente politique de protection des données peut être modifiée à tout moment.",
+      "La présente politique de confidentialité peut être modifiée à tout moment.",
       "La version actuellement publiée sur notre site s'applique en tout temps.",
     ],
   },
@@ -386,7 +383,7 @@ const fr: Translations = {
       "Votre bien-être et votre sécurité passent avant tout. Voici les pratiques d'hygiène chez Sophie Massage, ainsi que les situations dans lesquelles le massage peut ne pas être approprié.",
     hygieneTitle: "Pratiques d'hygiène",
     hygieneItems: [
-      "Linge, serviettes et draps propres utilisés pour chaque client·e et changés entre les séances.",
+      "Linges et draps propres utilisés pour chaque client·e et changés entre les séances.",
       "Mains lavées et désinfectées avant et après chaque soin.",
       "Outils et surfaces de massage nettoyés et désinfectés entre les séances.",
       "Studio régulièrement aéré et nettoyé.",

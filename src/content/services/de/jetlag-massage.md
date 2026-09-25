@@ -15,10 +15,10 @@ imageAlt: "Jetlag-Massage bei Sophie Massage in Zürich"
 featured: true
 order: 3
 suitableFor:
-  - "Menschen mit Verspannungen im Nacken, in den Schultern oder im unteren Rücken"
+  - "Menschen mit Verspannungen in den Beinen, Schultern oder im unteren Rücken"
   - "Kabinenpersonal, das nach langen Flügen unter Müdigkeit leidet"
 whatToExpect:
-  - "Ein Gespräch, um die Bereiche zu bestimmen, auf die Sie sich konzentrieren möchten"
+  - "Ein Gespräch, um die Bereiche zu bestimmen, auf die du dich konzentrieren möchtest"
   - "Progressive Techniken, um Verspannungen allmählich zu lösen"
   - "Die Lösung von Verspannungen, die sich während eines langen Tages im Stehen angesammelt haben"
 ---

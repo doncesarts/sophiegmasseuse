@@ -102,8 +102,8 @@ const restartButtonId = 'cal-booking-restart';
     const bg = rootStyle.getPropertyValue('--color-base-100').trim();
     const text = rootStyle.getPropertyValue('--color-base-content').trim();
     const border = rootStyle.getPropertyValue('--color-base-300').trim();
-    //  'cal-bg': bg,
-    const theme = { 'cal-brand': brandColor, 'cal-bg-emphasis': bg, 'cal-border': border, 'cal-text': text };
+    //  'cal-bg': bg,'cal-brand': brandColor, 
+    const theme = { 'cal-bg-emphasis': bg, 'cal-border': border, 'cal-text': text };
 
     Cal.ns[namespace]('ui', {
       hideEventTypeDetails: false,

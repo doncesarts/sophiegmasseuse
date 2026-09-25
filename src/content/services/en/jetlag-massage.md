@@ -15,7 +15,7 @@ imageAlt: "Jetlag massage treatment at Sophie Massage in Zurich"
 featured: true
 order: 3
 suitableFor:
-  - "Those carrying tension in the neck, shoulders or lower back"
+  - "Those carrying tension in the legs, the shoulders or the lower back"
   - "Cabin crew experiencing fatigue from long flights"
 whatToExpect:
   - "A conversation to identify the areas you'd like to focus on"

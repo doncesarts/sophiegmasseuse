@@ -32,9 +32,9 @@ export interface SiteConfig {
   /** schema.org openingHoursSpecification strings, e.g. "Mo-Fr 09:00-19:00". */
   openingHours: string[];
   /**
-  * Google reviews social proof. Dynamic values are fetched when
-  * GOOGLE_PLACES_API_KEY is available; rating and count are used as the
-  * static fallback otherwise.
+   * Google reviews social proof. Dynamic values are fetched when
+   * GOOGLE_PLACES_API_KEY is available; rating and count are used as the
+   * static fallback otherwise.
    */
   reviews: {
     enabled: boolean;
@@ -91,7 +91,7 @@ export const siteConfig: SiteConfig = {
     accent: "#D8B36B",
   },
   socialImage: "/images/og-image.svg",
-  logo: "/images/logo.svg",
+  logo: "/images/logo-transparent-png.png",
   favicon: "/favicon/favicon.svg",
   seo: {
     defaultTitle: "Sophie Massage — Independent Massage Therapy in Zurich",

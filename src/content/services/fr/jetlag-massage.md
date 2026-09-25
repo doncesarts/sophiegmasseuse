@@ -15,7 +15,7 @@ imageAlt: "Massage anti-jetlag chez Sophie Massage à Zurich"
 featured: true
 order: 3
 suitableFor:
-  - "Les personnes ayant des tensions dans la nuque, les épaules ou le bas du dos"
+  - "Les personnes ayant des tensions dans les jambes, les épaules ou le dos"
   - "Le personnel navigant souffrant de fatigue après de longs vols"
 whatToExpect:
   - "Un échange pour identifier les zones sur lesquelles vous souhaitez vous concentrer"
@@ -23,7 +23,7 @@ whatToExpect:
   - "La libération des tensions accumulées après une longue journée passée debout"
 ---
 
-Un massage spécialement conçu pour les personnes qui voyagent fréquemment et travaillent de longues périodes de nuit, notamment le personnel navigant, et qui ont besoin d'une profonde détente.
+Un massage spécialement conçu pour les personnes qui voyagent fréquemment et travaillent de longues périodes de nuit, notamment le personnel navigant, et qui ont besoin d'une détente profonde.
 
 Une combinaison de techniques ciblant les jambes, le dos et les épaules stimule la circulation sanguine dans les jambes et libère les tensions accumulées lors des longs vols.
 

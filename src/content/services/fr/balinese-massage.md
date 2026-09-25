@@ -21,7 +21,7 @@ order: 2
 suitableFor:
   - "Les personnes portant des tensions dans la nuque, les épaules ou le bas du dos"
   - "Les personnes découvrant le massage pour la première fois et souhaitant une introduction en douceur"
-  - "Toute personne se sentant débordée, tendue ou ayant besoin de ralentir"
+  - "Toute personne se sentant débordée, tendue ou ayant besoin de se ressourcer"
 whatToExpect:
   - "Un échange pour identifier les zones à travailler en priorité"
   - "Une pression plus lente et plus soutenue avec les mains, les avant-bras et les coudes"

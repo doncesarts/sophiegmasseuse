@@ -16,7 +16,7 @@ const de: Translations = {
     readMore: "Weiterlesen",
     viewService: "Massage ansehen",
     backToServices: "Zurück zu allen Massagen",
-    relatedServices: "Weitere Massagen, die Ihnen gefallen könnten",
+    relatedServices: "Weitere Massagen, die dir gefallen könnten",
     minutesShort: "Min.",
     from: "ab",
     skipToContent: "Zum Inhalt springen",
@@ -29,17 +29,17 @@ const de: Translations = {
     home: {
       title: "Sophie Massage — Balinesische & Schwedische Massage in Zürich",
       description:
-        "Unabhängige Massagetherapeutin in Zürich mit Balinesischer und Schwedischer Massage. Ruhige, individuell abgestimmte Behandlungen — buchen Sie Ihre Sitzung bei Sophie Goupil.",
+        "Unabhängige Massagetherapeutin in Zürich mit Balinesischer und Schwedischer Massage. Ruhige, individuell abgestimmte Behandlungen — buche deine Sitzung bei Sophie Goupil.",
     },
     services: {
       title: "Balinesische & Schwedische Massage in Zürich — Sophie Massage",
       description:
-        "Entdecken Sie unsere Massagebehandlungen in Zürich, darunter Balinesische Massage und Schwedische Massage — jede individuell angepasst.",
+        "Entdecke unsere Massagebehandlungen in Zürich, darunter Balinesische Massage und Schwedische Massage — jede individuell angepasst.",
     },
     about: {
       title: "Über Sophie Goupil — Sophie Massage",
       description:
-        "Lernen Sie Sophie Goupil kennen, unabhängige Massagetherapeutin in Zürich, und die Philosophie von Sophie Massage.",
+        "Lerne Sophie Goupil kennen, unabhängige Massagetherapeutin in Zürich, und die Philosophie von Sophie Massage.",
     },
     faq: {
       title: "Häufige Fragen — Sophie Massage",
@@ -49,12 +49,12 @@ const de: Translations = {
     contact: {
       title: "Kontakt — Sophie Massage",
       description:
-        "Kontaktieren Sie Sophie Massage in Zürich oder buchen Sie Ihre Massagesitzung direkt online.",
+        "Kontaktiere Sophie Massage in Zürich oder buche deine Massagesitzung direkt online.",
     },
     book: {
       title: "Termin buchen — Sophie Massage",
       description:
-        "Buchen Sie Ihre Massagesitzung in wenigen Klicks online über unsere sichere Cal.com-Buchungsseite.",
+        "Buche deine Massagesitzung in wenigen Klicks online über unsere sichere Cal.com-Buchungsseite.",
     },
     privacy: {
       title: "Datenschutz — Sophie Massage",
@@ -73,7 +73,7 @@ const de: Translations = {
     healthSafety: {
       title: "Gesundheit, Sicherheit & Hygiene — Sophie Massage",
       description:
-        "Hygienepraktiken und medizinische Kontraindikationen, die Sie vor einer Massagebuchung bei Sophie Massage in Zürich kennen sollten.",
+        "Hygienepraktiken und medizinische Kontraindikationen, die du vor einer Massagebuchung bei Sophie Massage in Zürich kennen solltest.",
     },
   },
   hero: {
@@ -85,7 +85,7 @@ const de: Translations = {
     secondaryCta: "Massagen entdecken",
   },
   intro: {
-    title: "Ein Moment ganz für Sie",
+    title: "Ein Moment ganz für Dich",
     body: "Jede Sitzung beginnt mit einem Gespräch. Sophie nimmt sich Zeit, um zu verstehen, wie du dich fühlst, bevor sie den richtigen Druck, das richtige Tempo und die richtige Technik auswählt. Sophie verwendet ausschliesslich natürliche, pflegende Öle, die für empfindliche Haut geeignet sind.",
     cta: "Über Sophie",
   },
@@ -112,7 +112,7 @@ const de: Translations = {
       {
         title: "Konsequente, entspannte Betreuung",
         description:
-          "Die Sitzungen werden niemals überstürzt durchgeführt. Bei jedem Besuch werdest du von demselben Therapeuten behandelt, den du kennst und dem du vertraust.",
+          "Die Sitzungen werden niemals überstürzt durchgeführt. Bei jedem Besuch wirst du von demselben Therapeuten behandelt, den du kennst und dem du vertraust.",
       },
       {
         title: "Einfache Online-Buchung",
@@ -123,7 +123,7 @@ const de: Translations = {
   },
   philosophy: {
     title: "Eine Reise für die Sinne",
-    body: "Sophies Ansatz bringt die Welt zu Ihnen — ohne Eile und mit dem Ziel einer vollständigen Entspannung des Körpers.",
+    body: "Sophies Ansatz bringt die Welt zu dir — ohne Eile und mit dem Ziel einer vollständigen Entspannung des Körpers.",
     quote: "",
     quoteAuthor: "Sophie G.",
   },
@@ -139,7 +139,7 @@ const de: Translations = {
       "Ein Einblick in den ruhigen, gemütlichen Raum, in dem jede Sitzung stattfindet.",
   },
   locationSection: {
-    title: "Wo Sie uns finden",
+    title: "Wo du uns findest",
     body: "Sophie Massage empfängt ihre Kund:innen nach Vereinbarung in einem ruhigen, gut erreichbaren Studio in Zürich und betreut Kunden aus der Stadt und der Umgebung.",
     transports: [
       {
@@ -180,7 +180,7 @@ const de: Translations = {
     aftercareTitle: "Nach deiner Sitzung",
     aftercareItems: [
       "Trink in den nächsten Stunden reichlich Wasser, damit sich dein Körper erholen kann",
-      "Schon dich für den Rest des Tages und vermeide anstrengende körperliche Aktivitäten",
+      "Geniess den Rest des Tages und vermeide anstrengende körperliche Aktivitäten",
       "Eine warme (nicht heisse) Dusche ist in Ordnung; vermeide für einige Stunden sehr heisse Bäder oder Saunagänge",
       "Leichte Empfindlichkeit, Müdigkeit oder kurzzeitiger Schwindel sind normal – ruhe dich aus, wenn du eines dieser Symptome verspürst",
       "Lass es uns wissen, wenn dir etwas ungewöhnlich vorkommt oder wenn deine Symptome nicht verschwinden",
@@ -196,7 +196,7 @@ const de: Translations = {
     biography: [
       "Massagen gehören seit meiner frühen Kindheit zu meinem Leben. Schon als Kind habe ich Massagen praktiziert, um Rückenschmerzen zu lindern. Das Leben führte mich auf einen anderen Weg, der von einer anderen Leidenschaft geprägt war: der Leidenschaft für Sprachen und fremde Kulturen. Im Jahr 2025 beschloss ich, mein langjähriges Interesse an Massagen wieder aufzugreifen, und absolvierte daher mehrere Ausbildungen in schwedischer und balinesischer Massage.",
       "Heute freue ich mich sehr, Patienten in verschiedenen Sprachen begrüssen zu dürfen und ihnen eine Vielzahl traditioneller Massagetechniken näherzubringen.",
-      "Beide Leidenschaften vereinen sich, um Sie auf eine Reise durch eine der ältesten Traditionen der Welt mitzunehmen.",
+      "Beide Leidenschaften vereinen sich, um dich auf eine Reise durch eine der ältesten Traditionen der Welt mitzunehmen.",
     ],
     philosophyTitle: "Meine Philosophie",
     philosophyBody:
@@ -268,24 +268,24 @@ const de: Translations = {
   contactPage: {
     title: "Kontakt",
     intro:
-      "Eine Frage vor der Buchung, oder Sie möchten uns lieber direkt kontaktieren? So erreichen Sie Sophie Massage.",
+      "Eine Frage vor der Buchung, oder du möchtest uns lieber direkt kontaktieren? So erreichst du Sophie Massage.",
     emailLabel: "E-Mail",
     phoneLabel: "Telefon",
     whatsappLabel: "Uns auf WhatsApp schreiben",
     addressLabel: "Adresse des Studios",
     areaLabel: "Einzugsgebiet",
-    socialLabel: "Folgen Sie uns",
-    bookAlternative: "Möchten Sie lieber gleich buchen?",
+    socialLabel: "Folge uns",
+    bookAlternative: "Möchtest du lieber gleich buchen?",
   },
   bookPage: {
     title: "Sitzung buchen",
     intro:
-      "Wählen Sie eine Behandlung und einen passenden Termin. Sie erhalten sofort eine Bestätigung per E-Mail.",
+      "Wähle eine Behandlung und einen passenden Termin. Du erhältst sofort eine Bestätigung per E-Mail.",
     fallbackText: "Falls der Buchungskalender nicht lädt,",
-    fallbackCta: "öffnen Sie die Buchungsseite direkt",
+    fallbackCta: "öffne die Buchungsseite direkt",
     startOver: "Von vorne beginnen",
     contactAlternative:
-      "Sie können uns auch direkt kontaktieren, wenn Sie Ihre Sitzung lieber per E-Mail oder WhatsApp vereinbaren möchten.",
+      "Du kannst uns auch direkt kontaktieren, wenn du deine Sitzung lieber per E-Mail oder WhatsApp vereinbaren möchtest.",
   },
   footer: {
     description:
@@ -397,18 +397,18 @@ const de: Translations = {
   healthSafetyPage: {
     title: "Gesundheit, Sicherheit & Hygiene",
     intro:
-      "Ihr Wohlbefinden und Ihre Sicherheit stehen an erster Stelle. Hier erfahren Sie mehr über die Hygienepraktiken bei Sophie Massage sowie Situationen, in denen eine Massage möglicherweise nicht geeignet ist.",
+      "Dein Wohlbefinden und deine Sicherheit stehen an erster Stelle. Hier erfährst du mehr über die Hygienepraktiken bei Sophie Massage sowie Situationen, in denen eine Massage möglicherweise nicht geeignet ist.",
     hygieneTitle: "Hygienepraktiken",
     hygieneItems: [
       "Frische Wäsche, Handtücher und Abdeckungen werden für jede Sitzung verwendet und dazwischen gewechselt.",
       "Hände werden vor und nach jeder Behandlung gewaschen und desinfiziert.",
       "Massagewerkzeuge und Flächen werden zwischen den Sitzungen gereinigt und desinfiziert.",
       "Das Studio wird regelmäßig gelüftet und gereinigt.",
-      "Falls Sie sich unwohl fühlen (Fieber, Erkältung, Grippe, ansteckende Krankheit), verschieben Sie bitte Ihren Termin — zum Schutz von Ihnen, anderen Kund:innen und Sophie.",
+      "Falls du dich unwohl fühlst (Fieber, Erkältung, Grippe, ansteckende Krankheit), verschiebe bitte deinen Termin — zum Schutz von dir, anderen Kund:innen und Sophie.",
     ],
     contraindicationsTitle: "Kontraindikationen & medizinischer Hinweis",
     contraindicationsIntro:
-      "Massage ist grundsätzlich sicher, eignet sich jedoch nicht für jede Situation. Bitte informieren Sie Sophie vor Ihrer Sitzung, falls einer der folgenden Punkte auf Sie zutrifft, damit die Behandlung angepasst oder sicher verschoben werden kann:",
+      "Massage ist grundsätzlich sicher, eignet sich jedoch nicht für jede Situation. Bitte informiere Sophie vor deiner Sitzung, falls einer der folgenden Punkte auf dich zutrifft, damit die Behandlung angepasst oder sicher verschoben werden kann:",
     contraindicationsItems: [
       "Schwangerschaft, insbesondere im ersten Trimester",
       "Kürzliche Operationen, Brüche, Verstauchungen oder offene Wunden",
@@ -419,7 +419,7 @@ const de: Translations = {
       "Kürzliche Chemo- oder Strahlentherapie ohne ärztliche Freigabe",
     ],
     disclaimerNote:
-      "Diese Informationen dienen nur der allgemeinen Orientierung und ersetzen keine ärztliche Beratung. Massage ersetzt keine medizinische Behandlung — bei gesundheitlichen Beschwerden oder Unsicherheit konsultieren Sie bitte vor der Buchung Ihre ärztliche Fachperson.",
+      "Diese Informationen dienen nur der allgemeinen Orientierung und ersetzen keine ärztliche Beratung. Massage ersetzt keine medizinische Behandlung — bei gesundheitlichen Beschwerden oder Unsicherheit konsultiere bitte vor der Buchung deine ärztliche Fachperson.",
   },
   notFound: {
     title: "Seite nicht gefunden",
@@ -428,7 +428,7 @@ const de: Translations = {
   },
   serverError: {
     title: "Etwas ist schiefgelaufen",
-    body: "Bitte versuchen Sie es gleich noch einmal oder kontaktieren Sie uns, falls das Problem bestehen bleibt.",
+    body: "Bitte versuche es gleich noch einmal oder kontaktiere uns, falls das Problem bestehen bleibt.",
     cta: "Zurück zur Startseite",
   },
 };

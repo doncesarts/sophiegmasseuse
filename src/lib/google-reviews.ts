@@ -30,12 +30,16 @@ async function resolvePlaceId(url: string) {
   const placeId = extractPlaceId(response.url);
   if (placeId) return { placeId };
 
-  const name = decodeURIComponent(response.url.match(/\/place\/([^/@]+)/)?.[1] ?? "").replaceAll("+", " ");
+  const name = decodeURIComponent(
+    response.url.match(/\/place\/([^/@]+)/)?.[1] ?? "",
+  ).replaceAll("+", " ");
   const coordinates = response.url.match(/@(-?\d+\.\d+),(-?\d+\.\d+)/);
   return { name, coordinates };
 }
 
-async function fetchGoogleReviewStats(url: string): Promise<GoogleReviewStats | null> {
+async function fetchGoogleReviewStats(
+  url: string,
+): Promise<GoogleReviewStats | null> {
   const apiKey = import.meta.env.GOOGLE_PLACES_API_KEY;
   if (!apiKey) return null;
 
@@ -55,15 +59,18 @@ async function fetchGoogleReviewStats(url: string): Promise<GoogleReviewStats | 
             },
           }
         : undefined;
-      const searchResponse = await fetch("https://places.googleapis.com/v1/places:searchText", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "X-Goog-Api-Key": apiKey,
-          "X-Goog-FieldMask": "places.id",
+      const searchResponse = await fetch(
+        "https://places.googleapis.com/v1/places:searchText",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "X-Goog-Api-Key": apiKey,
+            "X-Goog-FieldMask": "places.id",
+          },
+          body: JSON.stringify({ textQuery: resolved.name, locationBias }),
         },
-        body: JSON.stringify({ textQuery: resolved.name, locationBias }),
-      });
+      );
       if (!searchResponse.ok) return null;
       const search = (await searchResponse.json()) as TextSearchResponse;
       placeId = search.places?.[0]?.id;
@@ -71,17 +78,23 @@ async function fetchGoogleReviewStats(url: string): Promise<GoogleReviewStats | 
 
     if (!placeId) return null;
 
-    const response = await fetch(`https://places.googleapis.com/v1/places/${placeId}`, {
-      headers: {
-        "X-Goog-Api-Key": apiKey,
-        "X-Goog-FieldMask": "rating,userRatingCount",
+    const response = await fetch(
+      `https://places.googleapis.com/v1/places/${placeId}`,
+      {
+        headers: {
+          "X-Goog-Api-Key": apiKey,
+          "X-Goog-FieldMask": "rating,userRatingCount",
+        },
       },
-    });
+    );
 
     if (!response.ok) return null;
 
     const place = (await response.json()) as PlaceDetailsResponse;
-    if (typeof place.rating !== "number" || typeof place.userRatingCount !== "number") {
+    if (
+      typeof place.rating !== "number" ||
+      typeof place.userRatingCount !== "number"
+    ) {
       return null;
     }
 
