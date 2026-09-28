@@ -29,7 +29,7 @@ const de: Translations = {
     home: {
       title: "Sophie Massage — Balinesische & Schwedische Massage in Zürich",
       description:
-        "Unabhängige Massagetherapeutin in Zürich mit Balinesischer und Schwedischer Massage. Ruhige, individuell abgestimmte Behandlungen — buche deine Sitzung bei Sophie Goupil.",
+        "Unabhängige Massagetherapeutin in Zürich mit Balinesischer und Schwedischer Massage. Ruhige, individuell abgestimmte Behandlungen — buche deine Sitzung.",
     },
     services: {
       title: "Balinesische & Schwedische Massage in Zürich — Sophie Massage",
@@ -37,9 +37,9 @@ const de: Translations = {
         "Entdecke unsere Massagebehandlungen in Zürich, darunter Balinesische Massage und Schwedische Massage — jede individuell angepasst.",
     },
     about: {
-      title: "Über Sophie Goupil — Sophie Massage",
+      title: "Über mich — Sophie Massage",
       description:
-        "Lerne Sophie Goupil kennen, unabhängige Massagetherapeutin in Zürich, und die Philosophie von Sophie Massage.",
+        "Lerne mich kennen, unabhängige Massagetherapeutin in Zürich, und die Philosophie von Sophie Massage.",
     },
     faq: {
       title: "Häufige Fragen — Sophie Massage",
@@ -77,7 +77,7 @@ const de: Translations = {
     },
   },
   hero: {
-    eyebrow: "Wellnessassagepraxis · Zürich",
+    eyebrow: "Wellnessmassagepraxis · Zürich",
     headline: "Ein ruhiger Ort zum Entspannen – eine Reise für die Sinne.",
     subheadline: "",
     intro: "Massage & Wellbeing",
@@ -86,8 +86,8 @@ const de: Translations = {
   },
   intro: {
     title: "Ein Moment ganz für Dich",
-    body: "Jede Sitzung beginnt mit einem Gespräch. Sophie nimmt sich Zeit, um zu verstehen, wie du dich fühlst, bevor sie den richtigen Druck, das richtige Tempo und die richtige Technik auswählt. Sophie verwendet ausschliesslich natürliche, pflegende Öle, die für empfindliche Haut geeignet sind.",
-    cta: "Über Sophie",
+    body: "Jede Sitzung beginnt mit einem Gespräch. ich nemme mich Zeit, um zu verstehen, wie du dich fühlst, bevor ich den richtigen Druck, das richtige Tempo und die richtige Technik auswählt. Ich verwende ausschliesslich natürliche, pflegende Öle, die für empfindliche Haut geeignet sind.",
+    cta: "Über mich",
   },
   featuredServices: {
     title: "Signature-Massagen",
@@ -123,7 +123,7 @@ const de: Translations = {
   },
   philosophy: {
     title: "Eine Reise für die Sinne",
-    body: "Sophies Ansatz bringt die Welt zu dir — ohne Eile und mit dem Ziel einer vollständigen Entspannung des Körpers.",
+    body: "Mein Ansatz bringt die Welt zu dir — ohne Eile und mit dem Ziel einer vollständigen Entspannung des Körpers.",
     quote: "",
     quoteAuthor: "Sophie G.",
   },
@@ -168,7 +168,7 @@ const de: Translations = {
   servicesPage: {
     title: "Massagen",
     intro:
-      "Du weisst nicht, wofür du dich entscheiden sollst? Melde dich bei uns, und Sophie hilft dir bei der Entscheidung.",
+      "Du weisst nicht, wofür du dich entscheiden sollst? Melde dich bei uns, und ich helfe dir bei der Entscheidung.",
   },
   serviceDetail: {
     optionsTitle: "Optionen & Preise",
@@ -190,7 +190,7 @@ const de: Translations = {
     ctaBody: "Buche deinen Wunschtermin online – das dauert nur eine Minute.",
   },
   about: {
-    title: "Über Sophie Goupil",
+    title: "Über mich",
     intro: "Selbstständige Massagetherapeutin mit Sitz in Zürich.",
     biographyTitle: "Meine Geschichte",
     biography: [
@@ -212,7 +212,7 @@ const de: Translations = {
     approachTitle: "Mein Ansatz",
     approachBody:
       "Jede Sitzung beginnt mit einem kurzen Gespräch darüber, wie du dich fühlst und was du dir von der Sitzung erhoffst. Darauf aufbauend kombiniere ich verschiedene Techniken – von langsamen, entspannenden Streichbewegungen bis hin zu gezielteren Handgriffen –, um mich ganz auf deinen Körper an diesem Tag einzustellen.",
-    cta: "Sitzung bei Sophie buchen",
+    cta: "Sitzung buchen",
   },
   faqPage: {
     title: "Häufige Fragen",
@@ -404,11 +404,11 @@ const de: Translations = {
       "Hände werden vor und nach jeder Behandlung gewaschen und desinfiziert.",
       "Massagewerkzeuge und Flächen werden zwischen den Sitzungen gereinigt und desinfiziert.",
       "Das Studio wird regelmäßig gelüftet und gereinigt.",
-      "Falls du dich unwohl fühlst (Fieber, Erkältung, Grippe, ansteckende Krankheit), verschiebe bitte deinen Termin — zum Schutz von dir, anderen Kund:innen und Sophie.",
+      "Falls du dich unwohl fühlst (Fieber, Erkältung, Grippe, ansteckende Krankheit), verschiebe bitte deinen Termin — zum Schutz von dir, anderen Kund:innen und ich selbst.",
     ],
     contraindicationsTitle: "Kontraindikationen & medizinischer Hinweis",
     contraindicationsIntro:
-      "Massage ist grundsätzlich sicher, eignet sich jedoch nicht für jede Situation. Bitte informiere Sophie vor deiner Sitzung, falls einer der folgenden Punkte auf dich zutrifft, damit die Behandlung angepasst oder sicher verschoben werden kann:",
+      "Massage ist grundsätzlich sicher, eignet sich jedoch nicht für jede Situation. Bitte informiere mich vor deiner Sitzung, falls einer der folgenden Punkte auf dich zutrifft, damit die Behandlung angepasst oder sicher verschoben werden kann:",
     contraindicationsItems: [
       "Schwangerschaft, insbesondere im ersten Trimester",
       "Kürzliche Operationen, Brüche, Verstauchungen oder offene Wunden",

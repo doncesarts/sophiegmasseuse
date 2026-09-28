@@ -2,7 +2,7 @@
 lang: "de"
 name: "Stephanie M."
 location: "Zurich"
-quote: "Ich habe mich für eine schwedische Massage bei Sophie entschieden. Da ich in der Gastronomie ständig auf den Beinen bin, hat sie meine Verspannungspunkte sofort erkannt und mich vollkommen entspannt. Ich habe mich danach wie neu gefühlt – ganz leicht. Danke, Sophie, für diese Wellness-Auszeit! Ich komme gerne wieder."
+quote: "Ich habe mich für eine schwedische Massage bei Sophie entschieden. Da ich durch meine Arbeit in der Gastronomie den ganzen Tag auf den Beinen bin, konnte sie meine Verspannungen erkennen und mir helfen, vollkommen zu entspannen. Danach fühlte ich mich wunderbar leicht. Danke, Sophie, für diese wohltuende Auszeit! Ich komme wieder."
 rating: 5
 featured: true
 order: 3

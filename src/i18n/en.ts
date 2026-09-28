@@ -30,7 +30,7 @@ const en: Translations = {
     home: {
       title: "Sophie Massage — Balinese & Swedish Massage in Zurich",
       description:
-        "Independent massage therapist in Zurich offering Balinese and Swedish massage. Calm, attentive treatments tailored to you — book your session with Sophie Goupil today.",
+        "Independent massage therapist in Zurich offering Balinese and Swedish massage. Calm, attentive treatments tailored to you — book your session today.",
     },
     services: {
       title: "Balinese & Swedish Massage Treatments in Zurich — Sophie Massage",
@@ -38,9 +38,9 @@ const en: Translations = {
         "Explore our massage treatments in Zurich, including Balinese massage and Swedish massage — each thoughtfully adapted to your needs.",
     },
     about: {
-      title: "About Sophie Goupil — Sophie Massage",
+      title: "About Me — Sophie Massage",
       description:
-        "Meet Sophie Goupil, independent massage therapist in Zurich, and discover the philosophy behind Sophie Massage.",
+        "Meet me, independent massage therapist in Zurich, and discover the philosophy behind Sophie Massage.",
     },
     faq: {
       title: "Frequently Asked Questions — Sophie Massage",
@@ -86,8 +86,8 @@ const en: Translations = {
   },
   intro: {
     title: "A moment made entirely for you",
-    body: "Every session begins with a conversation. Sophie takes the time to understand how you feel before choosing the right pressure, pace and technique. Sophie uses only natural, nourishing oils suitable for senstive skin.",
-    cta: "About Sophie",
+    body: "Every session begins with a conversation. I take the time to understand how you feel before choosing the right pressure, pace and technique. I use only natural, nourishing oils suitable for sensitive skin.",
+    cta: "About Me",
   },
   featuredServices: {
     title: "Signature massages",
@@ -123,7 +123,7 @@ const en: Translations = {
   },
   philosophy: {
     title: "A journey for the senses",
-    body: "Sophie's approach is to bring the world to you - without the rush and ensuring total body relaxation.",
+    body: "My approach is to bring the world to you - without the rush and ensuring total body relaxation.",
     quote: "",
     quoteAuthor: "Sophie G.",
   },
@@ -166,8 +166,7 @@ const en: Translations = {
   },
   servicesPage: {
     title: "Massages",
-    intro:
-      "Not sure what to choose? Get in touch and Sophie will help you decide.",
+    intro: "Not sure what to choose? Get in touch and I will help you decide.",
   },
   serviceDetail: {
     optionsTitle: "Options & Pricing",
@@ -189,7 +188,7 @@ const en: Translations = {
     ctaBody: "Reserve your preferred time online — it only takes a minute.",
   },
   about: {
-    title: "About Sophie Goupil",
+    title: "About me",
     intro: "Independent massage therapist based in Zurich.",
     biographyTitle: "My story",
     biography: [
@@ -211,7 +210,7 @@ const en: Translations = {
     approachTitle: "My approach",
     approachBody:
       "Every session opens with a short conversation about how you're feeling and what you'd like from the session. From there, I blend techniques — from slow, relaxing strokes to more focused work — to suit your body that day.",
-    cta: "Book a session with Sophie",
+    cta: "Book a session",
   },
   faqPage: {
     title: "Frequently Asked Questions",
@@ -267,7 +266,7 @@ const en: Translations = {
   contactPage: {
     title: "Contact",
     intro:
-      "Have a question before booking, or prefer to reach out directly? Here's how to find Sophie.",
+      "Have a question before booking, or prefer to reach out directly? Here's how to find me.",
     emailLabel: "Email",
     phoneLabel: "Phone",
     whatsappLabel: "Message us on WhatsApp",
@@ -387,11 +386,11 @@ const en: Translations = {
       "Hands are washed and sanitised before and after each treatment.",
       "Massage tools and surfaces are cleaned and disinfected between sessions.",
       "The studio is ventilated and cleaned regularly.",
-      "If you're feeling unwell (fever, cold, flu, contagious illness), please reschedule — this protects you, other clients and Sophie.",
+      "If you're feeling unwell (fever, cold, flu, contagious illness), please reschedule — this protects you, other clients and myself.",
     ],
     contraindicationsTitle: "Contraindications & medical disclaimer",
     contraindicationsIntro:
-      "Massage is generally safe, but it isn't appropriate for everyone or in every situation. Please tell Sophie before your session if any of the following apply to you, so the treatment can be adjusted or safely postponed:",
+      "Massage is generally safe, but it isn't appropriate for everyone or in every situation. Please tell me before your session if any of the following apply to you, so the treatment can be adjusted or safely postponed:",
     contraindicationsItems: [
       "Pregnancy, particularly in the first trimester",
       "Recent surgery, fractures, sprains or open wounds",

@@ -30,7 +30,7 @@ const fr: Translations = {
     home: {
       title: "Sophie Massage — Massage balinais & suédois à Zurich",
       description:
-        "Masseuse indépendante à Zurich proposant massage balinais et massage suédois. Soins calmes et sur mesure — réservez votre séance avec Sophie Goupil.",
+        "Masseuse indépendante à Zurich proposant massage balinais et massage suédois. Soins calmes et sur mesure — réservez votre séance.",
     },
     services: {
       title: "Massage balinais & suédois à Zurich — Sophie Massage",
@@ -38,9 +38,9 @@ const fr: Translations = {
         "Découvrez nos soins de massage à Zurich, dont le massage balinais et le massage suédois, chacun adapté à vos besoins.",
     },
     about: {
-      title: "À propos de Sophie Goupil — Sophie Massage",
+      title: "À propos de moi — Sophie Massage",
       description:
-        "Découvrez Sophie Goupil, masseuse indépendante à Zurich, et la philosophie de Sophie Massage.",
+        "Masseuse indépendante à Zurich - découvrez la philosophie de Sophie Massage.",
     },
     faq: {
       title: "Questions fréquentes — Sophie Massage",
@@ -87,8 +87,8 @@ const fr: Translations = {
   },
   intro: {
     title: "Un moment pensé entièrement pour vous",
-    body: "Chaque séance commence par un échange. Sophie prend le temps de comprendre comment vous vous sentez avant de choisir la pression, le rythme et la technique adaptés. Sophie utilise uniquement des huiles naturelles et nourrissantes, adaptées aux peaux sensibles.",
-    cta: "Découvrir Sophie",
+    body: "Chaque séance commence par un échange. Je prends le temps de comprendre comment vous vous sentez avant de choisir la pression, le rythme et la technique adaptés. J'utilise uniquement des huiles naturelles et nourrissantes, adaptées aux peaux sensibles.",
+    cta: "A propos de moi",
   },
   featuredServices: {
     title: "Massages signature",
@@ -123,7 +123,7 @@ const fr: Translations = {
   },
   philosophy: {
     title: "Voyage sensoriel",
-    body: "L'approche de Sophie consiste à faire voyager le monde jusqu'à vous, sans précipitation, pour favoriser une détente complète du corps.",
+    body: "Mon approche consiste à faire voyager le monde jusqu'à vous, sans précipitation, pour favoriser une détente complète du corps.",
     quote: "",
     quoteAuthor: "Sophie G.",
   },
@@ -166,7 +166,7 @@ const fr: Translations = {
   servicesPage: {
     title: "Massages",
     intro:
-      "Vous ne savez pas lequel choisir ? Contactez Sophie, qui vous aidera à vous décider.",
+      "Vous ne savez pas lequel choisir ? Contactez-moi, je vous aiderai à vous décider.",
   },
   serviceDetail: {
     optionsTitle: "Formules et tarifs",
@@ -189,7 +189,7 @@ const fr: Translations = {
       "Réservez le créneau de votre choix en ligne — cela ne prend qu'une minute.",
   },
   about: {
-    title: "À propos de Sophie Goupil",
+    title: "À propos de moi",
     intro: "Masseuse indépendante basée à Zurich.",
     biographyTitle: "Mon parcours",
     biography: [
@@ -211,7 +211,7 @@ const fr: Translations = {
     approachTitle: "Mon approche",
     approachBody:
       "Chaque séance débute par un court échange sur votre état du moment et vos attentes. Je combine ensuite les techniques — des mouvements lents et relaxants à un travail plus ciblé — pour m'adapter à votre corps ce jour-là.",
-    cta: "Réserver une séance avec Sophie",
+    cta: "Réserver une séance",
   },
   faqPage: {
     title: "Questions fréquentes",
@@ -387,11 +387,11 @@ const fr: Translations = {
       "Mains lavées et désinfectées avant et après chaque soin.",
       "Outils et surfaces de massage nettoyés et désinfectés entre les séances.",
       "Studio régulièrement aéré et nettoyé.",
-      "En cas de symptômes (fièvre, rhume, grippe, maladie contagieuse), merci de reporter votre rendez-vous — pour vous protéger, protéger les autres client·e·s et Sophie.",
+      "En cas de symptômes (fièvre, rhume, grippe, maladie contagieuse), merci de reporter votre rendez-vous — pour vous protéger, protéger les autres client·e·s et moi-même.",
     ],
     contraindicationsTitle: "Contre-indications & avertissement médical",
     contraindicationsIntro:
-      "Le massage est généralement sûr, mais ne convient pas à toutes les situations. Merci d'informer Sophie avant votre séance si l'un des points suivants vous concerne, afin d'adapter ou de reporter le soin en toute sécurité :",
+      "Le massage est généralement sûr, mais ne convient pas à toutes les situations. Merci de m'informer avant votre séance si l'un des points suivants vous concerne, afin d'adapter ou de reporter le soin en toute sécurité :",
     contraindicationsItems: [
       "Grossesse, en particulier au premier trimestre",
       "Chirurgie récente, fractures, entorses ou plaies ouvertes",
