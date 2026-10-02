@@ -28,6 +28,12 @@ const t = getTranslations(locale);
 const { entry }: Props = Astro.props;
 const { Content } = await render(entry);
 const slug = entry.id.split('/').pop();
+const serviceLocation = {
+  en: 'in Zurich',
+  fr: 'à Zurich',
+  de: 'in Zürich',
+}[locale];
+const localizedServiceName = `${entry.data.title} ${serviceLocation}`;
 
 const related = (await getCollection('services', (e) => e.data.lang === locale && e.id !== entry.id))
   .sort((a, b) => a.data.order - b.data.order)
@@ -61,7 +67,7 @@ const offers = (entry.data.options.length > 0
 const serviceSchema = {
   '@type': 'Service',
   serviceType: entry.data.title,
-  name: `${entry.data.title} — ${siteConfig.city}`,
+  name: `${localizedServiceName} — ${siteConfig.name}`,
   description: entry.data.shortDescription || entry.data.title,
   areaServed: siteConfig.serviceArea,
   provider: { '@id': new URL(`/${defaultLocale}#business`, Astro.site).toString() },
@@ -70,7 +76,7 @@ const serviceSchema = {
 ---
 
 <MainLayout
-  title={`${entry.data.title} in ${siteConfig.city} — ${siteConfig.name}`}
+  title={`${localizedServiceName} — ${siteConfig.name}`}
   description={entry.data.shortDescription || entry.data.title}
   locale={locale}
   path={pagePath}

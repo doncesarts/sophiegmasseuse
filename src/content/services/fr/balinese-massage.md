@@ -14,6 +14,11 @@ options:
     price: 110
     discountPercent: 15
     calLink: "sophiegmassage/balinese-massage-full-body-60-minutes"
+  - description: "Corps entier avec visage et tête"
+    duration: 75
+    price: 125
+    discountPercent: 15
+    calLink: "sophiegmassage/balinese75min"
 image: "/images/service-balinese-massage.jpg"
 imageAlt: "Massage balinais chez Sophie Massage à Zurich"
 featured: true

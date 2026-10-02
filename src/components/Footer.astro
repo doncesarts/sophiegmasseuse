@@ -50,7 +50,7 @@ const navItems = [
               <a href={`tel:${siteConfig.phone.replace(/\s/g, '')}`} class="hover:text-primary hover:underline">{siteConfig.phone}</a>
               <WhatsAppLink label={t.contactPage.whatsappLabel} />
             </span>
-            <span>{siteConfig.address}, {siteConfig.city}</span>
+            <span>{siteConfig.address}</span>
           </nav>
         </div>
       </div>
@@ -62,10 +62,18 @@ const navItems = [
       <div class="flex flex-wrap gap-4 items-center justify-between">
         <div class="flex flex-wrap gap-4 items-center">
           {siteConfig.instagramUrl && (
-            <a href={siteConfig.instagramUrl} class="hover:text-primary" title="Instagram" rel="me noopener noreferrer" target="_blank">Instagram</a>
+            <a href={siteConfig.instagramUrl} class="inline-flex items-center justify-center hover:text-primary" title="Instagram" aria-label="Instagram" rel="me noopener noreferrer" target="_blank">
+              <svg viewBox="0 0 24 24" width="1.4em" height="1.4em" aria-hidden="true" fill="currentColor">
+                <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm5.25-3.25a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5Z" />
+              </svg>
+            </a>
           )}
           {siteConfig.facebookUrl && (
-            <a href={siteConfig.facebookUrl} class="hover:text-primary" title="Facebook" rel="me noopener noreferrer" target="_blank">Facebook</a>
+            <a href={siteConfig.facebookUrl} class="inline-flex items-center justify-center hover:text-primary" title="Facebook" aria-label="Facebook" rel="me noopener noreferrer" target="_blank">
+              <svg viewBox="0 0 24 24" width="1.4em" height="1.4em" aria-hidden="true" fill="currentColor">
+                <path d="M13.5 21v-8.2h2.8l.4-3.2h-3.2V7.5c0-.9.3-1.5 1.6-1.5h1.7V3.1c-.3 0-1.4-.1-2.6-.1-2.6 0-4.3 1.6-4.3 4.5v2.1H7v3.2h2.9V21h3.6Z" />
+              </svg>
+            </a>
           )}
         </div>
         <LanguageSwitcher locale={locale} path={path} />

@@ -1,7 +1,7 @@
 ---
 lang: "en"
 title: "Balinese Massage"
-shortDescription: "Traditional massage providing deep relaxation and promoting lymphatic drainage. It involves pressure-point massage as well as tehcniques to improve the body's flexibility and mobility."
+shortDescription: "Traditional massage providing deep relaxation and promoting lymphatic drainage. It involves pressure-point massage as well as techniques to improve the body's flexibility and mobility."
 currency: "CHF"
 options:
   - description: "Back, neck and shoulders"
@@ -9,11 +9,16 @@ options:
     price: 60
     discountPercent: 15
     calLink: "sophiegmassage/balinese30min"
-  - description: "Full body incl. face and head"
+  - description: "Full body"
     duration: 60
     price: 110
     discountPercent: 15
     calLink: "sophiegmassage/balinese-massage-full-body-60-minutes"
+  - description: "Full body incl. face and head"
+    duration: 75
+    price: 125
+    discountPercent: 15
+    calLink: "sophiegmassage/balinese75min"
 image: "/images/service-balinese-massage.jpg"
 imageAlt: "Balinese massage treatment at Sophie Massage in Zurich"
 featured: true

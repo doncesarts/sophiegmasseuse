@@ -4,6 +4,7 @@
 // rebranding only requires editing `src/config/site.ts`.
 import '../styles/global.css';
 import { Font } from 'astro:assets';
+import { getCollection } from 'astro:content';
 import { siteConfig } from '../config/site';
 import { locales, defaultLocale, type Locale } from '../i18n/config';
 
@@ -33,10 +34,18 @@ const {
 } = Astro.props;
 
 const normalizedPath = path === '/' ? '' : path;
-const localizedPath = `/${locale}${normalizedPath}`;
+const localizedPath = `/${locale}${normalizedPath}/`;
 const canonicalURL = new URL(localizedPath, Astro.site);
 const imageURL = new URL(image, Astro.site);
 const businessId = new URL(`/${defaultLocale}#business`, Astro.site).toString();
+const catalogEntries = await getCollection('services', (entry) => entry.data.lang === locale);
+const catalogItemList = catalogEntries.map((entry) => ({
+  '@type': 'Offer',
+  itemOffered: {
+    '@type': 'Service',
+    name: entry.data.title,
+  },
+}));
 
 const localBusinessNode = {
   '@context': 'https://schema.org',
@@ -52,9 +61,10 @@ const localBusinessNode = {
   priceRange: siteConfig.priceRange,
   address: {
     '@type': 'PostalAddress',
-    streetAddress: siteConfig.address,
-    addressLocality: siteConfig.city.split(',')[0].trim(),
-    addressCountry: 'CH',
+    streetAddress: siteConfig.streetAddress,
+    postalCode: siteConfig.postalCode,
+    addressLocality: siteConfig.addressLocality,
+    addressCountry: siteConfig.addressCountry,
   },
   ...(siteConfig.geo
     ? {
@@ -67,8 +77,12 @@ const localBusinessNode = {
     : {}),
   ...(siteConfig.googleMapsUrl ? { hasMap: siteConfig.googleMapsUrl } : {}),
   areaServed: siteConfig.serviceArea,
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    itemListElement: catalogItemList,
+  },
   openingHoursSpecification: siteConfig.openingHours,
-  sameAs: [siteConfig.instagramUrl, siteConfig.facebookUrl, siteConfig.googleMapsUrl].filter(Boolean),
+  sameAs: [siteConfig.instagramUrl, siteConfig.facebookUrl, siteConfig.googleMapsUrl, siteConfig.bookingUrl].filter(Boolean),
 };
 
 const jsonLdGraph = {
@@ -94,13 +108,13 @@ const jsonLdGraph = {
   <link
     rel="alternate"
     hreflang={loc}
-    href={new URL(`/${loc}${normalizedPath}`, Astro.site).toString()}
+    href={new URL(`/${loc}${normalizedPath}/`, Astro.site).toString()}
   />
 ))}
 <link
   rel="alternate"
   hreflang="x-default"
-  href={new URL(`/${defaultLocale}${normalizedPath}`, Astro.site).toString()}
+  href={new URL(`/${defaultLocale}${normalizedPath}/`, Astro.site).toString()}
 />
 
 <!-- Primary Meta Tags -->

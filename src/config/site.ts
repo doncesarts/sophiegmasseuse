@@ -13,7 +13,12 @@ export interface SiteConfig {
   description: string;
   email: string;
   phone: string;
+  /** Complete human-readable address shown in page content. */
   address: string;
+  streetAddress: string;
+  postalCode: string;
+  addressLocality: string;
+  addressCountry: string;
   /** Building name or specific location within the address. */
   building?: string;
   city: string;
@@ -68,14 +73,18 @@ export const siteConfig: SiteConfig = {
     "Independent massage practice in Zurich offering calm and attentive wellbeing treatments. A journey for the senses.",
   email: "sophie.g.massage@gmail.com",
   phone: "+41 77 804 44 52",
-  address: "Glattwiesenstrasse 213, 8051 Zurich",
+  address: "Glattwiesenstrasse 213, 8051 Zurich, Switzerland",
+  streetAddress: "Glattwiesenstrasse 213",
+  postalCode: "8051",
+  addressLocality: "Zürich",
+  addressCountry: "CH",
   building: "Gemeinschaftsräume Glattwiesen",
-  city: "Switzerland",
-  serviceArea: "Zurich 11",
+  city: "Zurich",
+  serviceArea: "Zurich, Switzerland",
   bookingUrl: "https://cal.com/sophiegmassage",
-  instagramUrl: "",
-  facebookUrl: "https://facebook.com/SophieMassageZurich",
-  googleMapsUrl: "https://maps.app.goo.gl/mPGLm1mTLfZudURg8",
+  instagramUrl: "https://www.instagram.com/sophiemassagezurich/",
+  facebookUrl: "https://www.facebook.com/SophieMassageZurich",
+  googleMapsUrl: "https://maps.app.goo.gl/GR6ieCwfmr8M7mN79",
   geo: { latitude: 47.4042, longitude: 8.5833 },
   priceRange: "CHF 60-130",
   openingHours: ["Wed-Thur 09:00-21:00"],

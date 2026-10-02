@@ -23,7 +23,7 @@ const breadcrumbSchema = breadcrumbList(
   breadcrumbs.map((b) => ({ name: b.name, url: new URL(b.href, Astro.site).toString() })),
 );
 
-const mapQuery = encodeURIComponent(`${siteConfig.address}, ${siteConfig.city}`);
+const mapQuery = encodeURIComponent(siteConfig.address);
 const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
 ---
 
@@ -61,7 +61,7 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
             height="80"
             class="h-20 w-20 shrink-0 rounded-box object-cover"
           />
-          <div>{siteConfig.address}, {siteConfig.city}
+          <div>{siteConfig.address}
           <p>
            {siteConfig.building}
           </p>
@@ -91,7 +91,7 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
     <div class="mt-10 rounded-box overflow-hidden border border-base-300 not-prose">
       <iframe
         src={mapEmbedSrc}
-        title={`Map showing ${siteConfig.address}, ${siteConfig.city}`}
+        title={`Map showing ${siteConfig.address}`}
         width="100%"
         height="350"
         style="border:0"

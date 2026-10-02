@@ -10,7 +10,7 @@ interface Props {
 
 const { locale, t } = Astro.props;
 
-const mapQuery = encodeURIComponent(`${siteConfig.address}, ${siteConfig.city}`);
+const mapQuery = encodeURIComponent(siteConfig.address);
 const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
 ---
 
@@ -28,7 +28,7 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
           height="80"
           class="h-20 w-20 shrink-0 rounded-box object-cover"
         />
-        <p class="text-base-content/80 font-medium">{siteConfig.address}, {siteConfig.city}</p>
+        <p class="text-base-content/80 font-medium">{siteConfig.address}</p>
       </div>
       <a href={`/${locale}/contact`} class="btn btn-outline btn-primary rounded-field mt-4">{t.locationSection.cta}</a>
       </div>
@@ -44,7 +44,7 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
     <div class="rounded-box overflow-hidden border border-base-300">
       <iframe
         src={mapEmbedSrc}
-        title={`Map showing ${siteConfig.address}, ${siteConfig.city}`}
+        title={`Map showing ${siteConfig.address}`}
         width="100%"
         height="300"
         style="border:0"
