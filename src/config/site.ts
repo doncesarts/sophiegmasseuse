@@ -100,7 +100,7 @@ export const siteConfig: SiteConfig = {
     accent: "#D8B36B",
   },
   socialImage: "/images/og-image.svg",
-  logo: "/images/logo-flower.png",
+  logo: "/images/logo-flower-transparent.png",
   favicon: "/favicon/favicon.svg",
   seo: {
     defaultTitle: "Sophie Massage — Independent Massage Therapy in Zurich",
