@@ -1,0 +1,33 @@
+---
+import '../styles/global.css';
+import { locales, localeNames, defaultLocale } from '../i18n/config';
+---
+
+<html lang={defaultLocale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sophie Massage — Zürich</title>
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href={new URL(`/${defaultLocale}/`, Astro.site).toString()} />
+    <script is:inline define:vars={{ locales, defaultLocale }}>
+      // Send visitors to the first locale matching their browser languages.
+      const preferred = (navigator.languages || [navigator.language || ''])
+        .map((l) => l.slice(0, 2).toLowerCase())
+        .find((l) => locales.includes(l));
+      location.replace('/' + (preferred || defaultLocale) + '/');
+    </script>
+  </head>
+  <body class="min-h-screen flex items-center justify-center">
+    <main class="text-center grid gap-6 p-6">
+      <h1>Sophie Massage</h1>
+      <ul class="flex gap-3 justify-center">
+        {locales.map((loc) => (
+          <li>
+            <a href={`/${loc}/`} hreflang={loc} lang={loc} class="btn btn-primary rounded-field">{localeNames[loc]}</a>
+          </li>
+        ))}
+      </ul>
+    </main>
+  </body>
+</html>

@@ -8,14 +8,12 @@ import tailwindcss from "@tailwindcss/vite";
 // https://astro.build/config
 export default defineConfig({
   site: "https://sophie-massage.ch",
-  redirects: {
-    "/": "/en",
-  },
   integrations: [
     mdx(),
     sitemap({
+      filter: (page) => page !== "https://sophie-massage.ch/",
       i18n: {
-        defaultLocale: "en",
+        defaultLocale: "de",
         locales: { en: "en", fr: "fr", de: "de" },
       },
     }),

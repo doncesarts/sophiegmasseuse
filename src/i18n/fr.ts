@@ -78,7 +78,7 @@ const fr: Translations = {
     },
   },
   hero: {
-    eyebrow: "Cabinet de massage indépendant · Zurich",
+    eyebrow: "Cabinet de massage bien-être · Zurich",
     headline: "Un espace calme pour se ressourcer — un voyage sensoriel.",
     subheadline: "Massage & bien-être",
     intro: "",

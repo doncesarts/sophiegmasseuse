@@ -77,7 +77,7 @@ const en: Translations = {
     },
   },
   hero: {
-    eyebrow: "Independent massage practice · Zurich",
+    eyebrow: "Wellness massage practice · Zurich",
     headline: "A quiet space to slow down - a journey for the senses.",
     subheadline: "Massage & wellbeing",
     intro: "",
