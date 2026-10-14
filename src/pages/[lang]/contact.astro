@@ -16,8 +16,8 @@ const locale = lang as Locale;
 const t = getTranslations(locale);
 
 const breadcrumbs = [
-  { name: t.nav.home, href: `/${locale}` },
-  { name: t.nav.contact, href: `/${locale}/contact` },
+  { name: t.nav.home, href: `/${locale}/` },
+  { name: t.nav.contact, href: `/${locale}/contact/` },
 ];
 const breadcrumbSchema = breadcrumbList(
   breadcrumbs.map((b) => ({ name: b.name, url: new URL(b.href, Astro.site).toString() })),
@@ -114,7 +114,7 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
 
     <div class="mt-10 rounded-box border border-base-300 p-6 not-prose">
       <p class="mb-4">{t.contactPage.bookAlternative}</p>
-      <a href={`/${locale}/book`} class="btn btn-primary rounded-field">{t.common.bookNow}</a>
+      <a href={`/${locale}/book/`} class="btn btn-primary rounded-field">{t.common.bookNow}</a>
     </div>
   </section>
 </MainLayout>

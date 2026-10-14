@@ -20,7 +20,7 @@ const normalizedPath = path === '/' ? '' : path;
     {locales.map((loc) => (
       <li>
         <a
-          href={`/${loc}${normalizedPath}`}
+          href={`/${loc}${normalizedPath}/`}
           aria-current={loc === locale ? 'true' : undefined}
           class:list={[
             'inline-flex items-center justify-center rounded-field px-2.5 py-1 text-sm font-medium transition-colors',

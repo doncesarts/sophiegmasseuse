@@ -20,8 +20,8 @@ const services = (await getCollection('services', (entry) => entry.data.lang ===
 );
 
 const breadcrumbs = [
-  { name: t.nav.home, href: `/${locale}` },
-  { name: t.nav.services, href: `/${locale}/services` },
+  { name: t.nav.home, href: `/${locale}/` },
+  { name: t.nav.services, href: `/${locale}/services/` },
 ];
 const breadcrumbSchema = breadcrumbList(
   breadcrumbs.map((b) => ({ name: b.name, url: new URL(b.href, Astro.site).toString() })),

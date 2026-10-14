@@ -16,8 +16,8 @@ const locale = lang as Locale;
 const t = getTranslations(locale);
 
 const breadcrumbs = [
-  { name: t.nav.home, href: `/${locale}` },
-  { name: t.nav.book, href: `/${locale}/book` },
+  { name: t.nav.home, href: `/${locale}/` },
+  { name: t.nav.book, href: `/${locale}/book/` },
 ];
 const breadcrumbSchema = breadcrumbList(
   breadcrumbs.map((b) => ({ name: b.name, url: new URL(b.href, Astro.site).toString() })),

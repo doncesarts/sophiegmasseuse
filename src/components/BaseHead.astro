@@ -37,7 +37,7 @@ const normalizedPath = path === '/' ? '' : path;
 const localizedPath = `/${locale}${normalizedPath}/`;
 const canonicalURL = new URL(localizedPath, Astro.site);
 const imageURL = new URL(image, Astro.site);
-const businessId = new URL(`/${defaultLocale}#business`, Astro.site).toString();
+const businessId = new URL(`/${defaultLocale}/#business`, Astro.site).toString();
 const catalogEntries = await getCollection('services', (entry) => entry.data.lang === locale);
 const catalogItemList = catalogEntries.map((entry) => ({
   '@type': 'Offer',
@@ -55,7 +55,7 @@ const localBusinessNode = {
   description: siteConfig.seo.defaultDescription,
   image: imageURL.toString(),
   logo: new URL(siteConfig.logo, Astro.site).toString(),
-  url: new URL(`/${defaultLocale}`, Astro.site).toString(),
+  url: new URL(`/${defaultLocale}/`, Astro.site).toString(),
   telephone: siteConfig.phone,
   email: siteConfig.email,
   priceRange: siteConfig.priceRange,

@@ -15,11 +15,11 @@ interface Props {
 const { locale, path, t } = Astro.props;
 
 const navItems = [
-  { href: `/${locale}`, label: t.nav.home },
-  { href: `/${locale}/services`, label: t.nav.services },
-  { href: `/${locale}/about`, label: t.nav.about },
-  { href: `/${locale}/faq`, label: t.nav.faq },
-  { href: `/${locale}/contact`, label: t.nav.contact },
+  { href: `/${locale}/`, label: t.nav.home },
+  { href: `/${locale}/services/`, label: t.nav.services },
+  { href: `/${locale}/about/`, label: t.nav.about },
+  { href: `/${locale}/faq/`, label: t.nav.faq },
+  { href: `/${locale}/contact/`, label: t.nav.contact },
 ];
 ---
 
@@ -31,7 +31,7 @@ const navItems = [
 		</div>
 		<div class="flex items-center gap-3 ml-auto">
 			<LanguageSwitcher locale={locale} path={path} class="hidden md:flex" />
-			<a href={`/${locale}/book`} class="btn btn-primary rounded-field text-base h-auto py-2.5 px-5 shadow-sm hover:shadow-md">{t.nav.book}</a>
+			<a href={`/${locale}/book/`} class="btn btn-primary rounded-field text-base h-auto py-2.5 px-5 shadow-sm hover:shadow-md">{t.nav.book}</a>
 			<label for="mobile-drawer" aria-label="Open navigation menu" class="btn btn-square btn-ghost lg:hidden">
 				<Menu />
 			</label>

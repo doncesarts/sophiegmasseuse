@@ -99,7 +99,7 @@ export const siteConfig: SiteConfig = {
     secondary: "#B9713F",
     accent: "#D8B36B",
   },
-  socialImage: "/images/og-image.svg",
+  socialImage: "/images/logo.svg",
   logo: "/images/logo-flower-transparent.png",
   favicon: "/favicon/favicon.svg",
   seo: {

@@ -260,7 +260,7 @@ const fr: Translations = {
       {
         question: "Où se déroulent les séances ?",
         answer:
-          "Les séances ont lieu au centre communautaire Gemeinschaftsräume Glattwiesen à Zurich, dans le quartier de Schwamendingen, Kreis 11. Le lieu est partagé avec entrepreneuses formidables qui proposent indépendamment du coaching, des massages et des thérapies alternatives.",
+          "Les séances ont lieu au centre communautaire Gemeinschaftsräume Glattwiesen à Zurich, dans le quartier de Schwamendingen, Kreis 11. Le lieu est partagé avec des entrepreneuses formidables qui proposent indépendamment du coaching, des massages et des thérapies alternatives.",
       },
     ],
   },

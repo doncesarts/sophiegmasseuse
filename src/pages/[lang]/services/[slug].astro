@@ -41,9 +41,9 @@ const related = (await getCollection('services', (e) => e.data.lang === locale &
 
 const pagePath = `/services/${slug}`;
 const breadcrumbs = [
-  { name: t.nav.home, href: `/${locale}` },
-  { name: t.nav.services, href: `/${locale}/services` },
-  { name: entry.data.title, href: `/${locale}${pagePath}` },
+  { name: t.nav.home, href: `/${locale}/` },
+  { name: t.nav.services, href: `/${locale}/services/` },
+  { name: entry.data.title, href: `/${locale}${pagePath}/` },
 ];
 const breadcrumbSchema = breadcrumbList(
   breadcrumbs.map((b) => ({ name: b.name, url: new URL(b.href, Astro.site).toString() })),
@@ -70,7 +70,7 @@ const serviceSchema = {
   name: `${localizedServiceName} — ${siteConfig.name}`,
   description: entry.data.shortDescription || entry.data.title,
   areaServed: siteConfig.serviceArea,
-  provider: { '@id': new URL(`/${defaultLocale}#business`, Astro.site).toString() },
+  provider: { '@id': new URL(`/${defaultLocale}/#business`, Astro.site).toString() },
   ...(offers.length > 0 ? { offers } : {}),
 };
 ---
@@ -84,7 +84,7 @@ const serviceSchema = {
 >
   <Breadcrumbs items={breadcrumbs} />
   <article class="page section container max-w-3xl">
-    <a href={`/${locale}/services`} class="link link-primary text-sm">&larr; {t.common.backToServices}</a>
+    <a href={`/${locale}/services/`} class="link link-primary text-sm">&larr; {t.common.backToServices}</a>
     <h1 class="mt-4">{entry.data.title}</h1>
     <img
       src={entry.data.image}
@@ -196,7 +196,7 @@ const serviceSchema = {
     <div class="rounded-box bg-secondary text-secondary-content p-8 my-10 text-center">
       <h2 class="text-secondary-content">{t.serviceDetail.ctaTitle}</h2>
       <p class="opacity-90 mb-6">{t.serviceDetail.ctaBody}</p>
-      <a href={`/${locale}/book`} class="btn bg-base-100 text-secondary border-0 rounded-field">{t.common.bookNow}</a>
+      <a href={`/${locale}/book/`} class="btn bg-base-100 text-secondary border-0 rounded-field">{t.common.bookNow}</a>
     </div>
   </article>
 
@@ -215,7 +215,7 @@ const serviceSchema = {
             options={r.data.options}
             image={r.data.image}
             imageAlt={r.data.imageAlt}
-            href={`/${locale}/services/${r.id.split('/').pop()}`}
+            href={`/${locale}/services/${r.id.split('/').pop()}/`}
             t={t}
           />
         ))}

@@ -41,7 +41,7 @@ const aggregateRatingSchema =
     ? [
         {
           '@type': 'AggregateRating',
-          itemReviewed: { '@id': new URL(`/${defaultLocale}#business`, Astro.site).toString() },
+          itemReviewed: { '@id': new URL(`/${defaultLocale}/#business`, Astro.site).toString() },
           ratingValue: stats.rating,
           reviewCount: stats.count,
         },

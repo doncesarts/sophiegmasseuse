@@ -14,11 +14,11 @@ interface Props {
 const { locale, path, t } = Astro.props;
 
 const navItems = [
-  { href: `/${locale}`, label: t.nav.home },
-  { href: `/${locale}/services`, label: t.nav.services },
-  { href: `/${locale}/about`, label: t.nav.about },
-  { href: `/${locale}/faq`, label: t.nav.faq },
-  { href: `/${locale}/contact`, label: t.nav.contact },
+  { href: `/${locale}/`, label: t.nav.home },
+  { href: `/${locale}/services/`, label: t.nav.services },
+  { href: `/${locale}/about/`, label: t.nav.about },
+  { href: `/${locale}/faq/`, label: t.nav.faq },
+  { href: `/${locale}/contact/`, label: t.nav.contact },
 ];
 ---
 
@@ -30,7 +30,7 @@ const navItems = [
     {navItems.map((item) => (
       <HeaderLink href={item.href} class="text-lg py-2">{item.label}</HeaderLink>
     ))}
-    <a href={`/${locale}/book`} class="btn btn-primary rounded-field mt-4 text-base h-auto py-3">{t.nav.book}</a>
+    <a href={`/${locale}/book/`} class="btn btn-primary rounded-field mt-4 text-base h-auto py-3">{t.nav.book}</a>
     <hr class="border-base-300 my-4" />
     <LanguageSwitcher locale={locale} path={path} />
   </nav>

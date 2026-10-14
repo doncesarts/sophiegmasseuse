@@ -15,8 +15,8 @@ const locale = lang as Locale;
 const t = getTranslations(locale);
 
 const breadcrumbs = [
-  { name: t.nav.home, href: `/${locale}` },
-  { name: t.nav.about, href: `/${locale}/about` },
+  { name: t.nav.home, href: `/${locale}/` },
+  { name: t.nav.about, href: `/${locale}/about/` },
 ];
 const breadcrumbSchema = breadcrumbList(
   breadcrumbs.map((b) => ({ name: b.name, url: new URL(b.href, Astro.site).toString() })),
@@ -43,7 +43,7 @@ const breadcrumbSchema = breadcrumbList(
       <div>
         <h1>{t.about.title}</h1>
         <p class="text-lg text-base-content/80">{t.about.intro}</p>
-        <a href={`/${locale}/book`} class="btn btn-primary rounded-field mt-4">{t.about.cta}</a>
+        <a href={`/${locale}/book/`} class="btn btn-primary rounded-field mt-4">{t.about.cta}</a>
       </div>
     </div>
 

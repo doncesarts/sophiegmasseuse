@@ -30,7 +30,7 @@ function slugOf(entry: CollectionEntry<'services'>) {
       options={service.data.options}
       image={service.data.image}
       imageAlt={service.data.imageAlt}
-      href={`/${locale}/services/${slugOf(service)}`}
+      href={`/${locale}/services/${slugOf(service)}/`}
       t={t}
     />
   ))}
