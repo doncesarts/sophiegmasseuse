@@ -34,8 +34,10 @@ const {
 } = Astro.props;
 
 const normalizedPath = path === '/' ? '' : path;
-const localizedPath = `/${locale}${normalizedPath}/`;
-const canonicalURL = new URL(localizedPath, Astro.site);
+// The default-locale home page is served at "/" and is the canonical for "/de/".
+const urlFor = (loc: Locale) =>
+  new URL(loc === defaultLocale && normalizedPath === '' ? '/' : `/${loc}${normalizedPath}/`, Astro.site).toString();
+const canonicalURL = urlFor(locale);
 const imageURL = new URL(image, Astro.site);
 const businessId = new URL(`/${defaultLocale}/#business`, Astro.site).toString();
 const catalogEntries = await getCollection('services', (entry) => entry.data.lang === locale);
@@ -108,13 +110,13 @@ const jsonLdGraph = {
   <link
     rel="alternate"
     hreflang={loc}
-    href={new URL(`/${loc}${normalizedPath}/`, Astro.site).toString()}
+    href={urlFor(loc)}
   />
 ))}
 <link
   rel="alternate"
   hreflang="x-default"
-  href={new URL(`/${defaultLocale}${normalizedPath}/`, Astro.site).toString()}
+  href={urlFor(defaultLocale)}
 />
 
 <!-- Primary Meta Tags -->

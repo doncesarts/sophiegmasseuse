@@ -15,11 +15,16 @@ import { getTranslations } from '../../i18n';
 import { siteConfig } from '../../config/site';
 import { getGoogleReviewStats } from '../../lib/google-reviews';
 
+interface Props {
+  lang?: Locale;
+}
+
 export function getStaticPaths() {
   return locales.map((lang) => ({ params: { lang } }));
 }
 
-const { lang } = Astro.params;
+// Also rendered at the site root with an explicit `lang` prop (see src/pages/index.astro).
+const lang = Astro.params.lang ?? Astro.props.lang;
 const locale = lang as Locale;
 const t = getTranslations(locale);
 
