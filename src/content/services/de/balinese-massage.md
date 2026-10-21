@@ -9,7 +9,7 @@ options:
     price: 60
     discountPercent: 15
     calLink: "sophiegmassage/balinese30min"
-  - description: "Ganzkörper inkl. Gesicht und Kopf"
+  - description: "Ganzkörper"
     duration: 60
     price: 110
     discountPercent: 15
