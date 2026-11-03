@@ -12,7 +12,7 @@ const en: Translations = {
   },
   common: {
     bookNow: "Book a session",
-    discoverTreatments: "Discover our massages",
+    discoverTreatments: "Discover my massages",
     learnMore: "Learn more",
     readMore: "Read more",
     viewService: "View massage",
@@ -36,7 +36,7 @@ const en: Translations = {
     services: {
       title: "Balinese & Swedish Massage Treatments in Zurich — Sophie Massage",
       description:
-        "Explore our massage treatments in Zurich, including Balinese massage and Swedish massage — each thoughtfully adapted to your needs.",
+        "Explore my massage treatments in Zurich, including Balinese massage and Swedish massage — each thoughtfully adapted to your needs.",
     },
     about: {
       title: "About Me — Sophie Massage",
@@ -56,7 +56,7 @@ const en: Translations = {
     book: {
       title: "Book a Session — Sophie Massage",
       description:
-        "Book your massage session online in a few clicks via our secure Cal.com booking page.",
+        "Book your massage session online in a few clicks via my secure Cal.com booking page.",
     },
     gift: {
       title: "Buy a Gift Voucher — Sophie Massage",
@@ -88,7 +88,7 @@ const en: Translations = {
     subheadline: "Massage & wellbeing",
     intro: "",
     primaryCta: "Book an appointment",
-    secondaryCta: "Discover our massages",
+    secondaryCta: "Discover my massages",
   },
   intro: {
     title: "A moment made entirely for you",
@@ -225,7 +225,7 @@ const en: Translations = {
       {
         question: "How do I book a session?",
         answer:
-          "You can book directly online via our booking page, available at any time. You'll receive an instant confirmation by email.",
+          "You can book directly online via my booking page, available at any time. You'll receive an instant confirmation by email.",
       },
       {
         question: "How long is a session?",

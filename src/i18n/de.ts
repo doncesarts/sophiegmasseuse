@@ -35,7 +35,7 @@ const de: Translations = {
     services: {
       title: "Balinesische & Schwedische Massage in Zürich — Sophie Massage",
       description:
-        "Entdecke unsere Massagebehandlungen in Zürich, darunter Balinesische Massage und Schwedische Massage — jede individuell angepasst.",
+        "Entdecke meine Massagebehandlungen in Zürich, darunter Balinesische Massage und Schwedische Massage — jede individuell angepasst.",
     },
     about: {
       title: "Über mich — Sophie Massage",
@@ -59,7 +59,7 @@ const de: Translations = {
     book: {
       title: "Termin buchen — Sophie Massage",
       description:
-        "Buche deine Massagesitzung in wenigen Klicks online über unsere sichere Cal.com-Buchungsseite.",
+        "Buche deine Massagesitzung in wenigen Klicks online über meine sichere Cal.com-Buchungsseite.",
     },
     privacy: {
       title: "Datenschutz — Sophie Massage",
@@ -91,7 +91,7 @@ const de: Translations = {
   },
   intro: {
     title: "Ein Moment ganz für Dich",
-    body: "Jede Sitzung beginnt mit einem Gespräch. ich nemme mich Zeit, um zu verstehen, wie du dich fühlst, bevor ich den richtigen Druck, das richtige Tempo und die richtige Technik auswählt. Ich verwende ausschliesslich natürliche, pflegende Öle, die für empfindliche Haut geeignet sind.",
+    body: "Jede Sitzung beginnt mit einem Gespräch. ich nehme mir Zeit, um zu verstehen, wie du dich fühlst, bevor ich den richtigen Druck, das richtige Tempo und die richtige Technik auswähle. Ich verwende ausschliesslich natürliche, pflegende Öle, die für empfindliche Haut geeignet sind.",
     cta: "Über mich",
   },
   featuredServices: {
@@ -226,7 +226,7 @@ const de: Translations = {
       {
         question: "Wie buche ich eine Sitzung?",
         answer:
-          "Du kannst direkt online über unsere Buchungsseite buchen, die jederzeit verfügbar ist. Du erhältst umgehend eine Bestätigung per E-Mail.",
+          "Du kannst direkt online über meine Buchungsseite buchen, die jederzeit verfügbar ist. Du erhältst umgehend eine Bestätigung per E-Mail.",
       },
       {
         question: "Wie lange dauert eine Behandlung?",

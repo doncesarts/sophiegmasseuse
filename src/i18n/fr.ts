@@ -12,7 +12,7 @@ const fr: Translations = {
   },
   common: {
     bookNow: "Réserver une séance",
-    discoverTreatments: "Découvrir nos massages",
+    discoverTreatments: "Découvrir mes massages",
     learnMore: "En savoir plus",
     readMore: "Lire la suite",
     viewService: "Voir le massage",
@@ -36,7 +36,7 @@ const fr: Translations = {
     services: {
       title: "Massage balinais & suédois à Zurich — Sophie Massage",
       description:
-        "Découvrez nos soins de massage à Zurich, dont le massage balinais et le massage suédois, chacun adapté à vos besoins.",
+        "Découvrez mes massages à Zurich, dont le massage balinais et le massage suédois, chacun adapté à vos besoins.",
     },
     about: {
       title: "À propos de moi — Sophie Massage",
@@ -60,7 +60,7 @@ const fr: Translations = {
     book: {
       title: "Réserver une séance — Sophie Massage",
       description:
-        "Réservez votre séance de massage en ligne en quelques clics via notre page de réservation Cal.com.",
+        "Réservez votre séance de massage en ligne en quelques clics via ma page de réservation Cal.com.",
     },
     privacy: {
       title: "Politique de confidentialité — Sophie Massage",
@@ -88,7 +88,7 @@ const fr: Translations = {
     subheadline: "Massage & bien-être",
     intro: "",
     primaryCta: "Prendre rendez-vous",
-    secondaryCta: "Découvrir nos massages",
+    secondaryCta: "Découvrir mes massages",
   },
   intro: {
     title: "Un moment pensé entièrement pour vous",
@@ -225,7 +225,7 @@ const fr: Translations = {
       {
         question: "Comment réserver une séance ?",
         answer:
-          "Vous pouvez réserver directement en ligne via notre page de réservation, disponible à tout moment. Vous recevrez une confirmation immédiate par email.",
+          "Vous pouvez réserver directement en ligne via ma page de réservation, disponible à tout moment. Vous recevrez une confirmation immédiate par email.",
       },
       {
         question: "Combien de temps dure une séance ?",
