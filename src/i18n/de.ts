@@ -101,7 +101,7 @@ const de: Translations = {
     cta: "Alle Massagen ansehen",
   },
   benefits: {
-    title: "Warum Kund:innen uns wählen",
+    title: "Warum Kund:innen mich wählen",
     subtitle: "",
     items: [
       {
@@ -144,8 +144,8 @@ const de: Translations = {
       "Ein Einblick in den ruhigen, gemütlichen Raum, in dem jede Sitzung stattfindet.",
   },
   locationSection: {
-    title: "Wo du uns findest",
-    body: "Sophie Massage empfängt ihre Kund:innen nach Vereinbarung in einem ruhigen, gut erreichbaren Studio in Zürich und betreut Kunden aus der Stadt und der Umgebung.",
+    title: "Wo du mich findest",
+    body: "Ich empfange meine Kund:innen nach Vereinbarung in einem ruhigen, gut erreichbaren Studio in Zürich und betreue Kunden aus der Stadt und der Umgebung.",
     transports: [
       {
         title: "Mit dem Tram",
@@ -173,7 +173,7 @@ const de: Translations = {
   servicesPage: {
     title: "Massagen",
     intro:
-      "Du weisst nicht, wofür du dich entscheiden sollst? Melde dich bei uns, und ich helfe dir bei der Entscheidung.",
+      "Du weisst nicht, wofür du dich entscheiden sollst? Melde dich bei mir, und ich helfe dir bei der Entscheidung.",
   },
   serviceDetail: {
     optionsTitle: "Optionen & Preise",
@@ -188,7 +188,7 @@ const de: Translations = {
       "Geniess den Rest des Tages und vermeide anstrengende körperliche Aktivitäten",
       "Eine warme (nicht heisse) Dusche ist in Ordnung; vermeide für einige Stunden sehr heisse Bäder oder Saunagänge",
       "Leichte Empfindlichkeit, Müdigkeit oder kurzzeitiger Schwindel sind normal – ruhe dich aus, wenn du eines dieser Symptome verspürst",
-      "Lass es uns wissen, wenn dir etwas ungewöhnlich vorkommt oder wenn deine Symptome nicht verschwinden",
+      "Lass es mich wissen, wenn dir etwas ungewöhnlich vorkommt oder wenn deine Symptome nicht verschwinden",
     ],
     relatedTitle: "Das könnte dir auch gefallen",
     ctaTitle: "Bereit, diese Massage zu buchen?",
@@ -273,13 +273,13 @@ const de: Translations = {
   contactPage: {
     title: "Kontakt",
     intro:
-      "Eine Frage vor der Buchung, oder du möchtest uns lieber direkt kontaktieren? So erreichst du Sophie Massage.",
+      "Eine Frage vor der Buchung, oder du möchtest mich lieber direkt kontaktieren? So erreichst du Sophie Massage.",
     emailLabel: "E-Mail",
     phoneLabel: "Telefon",
-    whatsappLabel: "Uns auf WhatsApp schreiben",
+    whatsappLabel: "Mir auf WhatsApp schreiben",
     addressLabel: "Adresse des Studios",
     areaLabel: "Einzugsgebiet",
-    socialLabel: "Folge uns",
+    socialLabel: "Mir folgen",
     bookAlternative: "Möchtest du lieber gleich buchen?",
   },
   bookPage: {
@@ -290,7 +290,7 @@ const de: Translations = {
     fallbackCta: "öffne die Buchungsseite direkt",
     startOver: "Von vorne beginnen",
     contactAlternative:
-      "Du kannst uns auch direkt kontaktieren, wenn du deine Sitzung lieber per E-Mail oder WhatsApp vereinbaren möchtest.",
+      "Du kannst mich auch direkt kontaktieren, wenn du deine Sitzung lieber per E-Mail oder WhatsApp vereinbaren möchtest.",
   },
   giftPage: {
     title: "Geschenkgutschein buchen",

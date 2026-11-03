@@ -102,7 +102,7 @@ const en: Translations = {
     cta: "View all massages",
   },
   benefits: {
-    title: "Why clients choose us",
+    title: "Why clients choose me",
     subtitle: "",
     items: [
       {
@@ -144,8 +144,8 @@ const en: Translations = {
       "A glimpse of the calm, warm space where every session takes place.",
   },
   locationSection: {
-    title: "Where to find us",
-    body: "Sophie Massage welcomes clients by appointment in a quiet, easily accessible studio in Zurich, serving the city and surrounding area.",
+    title: "Where to find me",
+    body: "I welcome clients by appointment in a quiet, easily accessible studio in Zurich, serving the city and surrounding area.",
     transports: [
       {
         title: "By tram",
@@ -250,7 +250,7 @@ const en: Translations = {
       {
         question: "What are the payment options?",
         answer:
-          "We accept payments via Cash, TWINT or bank transfers (Wise, Revolut) immediately after the session. \nInvoices issued on request only (payment due within 14 days). \nA payment reminder will be sent after 14 days for outstanding payments.",
+          "I accept payments via Cash, TWINT or bank transfers (Wise, Revolut) immediately after the session. \nInvoices issued on request only (payment due within 14 days). \nA payment reminder will be sent after 14 days for outstanding payments.",
       },
       {
         question: "What is the cancellation policy?",
@@ -272,10 +272,10 @@ const en: Translations = {
   contactPage: {
     title: "Contact",
     intro:
-      "Have a question before booking, or prefer to reach out directly? Here's how to find me.",
+      "Have a question before booking, or prefer to reach out to me directly? Here's how to find me.",
     emailLabel: "Email",
     phoneLabel: "Phone",
-    whatsappLabel: "Message us on WhatsApp",
+    whatsappLabel: "Message me on WhatsApp",
     addressLabel: "Studio address",
     areaLabel: "Service area",
     socialLabel: "Follow along",
@@ -289,7 +289,7 @@ const en: Translations = {
     fallbackCta: "open the booking page directly",
     startOver: "Start over",
     contactAlternative:
-      "You can also reach out directly if you'd prefer to arrange your session by email or WhatsApp +41 77 804 44 52.",
+      "You can also reach out to me directly if you'd prefer to arrange your session by email or WhatsApp +41 77 804 44 52.",
   },
   giftPage: {
     title: "Buy a Gift Voucher",
@@ -298,7 +298,7 @@ const en: Translations = {
     fallbackText: "If the gift voucher shop doesn't load,",
     fallbackCta: "open the gift voucher shop directly",
     contactAlternative:
-      "You can also reach out directly if you'd prefer to buy a gift voucher by email or WhatsApp +41 77 804 44 52.",
+      "You can also reach out to me directly if you'd prefer to buy a gift voucher by email or WhatsApp +41 77 804 44 52.",
   },
   footer: {
     description:

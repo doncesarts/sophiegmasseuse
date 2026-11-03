@@ -101,7 +101,7 @@ const fr: Translations = {
     cta: "Voir tous les massages",
   },
   benefits: {
-    title: "Pourquoi choisir notre cabinet",
+    title: "Pourquoi choisir mon cabinet",
     subtitle: "",
     items: [
       {
@@ -143,8 +143,8 @@ const fr: Translations = {
       "Un aperçu de l'espace calme et chaleureux où se déroule chaque séance.",
   },
   locationSection: {
-    title: "Où nous trouver",
-    body: "Sophie Massage accueille sa clientèle sur rendez-vous dans un studio calme et facilement accessible depuis Zurich et ses environs.",
+    title: "Où me trouver",
+    body: "J'accueille ma clientèle sur rendez-vous dans un studio calme et facilement accessible depuis Zurich et ses environs.",
     transports: [
       {
         title: "En tram",
@@ -161,7 +161,7 @@ const fr: Translations = {
         description: "Sonnez à « Gemeinschaftsräume Glattwiesen ». 1er étage.",
       },
     ],
-    cta: "Nous contacter",
+    cta: "Me contacter",
   },
   bookingCta: {
     title: "Prêt·e pour un moment rien qu'à vous ?",
@@ -186,7 +186,7 @@ const fr: Translations = {
       "Profitez calmement du reste de la journée et évitez les efforts intenses.",
       "Une douche tiède est recommandée ; évitez les bains très chauds ou le sauna pendant quelques heures.",
       "Une légère sensibilité, fatigue ou sensation de vertige est normale — reposez-vous si besoin.",
-      "Contactez-nous si quelque chose vous semble anormal ou qu'une gêne persiste au-delà d'un jour ou deux.",
+      "Contactez-moi si quelque chose vous semble anormal ou qu'une gêne persiste au-delà d'un jour ou deux.",
     ],
     relatedTitle: "Vous aimerez aussi",
     ctaTitle: "Prêt·e à réserver ce massage ?",
@@ -250,7 +250,7 @@ const fr: Translations = {
       {
         question: "Quelles sont les modes de paiement ?",
         answer:
-          "Nous acceptons les paiements en espèces, via TWINT ou par virement bancaire (Wise, Revolut) immédiatement après la séance. \nLes factures ne sont émises que sur demande (paiement sous 14 jours). \nUn rappel de paiement sera envoyé après 14 jours pour les paiements en attente.",
+          "J'accepte les paiements en espèces, via TWINT ou par virement bancaire (Wise, Revolut) immédiatement après la séance. \nLes factures ne sont émises que sur demande (paiement sous 14 jours). \nUn rappel de paiement sera envoyé après 14 jours pour les paiements en attente.",
       },
       {
         question: "Quelle est la politique d'annulation ?",
@@ -272,13 +272,13 @@ const fr: Translations = {
   contactPage: {
     title: "Contact",
     intro:
-      "Une question avant de réserver, ou vous préférez nous contacter directement ? Voici comment joindre Sophie Massage.",
+      "Une question avant de réserver, ou vous préférez me contacter directement ? Voici comment joindre Sophie Massage.",
     emailLabel: "Email",
     phoneLabel: "Natel",
-    whatsappLabel: "Nous écrire sur WhatsApp",
+    whatsappLabel: "M'écrire sur WhatsApp",
     addressLabel: "Adresse du studio",
     areaLabel: "Zone de service",
-    socialLabel: "Nous suivre",
+    socialLabel: "Me suivre",
     bookAlternative: "Vous préférez réserver tout de suite ?",
   },
   bookPage: {
@@ -289,7 +289,7 @@ const fr: Translations = {
     fallbackCta: "ouvrez directement la page de réservation",
     startOver: "Recommencer",
     contactAlternative:
-      "Vous pouvez aussi nous contacter directement si vous préférez organiser votre séance par e-mail ou WhatsApp au +41 77 804 44 52.",
+      "Vous pouvez aussi me contacter directement si vous préférez organiser votre séance par e-mail ou WhatsApp au +41 77 804 44 52.",
   },
   giftPage: {
     title: "Achetez un bon cadeau",
