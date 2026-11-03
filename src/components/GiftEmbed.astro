@@ -1,0 +1,48 @@
+---
+// Redirects to the Felizzio gift voucher shop (it can't be iframed: its cookies
+// are dropped in cross-site frames). The link remains as a fallback.
+import { FELIZZIO_LINK } from '../config/felizzio';
+
+interface Props {
+  /** Accessible fallback link label, e.g. "Open page". */
+  fallbackLabel: string;
+  /** Text shown before the fallback link, e.g. "If the link doesn't load," */
+  fallbackIntro?: string;
+  class?: string;
+  locale: string;
+}
+
+const { fallbackLabel, fallbackIntro, class: className, locale } = Astro.props;
+---
+<div class:list={['booking-embed', className]} data-felizzio-redirect={FELIZZIO_LINK(locale)}>
+  <noscript>
+    <meta http-equiv="refresh" content={`0; url=${FELIZZIO_LINK(locale)}`} />
+  </noscript>
+  <p class="mt-4 text-sm text-base-content/70">
+    {fallbackIntro}{' '}
+    <a href={FELIZZIO_LINK(locale)} rel="noopener noreferrer" class="link link-primary">
+      {fallbackLabel}
+    </a>
+  </p>
+</div>
+
+<script>
+  const url = document.querySelector<HTMLElement>('[data-felizzio-redirect]')?.dataset.felizzioRedirect;
+  if (url) window.location.replace(url);
+</script>
+
+ <!-- Redirect to FELIZZIO_LINK(locale) 
+  <div class="min-h-[720px] md:min-h-[860px] bg-base-100 rounded-box">
+    
+     
+    <iframe
+      src={FELIZZIO_LINK(locale)}
+      title={siteConfig.name}
+      width="100%"
+      height="800"
+      style="border:0"
+      loading="lazy"
+      allow="payment"
+    ></iframe>
+  </div>
+ -->

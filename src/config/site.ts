@@ -26,6 +26,8 @@ export interface SiteConfig {
   serviceArea: string;
   /** Public booking URL used by the booking embed and fallback link. */
   bookingUrl: string;
+  /** Public URL for purchasing gift vouchers. */
+  giftsUrl?: string;
   instagramUrl?: string;
   facebookUrl?: string;
   /** Google Business Profile / Maps listing URL, used for JSON-LD `hasMap` and NAP consistency. */
@@ -82,6 +84,7 @@ export const siteConfig: SiteConfig = {
   city: "Zurich",
   serviceArea: "Zurich, Switzerland",
   bookingUrl: "https://cal.com/sophiegmassage",
+  giftsUrl: "https://www.felizzio.com/93nsd2x8nj/shop",
   instagramUrl: "https://www.instagram.com/sophiemassagezurich/",
   facebookUrl: "https://www.facebook.com/SophieMassageZurich",
   googleMapsUrl: "https://maps.app.goo.gl/GR6ieCwfmr8M7mN79",

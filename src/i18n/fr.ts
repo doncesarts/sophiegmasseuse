@@ -8,6 +8,7 @@ const fr: Translations = {
     faq: "FAQ",
     contact: "Contact",
     book: "Réserver une séance",
+    gift: "Bons cadeaux",
   },
   common: {
     bookNow: "Réserver une séance",
@@ -41,6 +42,10 @@ const fr: Translations = {
       title: "À propos de moi — Sophie Massage",
       description:
         "Masseuse indépendante à Zurich - découvrez la philosophie de Sophie Massage.",
+    },
+    gift: {
+      title: "Réserver un bon cadeau — Sophie Massage",
+      description: "Faites découvrir Sophie Massage à vos proches.",
     },
     faq: {
       title: "Questions fréquentes — Sophie Massage",
@@ -285,6 +290,15 @@ const fr: Translations = {
     startOver: "Recommencer",
     contactAlternative:
       "Vous pouvez aussi nous contacter directement si vous préférez organiser votre séance par e-mail ou WhatsApp au +41 77 804 44 52.",
+  },
+  giftPage: {
+    title: "Achetez un bon cadeau",
+    intro:
+      "Offrez à vos proches un massage chez Sophie Massage. Vous serez redirigé vers une boutique de bons cadeaux pour finaliser votre achat.",
+    fallbackText: "Si la boutique de bons cadeaux ne s'affiche pas,",
+    fallbackCta: "ouvrez directement la page ici,",
+    contactAlternative:
+      "Vous pouvez aussi me contacter directement si vous préférez acheter un bon cadeau par e-mail ou WhatsApp au +41 77 804 44 52.",
   },
   footer: {
     description:

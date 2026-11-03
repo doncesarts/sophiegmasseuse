@@ -96,6 +96,10 @@ page and the `BookingEmbed` component
 ([`src/components/BookingEmbed.astro`](./src/components/BookingEmbed.astro))
 automatically use this URL.
 
+## Configuring gift vouchers
+
+Set `giftsUrl` in [`src/config/site.ts`](./src/config/site.ts) to the public URL where customers can purchase gift vouchers.
+
 ## Configuring Google reviews
 
 Set `GOOGLE_PLACES_API_KEY` in the build environment. The key must have the

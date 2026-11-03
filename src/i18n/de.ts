@@ -8,6 +8,7 @@ const de: Translations = {
     faq: "FAQ",
     contact: "Kontakt",
     book: "Termin buchen",
+    gift: "Geschenkgutscheine",
   },
   common: {
     bookNow: "Termin buchen",
@@ -40,6 +41,10 @@ const de: Translations = {
       title: "Über mich — Sophie Massage",
       description:
         "Lerne mich kennen, unabhängige Massagetherapeutin in Zürich, und die Philosophie von Sophie Massage.",
+    },
+    gift: {
+      title: "Geschenkgutschein buchen — Sophie Massage",
+      description: "Schenke Sophie Massage deinen Liebsten.",
     },
     faq: {
       title: "Häufige Fragen — Sophie Massage",
@@ -286,6 +291,15 @@ const de: Translations = {
     startOver: "Von vorne beginnen",
     contactAlternative:
       "Du kannst uns auch direkt kontaktieren, wenn du deine Sitzung lieber per E-Mail oder WhatsApp vereinbaren möchtest.",
+  },
+  giftPage: {
+    title: "Geschenkgutschein buchen",
+    intro:
+      "Gönne deinen Liebsten eine Massage bei Sophie Massage. Du wirst zu einem Geschenkgutschein-Shop weitergeleitet, um deinen Kauf abzuschliessen.",
+    fallbackText: "Falls der Geschenkgutschein-Shop nicht geladen wird,",
+    fallbackCta: "den Geschenkgutschein-Shop direkt öffnen",
+    contactAlternative:
+      "Du kannst dich auch direkt an mich wenden, wenn du einen Geschenkgutschein lieber per E-Mail oder über WhatsApp unter +41 77 804 44 52 kaufen möchtest.",
   },
   footer: {
     description:

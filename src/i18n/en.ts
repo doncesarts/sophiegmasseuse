@@ -8,6 +8,7 @@ const en: Translations = {
     faq: "FAQ",
     contact: "Contact",
     book: "Book a session",
+    gift: "Gift vouchers",
   },
   common: {
     bookNow: "Book a session",
@@ -56,6 +57,11 @@ const en: Translations = {
       title: "Book a Session — Sophie Massage",
       description:
         "Book your massage session online in a few clicks via our secure Cal.com booking page.",
+    },
+    gift: {
+      title: "Buy a Gift Voucher — Sophie Massage",
+      description:
+        "Buy a gift voucher for a massage at Sophie Massage in Zurich.",
     },
     privacy: {
       title: "Data Protection — Sophie Massage",
@@ -284,6 +290,15 @@ const en: Translations = {
     startOver: "Start over",
     contactAlternative:
       "You can also reach out directly if you'd prefer to arrange your session by email or WhatsApp +41 77 804 44 52.",
+  },
+  giftPage: {
+    title: "Buy a Gift Voucher",
+    intro:
+      "Treat your loved ones to a massage at Sophie Massage. You'll be redirected to a gift voucher shop to complete your purchase.",
+    fallbackText: "If the gift voucher shop doesn't load,",
+    fallbackCta: "open the gift voucher shop directly",
+    contactAlternative:
+      "You can also reach out directly if you'd prefer to buy a gift voucher by email or WhatsApp +41 77 804 44 52.",
   },
   footer: {
     description:

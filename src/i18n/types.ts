@@ -24,6 +24,7 @@ export interface Translations {
     faq: string;
     contact: string;
     book: string;
+    gift: string;
   };
   common: {
     bookNow: string;
@@ -45,6 +46,7 @@ export interface Translations {
     home: { title: string; description: string };
     services: { title: string; description: string };
     about: { title: string; description: string };
+    gift: { title: string; description: string };
     faq: { title: string; description: string };
     contact: { title: string; description: string };
     book: { title: string; description: string };
@@ -156,6 +158,13 @@ export interface Translations {
     fallbackCta: string;
     contactAlternative: string;
     startOver: string;
+  };
+  giftPage: {
+    title: string;
+    intro: string;
+    fallbackText: string;
+    fallbackCta: string;
+    contactAlternative: string;
   };
   footer: {
     description: string;
