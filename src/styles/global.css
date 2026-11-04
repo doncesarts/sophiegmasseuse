@@ -30,14 +30,15 @@
   --color-base-content: #6e4a45;
 
   /* Button colors, currently strong green */
-  /* --color-primary: oklch(50% 0.06 152); */
-  --color-primary: #a85757;
+  /* --color-primary: oklch(50% 0.06 152);  #a85757*/
+  --color-primary: #8a615c;
 
   /* Button content color, currently white */
   --color-primary-content: oklch(98% 0.01 152);
 
   /* Boxes color, currently brown */
-  --color-secondary: oklch(45% 0.1 35);
+  /* --color-secondary: oklch(45% 0.1 35); */
+  --color-secondary: #8a615c;
   /* Boxes content color, currently white */
   --color-secondary-content: oklch(98% 0.01 45);
 
@@ -69,7 +70,7 @@
 
 @theme {
   --font-sans: "Atkinson", ui-sans-serif, system-ui, sans-serif;
-  --font-serif: "Fraunces", ui-serif, Georgia, "Times New Roman", serif;
+  --font-serif: "Atkinson", ui-sans-serif, system-ui, sans-serif;
 }
 
 html,

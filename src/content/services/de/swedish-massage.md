@@ -33,6 +33,6 @@ whatToExpect:
   - "Ein paar ruhige Minuten zum Ausruhen am Ende der Sitzung"
 ---
 
-Der Begriff «schwedische Massage» geht auf einen Schweden namens Per Henrik Ling zurück, der im frühen 19. Jahrhundert das Programm «Schwedische Gymnastikübungen» entwickelte.
+Der Begriff «schwedische Massage» geht auf einen Schweden namens Pehr Henrik Ling zurück, der im frühen 19. Jahrhundert das Programm «Schwedische Gymnastikübungen» entwickelte.
 
 Die schwedische Massage ermöglicht es dem Körper, mehr Sauerstoff aufzunehmen, was seine Regeneration fördert. Ausserdem unterstützt sie die Entgiftung, indem sie die Geschwindigkeit erhöht, mit der die Körperzellen Abfallprodukte ausscheiden. Die schwedische Massage vermittelt dem Empfänger ein immenses Gefühl der Zufriedenheit und Entspannung.

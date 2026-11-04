@@ -33,7 +33,7 @@ whatToExpect:
   - "A few quiet minutes to rest at the end of the session"
 ---
 
-The term “Swedish Massage” is credited to a Swede named Per Henrik Ling who developed the Swedish Gymnastic Movements programme in the early nineteenth century.
+The term “Swedish Massage” is credited to a Swede named Pehr Henrik Ling who developed the Swedish Gymnastic Movements programme in the early nineteenth century.
 
 Swedish massage allows the body to absorb more oxygen, thereby rejuvenating the body.
 It is also geared towards detoxification by increasing the speed by which the cells of the body eliminate their waste materials. Swedish massage brings to the receiver an immense feeling of satisfaction and relaxation.

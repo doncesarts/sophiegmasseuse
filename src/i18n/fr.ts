@@ -29,14 +29,14 @@ const fr: Translations = {
   },
   seo: {
     home: {
-      title: "Sophie Massage — Massage balinais & suédois à Zurich",
+      title: "Sophie Massage — Massage balinais, suédois & bien-être à Zurich",
       description:
         "Masseuse indépendante à Zurich proposant massage balinais et massage suédois. Soins calmes et sur mesure — réservez votre séance.",
     },
     services: {
-      title: "Massage balinais & suédois à Zurich — Sophie Massage",
+      title: "Massage balinais, suédois & bien-être à Zurich — Sophie Massage",
       description:
-        "Découvrez mes massages à Zurich, dont le massage balinais et le massage suédois, chacun adapté à vos besoins.",
+        "Découvrez mes massages bien-être à Zurich, dont le massage balinais, le massage suédois et le massage anti-Jetlag — chacun adapté à vos besoins.",
     },
     about: {
       title: "À propos de moi — Sophie Massage",

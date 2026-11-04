@@ -29,14 +29,14 @@ const en: Translations = {
   },
   seo: {
     home: {
-      title: "Sophie Massage — Balinese & Swedish Massage in Zurich",
+      title: "Sophie Massage — Balinese, Swedish & Wellness Massage in Zurich",
       description:
         "Independent massage therapist in Zurich offering Balinese and Swedish massage. Calm, attentive treatments tailored to you — book your session today.",
     },
     services: {
-      title: "Balinese & Swedish Massage Treatments in Zurich — Sophie Massage",
+      title: "Balinese, Swedish & Wellness Massage in Zurich — Sophie Massage",
       description:
-        "Explore my massage treatments in Zurich, including Balinese massage and Swedish massage — each thoughtfully adapted to your needs.",
+        "Explore my wellness massages in Zurich, including Balinese massage, Swedish massage and anti-Jetlag massage — each thoughtfully adapted to your needs.",
     },
     about: {
       title: "About Me — Sophie Massage",

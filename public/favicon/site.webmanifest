@@ -2,7 +2,7 @@
   "name": "Sophie Massage",
   "short_name": "Sophie Massage",
   "start_url": "/",
-  "description": "Calm and attentive massage treatments in Zurich.",
+  "description": "Calm and attentive wellness massage in Zurich.",
   "display_override": ["window-control-overlay", "minimal-ui"],
   "orientation": "portrait",
   "theme_color": "#f5e9e9",

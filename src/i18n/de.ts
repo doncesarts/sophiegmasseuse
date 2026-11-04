@@ -28,14 +28,16 @@ const de: Translations = {
   },
   seo: {
     home: {
-      title: "Sophie Massage — Balinesische & Schwedische Massage in Zürich",
+      title:
+        "Sophie Massage — Balinesische, Schwedische & Wellness Massagen in Zürich",
       description:
         "Unabhängige Massagetherapeutin in Zürich mit Balinesischer und Schwedischer Massage. Ruhige, individuell abgestimmte Behandlungen — buche deine Sitzung.",
     },
     services: {
-      title: "Balinesische & Schwedische Massage in Zürich — Sophie Massage",
+      title:
+        "Balinesische, Schwedische & Wellness Massagen in Zürich — Sophie Massage",
       description:
-        "Entdecke meine Massagebehandlungen in Zürich, darunter Balinesische Massage und Schwedische Massage — jede individuell angepasst.",
+        "Entdecke meine Wellness-Massagen in Zürich, darunter Balinesische Massage, Schwedische Massage und Massage gegen Jetlag — jede individuell angepasst.",
     },
     about: {
       title: "Über mich — Sophie Massage",
