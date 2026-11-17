@@ -31,7 +31,7 @@ const { locale, t } = Astro.props;
     <div class="rounded-box overflow-hidden">
       <img
         src="/images/hero.jpeg"
-        alt="Placeholder photograph of the massage studio"
+        alt={t.hero.studioPhotoAlt}
         width="1600"
         height="1100"
         fetchpriority="high"

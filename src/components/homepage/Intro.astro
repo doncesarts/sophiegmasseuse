@@ -15,7 +15,7 @@ const { locale, t } = Astro.props;
     <div class="rounded-box overflow-hidden order-2 lg:order-1">
       <img
         src="/images/intro.jpg"
-        alt="Placeholder portrait of the therapist"
+        alt={t.intro.therapistPhotoAlt}
         width="900"
         height="1100"
         loading="lazy"

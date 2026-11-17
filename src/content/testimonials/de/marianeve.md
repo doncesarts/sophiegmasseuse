@@ -6,4 +6,5 @@ quote: "Letzte Woche hatte ich die Gelegenheit, mich von Sophie massieren zu las
 rating: 5
 featured: true
 order: 1
+translationNote: "Übersetzung der ursprünglichen Aussage auf Englisch."
 ---

@@ -29,7 +29,7 @@ const breadcrumbSchema = breadcrumbList(
   path="/health-safety"
   structuredData={[breadcrumbSchema]}
 >
-  <Breadcrumbs items={breadcrumbs} />
+  <Breadcrumbs items={breadcrumbs} label={t.common.breadcrumbLabel} />
   <article class="page section container max-w-3xl">
     <h1>{t.healthSafetyPage.title}</h1>
     <p class="text-base-content/80 mb-8">{t.healthSafetyPage.intro}</p>

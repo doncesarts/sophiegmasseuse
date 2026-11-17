@@ -41,6 +41,13 @@ export interface Translations {
     specialOfferBadge: string;
     close: string;
     specialOfferNotice: string;
+    navigationLabel: string;
+    mobileNavigationLabel: string;
+    footerNavigationLabel: string;
+    openMenu: string;
+    closeMenu: string;
+    toggleMenu: string;
+    breadcrumbLabel: string;
   };
   seo: {
     home: { title: string; description: string };
@@ -62,11 +69,13 @@ export interface Translations {
     intro: string;
     primaryCta: string;
     secondaryCta: string;
+    studioPhotoAlt: string;
   };
   intro: {
     title: string;
     body: string;
     cta: string;
+    therapistPhotoAlt: string;
   };
   featuredServices: {
     title: string;
@@ -99,6 +108,8 @@ export interface Translations {
     body: string;
     transports: TransportItem[];
     cta: string;
+    venueLogoAlt: string;
+    mapTitle: string;
   };
   bookingCta: {
     title: string;
@@ -147,7 +158,9 @@ export interface Translations {
     phoneLabel: string;
     whatsappLabel: string;
     addressLabel: string;
+    addressValue: string;
     areaLabel: string;
+    areaValue: string;
     socialLabel: string;
     bookAlternative: string;
   };

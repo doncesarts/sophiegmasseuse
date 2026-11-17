@@ -32,6 +32,7 @@ const serviceLocation = {
   en: 'in Zurich',
   fr: 'à Zurich',
   de: 'in Zürich',
+  es: 'en Zúrich',
 }[locale];
 const localizedServiceName = `${entry.data.title} ${serviceLocation}`;
 
@@ -82,7 +83,7 @@ const serviceSchema = {
   path={pagePath}
   structuredData={[breadcrumbSchema, serviceSchema]}
 >
-  <Breadcrumbs items={breadcrumbs} />
+  <Breadcrumbs items={breadcrumbs} label={t.common.breadcrumbLabel} />
   <article class="page section container max-w-3xl">
     <a href={`/${locale}/services/`} class="link link-primary text-sm">&larr; {t.common.backToServices}</a>
     <h1 class="mt-4">{entry.data.title}</h1>

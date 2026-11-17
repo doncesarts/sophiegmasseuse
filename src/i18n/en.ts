@@ -26,6 +26,13 @@ const en: Translations = {
     specialOfferNotice:
       "Special offer — options and prices subject to future change",
     close: "Close",
+    navigationLabel: "Primary navigation",
+    mobileNavigationLabel: "Mobile navigation",
+    footerNavigationLabel: "Footer navigation",
+    openMenu: "Open navigation menu",
+    closeMenu: "Close navigation menu",
+    toggleMenu: "Toggle navigation menu",
+    breadcrumbLabel: "Breadcrumb",
   },
   seo: {
     home: {
@@ -89,11 +96,13 @@ const en: Translations = {
     intro: "",
     primaryCta: "Book an appointment",
     secondaryCta: "Discover my massages",
+    studioPhotoAlt: "Placeholder photograph of the massage studio",
   },
   intro: {
     title: "A moment made entirely for you",
     body: "Every session begins with a conversation. I take the time to understand how you feel before choosing the right pressure, pace and technique. I use only natural, nourishing oils suitable for sensitive skin.",
     cta: "About Me",
+    therapistPhotoAlt: "Placeholder portrait of the therapist",
   },
   featuredServices: {
     title: "Signature massages",
@@ -164,6 +173,8 @@ const en: Translations = {
       },
     ],
     cta: "Get in touch",
+    venueLogoAlt: "Gemeinschaftsräume Glattwiesen community logo",
+    mapTitle: "Map showing the studio location",
   },
   bookingCta: {
     title: "Ready for a moment to yourself?",
@@ -250,7 +261,7 @@ const en: Translations = {
       {
         question: "What are the payment options?",
         answer:
-          "I accept payments via Cash, TWINT or bank transfers (Wise, Revolut) immediately after the session. \nInvoices issued on request only (payment due within 14 days). \nA payment reminder will be sent after 14 days for outstanding payments.",
+          "Payments via Cash, TWINT or bank transfers (Wise, Revolut) are accepted immediately after the session. \nInvoices issued on request only (payment due within 14 days). \nA payment reminder will be sent after 14 days for outstanding payments.",
       },
       {
         question: "What is the cancellation policy?",
@@ -277,7 +288,9 @@ const en: Translations = {
     phoneLabel: "Phone",
     whatsappLabel: "Message me on WhatsApp",
     addressLabel: "Studio address",
+    addressValue: "Glattwiesenstrasse 213, 8051 Zurich, Switzerland",
     areaLabel: "Service area",
+    areaValue: "Zurich, Switzerland",
     socialLabel: "Follow along",
     bookAlternative: "Prefer to book straight away?",
   },
@@ -336,7 +349,7 @@ const en: Translations = {
       "1. Scope",
       "These General Terms and Conditions (GTC) apply to all treatments provided by Sophie Goupil at the Zurich-Schwamendingen practice (Gemeinschaftsräume Glattwiesen, Glattwiesenstrasse 213, 8051 Zurich). By booking an appointment, you accept these GTC.",
       "2. Services and Prices",
-      "We offer wellness massages. These are not a substitute for medical treatment.",
+      "Wellness massages are offered. These are not a substitute for medical treatment.",
       "Prices are in CHF as stated on the website. Payment is due at the first consultation prior to the session (cash, TWINT, bank transfer); from the second session onwards, payment is due afterwards.",
       "3. Price adjustments",
       "Sophie Goupil reserves the right to adjust prices. The price communicated at the time of booking shall be the governing price.",
@@ -362,7 +375,7 @@ const en: Translations = {
     title: "Data Protection",
     body: [
       "Last updated: 15.09.2026",
-      "Below, we provide transparent information on how we process personal data.",
+      "Below, it is provided transparent information on how Sophie Massage processes personal data.",
       "1. Data controller",
       "Sophie Goupil\nGemeinschaftsräume Glattwiesen\nGlattwiesenstrasse 213\n8051 Zürich\nSwitzerland\n\nPhone: +41 77 804 44 52\nEmail: sophie.g.massage@gmail.com",
       "2. Using the online booking service, I offer you the opportunity to book appointments at Sophie Massage. The online booking service is operated by cal.com. For further information, please visit: https://cal.com/privacy",
@@ -370,14 +383,14 @@ const en: Translations = {
       "If you wish to use the online booking service, you will need to provide various personal details such as your first name and surname, and possibly further personal information such as your email address and mobile phone number. You are also free to use the 'Comments' field.",
       "The information you provide will be processed for the purpose of arranging and managing your appointment.",
       "The mandatory fields are required in order to arrange an appointment with you. Providing additional information on a voluntary basis helps me to process your enquiry more efficiently and enables me to provide you with more detailed information.",
-      "We will only pass on personal data where necessary, in particular to: Accounting services.",
+      "Personal data will only be passed on where necessary, in particular to: Accounting services.",
       "You may object to this data processing at any time. Please send your objection to the email address specified in section 1.",
       "4. Cookies and Tracking",
-      "Our website uses cookies as well as analytics and security features.",
+      "The website uses cookies as well as analytics and security features.",
       "Cookies are small text files that are stored on your device. You can delete or block cookies in your browser at any time.",
       "5. Retention of data",
       "In principle, your personal data will be retained for as long as is necessary for the respective purpose.",
-      "Where statutory retention obligations apply, the relevant personal data will be stored for the duration of the retention obligation. Once the retention obligation has expired, we will assess whether there is still a need to process the data. If there is no longer a need for processing, your data will either be deleted or anonymised.",
+      "Where statutory retention obligations apply, the relevant personal data will be stored for the duration of the retention obligation. Once the retention obligation has expired, it will be assessed whether there is still a need to process the data. If there is no longer a need for processing, your data will either be deleted or anonymised.",
       "If your data is stored on the basis of a contractual relationship with you, it will remain stored for at least as long as the contractual relationship exists and, at the very latest, for as long as limitation periods for potential claims apply or statutory or contractual retention obligations remain in force.",
       "Personal data is retained for as long as required by statutory and contractual retention periods. Once the retention period has expired, the personal data is deleted or anonymised.",
       "6. Data subjects' rights",

@@ -25,6 +25,13 @@ const de: Translations = {
     specialOfferBadge: "Sonderangebot",
     specialOfferNotice: "Sonderangebot — Optionen und Preise freibleibend",
     close: "Schliessen",
+    navigationLabel: "Hauptnavigation",
+    mobileNavigationLabel: "Mobile Navigation",
+    footerNavigationLabel: "Footer-Navigation",
+    openMenu: "Navigationsmenü öffnen",
+    closeMenu: "Navigationsmenü schliessen",
+    toggleMenu: "Navigationsmenü ein- oder ausblenden",
+    breadcrumbLabel: "Brotkrumennavigation",
   },
   seo: {
     home: {
@@ -90,11 +97,13 @@ const de: Translations = {
     intro: "Massage & Wellbeing",
     primaryCta: "Termin buchen",
     secondaryCta: "Massagen entdecken",
+    studioPhotoAlt: "Platzhalterfoto des Massagestudios",
   },
   intro: {
     title: "Ein Moment ganz für Dich",
     body: "Jede Sitzung beginnt mit einem Gespräch. ich nehme mir Zeit, um zu verstehen, wie du dich fühlst, bevor ich den richtigen Druck, das richtige Tempo und die richtige Technik auswähle. Ich verwende ausschliesslich natürliche, pflegende Öle, die für empfindliche Haut geeignet sind.",
     cta: "Über mich",
+    therapistPhotoAlt: "Platzhalterporträt der Therapeutin",
   },
   featuredServices: {
     title: "Signature-Massagen",
@@ -166,6 +175,8 @@ const de: Translations = {
       },
     ],
     cta: "Kontakt aufnehmen",
+    venueLogoAlt: "Logo des Gemeinschaftszentrums Glattwiesen",
+    mapTitle: "Karte mit dem Standort des Studios",
   },
   bookingCta: {
     title: "Bereit für einen Moment ganz für dich?",
@@ -253,7 +264,7 @@ const de: Translations = {
       {
         question: "Welche Zahlungsmöglichkeiten gibt es?",
         answer:
-          "Wir akzeptieren Zahlungen in bar, per TWINT oder per Banküberweisung (Wise, Revolut) unmittelbar nach der Sitzung. Rechnungen werden nur auf Anfrage ausgestellt (Zahlungsfrist 14 Tage). Bei ausstehenden Zahlungen wird nach 14 Tagen eine Zahlungserinnerung verschickt.",
+          "Zahlungen in bar, per TWINT oder per Banküberweisung (Wise, Revolut) werden unmittelbar nach der Sitzung entgegengenommen. \nRechnungen werden nur auf Anfrage ausgestellt (Zahlungsfrist 14 Tage). \nBei ausstehenden Zahlungen wird nach 14 Tagen eine Zahlungserinnerung versandt.",
       },
       {
         question: "Wie lauten die Stornierungsbedingungen?",
@@ -280,7 +291,9 @@ const de: Translations = {
     phoneLabel: "Telefon",
     whatsappLabel: "Mir auf WhatsApp schreiben",
     addressLabel: "Adresse des Studios",
+    addressValue: "Glattwiesenstrasse 213, 8051 Zürich, Schweiz",
     areaLabel: "Einzugsgebiet",
+    areaValue: "Zürich und Umgebung, Schweiz",
     socialLabel: "Mir folgen",
     bookAlternative: "Möchtest du lieber gleich buchen?",
   },
@@ -344,7 +357,7 @@ const de: Translations = {
       "Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Behandlungen von Sophie Goupil an den Standort Zürich-Schwamendingen (Glattwiesenstrasse 213, 8051 Zürich). Mit der Buchung eines Termins werden diese AGB anerkannt. Diese ersetzen keine medizinische Behandlung.",
 
       "2. Angebot und Preise",
-      "Wir bieten Wellness-Massagen an. Diese sind kein Ersatz für eine medizinische Behandlung.",
+      "Es werden Wellness-Massagen angeboten. Diese ersetzen keine medizinische Behandlung.",
       "Preise in CHF gemäss Website. Zahlung bei der ersten Konsultation vor der Sitzung (Bar, TWINT, Überweisung), ab zweiter Sitzung danach.",
 
       "3. Preisanpassungen",
@@ -379,7 +392,7 @@ const de: Translations = {
     title: "Datenschutzerklärung",
     body: [
       "Zuletzt aktualisiert am: 15.09.2026",
-      "Wir informieren nachfolgend transparent darüber, wie wir personenbezogene Daten bearbeiten.",
+      "Nachstehend finden Sie anschauliche Erläuterungen dazu, wie wir mit Personendaten umgehen.",
       "1. Verantwortlicher",
       "Sophie Goupil \nGemeinschaftsräume Glattwiesen\nGlattwiesenstrasse 213\n8051 Zürich\nSchweiz\n\n Telefon: +41 77 804 44 52 \nE-Mail: sophie.g.massage@gmail.com",
       "2. Nutzung der Online-Buchung",
@@ -388,8 +401,7 @@ const de: Translations = {
       "Wenn Sie die Online-Buchung nutzen möchten, ist die Angabe verschiedener Personendaten wie Vor-/Nachname und möglicherweise weiterer persönlicher Informationen wie E-Mail-Adresse und Mobiltelefonnummer. Ausserdem steht es Ihnen frei, das Feld «Bemerkungen» zu nutzen.",
       "Die von Ihnen gemachten Angaben werden zum Zwecke der Terminvereinbarung und deren Abwicklung bearbeitet.",
       "Die Pflichtangaben sind erforderlich, um mit Ihnen einen Termin zu vereinbaren. Die freiwillige Angabe weiterer Daten erleichtert mir die Bearbeitung Ihrer Anfrage und ermöglicht mir, Ihnen genauere Auskünfte zu erteilen.",
-      "Wir geben personenbezogene Daten nur weiter, wenn dies notwendig ist, insbesondere an:",
-      "Buchhaltung.",
+      "Personendaten werden nur weitergegeben, wenn dies erforderlich ist, insbesondere an: Buchhaltungs- und Treuhandstellen.",
       "Sie können dieser Datenbearbeitung jederzeit widersprechen. Senden Sie Ihren Widerspruch bitte an die unter Ziffer 1 genannte E-Mail-Adresse.",
       "4. Cookies und Tracking",
       "Unsere Website verwendet Cookies sowie Funktionen zur Analyse und Sicherheit.",
@@ -401,10 +413,10 @@ const de: Translations = {
       "Die Personendaten werden so lange aufbewahrt, wie es die gesetzlichen und vertraglichen Aufbewahrungsfristen verlangen. Nach Ablauf der Aufbewahrungsfrist werden die Personendaten gelöscht oder anonymisiert.",
       "6. Betroffenenrechte",
       "Ihnen stehen grundsätzlich die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung, Datenübertragbarkeit, Widerspruch gegen die Bearbeitung und Widerruf der Einwilligung mit Bezug auf Ihre Personendaten zu.",
-      "Bitte beachten Sie aber, dass ich mir vorbehalte, die gesetzlich vorgesehenen Einschränkungen geltend zu machen, etwa wenn ich zur Aufbewahrung oder Bearbeitung gewisser Daten verpflichtet bin, daran ein überwiegendes Interesse habe (soweit ich mich darauf berufen darf) oder sie für die Geltendmachung von Ansprüchen benötige.",
-      "Beachten Sie, dass die Ausübung dieser Rechte im Konflikt zu vertraglichen Abmachungen stehen kann und dies Folgen wie z.B. die vorzeitige Vertragsauflösung oder Kostenfolgen haben kann. Ich werde Sie diesfalls vorgängig informieren, wo dies nicht bereits vertraglich geregelt ist.",
+      "Bitte beachten Sie aber, dass Sophie Massage sich vorbehalten, die gesetzlich vorgesehenen Einschränkungen geltend zu machen, etwa wenn Sophie Massage zur Aufbewahrung oder Bearbeitung gewisser Daten verpflichtet ist, daran ein überwiegendes Interesse hat (soweit sie sich darauf berufen darf) oder sie für die Geltendmachung von Ansprüchen benötigt.",
+      "Beachten Sie, dass die Ausübung dieser Rechte im Konflikt zu vertraglichen Abmachungen stehen kann und dies Folgen wie z.B. die vorzeitige Vertragsauflösung oder Kostenfolgen haben kann. Sophie Massage wird Sie diesfalls vorgängig informieren, wo dies nicht bereits vertraglich geregelt ist.",
       "Wenn Sie glauben, dass die Bearbeitung Ihrer Personendaten gegen das Datenschutzrecht verstösst, oder Ihre datenschutzrechtlichen Ansprüche sonst in einer Weise verletzt worden sind, können Sie sich ausserdem bei der zuständigen Aufsichtsbehörde beschweren. In der Schweiz ist dies der Eidgenössische Datenschutz- und Öffentlichkeitsbeauftrage (EDÖB).",
-      "Die Ausübung Ihrer datenschutzrechtlichen Rechte setzt in der Regel voraus, dass Sie Ihre Identität eindeutig nachweisen (z.B. durch eine Ausweiskopie, wo Ihre Identität sonst nicht klar ist bzw. verifiziert werden kann). Zur Geltendmachung Ihrer Rechte kontaktieren Sie mich bitte per E-Mail unter der in Ziffer 1 bezeichneten E-Mail-Adresse.",
+      "Die Ausübung Ihrer datenschutzrechtlichen Rechte setzt in der Regel voraus, dass Sie Ihre Identität eindeutig nachweisen (z.B. durch eine Ausweiskopie, wo Ihre Identität sonst nicht klar ist bzw. verifiziert werden kann). Zur Geltendmachung Ihrer Rechte kontaktieren Sie Sophie Massage bitte per E-Mail unter der in Ziffer 1 bezeichneten E-Mail-Adresse.",
       "7. Änderungen",
       "Diese Datenschutzerklärung kann jederzeit angepasst werden.",
       "Es gilt jeweils die aktuelle Version auf unserer Website.",

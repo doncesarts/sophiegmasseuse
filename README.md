@@ -11,7 +11,7 @@ therapist, built with **Astro 7**, **Tailwind CSS 4** and **DaisyUI**.
 
 ## Features
 
-- 🌍 Multilingual from the start: English, French, German (`/en`, `/fr`, `/de`)
+- 🌍 Multilingual from the start: English, French, German and Spanish (`/en`, `/fr`, `/de`, `/es`)
 - 📅 Booking via an embedded [Cal.com](https://cal.com) page (`/book`), centrally configured
 - 🎨 One place to rebrand: [`src/config/site.ts`](./src/config/site.ts)
 - 🗣️ One place to translate: [`src/i18n/`](./src/i18n)
@@ -29,17 +29,17 @@ src/
 │   ├── site.ts          Central brand/business configuration
 │   └── calcom.ts        Centralized Cal.com booking URL
 ├── content/
-│   ├── services/{en,fr,de}/   Treatment data (slug, price, duration, ...)
-│   └── testimonials/{en,fr,de}/
+│   ├── services/{en,fr,de,es}/   Treatment data (slug, price, duration, ...)
+│   └── testimonials/{en,fr,de,es}/
 ├── i18n/
-│   ├── en.ts, fr.ts, de.ts    Translation dictionaries
+│   ├── en.ts, fr.ts, de.ts, es.ts  Translation dictionaries
 │   ├── config.ts              Locales list & helpers
 │   └── types.ts                Shared `Translations` shape
 ├── layouts/
 │   └── MainLayout.astro
 └── pages/
     ├── 404.astro, 500.astro
-    └── [lang]/            en / fr / de routes (index, services, about, faq, contact, book, privacy, legal)
+    └── [lang]/            en / fr / de / es routes (index, services, about, faq, contact, book, privacy, legal)
 ```
 
 ## Commands
@@ -114,7 +114,7 @@ the current Google values are used instead.
 ## Adding or editing services
 
 Add a Markdown file under `src/content/services/<locale>/<slug>.md` (use the
-**same slug** in all three locale folders so the language switcher can map
+**same slug** in every locale folder so the language switcher can map
 between translations). See existing files for the required frontmatter
 fields (`title`, `shortDescription`, `duration`, `price`, `image`,
 `suitableFor`, `whatToExpect`, etc.).

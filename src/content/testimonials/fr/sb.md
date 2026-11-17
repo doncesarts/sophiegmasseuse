@@ -6,4 +6,5 @@ quote: "Les indications de Sophie ont facilité mon arrivée. Le stationnement �
 rating: 5
 featured: true
 order: 3
+translationNote: "Traduction de l'avis original en allemand."
 ---

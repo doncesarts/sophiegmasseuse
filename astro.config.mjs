@@ -15,7 +15,7 @@ export default defineConfig({
       filter: (page) => page !== "https://sophie-massage.ch/de/",
       i18n: {
         defaultLocale: "de",
-        locales: { en: "en", fr: "fr", de: "de" },
+        locales: { en: "en", fr: "fr", de: "de", es: "es" },
       },
     }),
   ],

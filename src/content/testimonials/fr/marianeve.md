@@ -6,4 +6,5 @@ quote: "La semaine dernière, j'ai eu l'occasion de me faire masser par Sophie. 
 rating: 5
 featured: true
 order: 1
+translationNote: "Traduction de l'avis original en anglais."
 ---

@@ -6,4 +6,5 @@ quote: "Cela m'a aidé à me détendre et à soulager les tensions dans mon dos.
 rating: 5
 featured: true
 order: 2
+translationNote: "Traduction de l'avis original en anglais."
 ---

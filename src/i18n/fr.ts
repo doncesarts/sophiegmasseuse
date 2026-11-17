@@ -26,6 +26,13 @@ const fr: Translations = {
     specialOfferNotice:
       "Offre spéciale — formules et tarifs sujets à modification",
     close: "Fermer",
+    navigationLabel: "Navigation principale",
+    mobileNavigationLabel: "Navigation mobile",
+    footerNavigationLabel: "Navigation de pied de page",
+    openMenu: "Ouvrir le menu de navigation",
+    closeMenu: "Fermer le menu de navigation",
+    toggleMenu: "Afficher ou masquer le menu de navigation",
+    breadcrumbLabel: "Fil d’Ariane",
   },
   seo: {
     home: {
@@ -89,11 +96,13 @@ const fr: Translations = {
     intro: "",
     primaryCta: "Prendre rendez-vous",
     secondaryCta: "Découvrir mes massages",
+    studioPhotoAlt: "Photo provisoire du studio de massage",
   },
   intro: {
     title: "Un moment pensé entièrement pour vous",
     body: "Chaque séance commence par un échange. Je prends le temps de comprendre comment vous vous sentez avant de choisir la pression, le rythme et la technique adaptés. J'utilise uniquement des huiles naturelles et nourrissantes, adaptées aux peaux sensibles.",
     cta: "A propos de moi",
+    therapistPhotoAlt: "Portrait provisoire de la thérapeute",
   },
   featuredServices: {
     title: "Massages signature",
@@ -162,6 +171,8 @@ const fr: Translations = {
       },
     ],
     cta: "Me contacter",
+    venueLogoAlt: "Logo du centre communautaire Gemeinschaftsräume Glattwiesen",
+    mapTitle: "Carte indiquant l’emplacement du studio",
   },
   bookingCta: {
     title: "Prêt·e pour un moment rien qu'à vous ?",
@@ -250,7 +261,7 @@ const fr: Translations = {
       {
         question: "Quelles sont les modes de paiement ?",
         answer:
-          "J'accepte les paiements en espèces, via TWINT ou par virement bancaire (Wise, Revolut) immédiatement après la séance. \nLes factures ne sont émises que sur demande (paiement sous 14 jours). \nUn rappel de paiement sera envoyé après 14 jours pour les paiements en attente.",
+          "Les paiements en espèces, via TWINT ou par virement bancaire (Wise, Revolut) sont acceptés immédiatement après la séance. \nLes factures sont émises uniquement sur demande (paiement dû dans les 14 jours). \nUn rappel de paiement sera envoyé au bout de 14 jours pour les paiements en souffrance.",
       },
       {
         question: "Quelle est la politique d'annulation ?",
@@ -277,7 +288,9 @@ const fr: Translations = {
     phoneLabel: "Natel",
     whatsappLabel: "M'écrire sur WhatsApp",
     addressLabel: "Adresse du studio",
+    addressValue: "Glattwiesenstrasse 213, 8051 Zurich, Suisse",
     areaLabel: "Zone de service",
+    areaValue: "Zurich et ses environs, Suisse",
     socialLabel: "Me suivre",
     bookAlternative: "Vous préférez réserver tout de suite ?",
   },
@@ -336,7 +349,7 @@ const fr: Translations = {
       "1. Champ d'application",
       "Les présentes conditions générales s'appliquent à tous les soins proposés par Sophie Goupil dans son cabinet de Zurich-Schwamendingen (Glattwiesenstrasse 213, 8051 Zurich). En prenant rendez-vous, vous acceptez les présentes conditions générales.",
       "2. Prestations et tarifs",
-      "Nous proposons des massages bien-être. Ceux-ci ne remplacent pas un traitement médical.",
+      "Des massages de bien-être sont proposés. Ceux-ci ne remplacent pas un traitement médical.",
       "Les prix sont indiqués en CHF sur le site internet. Lors de la première consultation, le paiement est dû avant la séance (en espèces, par TWINT ou par virement bancaire) ; à partir de la deuxième séance, le paiement est dû après la séance.",
       "3. Modification des tarifs",
       "Sophie Goupil se réserve le droit d'adapter ses tarifs. Le prix communiqué au moment de la réservation est le prix applicable.",
@@ -362,7 +375,7 @@ const fr: Translations = {
     title: "Politique de confidentialité",
     body: [
       "Dernière mise à jour : 15.09.2026",
-      "Vous trouverez ci-dessous des informations transparentes sur la manière dont nous traitons les données personnelles.",
+      "Vous trouverez ci-dessous des explications claires sur la manière dont nous traitons les données à caractère personnel.",
       "1. Responsable du traitement",
       "Sophie Goupil\nGemeinschaftsräume Glattwiesen\nGlattwiesenstrasse 213\n8051 Zurich\nSuisse\n\nTéléphone : +41 77 804 44 52\nE-mail : sophie.g.massage@gmail.com",
       "2. En utilisant le service de réservation en ligne, je vous offre la possibilité de prendre rendez-vous chez Sophie Massage. Le service de réservation en ligne est exploité par cal.com. Pour plus d'informations, veuillez consulter : https://cal.com/privacy",
@@ -370,14 +383,14 @@ const fr: Translations = {
       "Si vous souhaitez utiliser le service de réservation en ligne, vous devrez fournir diverses données personnelles, telles que vos prénom et nom, et éventuellement d'autres informations personnelles comme votre adresse e-mail et votre numéro de natel. Vous pouvez également utiliser librement le champ « Commentaires ».",
       "Les informations que vous fournissez seront traitées afin d'organiser et de gérer votre rendez-vous.",
       "Les champs obligatoires sont nécessaires pour organiser un rendez-vous avec vous. La fourniture volontaire d'informations supplémentaires m'aide à traiter votre demande plus efficacement et me permet de vous fournir des informations plus détaillées.",
-      "Nous ne transmettrons les données personnelles que lorsque cela est nécessaire, notamment à : des services de comptabilité et de fiduciaire.",
+      "Les données personnelles ne sont transmises que lorsque cela est nécessaire, notamment à : des services de comptabilité et de fiduciaire.",
       "Vous pouvez vous opposer à ce traitement des données à tout moment. Veuillez envoyer votre opposition à l'adresse e-mail indiquée à la section 1.",
       "4. Cookies et suivi",
-      "Notre site utilise des cookies ainsi que des fonctions d'analyse et de sécurité.",
+      "Le site utilise des cookies ainsi que des fonctions d'analyse et de sécurité.",
       "Les cookies sont de petits fichiers texte enregistrés sur votre appareil. Vous pouvez supprimer ou bloquer les cookies à tout moment dans votre navigateur.",
       "5. Conservation des données",
       "En principe, vos données personnelles sont conservées aussi longtemps que nécessaire aux fins concernées.",
-      "Lorsque des obligations légales de conservation s'appliquent, les données personnelles concernées sont conservées pendant toute la durée de l'obligation. À l'expiration de celle-ci, nous vérifions s'il existe encore un besoin de traiter les données. Si ce n'est plus le cas, vos données sont supprimées ou anonymisées.",
+      "Lorsque des obligations légales de conservation s'appliquent, les données personnelles concernées sont conservées pendant toute la durée de l'obligation. À l'expiration de celle-ci, Sophie Massage vérifie s'il existe encore un besoin de traiter les données. Si ce n'est plus le cas, vos données sont supprimées ou anonymisées.",
       "Si vos données sont conservées sur la base d'une relation contractuelle avec vous, elles le restent au moins pendant toute la durée de cette relation et, au plus tard, pendant la durée des délais de prescription applicables aux éventuelles prétentions ou tant que des obligations légales ou contractuelles de conservation sont en vigueur.",
       "Les données personnelles sont conservées pendant les durées prévues par la loi et par les contrats. À l'expiration de ces délais, elles sont supprimées ou anonymisées.",
       "6. Droits des personnes concernées",
@@ -425,7 +438,7 @@ const fr: Translations = {
   },
   serverError: {
     title: "Une erreur est survenue",
-    body: "Merci de réessayer dans un instant, ou de nous contacter si le problème persiste.",
+    body: "Merci de réessayer dans un instant, ou de me contacter si le problème persiste.",
     cta: "Retour à l'accueil",
   },
 };

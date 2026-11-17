@@ -34,7 +34,7 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
   path="/contact"
   structuredData={[breadcrumbSchema]}
 >
-  <Breadcrumbs items={breadcrumbs} />
+  <Breadcrumbs items={breadcrumbs} label={t.common.breadcrumbLabel} />
   <section class="page section container max-w-3xl">
     <h1>{t.contactPage.title}</h1>
     <p class="text-base-content/80 mb-8">{t.contactPage.intro}</p>
@@ -56,12 +56,12 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
         <dd class="flex items-center gap-4">
           <img
             src="/images/logo-community.jpg"
-            alt="Gemeinschaftsräume Glattwiesen community logo"
+            alt={t.locationSection.venueLogoAlt}
             width="80"
             height="80"
             class="h-20 w-20 shrink-0 rounded-box object-cover"
           />
-          <div>{siteConfig.address}
+          <div>{t.contactPage.addressValue}
           <p>
            {siteConfig.building}
           </p>
@@ -71,7 +71,7 @@ const mapEmbedSrc = `https://www.google.com/maps?q=${mapQuery}&output=embed`;
       </div>
       <div>
         <dt class="font-semibold">{t.contactPage.areaLabel}</dt>
-        <dd>{siteConfig.serviceArea}</dd>
+        <dd>{t.contactPage.areaValue}</dd>
       </div>
       {(siteConfig.instagramUrl || siteConfig.facebookUrl) && (
         <div>

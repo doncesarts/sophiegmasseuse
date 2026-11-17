@@ -30,7 +30,7 @@ const breadcrumbSchema = breadcrumbList(
   path="/about"
   structuredData={[breadcrumbSchema]}
 >
-  <Breadcrumbs items={breadcrumbs} />
+  <Breadcrumbs items={breadcrumbs} label={t.common.breadcrumbLabel} />
   <article class="page section container max-w-3xl">
     <div class="grid gap-10 lg:grid-cols-[1fr_1.4fr] items-start mb-12 not-prose">
       <img

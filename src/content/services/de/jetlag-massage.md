@@ -16,6 +16,7 @@ featured: true
 order: 3
 suitableFor:
   - "Menschen mit Verspannungen in den Beinen, Schultern oder im unteren Rücken"
+  - "Menschen mit Nachtschichtarbeit"
   - "Kabinenpersonal, das nach langen Flügen unter Müdigkeit leidet"
 whatToExpect:
   - "Ein Gespräch, um die Bereiche zu bestimmen, auf die du dich konzentrieren möchtest"

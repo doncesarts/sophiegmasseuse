@@ -38,7 +38,7 @@ const faqSchema = {
   path="/faq"
   structuredData={[breadcrumbSchema, faqSchema]}
 >
-  <Breadcrumbs items={breadcrumbs} />
+  <Breadcrumbs items={breadcrumbs} label={t.common.breadcrumbLabel} />
   <section class="page section container max-w-3xl">
     <h1>{t.faqPage.title}</h1>
     <p class="text-base-content/80 mb-8">{t.faqPage.intro}</p>

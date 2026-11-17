@@ -6,6 +6,7 @@ import '../styles/global.css';
 import { Font } from 'astro:assets';
 import { getCollection } from 'astro:content';
 import { siteConfig } from '../config/site';
+import { getTranslations } from '../i18n';
 import { locales, defaultLocale, type Locale } from '../i18n/config';
 
 interface Props {
@@ -40,6 +41,7 @@ const urlFor = (loc: Locale) =>
 const canonicalURL = urlFor(locale);
 const imageURL = new URL(image, Astro.site);
 const businessId = new URL(`/${defaultLocale}/#business`, Astro.site).toString();
+const localizedDescription = getTranslations(locale).seo.home.description;
 const catalogEntries = await getCollection('services', (entry) => entry.data.lang === locale);
 const catalogItemList = catalogEntries.map((entry) => ({
   '@type': 'Offer',
@@ -54,7 +56,7 @@ const localBusinessNode = {
   '@type': 'HealthAndBeautyBusiness',
   '@id': businessId,
   name: siteConfig.name,
-  description: siteConfig.seo.defaultDescription,
+  description: localizedDescription,
   image: imageURL.toString(),
   logo: new URL(siteConfig.logo, Astro.site).toString(),
   url: new URL(`/${defaultLocale}/`, Astro.site).toString(),

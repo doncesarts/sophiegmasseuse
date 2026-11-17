@@ -6,4 +6,5 @@ quote: "Die Massage hat mir geholfen, mich zu entspannen und die Verspannungen i
 rating: 5
 featured: true
 order: 2
+translationNote: "Übersetzung der ursprünglichen Aussage auf Englisch."
 ---

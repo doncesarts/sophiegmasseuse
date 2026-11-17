@@ -6,4 +6,5 @@ quote: "Ich habe mich für eine schwedische Massage bei Sophie entschieden. Da i
 rating: 5
 featured: true
 order: 4
+translationNote: "Übersetzung der ursprünglichen Aussage auf Französisch."
 ---

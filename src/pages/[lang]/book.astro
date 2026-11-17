@@ -31,7 +31,7 @@ const breadcrumbSchema = breadcrumbList(
   path="/book"
   structuredData={[breadcrumbSchema]}
 >
-  <Breadcrumbs items={breadcrumbs} />
+  <Breadcrumbs items={breadcrumbs} label={t.common.breadcrumbLabel} />
   <section class="page section container max-w-3xl">
     <h1>{t.bookPage.title}</h1>
     <p class="text-base-content/80 mb-8">{t.bookPage.intro}</p>

@@ -39,7 +39,7 @@ const t = getTranslations(locale);
       {t.common.skipToContent}
     </a>
     <div class="drawer">
-      <input id="mobile-drawer" type="checkbox" class="drawer-toggle" title="Toggle navigation menu" />
+      <input id="mobile-drawer" type="checkbox" class="drawer-toggle" title={t.common.toggleMenu} />
       <div class="drawer-content flex flex-col h-full">
         <div class="flex flex-col flex-1">
           <Header locale={locale} path={path} t={t} />

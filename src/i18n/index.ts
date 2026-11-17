@@ -3,8 +3,9 @@ import type { Translations } from "./types";
 import en from "./en";
 import fr from "./fr";
 import de from "./de";
+import es from "./es";
 
-const dictionaries: Record<Locale, Translations> = { en, fr, de };
+const dictionaries: Record<Locale, Translations> = { en, fr, de, es };
 
 export function getTranslations(locale: Locale | string): Translations {
   return dictionaries[locale as Locale] ?? dictionaries[defaultLocale];

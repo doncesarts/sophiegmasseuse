@@ -8,12 +8,13 @@ interface Crumb {
 
 interface Props {
   items: Crumb[];
+  label: string;
 }
 
-const { items } = Astro.props;
+const { items, label } = Astro.props;
 ---
 
-<nav aria-label="Breadcrumb" class="container pt-6 not-prose">
+<nav aria-label={label} class="container pt-6 not-prose">
   <ol class="flex flex-wrap items-center gap-2 text-sm text-base-content/70">
     {items.map((item, index) => (
       <li class="flex items-center gap-2">

@@ -6,4 +6,5 @@ quote: "I chose to have a Swedish massage with Sophie. Since my job in the resta
 rating: 5
 featured: true
 order: 4
+translationNote: "Translated from French."
 ---

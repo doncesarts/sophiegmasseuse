@@ -19,7 +19,7 @@ const serviceOption = z.object({
 const services = defineCollection({
   loader: glob({ base: "./src/content/services", pattern: "**/*.{md,mdx}" }),
   schema: z.object({
-    lang: z.enum(["en", "fr", "de"]),
+    lang: z.enum(["en", "fr", "de", "es"]),
     title: z.string(),
     shortDescription: z.string().optional(),
     duration: z.number().describe("Duration in minutes").optional(),
@@ -49,7 +49,8 @@ const testimonials = defineCollection({
     pattern: "**/*.{md,mdx}",
   }),
   schema: z.object({
-    lang: z.enum(["en", "fr", "de"]),
+    lang: z.enum(["en", "fr", "de", "es"]),
+    translationNote: z.string().optional(),
     name: z.string(),
     location: z.string().optional(),
     quote: z.string(),

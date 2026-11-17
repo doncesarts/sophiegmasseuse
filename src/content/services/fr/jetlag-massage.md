@@ -16,6 +16,7 @@ featured: true
 order: 3
 suitableFor:
   - "Les personnes ayant des tensions dans les jambes, les épaules ou le dos"
+  - "Les personnes qui travaillent de nuit"
   - "Le personnel navigant souffrant de fatigue après de longs vols"
 whatToExpect:
   - "Un échange pour identifier les zones sur lesquelles vous souhaitez vous concentrer"

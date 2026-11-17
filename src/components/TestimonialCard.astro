@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 
 type Props = CollectionEntry<'testimonials'>['data'];
 
-const { name, location, quote, rating } = Astro.props;
+const { name, location, quote, rating, translationNote } = Astro.props;
 ---
 
 <figure class="rounded-box border border-base-300 bg-base-100 p-8 flex flex-col gap-4">
@@ -11,5 +11,6 @@ const { name, location, quote, rating } = Astro.props;
   <blockquote class="text-lg font-serif text-base-content/90">&ldquo;{quote}&rdquo;</blockquote>
   <figcaption class="text-sm text-base-content/70">
     {name}{location ? `, ${location}` : ''}
+    {translationNote && <span class="block text-xs mt-1">{translationNote}</span>}
   </figcaption>
 </figure>
