@@ -16,7 +16,9 @@ const { fallbackLabel, fallbackIntro, class: className, locale } = Astro.props;
 const felizzioUrl = FELIZZIO_LINK(locale === 'es' ? 'en' : locale);
 ---
 <div class:list={['booking-embed', className]} data-felizzio-redirect={felizzioUrl}>
-
+  <noscript>
+    <meta http-equiv="refresh" content={`0; url=${felizzioUrl}`} />
+  </noscript>
   <p class="mt-4 text-sm text-base-content/70">
     {fallbackIntro}{' '}
     <a href={felizzioUrl} rel="noopener noreferrer" class="link link-primary">
@@ -25,14 +27,17 @@ const felizzioUrl = FELIZZIO_LINK(locale === 'es' ? 'en' : locale);
   </p>
 </div>
 
-
+<script>
+  const url = document.querySelector<HTMLElement>('[data-felizzio-redirect]')?.dataset.felizzioRedirect;
+  if (url) window.location.replace(url);
+</script>
 
  <!-- Redirect to FELIZZIO_LINK(locale) 
   <div class="min-h-[720px] md:min-h-[860px] bg-base-100 rounded-box">
     
      
     <iframe
-      src={FELIZZIO_LINK(locale)}
+      src={felizzioUrl}
       title={siteConfig.name}
       width="100%"
       height="800"
