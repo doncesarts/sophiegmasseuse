@@ -1,6 +1,8 @@
 ---
 import type { Locale } from '../../i18n/config';
 import type { Translations } from '../../i18n/types';
+import WhatsAppLink from '../../components/WhatsAppLink.astro';
+import { siteConfig } from '../../config/site';
 
 interface Props {
   locale: Locale;
@@ -15,5 +17,10 @@ const { locale, t } = Astro.props;
     <h2 class="text-secondary-content">{t.bookingCta.title}</h2>
     <p class="opacity-90 mb-8 max-w-xl mx-auto">{t.bookingCta.subtitle}</p>
     <a href={`/${locale}/book/`} class="btn btn-lg bg-base-100 text-secondary hover:bg-base-200 border-0 rounded-field">{t.bookingCta.cta}</a>
+    <p class="opacity-90 mb-8 max-w-xl mx-auto"></p>
+    <span class="inline-flex items-center gap-3">
+      <a href={`tel:${siteConfig.phone.replace(/\s/g, '')}`} class="hover:text-primary hover:underline">{siteConfig.phone}</a>
+      <WhatsAppLink label={t.contactPage.whatsappLabel} />
+    </span>
   </div>
 </section>

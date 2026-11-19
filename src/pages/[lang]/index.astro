@@ -9,6 +9,7 @@ import Testimonials from '../../components/homepage/Testimonials.astro';
 import Gallery from '../../components/homepage/Gallery.astro';
 import LocationCta from '../../components/homepage/LocationCta.astro';
 import BookingCta from '../../components/homepage/BookingCta.astro';
+import FaqCta from '../../components/homepage/FaqCta.astro';
 import { getCollection } from 'astro:content';
 import { locales, defaultLocale, type Locale } from '../../i18n/config';
 import { getTranslations } from '../../i18n';
@@ -69,4 +70,5 @@ const aggregateRatingSchema =
   <Gallery t={t} />
   <LocationCta locale={locale} t={t} />
   <BookingCta locale={locale} t={t} />
+  <FaqCta locale={locale} t={t} />
 </MainLayout>

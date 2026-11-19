@@ -1,0 +1,18 @@
+---
+import type { Locale } from '../../i18n/config';
+import type { Translations } from '../../i18n/types';
+import FaqAccordion from '../../components/FaqAccordion.astro';
+
+interface Props {
+  locale: Locale;
+  t: Translations;
+}
+
+const { t } = Astro.props;
+---
+
+<section class="page section container max-w-3xl">
+    <h1>{t.faqPage.title}</h1>
+    <p class="text-base-content/80 mb-8">{t.faqPage.intro}</p>
+    <FaqAccordion items={t.faqPage.items} />
+</section>
